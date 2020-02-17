@@ -171,13 +171,13 @@ pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20),
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~nALT in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
-
 dev.off()
 
 
 
 
 #### frequency of ALT alleles per sample (fig2CD) ####
+write.table(gtd, "Fig2CD_ALTallele.csv", sep="\t",quote = F, row.names = F)
 pdf(file="Fig2CD_ALTallele.pdf",height=8,width=12)
 layout(matrix(1:6,nrow=2))
 
