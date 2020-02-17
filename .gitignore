@@ -1,0 +1,6 @@
+.ipynb_checkpoints/*
+.Rhistory
+tmp/*
+results_popgen_CIcol/*.csv.gz
+results_popgen_CIcol/*.csv
+*.ckp.gz

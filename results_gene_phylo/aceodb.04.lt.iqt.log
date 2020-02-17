@@ -1,0 +1,382 @@
+IQ-TREE multicore version 1.6.10 for Linux 64-bit built Feb 19 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    monolit (AVX512, FMA3, 62 GB RAM)
+Command: iqtree -s /home/xavi/Documents/VariationAg1k/duplication_Ace1_genephy/aceodb.04.lt.fasta -nt AUTO -m TEST -mset LG,WAG -pre aceodb.04.lt.iqt -bb 1000 -nm 1000 -cptime 3600
+Seed:    196276 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jun  5 11:12:57 2019
+Kernel:  AVX+FMA - auto-detect threads (12 CPU cores detected)
+
+Reading alignment file /home/xavi/Documents/VariationAg1k/duplication_Ace1_genephy/aceodb.04.lt.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 132 sequences with 277 columns, 277 distinct patterns
+246 parsimony-informative, 18 singleton sites, 13 constant sites
+                            Gap/Ambiguity  Composition  p-value
+   1  Aedaeg_AAEL000511-RJ          2.53%    passed     97.36%
+   2  Aedalb_AALF013932-RA          2.53%    passed     97.36%
+   3  Culqui_CPIJ006034-RA          2.53%    passed     95.54%
+   4  Anoalb_AALB002313-RA          2.53%    passed     98.77%
+   5  Anodar_ADAC000377-RA          2.53%    passed     98.44%
+   6  Anoara_AARA001814-RA          2.53%    passed     95.59%
+   7  Anocol_ACOM033983-RA          2.53%    passed     95.59%
+   8  Anoqua_AQUA006538-RA          2.53%    passed     95.59%
+   9  Anogam_AGAP001356-RA__ACE1    2.53%    passed     95.59%
+  10  Anoepi_AEPI001137-RA          2.53%    passed     95.98%
+  11  Anomac_AMAM010219-RA         35.74%    passed     71.75%
+  12  Anomer_AMEM004851-RA          2.53%    passed     95.59%
+  13  Anofun_AFUN011616-RA          2.53%    passed     95.78%
+  14  Anoste_ASTEI07510-RA          2.53%    passed     96.68%
+  15  Anochr_ACHR005534-RA          2.53%    passed     96.41%
+  16  Anomin_AMIN000542-RA          2.53%    passed     96.09%
+  17  Anodir_ADIR015679-RB          2.53%    passed     93.65%
+  18  Anocul_ACUA015087-RA          2.53%    passed     95.17%
+  19  Anofar_AFAF012446-RA          2.53%    passed     95.86%
+  20  Anomel_AMEC008403-RA          2.53%    passed     95.59%
+  21  Phlpap_PPAI004360-RA          8.66%    passed     96.17%
+  22  Apimel_GB43191-RA             2.53%    passed     91.71%
+  23  Nasvit_NV12591-RA             2.53%    passed     99.27%
+  24  Bommor_BGIBMGA003321-RA       2.53%    passed     99.48%
+  25  Pluxyl_rna11070               5.05%    passed     97.65%
+  26  Danple_DPOGS202180-TA         2.53%    passed     98.94%
+  27  Pedhum_gene_PHUM490200-RA     2.53%    passed     96.19%
+  28  Tricas_TC014402_001           2.53%    passed     89.17%
+  29  Zoonev_KDR17140               2.53%    passed     81.65%
+  30  Rhopro_gene_RPRC000482-RA     2.53%    passed     96.36%
+  31  Dappul_mRNA74                 2.53%    passed     96.73%
+  32  Dappul_mRNA16373              5.78%    passed     26.66%
+  33  Lepsal_EMLSAT00000002842      2.89%    passed     98.12%
+  34  Cgig_EKC37862                 2.53%    passed     71.97%
+  35  Linana_g15058.t1              2.53%    passed     94.87%
+  36  Lotgig_LotgiT113809           2.53%    passed     97.21%
+  37  Octbim_Ocbimv22023426m        2.53%    passed     61.44%
+  38  Brabel_194500R.t1             2.53%    passed     93.88%
+  39  Brabel_222080F.t1             2.53%    passed     80.05%
+  40  Brabel_194520R.t2             2.53%    passed     98.85%
+  41  Drer_ENSDART00000052989       2.53%    passed     97.30%
+  42  Trocal_P07692                 2.53%    passed     99.66%
+  43  Trocal_PDB_1W75               2.53%    passed     98.63%
+  44  Xtro_ENSXETT00000037518       2.53%    passed     77.31%
+  45  Hsap_ENST00000411582__ACHE    2.53%    failed      2.93%
+  46  Mmus_ENSMUST00000085934       2.53%    passed     24.44%
+  47  Mondom_ENSMODT00000006138     2.53%    failed      0.43%
+  48  Xtro_ENSXETT00000014225       2.53%    passed     99.31%
+  49  Brabel_194510R.t1             2.53%    passed     99.73%
+  50  Skow_gene_PAC_23928462        2.53%    passed     93.45%
+  51  Spur_SPU_006123-tr            2.53%    passed     97.01%
+  52  Biogla_gene_BGLB003747-RB     2.53%    passed     75.76%
+  53  Cele_W09B12.1.2               2.53%    passed     99.90%
+  54  Brabel_030630F.t2             2.89%    passed     72.47%
+  55  Brabel_288180R.t1             2.89%    passed     12.56%
+  56  Brabel_135990F.t1             2.53%    passed     56.12%
+  57  Spur_SPU_002589-tr           15.88%    passed     66.88%
+  58  Xtro_ENSXETT00000061701       2.89%    passed     99.72%
+  59  Brabel_017300R.t1             2.53%    passed     98.63%
+  60  Aedaeg_AAEL021432-RH          2.53%    passed     99.99%
+  61  Culqui_CPIJ000662-RA          2.53%    passed    100.00%
+  62  Anoalb_AALB007715-RA          2.53%    passed     99.96%
+  63  Anodar_ADAC000367-RA          2.53%    passed     99.96%
+  64  Anoara_AARA010659-RA          2.53%    passed    100.00%
+  65  Anogam_AGAP000466-RA__ACE2    2.53%    passed    100.00%
+  66  Anomer_AMEM012321-RA          2.53%    passed    100.00%
+  67  Anomel_AMEC001981-RA          8.30%    passed     99.98%
+  68  Anochr_ACHR009747-RA          2.53%    passed    100.00%
+  69  Anocul_ACUA020758-RA          2.53%    passed    100.00%
+  70  Anomin_AMIN005608-RA          2.53%    passed    100.00%
+  71  Anofun_AFUN005694-RA          2.53%    passed    100.00%
+  72  Anomac_AMAM009185-RA         77.62%    passed     79.32%
+  73  Anoste_ASTEI01008-RA          2.53%    passed    100.00%
+  74  Anoepi_AEPI005838-RA          2.53%    passed    100.00%
+  75  Anosin_ASIS006877-RA          2.53%    passed     99.98%
+  76  Anoatr_AATE005176-RA          2.53%    passed     99.96%
+  77  Anofar_AFAF013551-RA          2.53%    passed     99.99%
+  78  Anodir_ADIR001386-RA          2.53%    passed     99.99%
+  79  Anoqua_AQUA008010-RA         13.72%    passed     99.85%
+  80  Lutlon_LLOJ005957-RA          2.53%    passed     99.04%
+  81  Droana_FBtr0389341            2.53%    passed     99.95%
+  82  Droere_FBtr0137125            2.53%    passed     99.93%
+  83  Dromel_FBtr0300486__Ace2      2.53%    passed     99.93%
+  84  Drosim_FBtr0352990            2.53%    passed     99.93%
+  85  Droyak_FBtr0397370            2.53%    passed     99.93%
+  86  Drosec_FBtr0208941            3.61%    passed     99.92%
+  87  Droper_FBtr0188750            2.53%    passed     99.43%
+  88  Dropse_FBtr0375512            2.53%    passed     99.28%
+  89  Drogri_FBtr0154598            2.53%    passed     99.95%
+  90  Dromoj_FBtr0174944            2.53%    passed     99.86%
+  91  Drovir_FBtr0226715            2.53%    passed     99.77%
+  92  Drowil_FBtr0253423            2.53%    passed     99.77%
+  93  Glomor_gene_GMOY006964-RA     2.53%    passed     98.72%
+  94  Musdom_gene_MDOA006787-RB     2.53%    passed     99.47%
+  95  Apimel_GB41856-RA             2.53%    passed     99.90%
+  96  Nasvit_NV12498-RA             2.53%    passed     94.89%
+  97  Danple_DPOGS202609-TA         9.39%    passed     98.64%
+  98  Pluxyl_rna104                 2.53%    passed     98.93%
+  99  Rhopro_gene_RPRC003013-RA     2.53%    passed     37.56%
+ 100  Tricas_TC000981_001           2.53%    passed     97.02%
+ 101  Dappul_mRNA26130              2.53%    passed     99.98%
+ 102  Pedhum_gene_PHUM391440-RA    13.00%    failed      4.80%
+ 103  Cele_Y48B6A.7                 2.17%    passed     82.42%
+ 104  Octbim_Ocbimv22010460m       39.35%    passed      5.04%
+ 105  Octbim_Ocbimv22033431m        2.89%    passed      7.08%
+ 106  Octbim_Ocbimv22033429m        2.89%    failed      0.12%
+ 107  Octbim_Ocbimv22013598m       81.95%    passed     72.30%
+ 108  Octbim_Ocbimv22038398m        2.89%    passed     99.19%
+ 109  Skow_gene_PAC_23921262        2.53%    passed     77.70%
+ 110  Tadh_TriadT1836               2.53%    passed     27.02%
+ 111  Tadh_TriadT2392               2.53%    passed     37.21%
+ 112  Tadh_TriadT34708             57.04%    passed     22.86%
+ 113  Tadh_TriadT34819              2.53%    passed     40.35%
+ 114  Tadh_TriadT32031              2.53%    passed     89.30%
+ 115  Tadh_TriadT32071              2.53%    passed     95.54%
+ 116  Tadh_TriadT64430             40.07%    passed     86.22%
+ 117  Tadh_TriadT61106              3.61%    passed     70.65%
+ 118  Tadh_TriadT32085              2.53%    passed     30.38%
+ 119  Tadh_TriadT19080              2.53%    passed     28.53%
+ 120  Tadh_TriadT52793              2.53%    passed     45.84%
+ 121  Cint_ENSCINT00000009596       2.89%    passed     87.33%
+ 122  Nvec_EDO37548                38.99%    passed     60.41%
+ 123  Nvec_EDO37610                 2.89%    passed     61.68%
+ 124  Stypis_Spis7731               3.61%    passed     88.98%
+ 125  Tadh_TriadT31975              2.53%    passed     10.47%
+ 126  Brumal_Bm8527                 2.17%    passed     69.56%
+ 127  Cele_Y44E3A.2                 2.17%    passed     84.84%
+ 128  Biogla_gene_BGLB017250-RA     2.53%    failed      0.52%
+ 129  Sman_Smp_136690.1             3.97%    passed     77.23%
+ 130  Sman_Smp_154600.1             2.17%    passed     63.28%
+ 131  Aipt_gene_KXJ27710.1          5.42%    passed     90.46%
+ 132  Anoatr_AATE014052-RA         28.16%    passed     25.12%
+WARNING: 3 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         5.92%  5 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Aedalb_AALF013932-RA is identical to Aedaeg_AAEL000511-RJ but kept for subsequent analysis
+NOTE: Anocol_ACOM033983-RA is identical to Anoara_AARA001814-RA but kept for subsequent analysis
+NOTE: Anodar_ADAC000367-RA is identical to Anoalb_AALB007715-RA but kept for subsequent analysis
+NOTE: Anogam_AGAP000466-RA__ACE2 is identical to Anoara_AARA010659-RA but kept for subsequent analysis
+NOTE: Anofun_AFUN005694-RA is identical to Anocul_ACUA020758-RA but kept for subsequent analysis
+NOTE: Dromel_FBtr0300486__Ace2 is identical to Droere_FBtr0137125 but kept for subsequent analysis
+NOTE: 9 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Anoqua_AQUA006538-RA (identical to Anoara_AARA001814-RA) is ignored but added at the end
+NOTE: Anogam_AGAP001356-RA__ACE1 (identical to Anoara_AARA001814-RA) is ignored but added at the end
+NOTE: Anomer_AMEM004851-RA (identical to Anoara_AARA001814-RA) is ignored but added at the end
+NOTE: Anomel_AMEC008403-RA (identical to Anoara_AARA001814-RA) is ignored but added at the end
+NOTE: Anomer_AMEM012321-RA (identical to Anoara_AARA010659-RA) is ignored but added at the end
+NOTE: Anochr_ACHR009747-RA (identical to Anoara_AARA010659-RA) is ignored but added at the end
+NOTE: Anoste_ASTEI01008-RA (identical to Anoara_AARA010659-RA) is ignored but added at the end
+NOTE: Drosim_FBtr0352990 (identical to Droere_FBtr0137125) is ignored but added at the end
+NOTE: Droyak_FBtr0397370 (identical to Droere_FBtr0137125) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to aceodb.04.lt.iqt.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.035 seconds
+NOTE: ModelFinder requires 23 MB RAM!
+ModelFinder will test 16 protein models (sample size: 277) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Measuring multi-threading efficiency up to 12 CPU cores
+Increase to 10 rounds for branch lengths
+84 trees examined
+Threads: 1 / Time: 12.072 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -45004
+Threads: 2 / Time: 10.391 sec / Speedup: 1.162 / Efficiency: 58% / LogL: -45004
+Threads: 3 / Time: 10.525 sec / Speedup: 1.147 / Efficiency: 38% / LogL: -45004
+BEST NUMBER OF THREADS: 2
+
+  1  LG            26464.590    243 53415.180    57008.635    54295.816
+  2  LG+I          26353.464    244 53194.929    56931.179    54079.189
+  3  LG+G4         25399.995    244 51287.990    55024.240    52172.250
+  4  LG+I+G4       25394.184    245 51278.368    55166.755    52166.252
+  5  LG+F          26600.828    262 53725.656    63569.370    54675.148
+  6  LG+F+I        26477.747    263 53481.495    64163.341    54434.611
+  7  LG+F+G4       25463.094    263 51452.188    62134.035    52405.305
+  8  LG+F+I+G4     25456.318    264 51440.636    63100.636    52397.377
+  9  WAG           26416.459    243 53318.918    56912.373    54199.554
+ 10  WAG+I         26330.741    244 53149.482    56885.732    54033.742
+ 11  WAG+G4        25531.730    244 51551.459    55287.709    52435.719
+ 12  WAG+I+G4      25528.200    245 51546.399    55434.786    52434.284
+ 13  WAG+F         26408.909    262 53341.818    63185.532    54291.310
+ 14  WAG+F+I       26314.381    263 53154.762    63836.608    54107.878
+ 15  WAG+F+G4      25492.720    263 51511.441    62193.287    52464.557
+ 16  WAG+F+I+G4    25487.524    264 51503.049    63163.049    52459.789
+Akaike Information Criterion:           LG+I+G4
+Corrected Akaike Information Criterion: LG+G4
+Bayesian Information Criterion:         LG+I+G4
+Best-fit model: LG+I+G4 chosen according to BIC
+
+All model information printed to aceodb.04.lt.iqt.model.gz
+CPU time for ModelFinder: 78.790 seconds (0h:1m:18s)
+Wall-clock time for ModelFinder: 39.801 seconds (0h:0m:39s)
+Generating 1000 samples for ultrafast bootstrap (seed: 196276)...
+
+NOTE: 23 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 12 CPU cores
+Increase to 10 rounds for branch lengths
+16 trees examined
+Threads: 1 / Time: 12.066 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -41714
+Threads: 2 / Time: 7.197 sec / Speedup: 1.677 / Efficiency: 84% / LogL: -41714
+Threads: 3 / Time: 6.211 sec / Speedup: 1.943 / Efficiency: 65% / LogL: -41714
+Threads: 4 / Time: 10.777 sec / Speedup: 1.120 / Efficiency: 28% / LogL: -41714
+BEST NUMBER OF THREADS: 3
+
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 1.102 / LogL: -25399.970
+Init pinv, alpha: 0.005, 1.000 / Estimate: 0.022, 1.191 / LogL: -25394.192
+Init pinv, alpha: 0.010, 1.000 / Estimate: 0.022, 1.193 / LogL: -25394.185
+Init pinv, alpha: 0.016, 1.000 / Estimate: 0.022, 1.193 / LogL: -25394.184
+Init pinv, alpha: 0.021, 1.000 / Estimate: 0.022, 1.193 / LogL: -25394.184
+Init pinv, alpha: 0.026, 1.000 / Estimate: 0.023, 1.194 / LogL: -25394.185
+Init pinv, alpha: 0.031, 1.000 / Estimate: 0.023, 1.194 / LogL: -25394.186
+Init pinv, alpha: 0.037, 1.000 / Estimate: 0.023, 1.194 / LogL: -25394.188
+Init pinv, alpha: 0.042, 1.000 / Estimate: 0.023, 1.194 / LogL: -25394.189
+Init pinv, alpha: 0.047, 1.000 / Estimate: 0.023, 1.194 / LogL: -25394.191
+Optimal pinv,alpha: 0.022, 1.193 / LogL: -25394.184
+
+Parameters optimization took 5.254 sec
+Computing ML distances based on estimated model parameters... 4.465 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.017 seconds
+Log-likelihood of BIONJ tree: -25570.011
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.529 second
+Computing log-likelihood of 98 initial trees ... 7.797 seconds
+Current best score: -25307.816
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -25264.192
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -25258.168
+Iteration 10 / LogL: -25275.942 / Time: 0h:1m:3s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 16: -25254.935
+Iteration 20 / LogL: -25297.705 / Time: 0h:1m:10s
+Finish initializing candidate tree set (20)
+Current best tree score: -25254.935 / CPU time: 27.420
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -25252.822
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -25252.281
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -25251.926
+Iteration 30 / LogL: -25252.662 / Time: 0h:1m:21s (0h:4m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 31: -25250.719
+BETTER TREE FOUND at iteration 38: -25250.718
+Iteration 40 / LogL: -25266.864 / Time: 0h:1m:33s (0h:3m:53s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 49: -25248.750
+Iteration 50 / LogL: -25251.322 / Time: 0h:1m:42s (0h:3m:27s left)
+Log-likelihood cutoff on original alignment: -25308.130
+Iteration 60 / LogL: -25252.523 / Time: 0h:1m:51s (0h:2m:48s left)
+Iteration 70 / LogL: -25250.913 / Time: 0h:2m:0s (0h:2m:17s left)
+BETTER TREE FOUND at iteration 76: -25248.750
+Iteration 80 / LogL: -25250.866 / Time: 0h:2m:9s (0h:2m:37s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 83: -25248.513
+Iteration 90 / LogL: -25248.514 / Time: 0h:2m:20s (0h:2m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 91: -25247.563
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 92: -25247.436
+BETTER TREE FOUND at iteration 99: -25247.435
+Iteration 100 / LogL: -25259.923 / Time: 0h:2m:31s (0h:2m:30s left)
+Log-likelihood cutoff on original alignment: -25307.347
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 110 / LogL: -25256.045 / Time: 0h:2m:42s (0h:2m:13s left)
+Iteration 120 / LogL: -25247.765 / Time: 0h:2m:51s (0h:1m:55s left)
+BETTER TREE FOUND at iteration 121: -25247.435
+Iteration 130 / LogL: -25279.742 / Time: 0h:2m:59s (0h:2m:6s left)
+Iteration 140 / LogL: -25253.883 / Time: 0h:3m:11s (0h:1m:51s left)
+Iteration 150 / LogL: -25272.866 / Time: 0h:3m:21s (0h:1m:35s left)
+Log-likelihood cutoff on original alignment: -25307.347
+Iteration 160 / LogL: -25247.835 / Time: 0h:3m:30s (0h:1m:20s left)
+Iteration 170 / LogL: -25255.406 / Time: 0h:3m:38s (0h:1m:6s left)
+Iteration 180 / LogL: -25248.875 / Time: 0h:3m:47s (0h:0m:52s left)
+BETTER TREE FOUND at iteration 189: -25247.435
+Iteration 190 / LogL: -25291.425 / Time: 0h:3m:58s (0h:2m:5s left)
+Iteration 200 / LogL: -25247.563 / Time: 0h:4m:9s (0h:1m:51s left)
+Log-likelihood cutoff on original alignment: -25307.347
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+BETTER TREE FOUND at iteration 204: -25247.434
+Iteration 210 / LogL: -25250.788 / Time: 0h:4m:18s (0h:1m:56s left)
+Iteration 220 / LogL: -25266.265 / Time: 0h:4m:27s (0h:1m:42s left)
+Iteration 230 / LogL: -25252.732 / Time: 0h:4m:36s (0h:1m:29s left)
+Iteration 240 / LogL: -25247.435 / Time: 0h:4m:47s (0h:1m:17s left)
+Iteration 250 / LogL: -25248.674 / Time: 0h:4m:57s (0h:1m:4s left)
+Log-likelihood cutoff on original alignment: -25307.347
+Iteration 260 / LogL: -25249.085 / Time: 0h:5m:6s (0h:0m:52s left)
+Iteration 270 / LogL: -25247.835 / Time: 0h:5m:14s (0h:0m:39s left)
+BETTER TREE FOUND at iteration 271: -25247.434
+Iteration 280 / LogL: -25250.142 / Time: 0h:5m:25s (0h:1m:46s left)
+Iteration 290 / LogL: -25252.131 / Time: 0h:5m:36s (0h:1m:34s left)
+Iteration 300 / LogL: -25248.213 / Time: 0h:5m:45s (0h:1m:22s left)
+Log-likelihood cutoff on original alignment: -25307.347
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 310 / LogL: -25247.435 / Time: 0h:5m:54s (0h:1m:43s left)
+Iteration 320 / LogL: -25249.228 / Time: 0h:6m:4s (0h:1m:31s left)
+Iteration 330 / LogL: -25250.141 / Time: 0h:6m:14s (0h:1m:19s left)
+Iteration 340 / LogL: -25251.599 / Time: 0h:6m:25s (0h:1m:8s left)
+BETTER TREE FOUND at iteration 344: -25247.434
+Iteration 350 / LogL: -25247.765 / Time: 0h:6m:33s (0h:1m:45s left)
+Log-likelihood cutoff on original alignment: -25307.347
+Iteration 360 / LogL: -25247.434 / Time: 0h:6m:42s (0h:1m:34s left)
+BETTER TREE FOUND at iteration 368: -25247.434
+Iteration 370 / LogL: -25247.563 / Time: 0h:6m:52s (0h:1m:49s left)
+Iteration 380 / LogL: -25248.989 / Time: 0h:7m:2s (0h:1m:38s left)
+Iteration 390 / LogL: -25247.434 / Time: 0h:7m:12s (0h:1m:26s left)
+Iteration 400 / LogL: -25247.435 / Time: 0h:7m:21s (0h:1m:15s left)
+Log-likelihood cutoff on original alignment: -25307.347
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 410 / LogL: -25362.247 / Time: 0h:7m:30s (0h:1m:39s left)
+Iteration 420 / LogL: -25268.117 / Time: 0h:7m:38s (0h:1m:27s left)
+Iteration 430 / LogL: -25251.372 / Time: 0h:7m:49s (0h:1m:16s left)
+Iteration 440 / LogL: -25261.097 / Time: 0h:8m:1s (0h:1m:5s left)
+Iteration 450 / LogL: -25248.305 / Time: 0h:8m:11s (0h:0m:54s left)
+Log-likelihood cutoff on original alignment: -25307.347
+Iteration 460 / LogL: -25253.159 / Time: 0h:8m:20s (0h:0m:43s left)
+TREE SEARCH COMPLETED AFTER 469 ITERATIONS / Time: 0h:8m:28s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -25247.434
+Optimal log-likelihood: -25247.434
+Proportion of invariable sites: 0.023
+Gamma shape alpha: 1.189
+Parameters optimization took 1 rounds (0.080 sec)
+BEST SCORE FOUND : -25247.434
+Creating bootstrap support values...
+Split supports printed to NEXUS file aceodb.04.lt.iqt.splits.nex
+Total tree length: 31.089
+
+Total number of iterations: 469
+CPU time used for tree search: 1376.281 sec (0h:22m:56s)
+Wall-clock time used for tree search: 464.455 sec (0h:7m:44s)
+Total CPU time used: 1472.138 sec (0h:24m:32s)
+Total wall-clock time used: 508.494 sec (0h:8m:28s)
+
+Computing bootstrap consensus tree...
+Reading input file aceodb.04.lt.iqt.splits.nex...
+123 taxa and 1110 splits.
+Consensus tree written to aceodb.04.lt.iqt.contree
+Reading input trees file aceodb.04.lt.iqt.contree
+Log-likelihood of consensus tree: -25247.437
+
+Analysis results written to: 
+  IQ-TREE report:                aceodb.04.lt.iqt.iqtree
+  Maximum-likelihood tree:       aceodb.04.lt.iqt.treefile
+  Likelihood distances:          aceodb.04.lt.iqt.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          aceodb.04.lt.iqt.splits.nex
+  Consensus tree:                aceodb.04.lt.iqt.contree
+  Screen log file:               aceodb.04.lt.iqt.log
+
+Date and Time: Wed Jun  5 11:22:05 2019

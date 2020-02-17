@@ -1,0 +1,7 @@
+Input: 
+- sequences from my database with >95% identity with sequences from orthogroup from orthdob
+
+Filtering: 
+- v01 add trocal seqs
+- v02 remove strigamia maritima, remove and one sequence from Brabel with very long absurd insertion
+- v04 remove arachnids Ixosca and Sarsca

@@ -1,0 +1,646 @@
+IQ-TREE 1.6.10 built Feb 19 2019
+
+Input file name: /home/xavi/Documents/VariationAg1k/duplication_Ace1_genephy/aceodb.04.lt.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 196276
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 132 sequences with 277 amino-acid sites
+Number of constant sites: 13 (= 4.69314% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 13 (= 4.69314% of all sites)
+Number of parsimony informative sites: 246
+Number of distinct site patterns: 277
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+I+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+LG+I+G4         -25394.1841  51278.3682 + 0.9919  55166.7553 - 0.0000  52166.2524 + 0.9525
+LG+G4           -25399.9951  51287.9902 - 0.0081  55024.2402 + 1.0000  52172.2505 - 0.0475
+LG+F+I+G4       -25456.3182  51440.6364 - 0.0000  63100.6364 - 0.0000  52397.3770 - 0.0000
+LG+F+G4         -25463.0942  51452.1884 - 0.0000  62134.0346 - 0.0000  52405.3050 - 0.0000
+WAG+I+G4        -25528.1996  51546.3992 - 0.0000  55434.7863 - 0.0000  52434.2835 - 0.0000
+WAG+G4          -25531.7295  51551.4591 - 0.0000  55287.7091 - 0.0000  52435.7193 - 0.0000
+WAG+F+I+G4      -25487.5243  51503.0486 - 0.0000  63163.0486 - 0.0000  52459.7892 - 0.0000
+WAG+F+G4        -25492.7204  51511.4409 - 0.0000  62193.2870 - 0.0000  52464.5575 - 0.0000
+WAG+I           -26330.7408  53149.4817 - 0.0000  56885.7317 - 0.0000  54033.7419 - 0.0000
+LG+I            -26353.4645  53194.9289 - 0.0000  56931.1789 - 0.0000  54079.1892 - 0.0000
+WAG+F+I         -26314.3809  53154.7617 - 0.0000  63836.6079 - 0.0000  54107.8783 - 0.0000
+WAG             -26416.4590  53318.9180 - 0.0000  56912.3726 - 0.0000  54199.5543 - 0.0000
+WAG+F           -26408.9088  53341.8176 - 0.0000  63185.5319 - 0.0000  54291.3102 - 0.0000
+LG              -26464.5900  53415.1801 - 0.0000  57008.6346 - 0.0000  54295.8163 - 0.0000
+LG+F+I          -26477.7473  53481.4945 - 0.0000  64163.3407 - 0.0000  54434.6111 - 0.0000
+LG+F            -26600.8278  53725.6557 - 0.0000  63569.3699 - 0.0000  54675.1482 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+I+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0225
+Gamma shape alpha: 1.1889
+
+ Category  Relative_rate  Proportion
+  0         0              0.0225
+  1         0.1770         0.2444
+  2         0.5391         0.2444
+  3         1.0490         0.2444
+  4         2.3270         0.2444
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -25247.4340 (s.e. 834.7957)
+Unconstrained log-likelihood (without tree): -1557.8528
+Number of free parameters (#branches + #model parameters): 245
+Akaike information criterion (AIC) score: 50984.8681
+Corrected Akaike information criterion (AICc) score: 54873.2552
+Bayesian information criterion (BIC) score: 51872.7523
+
+Total tree length (sum of branch lengths): 31.0889
+Sum of internal branch lengths: 9.6246 (30.9582% of tree length)
+
+WARNING: 15 near-zero internal branches (<0.0036) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Aedaeg_AAEL000511-RJ' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Aedaeg_AAEL000511-RJ
+|
++**Aedalb_AALF013932-RA
+|
+|  +--Culqui_CPIJ006034-RA
++--| (100)
+   |              +**Anoalb_AALB002313-RA
+   |           +--| (100)
+   |           |  +--Anodar_ADAC000377-RA
+   |        +**| (38)
+   |        |  +--Anoste_ASTEI07510-RA
+   |     +--| (90)
+   |     |  |     +**Anoara_AARA001814-RA
+   |     |  |  +**| (94)
+   |     |  |  |  +**Anocol_ACOM033983-RA
+   |     |  +--| (47)
+   |     |     |     +**Anoepi_AEPI001137-RA
+   |     |     |  +**| (34)
+   |     |     |  |  |     +--Anodir_ADIR015679-RB
+   |     |     |  |  |  +--| (98)
+   |     |     |  |  |  |  +--Anofar_AFAF012446-RA
+   |     |     |  |  +**| (28)
+   |     |     |  |     +--Anocul_ACUA015087-RA
+   |     |     +--| (49)
+   |     |        |  +--Anomac_AMAM010219-RA
+   |     |        +**| (41)
+   |     |           |  +**Anofun_AFUN011616-RA
+   |     |           +--| (98)
+   |     |              +--Anomin_AMIN000542-RA
+   |  +--| (99)
+   |  |  +**Anochr_ACHR005534-RA
+   +--| (100)
+      |     +--Phlpap_PPAI004360-RA
+      |  +--| (94)
+      |  |  |                    +--Apimel_GB43191-RA
+      |  |  |                 +--| (100)
+      |  |  |                 |  +--Nasvit_NV12591-RA
+      |  |  |              +--| (90)
+      |  |  |              |  +--Tricas_TC014402_001
+      |  |  |           +--| (95)
+      |  |  |           |  |     +--Bommor_BGIBMGA003321-RA
+      |  |  |           |  |  +--| (100)
+      |  |  |           |  |  |  |  +--Pluxyl_rna11070
+      |  |  |           |  |  |  +--| (86)
+      |  |  |           |  |  |     +--Danple_DPOGS202180-TA
+      |  |  |           |  +--| (98)
+      |  |  |           |     |      +--Dappul_mRNA74
+      |  |  |           |     |  +---| (100)
+      |  |  |           |     |  |   +------Dappul_mRNA16373
+      |  |  |           |     +--| (99)
+      |  |  |           |        +-------Lepsal_EMLSAT00000002842
+      |  |  |        +--| (60)
+      |  |  |        |  +--Zoonev_KDR17140
+      |  |  |     +--| (60)
+      |  |  |     |  +--Pedhum_gene_PHUM490200-RA
+      |  |  |  +--| (100)
+      |  |  |  |  +--Rhopro_gene_RPRC000482-RA
+      |  |  +--| (100)
+      |  |     |            +---------Cgig_EKC37862
+      |  |     |         +--| (98)
+      |  |     |         |  |  +--------Biogla_gene_BGLB003747-RB
+      |  |     |         |  +--| (100)
+      |  |     |         |     +-----------------------------Biogla_gene_BGLB017250-RA
+      |  |     |      +--| (70)
+      |  |     |      |  +--------Lotgig_LotgiT113809
+      |  |     |   +--| (90)
+      |  |     |   |  |  +-------Linana_g15058.t1
+      |  |     |   |  +--| (78)
+      |  |     |   |     +------------Octbim_Ocbimv22023426m
+      |  |     +---| (100)
+      |  |         |                       +---------Brabel_194500R.t1
+      |  |         |                    +--| (62)
+      |  |         |                    |  |     +-------Brabel_194520R.t2
+      |  |         |                    |  |  +--| (80)
+      |  |         |                    |  |  |  |           +--Drer_ENSDART00000052989
+      |  |         |                    |  |  |  |        +--| (97)
+      |  |         |                    |  |  |  |        |  |    +--Trocal_P07692
+      |  |         |                    |  |  |  |        |  +----| (100)
+      |  |         |                    |  |  |  |        |       +**Trocal_PDB_1W75
+      |  |         |                    |  |  |  |     +--| (93)
+      |  |         |                    |  |  |  |     |  +-----Xtro_ENSXETT00000037518
+      |  |         |                    |  |  |  |  +--| (94)
+      |  |         |                    |  |  |  |  |  |          +--Hsap_ENST00000411582__ACHE
+      |  |         |                    |  |  |  |  |  |       +--| (100)
+      |  |         |                    |  |  |  |  |  |       |  +--Mondom_ENSMODT00000006138
+      |  |         |                    |  |  |  |  |  +-------| (100)
+      |  |         |                    |  |  |  |  |          +--Mmus_ENSMUST00000085934
+      |  |         |                    |  |  |  +--| (71)
+      |  |         |                    |  |  |     |  +-----Xtro_ENSXETT00000014225
+      |  |         |                    |  |  |     +--| (99)
+      |  |         |                    |  |  |        +----------------Xtro_ENSXETT00000061701
+      |  |         |                    |  +--| (81)
+      |  |         |                    |     +---------Brabel_194510R.t1
+      |  |         |                 +--| (74)
+      |  |         |                 |  |     +-------Brabel_222080F.t1
+      |  |         |                 |  |  +--| (83)
+      |  |         |                 |  |  |  |         +--Brabel_030630F.t2
+      |  |         |                 |  |  |  |     +---| (100)
+      |  |         |                 |  |  |  |     |   +----Brabel_288180R.t1
+      |  |         |                 |  |  |  +-----| (100)
+      |  |         |                 |  |  |        +----------Brabel_135990F.t1
+      |  |         |                 |  +--| (79)
+      |  |         |                 |     +--------------Brabel_017300R.t1
+      |  |         |              +--| (45)
+      |  |         |              |  |          +------------Cele_Y48B6A.7
+      |  |         |              |  |     +----| (100)
+      |  |         |              |  |     |    |        +-----Brumal_Bm8527
+      |  |         |              |  |     |    +--------| (100)
+      |  |         |              |  |     |             +--------Cele_Y44E3A.2
+      |  |         |              |  |  +--| (84)
+      |  |         |              |  |  |  +--------------Cint_ENSCINT00000009596
+      |  |         |              |  +--| (57)
+      |  |         |              |     |                   +--Octbim_Ocbimv22010460m
+      |  |         |              |     |                +--| (100)
+      |  |         |              |     |                |  |   +**Octbim_Ocbimv22033429m
+      |  |         |              |     |                |  +---| (100)
+      |  |         |              |     |                |      +**Octbim_Ocbimv22013598m
+      |  |         |              |     |            +---| (100)
+      |  |         |              |     |            |   +--Octbim_Ocbimv22033431m
+      |  |         |              |     |  +---------| (100)
+      |  |         |              |     |  |         +------Octbim_Ocbimv22038398m
+      |  |         |              |     +--| (69)
+      |  |         |              |        +------------------Sman_Smp_154600.1
+      |  |         |           +--| (52)
+      |  |         |           |  +------------------------Sman_Smp_136690.1
+      |  |         |        +--| (58)
+      |  |         |        |  |        +---------Skow_gene_PAC_23928462
+      |  |         |        |  |     +--| (90)
+      |  |         |        |  |     |  +---------Spur_SPU_002589-tr
+      |  |         |        |  |  +--| (81)
+      |  |         |        |  |  |  +------------------Skow_gene_PAC_23921262
+      |  |         |        |  +--| (67)
+      |  |         |        |     |                          +------Tadh_TriadT1836
+      |  |         |        |     |                    +-----| (100)
+      |  |         |        |     |                    |     |       +--Tadh_TriadT2392
+      |  |         |        |     |                    |     |    +--| (99)
+      |  |         |        |     |                    |     |    |  +-----Tadh_TriadT34708
+      |  |         |        |     |                    |     +----| (100)
+      |  |         |        |     |                    |          +---Tadh_TriadT34819
+      |  |         |        |     |                 +--| (73)
+      |  |         |        |     |                 |  |               +--Tadh_TriadT32031
+      |  |         |        |     |                 |  |        +------| (100)
+      |  |         |        |     |                 |  |        |      |  +**Tadh_TriadT32071
+      |  |         |        |     |                 |  |        |      +--| (100)
+      |  |         |        |     |                 |  |        |         +--Tadh_TriadT64430
+      |  |         |        |     |                 |  +--------| (100)
+      |  |         |        |     |                 |           +--------Tadh_TriadT61106
+      |  |         |        |     |              +--| (99)
+      |  |         |        |     |              |  +----------------------Tadh_TriadT31975
+      |  |         |        |     |   +----------| (100)
+      |  |         |        |     |   |          |  +--------------Tadh_TriadT32085
+      |  |         |        |     |   |          +--| (93)
+      |  |         |        |     |   |             |              +-----Tadh_TriadT19080
+      |  |         |        |     |   |             +--------------| (100)
+      |  |         |        |     |   |                            +-----Tadh_TriadT52793
+      |  |         |        |     +---| (90)
+      |  |         |        |         |        +--------------Nvec_EDO37548
+      |  |         |        |         |    +---| (99)
+      |  |         |        |         |    |   |       +----------Nvec_EDO37610
+      |  |         |        |         |    |   +-------| (100)
+      |  |         |        |         |    |           +--------Stypis_Spis7731
+      |  |         |        |         +----| (93)
+      |  |         |        |              +-----------------------------Aipt_gene_KXJ27710.1
+      |  |         |     +--| (77)
+      |  |         |     |  +-----------Spur_SPU_006123-tr
+      |  |         |  +--| (70)
+      |  |         |  |  |                                                                +--Aedaeg_AAEL021432-RH
+      |  |         |  |  |                                                             +--| (98)
+      |  |         |  |  |                                                             |  +--Culqui_CPIJ000662-RA
+      |  |         |  |  |                                                          +--| (50)
+      |  |         |  |  |                                                          |  +**Anoepi_AEPI005838-RA
+      |  |         |  |  |                                                       +**| (1)
+      |  |         |  |  |                                                       |  +**Anoara_AARA010659-RA
+      |  |         |  |  |                                                    +**| (2)
+      |  |         |  |  |                                                    |  +**Anogam_AGAP000466-RA__ACE2
+      |  |         |  |  |                                                 +**| (2)
+      |  |         |  |  |                                                 |  +**Anomel_AMEC001981-RA
+      |  |         |  |  |                                              +**| (38)
+      |  |         |  |  |                                              |  |        +**Anocul_ACUA020758-RA
+      |  |         |  |  |                                              |  |     +**| (87)
+      |  |         |  |  |                                              |  |     |  +**Anofun_AFUN005694-RA
+      |  |         |  |  |                                              |  |  +**| (59)
+      |  |         |  |  |                                              |  |  |  +--Anomin_AMIN005608-RA
+      |  |         |  |  |                                              |  +--| (81)
+      |  |         |  |  |                                              |     +**Anoqua_AQUA008010-RA
+      |  |         |  |  |                                           +--| (55)
+      |  |         |  |  |                                           |  |  +**Anoalb_AALB007715-RA
+      |  |         |  |  |                                           |  +--| (100)
+      |  |         |  |  |                                           |     +**Anodar_ADAC000367-RA
+      |  |         |  |  |                                        +**| (15)
+      |  |         |  |  |                                        |  +--Anodir_ADIR001386-RA
+      |  |         |  |  |                                     +**| (29)
+      |  |         |  |  |                                     |  +--Anofar_AFAF013551-RA
+      |  |         |  |  |                                  +--| (44)
+      |  |         |  |  |                                  |  +--Anomac_AMAM009185-RA
+      |  |         |  |  |                               +--| (59)
+      |  |         |  |  |                               |  +**Anoatr_AATE005176-RA
+      |  |         |  |  |                            +--| (99)
+      |  |         |  |  |                            |  +--Anosin_ASIS006877-RA
+      |  |         |  |  |                         +--| (89)
+      |  |         |  |  |                         |  |             +**Droana_FBtr0389341
+      |  |         |  |  |                         |  |          +--| (77)
+      |  |         |  |  |                         |  |          |  |     +--Droper_FBtr0188750
+      |  |         |  |  |                         |  |          |  |  +--| (100)
+      |  |         |  |  |                         |  |          |  |  |  +**Dropse_FBtr0375512
+      |  |         |  |  |                         |  |          |  +--| (76)
+      |  |         |  |  |                         |  |          |     |        +--Drogri_FBtr0154598
+      |  |         |  |  |                         |  |          |     |     +--| (98)
+      |  |         |  |  |                         |  |          |     |     |  +--Drovir_FBtr0226715
+      |  |         |  |  |                         |  |          |     |  +--| (98)
+      |  |         |  |  |                         |  |          |     |  |  +**Drowil_FBtr0253423
+      |  |         |  |  |                         |  |          |     +--| (78)
+      |  |         |  |  |                         |  |          |        +--Dromoj_FBtr0174944
+      |  |         |  |  |                         |  |       +**| (32)
+      |  |         |  |  |                         |  |       |  |  +**Droere_FBtr0137125
+      |  |         |  |  |                         |  |       |  +**| (57)
+      |  |         |  |  |                         |  |       |     +**Dromel_FBtr0300486__Ace2
+      |  |         |  |  |                         |  |    +--| (95)
+      |  |         |  |  |                         |  |    |  +--Drosec_FBtr0208941
+      |  |         |  |  |                         |  +----| (100)
+      |  |         |  |  |                         |       |  +--Glomor_gene_GMOY006964-RA
+      |  |         |  |  |                         |       +--| (97)
+      |  |         |  |  |                         |          +--Musdom_gene_MDOA006787-RB
+      |  |         |  |  |                     +---| (100)
+      |  |         |  |  |                     |   +--Lutlon_LLOJ005957-RA
+      |  |         |  |  |                  +--| (96)
+      |  |         |  |  |                  |  |     +--Apimel_GB41856-RA
+      |  |         |  |  |                  |  |  +--| (100)
+      |  |         |  |  |                  |  |  |  +--Nasvit_NV12498-RA
+      |  |         |  |  |                  |  +--| (86)
+      |  |         |  |  |                  |     +-------Pedhum_gene_PHUM391440-RA
+      |  |         |  |  |               +--| (91)
+      |  |         |  |  |               |  |  +--Danple_DPOGS202609-TA
+      |  |         |  |  |               |  +--| (100)
+      |  |         |  |  |               |     +--Pluxyl_rna104
+      |  |         |  |  |            +--| (98)
+      |  |         |  |  |            |  +--Tricas_TC000981_001
+      |  |         |  |  |         +--| (100)
+      |  |         |  |  |         |  +--Rhopro_gene_RPRC003013-RA
+      |  |         |  |  +---------| (100)
+      |  |         |  |            +--Dappul_mRNA26130
+      |  |         +--| (73)
+      |  |            +-------------Cele_W09B12.1.2
+      +--| (99)
+         +------------Anoatr_AATE014052-RA
+
+Tree in newick format:
+
+(Aedaeg_AAEL000511-RJ:0.0000027642,Aedalb_AALF013932-RA:0.0000027642,(Culqui_CPIJ006034-RA:0.0128258475,(((((Anoalb_AALB002313-RA:0.0000021164,Anodar_ADAC000377-RA:0.0038738607)100:0.0117174450,Anoste_ASTEI07510-RA:0.0038764866)38:0.0000021420,((Anoara_AARA001814-RA:0.0000027642,Anocol_ACOM033983-RA:0.0000027642)94:0.0000020231,((Anoepi_AEPI001137-RA:0.0000027929,((Anodir_ADIR015679-RB:0.0038556781,Anofar_AFAF012446-RA:0.0116927964)98:0.0038926947,Anocul_ACUA015087-RA:0.0038689028)28:0.0000026507)34:0.0000024650,(Anomac_AMAM010219-RA:0.0065633784,(Anofun_AFUN011616-RA:0.0000023031,Anomin_AMIN000542-RA:0.0038683223)98:0.0038693387)41:0.0000011817)49:0.0038772005)47:0.0038775556)90:0.0038764818,Anochr_ACHR005534-RA:0.0000025194)99:0.0166056605,((Phlpap_PPAI004360-RA:0.0812587654,(((((((Apimel_GB43191-RA:0.0626581991,Nasvit_NV12591-RA:0.0910113718)100:0.0847377612,Tricas_TC014402_001:0.0616787693)90:0.0278960931,((Bommor_BGIBMGA003321-RA:0.0106514048,(Pluxyl_rna11070:0.0275151755,Danple_DPOGS202180-TA:0.0565582357)86:0.0082926745)100:0.1143137076,((Dappul_mRNA74:0.0050131834,Dappul_mRNA16373:0.2586791196)100:0.1503280435,Lepsal_EMLSAT00000002842:0.3152107227)99:0.0434734425)98:0.0359862682)95:0.0346434063,Zoonev_KDR17140:0.0598604953)60:0.0320229223,Pedhum_gene_PHUM490200-RA:0.0986879662)60:0.0207375748,Rhopro_gene_RPRC000482-RA:0.0958506587)100:0.0897182035,((((Cgig_EKC37862:0.3883571991,(Biogla_gene_BGLB003747-RB:0.3289278879,Biogla_gene_BGLB017250-RA:1.0901050171)100:0.0965105042)98:0.0584504170,Lotgig_LotgiT113809:0.3476871804)70:0.0930383235,(Linana_g15058.t1:0.2991025722,Octbim_Ocbimv22023426m:0.4647879946)78:0.0531682564)90:0.0761107663,((((((((Brabel_194500R.t1:0.3608463834,((Brabel_194520R.t2:0.3059993189,((((Drer_ENSDART00000052989:0.0892082458,(Trocal_P07692:0.0236884915,Trocal_PDB_1W75:0.0000024558)100:0.1825634404)97:0.0466926457,Xtro_ENSXETT00000037518:0.2162873124)93:0.0714858102,((Hsap_ENST00000411582__ACHE:0.0355490782,Mondom_ENSMODT00000006138:0.0846549142)100:0.0312265948,Mmus_ENSMUST00000085934:0.0391564032)100:0.2967077338)94:0.0710801458,(Xtro_ENSXETT00000014225:0.2144118007,Xtro_ENSXETT00000061701:0.6188753544)99:0.1347327779)71:0.0730824433)80:0.0517219679,Brabel_194510R.t1:0.3851754761)81:0.0501492657)62:0.0307073653,((Brabel_222080F.t1:0.2990314174,((Brabel_030630F.t2:0.1391939819,Brabel_288180R.t1:0.1803217286)100:0.1595520470,Brabel_135990F.t1:0.4257871149)100:0.2253062506)83:0.0962127801,Brabel_017300R.t1:0.5396011111)79:0.0364806674)74:0.0638702948,(((Cele_Y48B6A.7:0.4659791371,(Brumal_Bm8527:0.2173134604,Cele_Y44E3A.2:0.3418122634)100:0.3430459245)100:0.2121302057,Cint_ENSCINT00000009596:0.5496524917)84:0.0792837447,((((Octbim_Ocbimv22010460m:0.0871947163,(Octbim_Ocbimv22033429m:0.0000021135,Octbim_Ocbimv22013598m:0.0000026567)100:0.1733032132)100:0.0296404518,Octbim_Ocbimv22033431m:0.0836270338)100:0.1711709910,Octbim_Ocbimv22038398m:0.2576005462)100:0.3795828922,Sman_Smp_154600.1:0.6745998942)69:0.1417327118)57:0.0680282972)45:0.0415807533,Sman_Smp_136690.1:0.8916953819)52:0.0225760730,(((Skow_gene_PAC_23928462:0.3631294669,Spur_SPU_002589-tr:0.3668915618)90:0.0894359323,Skow_gene_PAC_23921262:0.6843906714)81:0.0754684755,(((((Tadh_TriadT1836:0.2635748078,((Tadh_TriadT2392:0.1014664079,Tadh_TriadT34708:0.2233679695)99:0.0604376462,Tadh_TriadT34819:0.1472139892)100:0.2005798407)100:0.2225441463,((Tadh_TriadT32031:0.1189647191,(Tadh_TriadT32071:0.0000024965,Tadh_TriadT64430:0.0265922888)100:0.1329697509)100:0.2688615844,Tadh_TriadT61106:0.3440473994)100:0.3528414105)73:0.1125455781,Tadh_TriadT31975:0.8197283882)99:0.0688853314,(Tadh_TriadT32085:0.5588523467,(Tadh_TriadT19080:0.2222126468,Tadh_TriadT52793:0.2445938120)100:0.5655005663)93:0.0773800873)100:0.3948796034,((Nvec_EDO37548:0.5554651632,(Nvec_EDO37610:0.4190251924,Stypis_Spis7731:0.3363113654)100:0.3007757893)99:0.1538747508,Aipt_gene_KXJ27710.1:1.0910803117)93:0.1848998474)90:0.1730289596)67:0.0625753840)58:0.0330250255,Spur_SPU_006123-tr:0.4331169500)77:0.0882246298,(((((((((((((((((((Aedaeg_AAEL021432-RH:0.0317769935,Culqui_CPIJ000662-RA:0.0201077080)98:0.0212710040,Anoepi_AEPI005838-RA:0.0000020006)50:0.0075329837,Anoara_AARA010659-RA:0.0000027642)1:0.0000027193,Anogam_AGAP000466-RA__ACE2:0.0000027642)2:0.0000024524,Anomel_AMEC001981-RA:0.0000027642)2:0.0000027368,(((Anocul_ACUA020758-RA:0.0000027642,Anofun_AFUN005694-RA:0.0000027642)87:0.0000012767,Anomin_AMIN005608-RA:0.0037584239)59:0.0000021767,Anoqua_AQUA008010-RA:0.0000027642)81:0.0037560103)38:0.0000021335,(Anoalb_AALB007715-RA:0.0000021844,Anodar_ADAC000367-RA:0.0000022650)100:0.0191971945)55:0.0037586944,Anodir_ADIR001386-RA:0.0037597657)15:0.0000027451,Anofar_AFAF013551-RA:0.0037597883)29:0.0000014454,Anomac_AMAM009185-RA:0.0722208820)44:0.0037546710,Anoatr_AATE005176-RA:0.0000025637)59:0.0067780748,Anosin_ASIS006877-RA:0.0045088533)99:0.0594206588,((((Droana_FBtr0389341:0.0000020354,((Droper_FBtr0188750:0.0037461710,Dropse_FBtr0375512:0.0000020532)100:0.0345776425,(((Drogri_FBtr0154598:0.0228442702,Drovir_FBtr0226715:0.0113398032)98:0.0075386226,Drowil_FBtr0253423:0.0000026365)98:0.0037716993,Dromoj_FBtr0174944:0.0113431920)78:0.0038843418)76:0.0036750008)77:0.0037676334,(Droere_FBtr0137125:0.0000027642,Dromel_FBtr0300486__Ace2:0.0000020677)57:0.0000020254)32:0.0000026972,Drosec_FBtr0208941:0.0037907190)95:0.0131079085,(Glomor_gene_GMOY006964-RA:0.0216256871,Musdom_gene_MDOA006787-RB:0.0148553444)97:0.0205948372)100:0.2026154201)89:0.0265648467,Lutlon_LLOJ005957-RA:0.0925420599)100:0.1456611061,((Apimel_GB41856-RA:0.0723868303,Nasvit_NV12498-RA:0.1291675666)100:0.1013354251,Pedhum_gene_PHUM391440-RA:0.2976263552)86:0.0038110555)96:0.0298438527,(Danple_DPOGS202609-TA:0.0307604483,Pluxyl_rna104:0.0276063650)100:0.1243390596)91:0.0226202902,Tricas_TC000981_001:0.1104271687)98:0.0482647234,Rhopro_gene_RPRC003013-RA:0.1220747090)100:0.1218860915,Dappul_mRNA26130:0.1026138403)100:0.3886336848)70:0.0493289734,Cele_W09B12.1.2:0.5322054272)73:0.0446597347)100:0.1571012806)100:0.0822012926)94:0.0291842405,Anoatr_AATE014052-RA:0.4835634057)99:0.0200786444)100:0.0110290228)100:0.0219614365);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -25247.436809
+Robinson-Foulds distance between ML tree and consensus tree: 12
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Aedaeg_AAEL000511-RJ
+|
++--Aedalb_AALF013932-RA
+|
+|  +--Culqui_CPIJ006034-RA
++--| (100)
+   |              +--Anoalb_AALB002313-RA
+   |           +--| (100)
+   |           |  +--Anodar_ADAC000377-RA
+   |        +--| (47)
+   |        |  |                 +**Anoara_AARA001814-RA
+   |        |  |              +**|
+   |        |  |              |  +**Anomer_AMEM004851-RA
+   |        |  |           +**|
+   |        |  |           |  +**Anomel_AMEC008403-RA
+   |        |  |        +**|
+   |        |  |        |  +**Anogam_AGAP001356-RA__ACE1
+   |        |  |     +--|
+   |        |  |     |  +**Anoqua_AQUA006538-RA
+   |        |  |  +--| (94)
+   |        |  |  |  +--Anocol_ACOM033983-RA
+   |        |  +--| (47)
+   |        |     |     +--Anoepi_AEPI001137-RA
+   |        |     |  +--| (34)
+   |        |     |  |  |     +--Anodir_ADIR015679-RB
+   |        |     |  |  |  +--| (98)
+   |        |     |  |  |  |  +--Anofar_AFAF012446-RA
+   |        |     |  |  +--| (28)
+   |        |     |  |     +--Anocul_ACUA015087-RA
+   |        |     +--| (49)
+   |        |        |  +--Anomac_AMAM010219-RA
+   |        |        +--| (41)
+   |        |           |  +--Anofun_AFUN011616-RA
+   |        |           +--| (98)
+   |        |              +--Anomin_AMIN000542-RA
+   |     +--| (90)
+   |     |  +--Anoste_ASTEI07510-RA
+   |  +--| (99)
+   |  |  +--Anochr_ACHR005534-RA
+   +--| (100)
+      |     +--Phlpap_PPAI004360-RA
+      |  +--| (94)
+      |  |  |                    +--Apimel_GB43191-RA
+      |  |  |                 +--| (100)
+      |  |  |                 |  +--Nasvit_NV12591-RA
+      |  |  |              +--| (90)
+      |  |  |              |  +--Tricas_TC014402_001
+      |  |  |           +--| (95)
+      |  |  |           |  |     +--Bommor_BGIBMGA003321-RA
+      |  |  |           |  |  +--| (100)
+      |  |  |           |  |  |  |  +--Pluxyl_rna11070
+      |  |  |           |  |  |  +--| (86)
+      |  |  |           |  |  |     +--Danple_DPOGS202180-TA
+      |  |  |           |  +--| (98)
+      |  |  |           |     |      +--Dappul_mRNA74
+      |  |  |           |     |  +---| (100)
+      |  |  |           |     |  |   +------Dappul_mRNA16373
+      |  |  |           |     +--| (99)
+      |  |  |           |        +-------Lepsal_EMLSAT00000002842
+      |  |  |        +--| (60)
+      |  |  |        |  +--Zoonev_KDR17140
+      |  |  |     +--| (60)
+      |  |  |     |  +--Pedhum_gene_PHUM490200-RA
+      |  |  |  +--| (100)
+      |  |  |  |  +--Rhopro_gene_RPRC000482-RA
+      |  |  +--| (100)
+      |  |     |            +---------Cgig_EKC37862
+      |  |     |         +--| (98)
+      |  |     |         |  |  +--------Biogla_gene_BGLB003747-RB
+      |  |     |         |  +--| (100)
+      |  |     |         |     +-----------------------------Biogla_gene_BGLB017250-RA
+      |  |     |      +--| (70)
+      |  |     |      |  +--------Lotgig_LotgiT113809
+      |  |     |   +--| (90)
+      |  |     |   |  |  +-------Linana_g15058.t1
+      |  |     |   |  +--| (78)
+      |  |     |   |     +------------Octbim_Ocbimv22023426m
+      |  |     +---| (100)
+      |  |         |                       +---------Brabel_194500R.t1
+      |  |         |                    +--| (62)
+      |  |         |                    |  |     +-------Brabel_194520R.t2
+      |  |         |                    |  |  +--| (80)
+      |  |         |                    |  |  |  |           +--Drer_ENSDART00000052989
+      |  |         |                    |  |  |  |        +--| (97)
+      |  |         |                    |  |  |  |        |  |    +--Trocal_P07692
+      |  |         |                    |  |  |  |        |  +----| (100)
+      |  |         |                    |  |  |  |        |       +--Trocal_PDB_1W75
+      |  |         |                    |  |  |  |     +--| (93)
+      |  |         |                    |  |  |  |     |  +-----Xtro_ENSXETT00000037518
+      |  |         |                    |  |  |  |  +--| (94)
+      |  |         |                    |  |  |  |  |  |          +--Hsap_ENST00000411582__ACHE
+      |  |         |                    |  |  |  |  |  |       +--| (100)
+      |  |         |                    |  |  |  |  |  |       |  +--Mondom_ENSMODT00000006138
+      |  |         |                    |  |  |  |  |  +-------| (100)
+      |  |         |                    |  |  |  |  |          +--Mmus_ENSMUST00000085934
+      |  |         |                    |  |  |  +--| (71)
+      |  |         |                    |  |  |     |  +-----Xtro_ENSXETT00000014225
+      |  |         |                    |  |  |     +--| (99)
+      |  |         |                    |  |  |        +----------------Xtro_ENSXETT00000061701
+      |  |         |                    |  +--| (81)
+      |  |         |                    |     +---------Brabel_194510R.t1
+      |  |         |                 +--| (74)
+      |  |         |                 |  |     +-------Brabel_222080F.t1
+      |  |         |                 |  |  +--| (83)
+      |  |         |                 |  |  |  |         +--Brabel_030630F.t2
+      |  |         |                 |  |  |  |     +---| (100)
+      |  |         |                 |  |  |  |     |   +----Brabel_288180R.t1
+      |  |         |                 |  |  |  +-----| (100)
+      |  |         |                 |  |  |        +----------Brabel_135990F.t1
+      |  |         |                 |  +--| (79)
+      |  |         |                 |     +--------------Brabel_017300R.t1
+      |  |         |              +--| (45)
+      |  |         |              |  |          +------------Cele_Y48B6A.7
+      |  |         |              |  |     +----| (100)
+      |  |         |              |  |     |    |        +-----Brumal_Bm8527
+      |  |         |              |  |     |    +--------| (100)
+      |  |         |              |  |     |             +--------Cele_Y44E3A.2
+      |  |         |              |  |  +--| (84)
+      |  |         |              |  |  |  +--------------Cint_ENSCINT00000009596
+      |  |         |              |  +--| (57)
+      |  |         |              |     |                   +--Octbim_Ocbimv22010460m
+      |  |         |              |     |                +--| (100)
+      |  |         |              |     |                |  |   +--Octbim_Ocbimv22033429m
+      |  |         |              |     |                |  +---| (100)
+      |  |         |              |     |                |      +--Octbim_Ocbimv22013598m
+      |  |         |              |     |            +---| (100)
+      |  |         |              |     |            |   +--Octbim_Ocbimv22033431m
+      |  |         |              |     |  +---------| (100)
+      |  |         |              |     |  |         +------Octbim_Ocbimv22038398m
+      |  |         |              |     +--| (69)
+      |  |         |              |        +------------------Sman_Smp_154600.1
+      |  |         |           +--| (52)
+      |  |         |           |  +------------------------Sman_Smp_136690.1
+      |  |         |        +--| (58)
+      |  |         |        |  |        +---------Skow_gene_PAC_23928462
+      |  |         |        |  |     +--| (90)
+      |  |         |        |  |     |  +---------Spur_SPU_002589-tr
+      |  |         |        |  |  +--| (81)
+      |  |         |        |  |  |  +------------------Skow_gene_PAC_23921262
+      |  |         |        |  +--| (67)
+      |  |         |        |     |                          +------Tadh_TriadT1836
+      |  |         |        |     |                    +-----| (100)
+      |  |         |        |     |                    |     |       +--Tadh_TriadT2392
+      |  |         |        |     |                    |     |    +--| (99)
+      |  |         |        |     |                    |     |    |  +-----Tadh_TriadT34708
+      |  |         |        |     |                    |     +----| (100)
+      |  |         |        |     |                    |          +---Tadh_TriadT34819
+      |  |         |        |     |                 +--| (73)
+      |  |         |        |     |                 |  |               +--Tadh_TriadT32031
+      |  |         |        |     |                 |  |        +------| (100)
+      |  |         |        |     |                 |  |        |      |  +--Tadh_TriadT32071
+      |  |         |        |     |                 |  |        |      +--| (100)
+      |  |         |        |     |                 |  |        |         +--Tadh_TriadT64430
+      |  |         |        |     |                 |  +--------| (100)
+      |  |         |        |     |                 |           +--------Tadh_TriadT61106
+      |  |         |        |     |              +--| (99)
+      |  |         |        |     |              |  +----------------------Tadh_TriadT31975
+      |  |         |        |     |   +----------| (100)
+      |  |         |        |     |   |          |  +--------------Tadh_TriadT32085
+      |  |         |        |     |   |          +--| (93)
+      |  |         |        |     |   |             |              +-----Tadh_TriadT19080
+      |  |         |        |     |   |             +--------------| (100)
+      |  |         |        |     |   |                            +-----Tadh_TriadT52793
+      |  |         |        |     +---| (90)
+      |  |         |        |         |        +--------------Nvec_EDO37548
+      |  |         |        |         |    +---| (99)
+      |  |         |        |         |    |   |       +----------Nvec_EDO37610
+      |  |         |        |         |    |   +-------| (100)
+      |  |         |        |         |    |           +--------Stypis_Spis7731
+      |  |         |        |         +----| (93)
+      |  |         |        |              +-----------------------------Aipt_gene_KXJ27710.1
+      |  |         |     +--| (77)
+      |  |         |     |  +-----------Spur_SPU_006123-tr
+      |  |         |  +--| (70)
+      |  |         |  |  |                                                       +--Aedaeg_AAEL021432-RH
+      |  |         |  |  |                                                    +--| (98)
+      |  |         |  |  |                                                    |  +--Culqui_CPIJ000662-RA
+      |  |         |  |  |                                                 +--| (50)
+      |  |         |  |  |                                                 |  +--Anoepi_AEPI005838-RA
+      |  |         |  |  |                                              +--| (38)
+      |  |         |  |  |                                              |  |                 +**Anoara_AARA010659-RA
+      |  |         |  |  |                                              |  |              +**|
+      |  |         |  |  |                                              |  |              |  +**Anochr_ACHR009747-RA
+      |  |         |  |  |                                              |  |           +**|
+      |  |         |  |  |                                              |  |           |  +**Anoste_ASTEI01008-RA
+      |  |         |  |  |                                              |  |        +--|
+      |  |         |  |  |                                              |  |        |  +**Anomer_AMEM012321-RA
+      |  |         |  |  |                                              |  |     +--| (26)
+      |  |         |  |  |                                              |  |     |  +--Anogam_AGAP000466-RA__ACE2
+      |  |         |  |  |                                              |  |  +--| (25)
+      |  |         |  |  |                                              |  |  |  +--Anomel_AMEC001981-RA
+      |  |         |  |  |                                              |  +--| (22)
+      |  |         |  |  |                                              |     |        +--Anocul_ACUA020758-RA
+      |  |         |  |  |                                              |     |     +--| (87)
+      |  |         |  |  |                                              |     |     |  +--Anofun_AFUN005694-RA
+      |  |         |  |  |                                              |     |  +--| (59)
+      |  |         |  |  |                                              |     |  |  +--Anomin_AMIN005608-RA
+      |  |         |  |  |                                              |     +--| (81)
+      |  |         |  |  |                                              |        +--Anoqua_AQUA008010-RA
+      |  |         |  |  |                                           +--| (55)
+      |  |         |  |  |                                           |  |  +--Anoalb_AALB007715-RA
+      |  |         |  |  |                                           |  +--| (100)
+      |  |         |  |  |                                           |     +--Anodar_ADAC000367-RA
+      |  |         |  |  |                                        +--| (16)
+      |  |         |  |  |                                        |  +--Anofar_AFAF013551-RA
+      |  |         |  |  |                                     +--| (29)
+      |  |         |  |  |                                     |  +--Anodir_ADIR001386-RA
+      |  |         |  |  |                                  +--| (44)
+      |  |         |  |  |                                  |  +--Anomac_AMAM009185-RA
+      |  |         |  |  |                               +--| (59)
+      |  |         |  |  |                               |  +--Anoatr_AATE005176-RA
+      |  |         |  |  |                            +--| (99)
+      |  |         |  |  |                            |  +--Anosin_ASIS006877-RA
+      |  |         |  |  |                         +--| (89)
+      |  |         |  |  |                         |  |          +--Droana_FBtr0389341
+      |  |         |  |  |                         |  |       +--| (77)
+      |  |         |  |  |                         |  |       |  |     +--Droper_FBtr0188750
+      |  |         |  |  |                         |  |       |  |  +--| (100)
+      |  |         |  |  |                         |  |       |  |  |  +--Dropse_FBtr0375512
+      |  |         |  |  |                         |  |       |  +--| (76)
+      |  |         |  |  |                         |  |       |     |        +--Drogri_FBtr0154598
+      |  |         |  |  |                         |  |       |     |     +--| (98)
+      |  |         |  |  |                         |  |       |     |     |  +--Drovir_FBtr0226715
+      |  |         |  |  |                         |  |       |     |  +--| (98)
+      |  |         |  |  |                         |  |       |     |  |  +--Drowil_FBtr0253423
+      |  |         |  |  |                         |  |       |     +--| (78)
+      |  |         |  |  |                         |  |       |        +--Dromoj_FBtr0174944
+      |  |         |  |  |                         |  |    +--| (95)
+      |  |         |  |  |                         |  |    |  |           +**Droere_FBtr0137125
+      |  |         |  |  |                         |  |    |  |        +**|
+      |  |         |  |  |                         |  |    |  |        |  +**Droyak_FBtr0397370
+      |  |         |  |  |                         |  |    |  |     +--|
+      |  |         |  |  |                         |  |    |  |     |  +**Drosim_FBtr0352990
+      |  |         |  |  |                         |  |    |  |  +--| (57)
+      |  |         |  |  |                         |  |    |  |  |  +--Dromel_FBtr0300486__Ace2
+      |  |         |  |  |                         |  |    |  +--| (51)
+      |  |         |  |  |                         |  |    |     +--Drosec_FBtr0208941
+      |  |         |  |  |                         |  +----| (100)
+      |  |         |  |  |                         |       |  +--Glomor_gene_GMOY006964-RA
+      |  |         |  |  |                         |       +--| (97)
+      |  |         |  |  |                         |          +--Musdom_gene_MDOA006787-RB
+      |  |         |  |  |                     +---| (100)
+      |  |         |  |  |                     |   +--Lutlon_LLOJ005957-RA
+      |  |         |  |  |                  +--| (96)
+      |  |         |  |  |                  |  |     +--Apimel_GB41856-RA
+      |  |         |  |  |                  |  |  +--| (100)
+      |  |         |  |  |                  |  |  |  +--Nasvit_NV12498-RA
+      |  |         |  |  |                  |  +--| (86)
+      |  |         |  |  |                  |     +-------Pedhum_gene_PHUM391440-RA
+      |  |         |  |  |               +--| (91)
+      |  |         |  |  |               |  |  +--Danple_DPOGS202609-TA
+      |  |         |  |  |               |  +--| (100)
+      |  |         |  |  |               |     +--Pluxyl_rna104
+      |  |         |  |  |            +--| (98)
+      |  |         |  |  |            |  +--Tricas_TC000981_001
+      |  |         |  |  |         +--| (100)
+      |  |         |  |  |         |  +--Rhopro_gene_RPRC003013-RA
+      |  |         |  |  +---------| (100)
+      |  |         |  |            +--Dappul_mRNA26130
+      |  |         +--| (73)
+      |  |            +-------------Cele_W09B12.1.2
+      +--| (99)
+         +------------Anoatr_AATE014052-RA
+
+
+Consensus tree in newick format: 
+
+(Aedaeg_AAEL000511-RJ:0.0000027656,Aedalb_AALF013932-RA:0.0000027656,(Culqui_CPIJ006034-RA:0.0128214418,(((((Anoalb_AALB002313-RA:0.0000027656,Anodar_ADAC000377-RA:0.0038721888)100:0.0117146486,((((((Anoara_AARA001814-RA:0.0000000000,Anomer_AMEM004851-RA:0.0000000000):0.0000000000,Anomel_AMEC008403-RA:0.0000000000):0.0000000000,Anogam_AGAP001356-RA__ACE1:0.0000000000):0.0000000000,Anoqua_AQUA006538-RA:0.0000000000):0.0000027656,Anocol_ACOM033983-RA:0.0000027656)94:0.0000027656,((Anoepi_AEPI001137-RA:0.0000027656,((Anodir_ADIR015679-RB:0.0038540109,Anofar_AFAF012446-RA:0.0116900340)98:0.0038910133,Anocul_ACUA015087-RA:0.0038672350)28:0.0000027656)34:0.0000027656,(Anomac_AMAM010219-RA:0.0065602968,(Anofun_AFUN011616-RA:0.0000027656,Anomin_AMIN000542-RA:0.0038666621)98:0.0036312490)41:0.0002378276)49:0.0038755258)47:0.0038758686)47:0.0000027692,Anoste_ASTEI07510-RA:0.0038748261)90:0.0038748116,Anochr_ACHR005534-RA:0.0000027656)99:0.0166036227,((Phlpap_PPAI004360-RA:0.0813128118,(((((((Apimel_GB43191-RA:0.0626423438,Nasvit_NV12591-RA:0.0909897608)100:0.0847210762,Tricas_TC014402_001:0.0616583063)90:0.0278996889,((Bommor_BGIBMGA003321-RA:0.0106483649,(Pluxyl_rna11070:0.0275085154,Danple_DPOGS202180-TA:0.0565441182)86:0.0082897033)100:0.1142767275,((Dappul_mRNA74:0.0050135000,Dappul_mRNA16373:0.2586193717)100:0.1502884591,Lepsal_EMLSAT00000002842:0.3151261585)99:0.0434735322)98:0.0359797031)95:0.0346330455,Zoonev_KDR17140:0.0598410736)60:0.0320129397,Pedhum_gene_PHUM490200-RA:0.0986718529)60:0.0207486897,Rhopro_gene_RPRC000482-RA:0.0958034702)100:0.0897036848,((((Cgig_EKC37862:0.3882441181,(Biogla_gene_BGLB003747-RB:0.3288283913,Biogla_gene_BGLB017250-RA:1.0898221981)100:0.0965042078)98:0.0584524715,Lotgig_LotgiT113809:0.3475888896)70:0.0930223050,(Linana_g15058.t1:0.2990139966,Octbim_Ocbimv22023426m:0.4646595128)78:0.0531628131)90:0.0760785700,((((((((Brabel_194500R.t1:0.3607278880,((Brabel_194520R.t2:0.3059104942,((((Drer_ENSDART00000052989:0.0891848349,(Trocal_P07692:0.0236822452,Trocal_PDB_1W75:0.0000023295)100:0.1825139463)97:0.0466839197,Xtro_ENSXETT00000037518:0.2162286808)93:0.0714650823,((Hsap_ENST00000411582__ACHE:0.0355403397,Mondom_ENSMODT00000006138:0.0846331684)100:0.0312147077,Mmus_ENSMUST00000085934:0.0391525300)100:0.2966294648)94:0.0710655663,(Xtro_ENSXETT00000014225:0.2143445895,Xtro_ENSXETT00000061701:0.6186862009)99:0.1347185467)71:0.0730638199)80:0.0517152469,Brabel_194510R.t1:0.3850708253)81:0.0501501639)62:0.0306910188,((Brabel_222080F.t1:0.2989258767,((Brabel_030630F.t2:0.1391569184,Brabel_288180R.t1:0.1802740189)100:0.1594995331,Brabel_135990F.t1:0.4256733767)100:0.2252563585)83:0.0961895439,Brabel_017300R.t1:0.5394403451)79:0.0364918332)74:0.0638597577,(((Cele_Y48B6A.7:0.4658224887,(Brumal_Bm8527:0.2172464488,Cele_Y44E3A.2:0.3416926399)100:0.3429159955)100:0.2120712462,Cint_ENSCINT00000009596:0.5494745982)84:0.0792667861,((((Octbim_Ocbimv22010460m:0.0871720635,(Octbim_Ocbimv22033429m:0.0000023878,Octbim_Ocbimv22013598m:0.0000027656)100:0.1732583531)100:0.0296411525,Octbim_Ocbimv22033431m:0.0835424490)100:0.1711127612,Octbim_Ocbimv22038398m:0.2576882244)100:0.3794236405,Sman_Smp_154600.1:0.6743630435)69:0.1416948216)57:0.0680087213)45:0.0415716086,Sman_Smp_136690.1:0.8913670006)52:0.0225663303,(((Skow_gene_PAC_23928462:0.3629858015,Spur_SPU_002589-tr:0.3667540936)90:0.0894071153,Skow_gene_PAC_23921262:0.6841479569)81:0.0755002453,(((((Tadh_TriadT1836:0.2634870171,((Tadh_TriadT2392:0.1014470932,Tadh_TriadT34708:0.2232916863)99:0.0603796413,Tadh_TriadT34819:0.1471911548)100:0.2005071303)100:0.2224468647,((Tadh_TriadT32031:0.1189300352,(Tadh_TriadT32071:0.0000026641,Tadh_TriadT64430:0.0265830536)100:0.1329251219)100:0.2687672133,Tadh_TriadT61106:0.3439402695)100:0.3527379555)73:0.1125230473,Tadh_TriadT31975:0.8194521891)99:0.0688466810,(Tadh_TriadT32085:0.5586237791,(Tadh_TriadT19080:0.2221478242,Tadh_TriadT52793:0.2444998437)100:0.5653047373)93:0.0773905536)100:0.3947483379,((Nvec_EDO37548:0.5552560782,(Nvec_EDO37610:0.4188840932,Stypis_Spis7731:0.3361916241)100:0.3007033444)99:0.1538235838,Aipt_gene_KXJ27710.1:1.0906390160)93:0.1848401051)90:0.1730224588)67:0.0625145988)58:0.0330095445,Spur_SPU_006123-tr:0.4329330681)77:0.0881921201,((((((((((((((((Aedaeg_AAEL021432-RH:0.0317653554,Culqui_CPIJ000662-RA:0.0200987030)98:0.0212628113,Anoepi_AEPI005838-RA:0.0000029588)50:0.0075290441,((((((Anoara_AARA010659-RA:0.0000000000,Anochr_ACHR009747-RA:0.0000000000):0.0000000000,Anoste_ASTEI01008-RA:0.0000000000):0.0000000000,Anomer_AMEM012321-RA:0.0000000000):0.0000027656,Anogam_AGAP000466-RA__ACE2:0.0000027656)26:0.0000027656,Anomel_AMEC001981-RA:0.0000027656)25:0.0000027656,(((Anocul_ACUA020758-RA:0.0000027656,Anofun_AFUN005694-RA:0.0000027656)87:0.0000027656,Anomin_AMIN005608-RA:0.0037559775)59:0.0001103360,Anoqua_AQUA008010-RA:0.0000027656)81:0.0036462573)22:0.0000027656)38:0.0000027656,(Anoalb_AALB007715-RA:0.0000027656,Anodar_ADAC000367-RA:0.0000027656)100:0.0191887913)55:0.0037567340,Anofar_AFAF013551-RA:0.0037581519)16:0.0000027656,Anodir_ADIR001386-RA:0.0037581336)29:0.0001334019,Anomac_AMAM009185-RA:0.0721932758)44:0.0036205177,Anoatr_AATE005176-RA:0.0000027656)59:0.0067748509,Anosin_ASIS006877-RA:0.0045066909)99:0.0594020209,(((Droana_FBtr0389341:0.0000027656,((Droper_FBtr0188750:0.0037445408,Dropse_FBtr0375512:0.0000027656)100:0.0345642014,(((Drogri_FBtr0154598:0.0228355198,Drovir_FBtr0226715:0.0113349197)98:0.0075353243,Drowil_FBtr0253423:0.0000027656)98:0.0037700681,Dromoj_FBtr0174944:0.0113382870)78:0.0038826247)76:0.0036733989)77:0.0037660139,((((Droere_FBtr0137125:0.0000000000,Droyak_FBtr0397370:0.0000000000):0.0000000000,Drosim_FBtr0352990:0.0000000000):0.0000027656,Dromel_FBtr0300486__Ace2:0.0000027656)57:0.0000027656,Drosec_FBtr0208941:0.0037890851)51:0.0000027656)95:0.0131033946,(Glomor_gene_GMOY006964-RA:0.0216174958,Musdom_gene_MDOA006787-RB:0.0148488890)97:0.0205869400)100:0.2025350114)89:0.0265560059,Lutlon_LLOJ005957-RA:0.0925062406)100:0.1456011197,((Apimel_GB41856-RA:0.0723652214,Nasvit_NV12498-RA:0.1291149735)100:0.1012942797,Pedhum_gene_PHUM391440-RA:0.2975071111)86:0.0038179248)96:0.0298361028,(Danple_DPOGS202609-TA:0.0307543126,Pluxyl_rna104:0.0275913430)100:0.1242950647)91:0.0226075375,Tricas_TC000981_001:0.1103905934)98:0.0482527861,Rhopro_gene_RPRC003013-RA:0.1220274860)100:0.1218541112,Dappul_mRNA26130:0.1025643939)100:0.3884835492)70:0.0493249010,Cele_W09B12.1.2:0.5320591443)73:0.0446627218)100:0.1570768823)100:0.0821903747)94:0.0288826209,Anoatr_AATE014052-RA:0.4834793090)99:0.0202741685)100:0.0110257685)100:0.0219562665);
+
+TIME STAMP
+----------
+
+Date and time: Wed Jun  5 11:22:05 2019
+Total CPU time used: 1472.137808 seconds (0h:24m:32s)
+Total wall-clock time used: 508.8003359 seconds (0h:8m:28s)
+
