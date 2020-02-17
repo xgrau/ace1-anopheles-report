@@ -26,7 +26,7 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 ##### Frequency of non-syn variants in Ace1 #####
 # per population
 # load allele freqs
-allel   = read.table("out_Ace1due.AlleleFq_tab.csv",header = T,sep="\t")
+allel   = read.table("input_Ace1due.AlleleFq_tab.csv",header = T,sep="\t")
 popl_fq = paste(popl,"fqmin",sep="_")
 
 # is allele nonsyn?
