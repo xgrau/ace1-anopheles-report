@@ -3,7 +3,6 @@
 # input files
 getyf       = "ace1_genotypes.csv"
 dupsf       = "ace1_duplications.csv"
-outcode     = "freqs_duplication"
 pop1        = "alive"
 pop2        = "dead"
 sampf       = "~/Documents/VariationAg1k/docs/samples.meta_phenotypes.txt"
@@ -47,43 +46,8 @@ rownames(allel_f) = paste(allel_f$chr,":",allel_f$POS," ",gsub("n.","",allel_f$C
 # canvia major a minor a un allel concret
 allel_f[rowMeans(allel_f[,popl_fq])>0.5,popl_fq] = 1-allel_f[rowMeans(allel_f[,popl_fq])>0.5,popl_fq]
 
-# plot duplications
-pdf(file=paste("freqs_missenseallel.pdf",sep=""),height=12,width=12)
-pheatmap(t(allel_f[,popl_fq]), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
-         main=paste("nonsyn freqs"))
-dev.off()
 
-
-
-
-
-
-
-
-
-##### Frequency of minor duplications ####
-# Lucas et al 2019 #
-
-# load duplications
-dupf    = read.table("eric_dups_ace1.csv",header = T)
-dupf_f  = dupf[,popl]
-dupf_id = paste(dupf$chr,":",dupf$start,"-",dupf$end," ",dupf$CNV_id,sep="")
-rownames(dupf_f) = dupf_id
-
-# plot duplications
-pdf(file=paste(outcode,"_minor_duplications.pdf",sep=""),height=12,width=12)
-pheatmap(t(dupf_f), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
-         cellwidth = 18, cellheight = 12,
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
-         main=paste("dup freqs"))
-dev.off()
-
-
-
-
-##### Number of duplications per resistant phenotype in CIcol #####
+##### Calculate number of ALT alleles per specimen #####
 # define central loci
 loci_p   = 3492074
 loci_sta = 3484107
@@ -125,9 +89,96 @@ gtd$estimated_n_ALT = apply(gtd,1, FUN = function(x) {
 })
 
 
+##### heatmaps with genotype and duplication frequencies #####
 
-# frequency plots
-pdf(file=paste(outcode,"ALTallele.pdf",sep="."),height=8,width=12)
+popl = c("AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam","GM","GNcol","GNgam","GQgam","GW","KE","UGgam")
+col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
+
+
+# plot duplications Fig1A
+pdf(file="Fig1A_freqs_nonsyn.pdf",height=12,width=12)
+pheatmap(t(allel_f[,popl_fq]), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "red",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
+         main=paste("nonsyn freqs"))
+dev.off()
+
+# 119S genotypes per population Fig1B
+pdf(file="Fig1B_freqs_119Sgty_per_pop.pdf",height=12,width=12)
+ta = CrossTable(gtd$population, gtd$genotype,fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta$t = cbind(ta$t,rowSums(ta$t))
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=paste("genotype~pop"))
+dev.off()
+
+# number of Ace1 copies per population Fig2A
+pdf(file="Fig2A_freqs_CNV_per_pop.pdf",height=12,width=12)
+ta = CrossTable(gtd$population, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta$t = cbind(ta$t,rowSums(ta$t))
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=paste("CNV~pop"))
+dev.off()
+
+# number of Ace1 copies per 119S genotype Fig2B
+pdf(file="Fig2B_freqs_CNV_per_gty.pdf",height=12,width=12)
+ta = CrossTable(gtd$genotype, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta$t = cbind(ta$t,rowSums(ta$t))
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=paste("genotype~CNV"))
+dev.off()
+
+
+# fig10 summary duplications
+pdf(file="Fig10_summarydups.pdf",height=12,width=12)
+ta = CrossTable(gtd$estimated_n_ALT, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta$t = cbind(ta$t,rowSums(ta$t))
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=paste("CNV~estimated"))
+dev.off()
+
+
+
+
+#### Table1&2: genotype-phenotype associations in CIcol ####
+
+# table genotype-phenotype associations: 119S
+pdf(file="FigTable1_phe-gty119S.pdf",height=12,width=12)
+ta = CrossTable(gtd[gtd$population == "CIcol",]$genotype, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=sprintf("phe~119S in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+dev.off()
+
+# table genotype-phenotype associations: CNVs
+pdf(file="FigTable2_phe-CNV_phe-nALT.pdf",height=12,width=12)
+ta = CrossTable(gtd[gtd$population == "CIcol",]$CNV, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=sprintf("phe~CNV in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+
+ta = CrossTable(gtd[gtd$population == "CIcol",]$estimated_n_ALT, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=sprintf("phe~nALT in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+
+dev.off()
+
+
+
+
+#### frequency of ALT alleles per sample (fig2CD) ####
+pdf(file="Fig2CD_ALTallele.pdf",height=8,width=12)
 layout(matrix(1:6,nrow=2))
 
 
@@ -193,96 +244,23 @@ legend("topright",legend=c("alive","dead","other"),col=c("springgreen3","magenta
 dev.off()
 
 
-write.table(gtd, "ace1_phenogeno_association.csv", sep="\t",quote = F, row.names = F)
-
-# genotype-phenotype association tests in CIcol
-ta = CrossTable(gtd[gtd$population=="CIcol",]$genotype, 
-                gtd[gtd$population=="CIcol",]$phenotype,
-                fisher = T, prop.r = F, prop.c = F, prop.t = F ,expected = T)
-
-ta = CrossTable(gtd[gtd$population=="CIcol",]$CNV, 
-                gtd[gtd$population=="CIcol",]$phenotype,
-                fisher = T, prop.r = F, prop.c = F, prop.t = F ,expected = T)
-
-ta = CrossTable(gtd[gtd$population=="CIcol",]$CNV, 
-                gtd[gtd$population=="CIcol",]$genotype,
-                fisher = T, prop.r = F, prop.c = F, prop.t = F ,expected = T)
-
-ta = CrossTable(gtd[gtd$population=="CIcol",]$estimated_n_ALT, 
-                gtd[gtd$population=="CIcol",]$phenotype,
-                fisher = T, prop.r = F, prop.c = F, prop.t = F ,expected = T)
 
 
 
-##### heatmaps with genotype and duplication frequencies #####
+##### Frequency of minor duplications ####
+# Unused; data from Lucas et al 2019 
 
-popl = c("AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam","GM","GNcol","GNgam","GQgam","GW","KE","UGgam")
-col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
+# load duplications
+dupf    = read.table("eric_dups_ace1.csv",header = T)
+dupf_f  = dupf[,popl]
+dupf_id = paste(dupf$chr,":",dupf$start,"-",dupf$end," ",dupf$CNV_id,sep="")
+rownames(dupf_f) = dupf_id
 
-
-pdf(file=paste(outcode,"heatmaps.pdf",sep="."),height=12,width=12)
-
-ta = CrossTable(gtd$population, gtd$genotype,fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("genotype~pop"))
-
-ta = CrossTable(gtd$population, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("CNV~pop"))
-
-ta = CrossTable(gtd$genotype, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("genotype~CNV"))
-
-ta = CrossTable(gtd$CNV, gtd$genotype, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("CNV~genotype"))
-
-ta = CrossTable(gtd$estimated_n_ALT, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("CNV~estimated"))
-
-ta = CrossTable(signif(gtd[gtd$population=="CIcol",]$estimated_n_ALT/gtd[gtd$population=="CIcol",]$CNV*100,3), gtd[gtd$population=="CIcol","phenotype"], fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("phe~fraction119S"))
-
-ta = CrossTable(signif(gtd$estimated_n_ALT/gtd$CNV*100,3), gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("CNV~fraction119S"))
-
-ta = CrossTable(gtd$CNV, gtd$phenotype, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-ta$t = cbind(ta$t,rowSums(ta$t))
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=paste("phe~CNV"))
-
+# plot duplications
+pdf(file=paste("FigXX_minor_duplications.pdf",sep=""),height=12,width=12)
+pheatmap(t(dupf_f), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
+         cellwidth = 18, cellheight = 12,
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
+         main=paste("dup freqs"))
 dev.off()
-
-message("FI")
-
-
-
-
 
