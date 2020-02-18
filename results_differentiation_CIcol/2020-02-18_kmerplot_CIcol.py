@@ -13,8 +13,8 @@ import scipy.stats
 
 # input files
 chromlist  = ["2R","2L","3R","3L","X"]
-kmerdat_fn = "results_differentiation_CIcol/windowed_kmer_counts_table.csv"
-results_fo = "results_differentiation_CIcol"
+kmerdat_fn = "windowed_kmer_counts_table.csv"
+results_fo = "."
 
 # general settings
 sns.set(style="ticks",
