@@ -70,6 +70,12 @@ ov_gef_df = data.frame(
 )
 ov_list = unique(as.vector(ov_gef_df$gene))
 
+# output table
+ov_gef_df = merge(ov_gef_df, gene_names, by.x="gene", by.y="ID")
+ov_gef_df = merge(ov_gef_df, panno_ag, by.x="gene", by.y="gene")
+write.table(ov_gef_df, file = sprintf("%s.PBStop_genes.csv", outcode), sep="\t", quote = F, row.names = F)
+
+
 # highest pbs
 # functional enrichments
 hygeofun(list_interest=ov_list, 
@@ -82,9 +88,5 @@ suppressMessages(topgofun(list_interest=ov_list,
                           outputname=outcode,
                           name_geneset="PBStop_genes",topnum=20))
 
-# output table
-ov_gef_df = merge(ov_gef_df, gene_names, by.x="gene", by.y="ID")
-ov_gef_df = merge(ov_gef_df, panno_ag, by.x="gene", by.y="gene")
-write.table(ov_gef_df, file = sprintf("%s.PBStop_genes.csv", outcode), sep="\t", quote = F, row.names = F)
 
 
