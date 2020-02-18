@@ -306,10 +306,15 @@ samples_subset = samples_subset.reset_index(drop=True)
 ix_pop1_subset = np.where(samples_subset["phenotype"] == "alive")[0]
 ix_pop2_subset = np.where(samples_subset["phenotype"] == "dead")[0]
 
-# PCA1-2
+# PCA
 pdf_pages = PdfPages("%s/pca.pdf" % results_fo)
 pca_coo, pca_mod = allel.pca(genotyp_seg_nalt_ldp_all)
+
+# PC1-PC2
 fig,ax = plot_pca_coords( coords=pca_coo,model=pca_mod,pc1=0,pc2=1,pop1="alive", pop2="dead", colorpop1="green", colorpop2="magenta", whichpop1=ix_pop1_subset, whichpop2=ix_pop2_subset, title="PCA %i SNPs, LD-pruned" % (len(genotyp_seg_nalt_ldp_all)) )
+pdf_pages.savefig(fig,bbox_inches='tight')
+
+# PC1-PC3
 fig,ax = plot_pca_coords( coords=pca_coo,model=pca_mod,pc1=0,pc2=2,pop1="alive", pop2="dead", colorpop1="green", colorpop2="magenta", whichpop1=ix_pop1_subset, whichpop2=ix_pop2_subset, title="PCA %i SNPs, LD-pruned" % (len(genotyp_seg_nalt_ldp_all)) )
 pdf_pages.savefig(fig,bbox_inches='tight')
 
