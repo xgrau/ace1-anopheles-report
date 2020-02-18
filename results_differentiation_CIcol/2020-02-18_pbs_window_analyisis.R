@@ -52,7 +52,7 @@ names(gff_gr_gene) = gff_gr_gene$ID
 gen$PBS_p_adj = fdrtool(gen$PBS_p, statistic = 'pvalue', plot = F)$qval
 
 # find regions pval<0.001
-gef = gen[gen$PBS_p_adj < 0.001, ]
+gef = gen[gen$PBS_p_adj < 0.001 & gen$PBS > 0, ]
 # GenomicRanges of peaks
 gef_gr = makeGRangesFromDataFrame(gef,keep.extra.columns = T,start.field = "start",end.field = "end")
 
