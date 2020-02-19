@@ -64,3 +64,11 @@ python s06_assemble_full_sig_kmers.py
 python s07a_investigate_full_sig_kmers.py
 Rscript s07b_full_sig_kmers_for_plotting.r
 ```
+
+## Unused
+
+Assembly with `abyss`:
+
+```bash
+abyss-pe k=25 name=output se="full_sig_kmers.fa"
+```
