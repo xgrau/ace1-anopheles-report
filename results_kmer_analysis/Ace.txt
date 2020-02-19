@@ -22,3 +22,9 @@ Because multiple k-mers can overlap a single mutation, it was likely that many o
 [Package used (incorporate as you see fit): FDR was done using fdrtool package in R. ]
 
 Guillaume Marcais and Carl Kingsford, A fast, lock-free approach for efficient parallel counting of occurrences of k-mers. Bioinformatics (2011) 27(6): 764-770 (first published online January 7, 2011) doi:10.1093/bioinformatics/btr011
+
+
+
+
+# INÚTL
+To test whether the presence of any k-mers was associated with pirimiphos-methyl resistance, k-mer counts were converted to a binary presence/absence variable. The sample set was further reduced by grouping together all k-mers with the same presence/absence profiles in all samples, such that each profile was present only once. Significance of phenotypic association was determined independently for each marker using Fisher’s exact test with false discovery rate correction (ɑ = 0.05).
