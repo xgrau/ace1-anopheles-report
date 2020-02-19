@@ -161,13 +161,13 @@ dev.off()
 # table genotype-phenotype associations: CNVs
 pdf(file="Fig3_CIcol_phe-CNV_phe-nALT.pdf",height=12,width=12)
 ta = CrossTable(gtd[gtd$population == "CIcol",]$CNV, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-pheatmap(t(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~CNV in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
 
 ta = CrossTable(gtd[gtd$population == "CIcol",]$estimated_n_ALT, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-pheatmap(t(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~nALT in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
