@@ -26,11 +26,15 @@ Other results:
 
 * `results_gene_phylo`: alignments and phylogenetic analyses of acetylcholinesterase homologs from multiple animal species (list and data sources available as `SMXXX`), used to establish homology of *Ace1* mutations across species.
 
+* `results_kmer_analysis`: scripts and commands to count $k$-mers, detect association with phenotypes, and assemble and map the significant $k$-mers to the genome.
+
+* `results_tables`: additional scripts used to produce heatmaps and other figures (not required for primary analyses).
+
 Other files & folders:
 
 * `metadata` folder with metadata for the scripts above (sample info, karyotypes, etc.).
 
-* `scripts_hapclust`, `scripts_printtranscripts`, `results_tables`: some helper functions and additional scripts used to produce heatmaps and other figures (not required for primary analysis).
+* `scripts_hapclust`, `scripts_printtranscripts`, `scripts_other`: some helper functions required by the main scripts.
 
 ## Data
 
