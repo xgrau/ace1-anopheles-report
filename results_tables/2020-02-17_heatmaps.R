@@ -5,7 +5,7 @@ getyf       = "ace1_genotypes.csv"
 dupsf       = "ace1_duplications.csv"
 pop1        = "alive"
 pop2        = "dead"
-sampf       = "~/Documents/VariationAg1k/docs/samples.meta_phenotypes.txt"
+sampf       = "../metadata/samples.meta_phenotypes.txt"
 
 # libraries
 library(gmodels)
@@ -135,7 +135,7 @@ dev.off()
 
 
 # fig10 summary duplications
-pdf(file="Fig10_summarydups.pdf",height=12,width=12)
+pdf(file="Fig2C_summarydups.pdf",height=12,width=12)
 ta = CrossTable(gtd$estimated_n_ALT, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 ta$t = cbind(ta$t,rowSums(ta$t))
 pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
@@ -150,24 +150,24 @@ dev.off()
 #### Table1&2: genotype-phenotype associations in CIcol ####
 
 # table genotype-phenotype associations: 119S
-pdf(file="FigTable1_phe-gty119S.pdf",height=12,width=12)
+pdf(file="Fig3_CIcol_phe-gty119S.pdf",height=12,width=12)
 ta = CrossTable(gtd[gtd$population == "CIcol",]$genotype, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~119S in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
 dev.off()
 
 # table genotype-phenotype associations: CNVs
-pdf(file="FigTable2_phe-CNV_phe-nALT.pdf",height=12,width=12)
+pdf(file="Fig3_CIcol_phe-CNV_phe-nALT.pdf",height=12,width=12)
 ta = CrossTable(gtd[gtd$population == "CIcol",]$CNV, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+pheatmap(t(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~CNV in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
 
 ta = CrossTable(gtd[gtd$population == "CIcol",]$estimated_n_ALT, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+pheatmap(t(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~nALT in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
@@ -177,7 +177,7 @@ dev.off()
 
 
 #### frequency of ALT alleles per sample (fig2CD) ####
-write.table(gtd, "Fig2CD_ALTallele.csv", sep="\t",quote = F, row.names = F)
+write.table(gtd, "Fig3_CIcol_CNV-ALTallele.csv", sep="\t",quote = F, row.names = F)
 pdf(file="Fig2CD_ALTallele.pdf",height=8,width=12)
 layout(matrix(1:6,nrow=2))
 
