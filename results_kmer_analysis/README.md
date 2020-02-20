@@ -1,16 +1,16 @@
-# $k$-mer analysis
+# k-mer analysis
 
-Recipe to identify $k$-mers from `fastq` that are significantly associated with pirimiphos-methyl resistance, using 71 WGS data for *A. coluzzii* from Côte d'Ivoire.
+Recipe to identify k-mers from `fastq` that are significantly associated with pirimiphos-methyl resistance, using 71 WGS data for *A. coluzzii* from Côte d'Ivoire.
 
 ## Methods
 
-0. **Obtain $k$-mer counts** for each sample `fastq` file using `jellyfish` v. 2.2.10 [Marcais and Kingsford 2011]:
+0. **Obtain k-mer counts** for each sample `fastq` file using `jellyfish` v. 2.2.10 [Marcais and Kingsford 2011]:
 
 ```bash
 jellyfish count -C -m 31 --out-counter-len 2 -s 300M --bf-size 10G
 ```
 
-1. Obtain **lexographical $k$-mer groups**. To reduce the computer memory footprint of the k-mer count tables, the k-mer strings were recoded as integers, split into separate files according to their leading nucleotides ($k$-mers beginning with `AAA` were saved into one file, those beginning with `AAC` into another file, and so on) and, within each file, sorted lexographically. We call the set of $k$-mers within each file a "lexographical group".
+1. Obtain **lexographical k-mer groups**. To reduce the computer memory footprint of the k-mer count tables, the k-mer strings were recoded as integers, split into separate files according to their leading nucleotides (k-mers beginning with `AAA` were saved into one file, those beginning with `AAC` into another file, and so on) and, within each file, sorted lexographically. We call the set of k-mers within each file a "lexographical group".
 
 ```bash
 # run in a loop using as the first argument each of the
@@ -18,7 +18,7 @@ jellyfish count -C -m 31 --out-counter-len 2 -s 300M --bf-size 10G
 python s01_recode_split_sort.py <file_list> <path_to_jellyfish> <num_threads>
 ```
 
-2. The resulting tables were loaded into `R`, and $k$-mers present in fewer than 3 samples, or absent in fewer than 3 samples, were discarded in order to reduce the size of the dataset while keeping the K-mers most likely to show variation in the poulation (called "variant k-mers"). This was done separately for each lexographical group, using the script:
+2. The resulting tables were loaded into `R`, and k-mers present in fewer than 3 samples, or absent in fewer than 3 samples, were discarded in order to reduce the size of the dataset while keeping the K-mers most likely to show variation in the poulation (called "variant k-mers"). This was done separately for each lexographical group, using the script:
 
 ```bash
 # run in a loop using as the first argument each of the
@@ -50,7 +50,7 @@ Rscript s05a_get_total_kmers_per_sample.r
 Rscript s05b_full_phen_assoc_standalone.r
 ```
 
-6. **$k$-mer assembly**. We took the k-mers that showed a significant association with PM resistance and assembled them by joining any k-mers that overlapped perfectly over at least 10 bp. This was implemented using the script:
+6. **k-mer assembly**. We took the k-mers that showed a significant association with PM resistance and assembled them by joining any k-mers that overlapped perfectly over at least 10 bp. This was implemented using the script:
 
 ```bash
 # input: full_sig_kmers.fa
@@ -58,7 +58,7 @@ Rscript s05b_full_phen_assoc_standalone.r
 python s06_assemble_full_sig_kmers.py
 ```
 
-7. **$k$-mer alignment**. The resulting assembled k-mers were aligned against the AgamP3 reference genome using `bwa mem`. Results were then prepared into tables for plotting with the scripts:
+7. **k-mer alignment**. The resulting assembled k-mers were aligned against the AgamP3 reference genome using `bwa mem`. Results were then prepared into tables for plotting with the scripts:
 
 ```bash
 bwa mem -T 0 Anopheles-gambiae-PEST_CHROMOSOMES_AgamP4.fa full_sig_merged_kmers.fa
@@ -66,14 +66,14 @@ python s07a_investigate_full_sig_kmers.py
 Rscript s07b_full_sig_kmers_for_plotting.r
 ```
 
-8. **$k$-mer frequency correlation with *Ace1***: check whether the frequencies of each significant $k$-mer in each sample correlate with *Ace* copy numbers.
+8. **k-mer frequency correlation with *Ace1***: check whether the frequencies of each significant k-mer in each sample correlate with *Ace* copy numbers.
 
 ```bash
 Rscript s08a_extract_full_sig_kmers.r
 s08b_Ace1_correlation.r
 ```
 
-9. Produce table with counts of $k$-mer mapping coordinates along the genome:
+9. Produce table with counts of k-mer mapping coordinates along the genome:
 
 ```bash
 python s09_2020-02-20_kmerplot_coordinates_CIcolb.py
