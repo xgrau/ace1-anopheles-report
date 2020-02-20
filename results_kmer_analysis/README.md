@@ -66,10 +66,29 @@ python s07a_investigate_full_sig_kmers.py
 Rscript s07b_full_sig_kmers_for_plotting.r
 ```
 
+8. **$k$-mer frequency correlation with *Ace1***: check whether the frequencies of each significant $k$-mer in each sample correlate with *Ace* copy numbers.
+
+```bash
+Rscript s08a_extract_full_sig_kmers.r
+s08b_Ace1_correlation.r
+```
+
+9. Produce table with counts of $k$-mer mapping coordinates along the genome:
+
+```bash
+python s09_2020-02-20_kmerplot_coordinates_CIcolb.py
+```
+
 ## Unused
 
 Assembly with `abyss`:
 
 ```bash
-abyss-pe k=25 name=output se="full_sig_kmers.fa"
+abyss-pe k=25 name=full_sig_kmers_assembly se="full_sig_kmers.fa"
+```
+
+BLAT alignments:
+
+```bash
+blat Anopheles-gambiae-PEST_CHROMOSOMES_AgamP4.fa full_sig_merged_kmers.fa full_sig_merged_kmers.blat -out=blast8
 ```

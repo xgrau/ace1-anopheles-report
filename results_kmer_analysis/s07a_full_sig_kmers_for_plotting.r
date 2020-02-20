@@ -1,19 +1,34 @@
 library(Biostrings)
 options(scipen=999)
 
-all.sig.kmers <- read.table('/home/eric/Liverpool/ML/CI_fastq/full_analysis/full_phen_assoc_standalone/full_sig_kmers.csv', sep = '\t', header = T)
+all.sig.kmers <- read.table('full_sig_kmers.csv', sep = '\t', header = T, stringsAsFactors = F)
 all.sig.kmers <- all.sig.kmers[order(all.sig.kmers$Chrom, all.sig.kmers$Pos), ]
 
 cat('\nThere were ', nrow(all.sig.kmers), ' alignments in total, from a total of ', length(unique(all.sig.kmers$Kmer)), 
-    ' k-mers.\n', sep = '')
+    ' assembled sequences.\n', sep = '')
 
 # Get the median length of the assembled kmers
 assembled.kmers <- readDNAStringSet('/home/eric/Liverpool/ML/CI_fastq/full_analysis/full_phen_assoc_standalone/full_sig_merged_kmers.fa')
 cat('The median size of the assembled kmers was', median(width(assembled.kmers)), 'bp.\n')
 
+# Load the table relating each assembled sequence to the kmers that constitute it
+kmer.dict <- read.table('full_sig_kmer_dictionary.txt', row.names = 1, stringsAsFactors = F, col.names = c('Sequence', 'kmers'))
+# For each assembled sequence, get the number of kmers that assembled to it
+kmer.dict$num.kmer <- unlist(lapply(strsplit(kmer.dict$kmers, '\\.'), length))
+# Identify the sequences composed of at least 2 kmers
+filtered.sequences <- rownames(kmer.dict)[kmer.dict$num.kmer > 1]
+filtered.sig.kmers <- subset(all.sig.kmers, Kmer %in% filtered.sequences)
+
+cat('\nAfter filtering sequences composed of only 1 k-mer, there were ', nrow(filtered.sig.kmers), ' alignments in ',
+    'total, from a total of ', length(unique(filtered.sig.kmers$Kmer)), ' assembled sequences.\n', sep = '')
+
+# Get the median length of the assembled kmers
+filtered.assembled.kmers <- assembled.kmers[names(assembled.kmers) %in% filtered.sequences]
+cat('The median size of the assembled kmers after filtering was', median(width(filtered.assembled.kmers)), 'bp.\n')
+
 # Get rid of the supplementary alignments (ie: the alignment of the soft-clipped reads)
-cat(sum(all.sig.kmers$Supplementary == 'True'), ' of the alignments were supplementary. We will now consider only primary alignments.\n', sep = '')
-sig.kmers <- subset(all.sig.kmers, Supplementary == 'False')
+cat(sum(filtered.sig.kmers$Supplementary == 'True'), ' of the alignments were supplementary. We will now consider only primary alignments.\n', sep = '')
+sig.kmers <- subset(filtered.sig.kmers, Supplementary == 'False')
 
 # Get rid of the NA alignments
 cat(sum(is.na(sig.kmers$Chrom)), ' assembled kmers did not align.\n', sep = '')
