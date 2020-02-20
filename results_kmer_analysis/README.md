@@ -27,7 +27,7 @@ Rscript s02_join_tables.r <lexographical_group>
 
 # reduce sample set by grouping together kmers with the same presence/absence profile
 # output: smalltable.Rdata
-Rscript s03_combine_all_tables.r 
+Rscript s03_combine_all_tables.r
 ```
 
 4. **Significance of phenotypic association** was determined independently for each marker using Fisher's exact test with false discovery rate correction, implemented in the script:
@@ -61,6 +61,7 @@ python s06_assemble_full_sig_kmers.py
 7. **$k$-mer alignment**. The resulting assembled k-mers were aligned against the AgamP3 reference genome using `bwa mem`. Results were then prepared into tables for plotting with the scripts:
 
 ```bash
+bwa mem -T 0 Anopheles-gambiae-PEST_CHROMOSOMES_AgamP4.fa full_sig_merged_kmers.fa
 python s07a_investigate_full_sig_kmers.py
 Rscript s07b_full_sig_kmers_for_plotting.r
 ```
