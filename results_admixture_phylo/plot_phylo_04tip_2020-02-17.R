@@ -86,5 +86,3 @@ for (phy_fn in phy_list) {
 dev.off()
 
 
-stop("ara")
-
