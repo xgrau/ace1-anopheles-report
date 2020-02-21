@@ -4,7 +4,7 @@ library(pheatmap)
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
 # read input (run 2020-02-17_heatmaps.R to produce this table)
-gtd = read.table("Fig3_CIcol_CNV-ALTallele.csv", header = T)
+gtd = read.table("../results_tables/Fig3_CIcol_CNV-ALTallele.csv", header = T)
 
 
 #### genotype-phenotype associations in CIcol ####
