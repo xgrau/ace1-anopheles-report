@@ -6,7 +6,9 @@ The scripts and data in this repository can be used to reproduce all analyses fr
 
 Genome variation data for this project has been generated as part of the [***Anopheles gambiae* 1000 Genomes Consortium**](https://www.malariagen.net/projects/ag1000g).
 
-## Contents
+## Analyses
+
+### Genetic diversity & evolution of *Ace1*
 
 All main analyses are organised in `ipython` notebooks, that you can run/examine in the following order:
 
@@ -14,27 +16,29 @@ All main analyses are organised in `ipython` notebooks, that you can run/examine
 
 2. `s02_admixture_Ace1_arab_2020-02-14.ipynb`: perform Patterson's D tests of introgression (aka ABBA-BABA test) between various pairs of populations. Output goes to `results_admixture`. There are four scripts, using *arab*, *quad*, *mela* and *meru* as outgroups.
 
-3. `s03_alignments_haplotypes_Ace1_2020-02-14.ipynb`: produce alignments of haplotypes in the *Ace1* duplication and two control regions upstream and downstream of it. Results go to `results_admixture_phylo`.
+3. `s03_alignments_haplotypes_Ace1_2020-02-14.ipynb`: produce alignments of haplotypes in the *Ace1* duplication and two control regions upstream and downstream of it. Results go to `results_admixture_phylo`. This folder also contains log files from iqtree ML phylogenetic analyses, and a `R` script to create plots for each phylogeny(`00_plot_trees_2020-02-14.R`).
 
-4. `s04_popgen_CIcol_PCA_2020-02-14.ipynb`: calculate genetic differentiation and selection statistics between the PM-resistant and PM-susceptible subpopulations of *A. coluzzii* from Côte d'Ivoire. Results go to `results_popgen_CIcol`.
+4. `s04_popgen_CIcol_PCA_2020-02-14.ipynb`: calculate genetic differentiation and selection statistics between the PM-resistant and PM-susceptible subpopulations of *A. coluzzii* from Côte d'Ivoire. Results go to `results_differentiation_CIcol`.
 
 These scripts are available as `ipython` notebooks (you can open them here on github, using jupyter notebooks, or VSCode).
 
-Other results:
+### Genotype-phenotype association
 
-* `results_admixture_phylo`: alignments of haplotypes from the *Ag1000G* dataset, log files from `iqtree` ML phylogenetic analyses, and a `R` script to create plots for each phylogeny(`00_plot_trees_2020-02-14.R`).
+Folder `results_phe-gen_CIcol_9WA` contains scripts and data to run genotype-phenotype assocation analyses for the CIcol samples and 9 additional West African populations of *gam* and *col*.
 
-* `results_gene_phylo`: alignments and phylogenetic analyses of acetylcholinesterase homologs from multiple animal species (list and data sources available as `SMXXX`), used to establish homology of *Ace1* mutations across species.
+### Other
 
-* `results_kmer_analysis`: scripts and commands to count $k$-mers, detect association with phenotypes, and assemble and map the significant $k$-mers to the genome.
+* `results_gene_phylo`: alignments and phylogenetic analyses of acetylcholinesterase homologs from multiple animal species (list and data sources available as `SM16`), used to establish homology of *Ace1* mutations across species.
+
+* `results_kmer_analysis`: scripts and commands to count k-mers, detect association with phenotypes, and assemble and map the significant k-mers to the genome.
 
 * `results_tables`: additional scripts used to produce heatmaps and other figures (not required for primary analyses).
 
-Other files & folders:
+Other folders:
 
-* `metadata` folder with metadata for the scripts above (sample info, karyotypes, etc.).
+* `metadata` folder with metadata for the scripts above (sample info, karyotypes, genome annotations,etc.).
 
-* `scripts_hapclust`, `scripts_printtranscripts`, `scripts_other`: some helper functions required by the main scripts.
+* `scripts_hapclust`, `scripts_printtranscripts`, `scripts_other`: some helper functions used by the main scripts.
 
 ## Data
 
