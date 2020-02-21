@@ -13,7 +13,7 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 
 
 # table genotype-phenotype associations: CNVs
-pdf(file="FigY_phe-gty_119S.pdf",height=4,width=4)
+pdf(file="Fig3_phe-gty_119S.pdf",height=4,width=4)
 
 # loop with all tests
 for (spi in c("col","gam")) {
@@ -52,7 +52,7 @@ dev.off()
 
 #### Plot frequency of each species in each location ####
 
-pdf(file="FigY_populations.pdf",height=12,width=12)
+pdf(file="Fig3_populations.pdf",height=12,width=12)
 
 tei = CrossTable(dat$Ace1_G119S, dat$Species, fisher=F, prop.r = F, prop.c = F, prop.t = F, expected = T, missing.include = T)
 pheatmap(tei$t, color = col.fun(20), breaks = seq(0,300,length.out = 20), 
