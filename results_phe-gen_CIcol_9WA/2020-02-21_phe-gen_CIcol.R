@@ -78,6 +78,11 @@ mod_BIC_out$BIC_OR    = 1/exp(mod_BIC_out$BIC_coef)
 write.table(mod_BIC_out, "Fig3X_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t")
 
 
+# pearson test (linkage between mutations)
+cor.test(as.numeric(as.character(data$G280S)), as.numeric(as.character(data$A65S)), method = "pearson")
+cor.test(as.numeric(as.character(data$G280S)), as.numeric(data$CNV>2), method = "pearson")
+
+
 # ### BACKWARD ELIMINATION
 # source("../scripts_other/glmodelling.R")
 # mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "CNV", "estimated_n_ALT"),
