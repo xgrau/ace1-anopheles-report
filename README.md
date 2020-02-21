@@ -45,10 +45,9 @@ Other folders:
 Where is the input data?
 
 * All metadata required is in the `metadata` folder
-* Population genomic data **has to be downloaded** from the [Ag1000G project archive](https://www.malariagen.net/projects/ag1000g). These are huge files that don't fit in this repository. Download links for Phase1-AR3 and Phase2-AR1:
+* Population genomic data **has to be downloaded** from the [Ag1000G project archive](https://www.malariagen.net/projects/ag1000g). These are huge files that don't fit in this repository. Download link for Phase2-AR1:
 
 ```bash
-ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3/
 ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/
 ```
 
@@ -60,21 +59,18 @@ Notes on data download:
 
 ```bash
 ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/haplotypes/main/
-ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3/haplotypes/main/
 ```
 
 * nucleotide **accessibility arrays** in HDF5 format:
 
 ```bash
 ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/accessibility/
-ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3/accessibility/
 ```
 
 * other **metadata** files:
 
 ```bash
 ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/samples/
-ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3/samples/
 ```
 
 ## Dependencies
