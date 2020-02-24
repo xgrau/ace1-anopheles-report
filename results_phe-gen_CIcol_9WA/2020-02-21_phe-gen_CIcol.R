@@ -6,21 +6,31 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 # read input (run 2020-02-17_heatmaps.R to produce this table)
 gtd = read.table("../results_tables/Fig3_CIcol_CNV-ALTallele.csv", header = T)
 
+data_A65S = read.table("Genotype_3489405_A65S.csv", header = T)
+
 
 #### genotype-phenotype associations in CIcol ####
 # Simple Fisher's tests of individual variants
 
 # table genotype-phenotype associations: 119S
-pdf(file="Fig3_CIcol_phe-gty119S.pdf",height=12,width=12)
+pdf(file="Fig3A_CIcol_phe-gty.pdf",height=12,width=12)
 ta = CrossTable(gtd[gtd$population == "CIcol",]$genotype, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~119S in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+         main=sprintf("phe~280S in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+
+# same with S65A
+ta = CrossTable(data_A65S[data_A65S$population == "CIcol",]$genotype, data_A65S[data_A65S$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=sprintf("phe~S65A in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+
 dev.off()
 
 # table genotype-phenotype associations: CNVs
-pdf(file="Fig3_CIcol_phe-CNV_phe-nALT.pdf",height=12,width=12)
+pdf(file="Fig3BC_CIcol_phe-CNV_phe-nALT.pdf",height=12,width=12)
 ta = CrossTable(gtd[gtd$population == "CIcol",]$CNV, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
@@ -75,7 +85,7 @@ colnames(mod_BIC_out) = c("BIC_coef","BIC_se", "BIC_z", "BIC_p_chisq")
 mod_BIC_out$variant   = rownames(mod_BIC_out)
 mod_BIC_out$BIC_OR    = 1/exp(mod_BIC_out$BIC_coef)
 
-write.table(mod_BIC_out, "Fig3X_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t")
+write.table(mod_BIC_out, "Fig3ABC-sup_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t")
 
 
 # pearson test (linkage between mutations)
