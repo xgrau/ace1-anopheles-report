@@ -14,6 +14,8 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 
 dat$population = paste(dat$Species, dat$Location, dat$Country)
 
+daf = dat[dat$Species %in% c("col","gam") && dat$phenotype,]
+
 pdf(file="Fig3E_gty_per_pop.pdf",height=4,width=4)
 tat = CrossTable(dat$population, dat$Ace1_G119S)
 pheatmap(tat$t, color = col.fun(20), breaks = seq(0,50,length.out = 20), 
