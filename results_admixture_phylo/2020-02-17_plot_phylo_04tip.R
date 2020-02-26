@@ -7,11 +7,10 @@ library(stringr)
 
 prefix    = "phylo"
 
-phy_list  = c("hapalignment_upstream.iqt.treefile",
-              "hapalignment_duplication.iqt.treefile",
-              "hapalignment_dupdo.iqt.treefile",
+phy_list  = c("hapalignment_duplication.iqt.treefile",
+              "hapalignment_upstream.iqt.treefile",
               "hapalignment_downstream.iqt.treefile")
-phy_name  = c("upstream","duplication","dup post breakpoint","downstream")
+phy_name  = c("A) duplication","B) upstream","C) downstream")
 
 dups = read.table("haps_with_dups.csv", header = T)
 hap_has_dup = as.vector(dups[dups$has_dup,"hap"])
