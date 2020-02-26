@@ -16,11 +16,11 @@ All main analyses are organised in `ipython` notebooks, that you can run/examine
 
 2. `s02_admixture_Ace1_arab_2020-02-14.ipynb`: perform Patterson's D tests of introgression (aka ABBA-BABA test) between various pairs of populations. Output goes to `results_admixture`. There are four scripts, using *arab*, *quad*, *mela* and *meru* as outgroups.
 
-3. `s03_alignments_haplotypes_Ace1_2020-02-14.ipynb`: produce alignments of haplotypes in the *Ace1* duplication and two control regions upstream and downstream of it. Results go to `results_admixture_phylo`. This folder also contains log files from iqtree ML phylogenetic analyses, and a `R` script to create plots for each phylogeny(`00_plot_trees_2020-02-14.R`).
+3. `s03_alignments_haplotypes_Ace1_2020-02-14.ipynb`: produce alignments of haplotypes in the *Ace1* duplication and two control regions upstream and downstream of it. Results go to `results_admixture_phylo`. This folder also contains log files from iqtree ML phylogenetic analyses, and a R script to create plots for each phylogeny(`2020-02-17_plot_phylo_04tip.R`).
 
 4. `s04_popgen_CIcol_PCA_2020-02-14.ipynb`: calculate genetic differentiation and selection statistics between the PM-resistant and PM-susceptible subpopulations of *A. coluzzii* from Côte d'Ivoire. Results go to `results_differentiation_CIcol`.
 
-These scripts are available as `ipython` notebooks (you can open them here on github, using jupyter notebooks, or VSCode).
+These scripts are available as ipython notebooks (you can open them here on github, using jupyter notebooks, or VSCode).
 
 ### Genotype-phenotype association
 
