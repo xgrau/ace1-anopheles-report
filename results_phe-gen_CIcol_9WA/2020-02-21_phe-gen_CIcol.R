@@ -71,6 +71,10 @@ data = data[,c("A65S","G280S", "CNV", "estimated_n_ALT", "phenotype")]
 data$A65S = as.factor(data$A65S)
 data$G280S = as.factor(data$G280S)
 
+
+# null model
+mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
+
 ### BIC PROCEDURE
 # initial model (with all variables)
 mod_tot = glm(phenotype ~ ., data = data, family = "binomial")
@@ -84,14 +88,15 @@ mod_BIC_out = as.data.frame(mod_BIC_sum$coefficients)
 colnames(mod_BIC_out) = c("BIC_coef","BIC_se", "BIC_z", "BIC_p_chisq")
 mod_BIC_out$variant   = rownames(mod_BIC_out)
 mod_BIC_out$BIC_OR    = 1/exp(mod_BIC_out$BIC_coef)
+mod_BIC_signif = anova(mod_BIC, mod_null, test = 'Chisq')
+mod_BIC_out$pval_chisq_v_null = mod_BIC_signif$`Pr(>Chi)`[2]
 
-write.table(mod_BIC_out, "Fig3ABC-sup_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t")
+write.table(mod_BIC_out, "Fig3ABC-sup_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t", row.names = F)
 
 
 # pearson test (linkage between mutations)
 cor.test(as.numeric(as.character(data$G280S)), as.numeric(as.character(data$A65S)), method = "pearson")
 cor.test(as.numeric(as.character(data$G280S)), as.numeric(data$CNV>2), method = "pearson")
-
 
 # ### BACKWARD ELIMINATION
 # source("../scripts_other/glmodelling.R")
@@ -103,5 +108,9 @@ cor.test(as.numeric(as.character(data$G280S)), as.numeric(data$CNV>2), method = 
 # colnames(mod_BKE_out) = c("coef","se", "zscore", "p_chisq")
 # mod_BKE_out$variant   = rownames(mod_BKE_out)
 # mod_BKE_out$OR    = 1/exp(mod_BKE_out$coef)
-# mod_BKE$final.sig
+# mod_BKE_out$model_pval = mod_BKE$final.sig$P
+# mod_BKE_out$model_deviance = mod_BKE$final.sig$deviance
+# 
+# write.table(mod_BKE_out, "Fig3ABC-sup_model_GLM_BKE_CIcol.csv" , quote = F, sep="\t")
+
 
