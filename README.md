@@ -94,6 +94,8 @@ ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/samples/
 * ape 5.3
 * phytools 0.6-60
 * pheatmap 1.0.12
+* lme4 1.1-21
+* gmodels 2.18.1
 
 If you use these scripts in your own work, please do not forget to cite the relevant packages as well. It's free and it makes everyone happy :)
 
