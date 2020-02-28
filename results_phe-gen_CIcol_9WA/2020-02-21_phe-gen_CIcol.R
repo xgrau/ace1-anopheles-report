@@ -1,47 +1,150 @@
 library(gmodels)
 library(pheatmap)
+library(stringr)
+source("../scripts_other/summarise_model_OR.R")
 
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
 # read input (run 2020-02-17_heatmaps.R to produce this table)
 gtd = read.table("../results_tables/Fig3_CIcol_CNV-ALTallele.csv", header = T)
 
+
+gtd$genotype = stringr::str_replace(string = gtd$genotype, pattern = "wt/wt", replacement = "GG")
+gtd$genotype = stringr::str_replace(string = gtd$genotype, pattern = "119S/wt", replacement = "GS")
+gtd$genotype = stringr::str_replace(string = gtd$genotype, pattern = "119S/119S", replacement = "SS")
+
 data_A65S = read.table("Genotype_3489405_A65S.csv", header = T)
+data_A65S$genotype = as.factor(as.character(data_A65S$genotype))
 
 
-#### genotype-phenotype associations in CIcol ####
-# Simple Fisher's tests of individual variants
+#### G280S genotype ####
 
-# table genotype-phenotype associations: 119S
 pdf(file="Fig3A_CIcol_phe-gty.pdf",height=12,width=12)
+
+# Fisher test
 ta = CrossTable(gtd[gtd$population == "CIcol",]$genotype, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+
+# GLM model
+# used to calculate ORs for the resistance genotypes
+data = gtd[gtd$population == "CIcol",][, c("phenotype","genotype")]
+colnames(data) = c("phenotype","Ace1")
+mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
+mod_full = glm(phenotype ~ ., data = data, family = "binomial")
+mod_signif = anova(mod_full, mod_null, test = 'Chisq')
+# pval string
+mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+
+# report
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~280S in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+         main=sprintf("phe~G280S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+
+
+
+# same but ONLY THOSE WITH multiple wt and 1 280S
+# Fisher test
+ta = CrossTable(gtd[gtd$population == "CIcol" & gtd$estimated_n_ALT <= 1 ,]$genotype, gtd[gtd$population == "CIcol" & gtd$estimated_n_ALT <= 1,]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+
+# GLM model
+# used to calculate ORs for the resistance genotypes
+data = gtd[gtd$population == "CIcol"  & gtd$estimated_n_ALT <= 1,][, c("phenotype","genotype")]
+colnames(data) = c("phenotype","Ace1")
+mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
+mod_full = glm(phenotype ~ ., data = data, family = "binomial")
+mod_signif = anova(mod_full, mod_null, test = 'Chisq')
+# pval string
+mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+
+# report
+pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=sprintf("phe~G280S (1 280S only)\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
 
 # same with S65A
+# Fisher
 ta = CrossTable(data_A65S[data_A65S$population == "CIcol",]$genotype, data_A65S[data_A65S$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+
+# GLM model
+# used to calculate ORs for the resistance genotypes
+data = data_A65S[data_A65S$population == "CIcol",][, c("phenotype","genotype")]
+colnames(data) = c("phenotype","A65S")
+mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
+mod_full = glm(phenotype ~ ., data = data, family = "binomial")
+mod_signif = anova(mod_full, mod_null, test = 'Chisq')
+# pval string
+mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+
+# GLM
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~S65A in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+         main=sprintf("phe~A65S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
 
 dev.off()
 
+
+#### CNV ####
 # table genotype-phenotype associations: CNVs
 pdf(file="Fig3BC_CIcol_phe-CNV_phe-nALT.pdf",height=12,width=12)
-ta = CrossTable(gtd[gtd$population == "CIcol",]$CNV, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
-pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
-         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
-         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~CNV in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
 
-ta = CrossTable(gtd[gtd$population == "CIcol",]$estimated_n_ALT, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+# Fisher test
+ta = CrossTable(gtd[gtd$population == "CIcol",]$CNV, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+
+# GLM model
+# used to calculate ORs for the resistance genotypes
+data = gtd[gtd$population == "CIcol",][, c("phenotype","CNV")]
+colnames(data) = c("phenotype","Ace1")
+mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
+mod_full = glm(phenotype ~ ., data = data, family = "binomial")
+mod_signif = anova(mod_full, mod_null, test = 'Chisq')
+# pval string
+mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+
+# report
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~nALT in CIcol\nFisher's exact test p=%.3E", ta$fisher.ts$p.value))
+         main=sprintf("phe~CNV\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+
+
+
+
+#### nALT ####
+# Fisher test
+ta = CrossTable(gtd[gtd$population == "CIcol",]$estimated_n_ALT, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+
+# GLM model
+# used to calculate ORs for the resistance genotypes
+data = gtd[gtd$population == "CIcol",][, c("phenotype","estimated_n_ALT")]
+colnames(data) = c("phenotype","Ace1")
+mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
+mod_full = glm(phenotype ~ ., data = data, family = "binomial")
+mod_signif = anova(mod_full, mod_null, test = 'Chisq')
+# pval string
+mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+
+
+
+
+
+1/exp(confint.default(mod_full, level = 0.95)[-1,])
+
+1/exp(cbind("OR" = coef(mod_full), confint.default(mod_full, level = 0.95)))[-1,]
+
+
+# report
+pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
+         main=sprintf("phe~nALT\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+
 dev.off()
 
 
@@ -91,26 +194,28 @@ mod_BIC_out$BIC_OR    = 1/exp(mod_BIC_out$BIC_coef)
 mod_BIC_signif = anova(mod_BIC, mod_null, test = 'Chisq')
 mod_BIC_out$pval_chisq_v_null = mod_BIC_signif$`Pr(>Chi)`[2]
 
-write.table(mod_BIC_out, "Fig3ABC-sup_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t", row.names = F)
+write.table(mod_BIC_out, "Fig3ABCsup_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t", row.names = F)
 
 
-# pearson test (linkage between mutations)
-cor.test(as.numeric(as.character(data$G280S)), as.numeric(as.character(data$A65S)), method = "pearson")
-cor.test(as.numeric(as.character(data$G280S)), as.numeric(data$CNV>2), method = "pearson")
+### BACKWARD ELIMINATION
+source("../scripts_other/glmodelling.R")
+mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "CNV", "estimated_n_ALT"),
+                      rescolumn = "phenotype", glm.function = "glm", verbose = F)
 
-# ### BACKWARD ELIMINATION
-# source("../scripts_other/glmodelling.R")
-# mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "CNV", "estimated_n_ALT"),
-#                       rescolumn = "phenotype", glm.function = "glm", verbose = F)
-# 
-# mod_BKE_sum = summary(mod_BKE$final.model)
-# mod_BKE_out = as.data.frame(mod_BKE_sum$coefficients)
-# colnames(mod_BKE_out) = c("coef","se", "zscore", "p_chisq")
-# mod_BKE_out$variant   = rownames(mod_BKE_out)
-# mod_BKE_out$OR    = 1/exp(mod_BKE_out$coef)
-# mod_BKE_out$model_pval = mod_BKE$final.sig$P
-# mod_BKE_out$model_deviance = mod_BKE$final.sig$deviance
-# 
-# write.table(mod_BKE_out, "Fig3ABC-sup_model_GLM_BKE_CIcol.csv" , quote = F, sep="\t")
+mod_BKE_sum = summary(mod_BKE$final.model)
+mod_BKE_out = as.data.frame(mod_BKE_sum$coefficients)
+colnames(mod_BKE_out) = c("coef","se", "zscore", "p_chisq")
+mod_BKE_out$variant   = rownames(mod_BKE_out)
+mod_BKE_out$OR    = 1/exp(mod_BKE_out$coef)
+mod_BKE_out$model_pval = mod_BKE$final.sig$P
+mod_BKE_out$model_deviance = mod_BKE$final.sig$deviance
+
+write.table(mod_BKE_out, "Fig3ABCsup_model_GLM_BKE_CIcol.csv" , quote = F, sep="\t")
 
 
+
+message("FI CIcol")
+
+# # pearson test (linkage between mutations)
+# cor.test(as.numeric(as.character(data$G280S)), as.numeric(as.character(data$A65S)), method = "pearson")
+# cor.test(as.numeric(as.character(data$G280S)), as.numeric(data$CNV>2), method = "pearson")
