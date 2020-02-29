@@ -1,3 +1,57 @@
+glm_tables = function(model, null, ci=0.95, anova_test = "Chisq") {
+  
+  # get model significance
+  sig = anova(model, null, test = anova_test)
+  
+  # summarise model variables
+  sum = summary(model)
+  sut = as.data.frame(sum$coefficients)
+  variables = rownames(sut)
+  variables[1] = "Intercept"
+  
+  # get coefficients and odds ratio
+  coefs = sut$Estimate
+  odds_ratio = 1/exp(sut$Estimate)
+  
+  # upper CI95 for ORs and coefficients
+  odds_cido = 1/exp(sut$Estimate + qnorm( 1 - (1-ci)/2 ) * sut$`Std. Error`)
+  odds_ciup = 1/exp(sut$Estimate + qnorm(     (1-ci)/2 ) * sut$`Std. Error`)
+  coef_ciup = sut$Estimate + qnorm( 1 - (1-ci)/2 ) * sut$`Std. Error`
+  coef_cido = sut$Estimate + qnorm(     (1-ci)/2 ) * sut$`Std. Error`
+  
+  # build output tables:
+  # first, results from each variable 
+  variables_table = data.frame(
+    var = variables,
+    OR = odds_ratio,
+    OR_CIdo = odds_cido,
+    OR_CIup = odds_ciup,
+    coef = coefs,
+    coef_CIdo = coef_cido,
+    coef_CIup = coef_ciup,
+    zscore = sut$`z value`,
+    p = sut$`Pr(>|z|)`
+  )
+  
+  # second, table summarising the entire model
+  model_table = data.frame(
+    n = length(model$residuals),
+    p = sig$`Pr(>Chi)`[2],
+    anova_test = anova_test,
+    deviance_residual = sum$deviance,
+    df_residual = sum$df.residual,
+    df_null = sum$df.null,
+    aic = sum$aic,
+    ci = ci,
+    formula = capture.output(sum$call)
+  )
+  
+  # output
+  return(list("model_table" = model_table,
+              "variable_table" = variables_table))
+  
+}
+
 summarise_model_report_string = function(model) {
   # report model
   mod_sum = summary(model)
