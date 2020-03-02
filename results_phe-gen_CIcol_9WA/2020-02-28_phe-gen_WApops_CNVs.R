@@ -98,7 +98,7 @@ plot(data$phenotype, data$ratio_FAM_HEX, main="all", ylab="ratio", ylim=c(0,15),
 )
 
 # save model in a table
-mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "all", anova_p_col = "Pr(>Chisq)")
+mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "all", model_type = "glmer")
 table_models = rbind(table_models, mod_tau$model_table)
 table_modvar = rbind(table_modvar, mod_tau$variable_table)
 
@@ -166,7 +166,7 @@ for (pop in c("col","gam")){
   )
   
   # save model in a table
-  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("BKE",pop), anova_p_col = "Pr(>Chisq)")
+  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("BKE",pop), model_type = "glmer")
   table_models = rbind(table_models, mod_tau$model_table)
   table_modvar = rbind(table_modvar, mod_tau$variable_table)
   
