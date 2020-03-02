@@ -1,4 +1,4 @@
-glm_tables = function(model, null, ci=0.95, anova_test = "Chisq") {
+glm_tables = function(model, null, ci=0.95, anova_test = "Chisq", model_name = "model", anova_p_col = "Pr(>Chi)") {
   
   # get model significance
   sig = anova(model, null, test = anova_test)
@@ -22,6 +22,7 @@ glm_tables = function(model, null, ci=0.95, anova_test = "Chisq") {
   # build output tables:
   # first, results from each variable 
   variables_table = data.frame(
+    model = model_name,
     var = variables,
     OR = odds_ratio,
     OR_CIdo = odds_cido,
@@ -35,15 +36,12 @@ glm_tables = function(model, null, ci=0.95, anova_test = "Chisq") {
   
   # second, table summarising the entire model
   model_table = data.frame(
-    n = length(model$residuals),
-    p = sig$`Pr(>Chi)`[2],
+    model = model_name,
+    n = length(sum$residuals),
+    p = sig[,anova_p_col][2],
     anova_test = anova_test,
-    deviance_residual = sum$deviance,
-    df_residual = sum$df.residual,
-    df_null = sum$df.null,
-    aic = sum$aic,
     ci = ci,
-    formula = capture.output(sum$call)
+    variables = paste(capture.output(sum$call, file = NULL), collapse = "")
   )
   
   # output
