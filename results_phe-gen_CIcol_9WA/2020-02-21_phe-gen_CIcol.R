@@ -17,11 +17,6 @@ data_A65S = read.table("Genotype_3489405_A65S.csv", header = T)
 data_A65S$genotype = as.factor(as.character(data_A65S$genotype))
 
 
-# dataframes to save models
-table_models = data.frame()
-table_modvar = data.frame()
-
-
 #### G280S genotype ####
 
 pdf(file="Fig3A_CIcol_phe-gty.pdf",height=12,width=12)
@@ -46,6 +41,10 @@ pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20),
          main=sprintf("phe~G280S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                       ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
 
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol G280S~resistance")
+write.table(file="Fig3A_CIcol_phe-gty_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE)
+write.table(file="Fig3A_CIcol_phe-gty_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
 
 
 # same but ONLY THOSE WITH multiple wt and 1 280S
@@ -61,6 +60,12 @@ mod_full = glm(phenotype ~ ., data = data, family = "binomial")
 mod_signif = anova(mod_full, mod_null, test = 'Chisq')
 # pval string
 mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol G280S 1nALT~resistance")
+write.table(file="Fig3A_CIcol_phe-gty_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="Fig3A_CIcol_phe-gty_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+
 
 # report
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
@@ -83,14 +88,22 @@ mod_signif = anova(mod_full, mod_null, test = 'Chisq')
 # pval string
 mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
 
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol S65A~resistance")
+write.table(file="Fig3A_CIcol_phe-gty_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="Fig3A_CIcol_phe-gty_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+
+
 # GLM
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~A65S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                       ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
-
 dev.off()
+
+
+
 
 
 #### CNV ####
@@ -110,6 +123,11 @@ mod_signif = anova(mod_full, mod_null, test = 'Chisq')
 # pval string
 mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
 
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol CNV~resistance")
+write.table(file="Fig3BC_CIcol_phe-CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = F)
+write.table(file="Fig3BC_CIcol_phe-CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+
 # report
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
@@ -117,10 +135,7 @@ pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20),
          main=sprintf("phe~CNV\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                       ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
 
-# save model table
-mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CNV")
-table_models = rbind(table_models, mod_tau$model_table)
-table_modvar = rbind(table_modvar, mod_tau$variable_table)
+
 
 
 
@@ -138,18 +153,18 @@ mod_signif = anova(mod_full, mod_null, test = 'Chisq')
 # pval string
 mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
 
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol nALT~resistance")
+write.table(file="Fig3BC_CIcol_phe-CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="Fig3BC_CIcol_phe-CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+
+
 # report
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~nALT\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                       ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
-
-# save model table
-mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "nALT")
-table_models = rbind(table_models, mod_tau$model_table)
-table_modvar = rbind(table_modvar, mod_tau$variable_table)
-
 
 dev.off()
 
@@ -194,9 +209,10 @@ mod_tot = glm(phenotype ~ ., data = data, family = "binomial")
 mod_BIC = step(mod_tot, direction = "both", steps = 1e6, trace = F, k = log(nrow(data))) # k=log(num_obs) for BIC
 
 # save model table
-mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "BIC")
-table_models = rbind(table_models, mod_tau$model_table)
-table_modvar = rbind(table_modvar, mod_tau$variable_table)
+mod_tau = glm_tables(model=mod_BIC, null=mod_null, model_name = "CIcol all~resistance (BIC)")
+write.table(file="Fig3ABC_CIcol_phe_minGLM_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = F)
+write.table(file="Fig3ABC_CIcol_phe_minGLM_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+
 
 
 ### BACKWARD ELIMINATION
@@ -204,15 +220,10 @@ mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "C
                       rescolumn = "phenotype", glm.function = "glm", verbose = F)
 
 # save model table
-mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "BKE")
-table_models = rbind(table_models, mod_tau$model_table)
-table_modvar = rbind(table_modvar, mod_tau$variable_table)
+mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "CIcol all~resistance (BKE)")
+write.table(file="Fig3ABC_CIcol_phe_minGLM_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="Fig3ABC_CIcol_phe_minGLM_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
 
-
-
-# save models tables as csv
-write.table(table_models, file = "Fig3ABC_G280S_model_summaries.csv", quote = F, sep = "\t", row.names = F)
-write.table(table_modvar, file = "Fig3ABC_G280S_model_variables.csv", quote = F, sep = "\t", row.names = F)
 
 message("FI CIcol")
 

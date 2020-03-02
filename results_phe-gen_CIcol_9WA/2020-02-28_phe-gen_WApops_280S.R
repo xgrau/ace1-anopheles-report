@@ -30,10 +30,6 @@ dev.off()
 pop_order = rownames(tat$t)
 
 
-# dataframes to save models
-table_models = data.frame()
-table_modvar = data.frame()
-
 # table genotype-phenotype associations
 # loop with all tests
 pdf(file="Fig3Esup_G280S.pdf",height=4,width=4)
@@ -64,9 +60,9 @@ for (pop in pop_order) {
                           summarise_model_report_string(mod_full)))
     
     # save model table
-    mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste("full",pop))
-    table_models = rbind(table_models, mod_tau$model_table)
-    table_modvar = rbind(table_modvar, mod_tau$variable_table)
+    mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"G280S"))
+    write.table(file="Fig3Esup_G280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+    write.table(file="Fig3Esup_G280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
     
   }
 }
@@ -97,19 +93,14 @@ for (pop in c("gam","col")) {
                           summarise_model_report_string(mod_full)))
     
     # save model table
-    mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste("full",pop))
-    table_models = rbind(table_models, mod_tau$model_table)
-    table_modvar = rbind(table_modvar, mod_tau$variable_table)
+    mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"G280S"))
+    write.table(file="Fig3Esup_G280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+    write.table(file="Fig3Esup_G280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
     
   }
 }
 
 dev.off()
-
-# save models tables as csv
-write.table(table_models, file = "Fig3Esup_G280S_model_summaries.csv", quote = F, sep = "\t", row.names = F)
-write.table(table_modvar, file = "Fig3Esup_G280S_model_variables.csv", quote = F, sep = "\t", row.names = F)
-
 
 
 #### Plot frequency of each species in each location ####

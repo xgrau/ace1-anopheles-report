@@ -1,5 +1,0 @@
-model	n	anova_test	p	deviance_residual	df_residual	CI	variables	call
-CNV	71	Chisq	6.42562274154862e-10	59.0952807542566	69	0.95	Ace1	glm(formula = phenotype ~ ., family = "binomial", data = data)
-nALT	71	Chisq	8.96420990668906e-10	59.7448234567864	69	0.95	Ace1	glm(formula = phenotype ~ ., family = "binomial", data = data)
-BIC	71	Chisq	8.96420990668906e-10	59.7448234567864	69	0.95	Ace1	glm(formula = phenotype ~ ., family = "binomial", data = data)
-BKE	71	Chisq	6.42562274154862e-10	59.0952807542566	69	0.95	CNV	glm(formula = phenotype ~ CNV, family = binomial, data = data)

@@ -97,10 +97,10 @@ plot(data$phenotype, data$ratio_FAM_HEX, main="all", ylab="ratio", ylim=c(0,15),
      )
 )
 
-# save model in a table
-mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "all", model_type = "glmer")
-table_models = rbind(table_models, mod_tau$model_table)
-table_modvar = rbind(table_modvar, mod_tau$variable_table)
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste("allpops","CNV+ratio"), model_type = "glmer")
+write.table(file="Fig3Esup_CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = F)
+write.table(file="Fig3Esup_CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
 
 
 
@@ -165,10 +165,11 @@ for (pop in c("col","gam")){
        )
   )
   
-  # save model in a table
-  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("BKE",pop), model_type = "glmer")
-  table_models = rbind(table_models, mod_tau$model_table)
-  table_modvar = rbind(table_modvar, mod_tau$variable_table)
+  # save model table
+  mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"CNV+ratio"), model_type = "glmer")
+  write.table(file="Fig3Esup_CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig3Esup_CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  
   
   
 }
@@ -239,19 +240,14 @@ for (pop in pop_order) {
        )
   )
   
-  # save model in a table
-  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("BKE",pop))
-  table_models = rbind(table_models, mod_tau$model_table)
-  table_modvar = rbind(table_modvar, mod_tau$variable_table)
+  # save model table
+  mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"CNV+ratio"), model_type = "glm")
+  write.table(file="Fig3Esup_CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig3Esup_CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
 }
 
 dev.off()
-
-
-# save models tables as csv
-write.table(table_models, file = "Fig3Esup_CNV_GLMs_model_summaries.csv", quote = F, sep = "\t", row.names = F)
-write.table(table_modvar, file = "Fig3Esup_CNV_GLMs_model_variables.csv", quote = F, sep = "\t", row.names = F)
 
 
 message("FI")
