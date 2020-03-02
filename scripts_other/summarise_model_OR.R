@@ -1,4 +1,4 @@
-glm_tables = function(model, null, ci=0.95, anova_test = "Chisq", model_name = "model", anova_p_col = "Pr(>Chi)") {
+glm_tables = function(model, null, ci=0.95, anova_test = "Chisq", model_name = "model", model_type = "glm") {
   
   # get model significance
   sig = anova(model, null, test = anova_test)
@@ -35,13 +35,30 @@ glm_tables = function(model, null, ci=0.95, anova_test = "Chisq", model_name = "
   )
   
   # second, table summarising the entire model
+  if (model_type == "glm") {
+    num_obs = length(model$residuals)
+    deviance = sum$deviance
+    df_residual = sum$df.residual
+    pval = sig[,"Pr(>Chi)"][2]
+  } else if (model_type == "glmer") {
+    num_obs = length(sum$residuals)
+    deviance = sum$AICtab["deviance"]
+    df_residual = sum$AICtab["df.resid"]
+    pval = sig[,"Pr(>Chisq)"][2]
+  } else {
+    print("model_type must be either glm or glmer")
+  }
+  
   model_table = data.frame(
     model = model_name,
-    n = length(sum$residuals),
-    p = sig[,anova_p_col][2],
+    n = num_obs,
     anova_test = anova_test,
-    ci = ci,
-    variables = paste(capture.output(sum$call, file = NULL), collapse = "")
+    p = pval,
+    deviance_residual = deviance,
+    df_residual = df_residual,
+    CI = ci,
+    variables = paste(variables[-1], collapse = ","),
+    call = paste(capture.output(sum$call, file = NULL), collapse = "")
   )
   
   # output
