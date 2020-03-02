@@ -17,6 +17,11 @@ data_A65S = read.table("Genotype_3489405_A65S.csv", header = T)
 data_A65S$genotype = as.factor(as.character(data_A65S$genotype))
 
 
+# dataframes to save models
+table_models = data.frame()
+table_modvar = data.frame()
+
+
 #### G280S genotype ####
 
 pdf(file="Fig3A_CIcol_phe-gty.pdf",height=12,width=12)
@@ -112,6 +117,10 @@ pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20),
          main=sprintf("phe~CNV\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                       ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
 
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CNV")
+table_models = rbind(table_models, mod_tau$model_table)
+table_modvar = rbind(table_modvar, mod_tau$variable_table)
 
 
 
@@ -129,21 +138,18 @@ mod_signif = anova(mod_full, mod_null, test = 'Chisq')
 # pval string
 mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
 
-
-
-
-
-1/exp(confint.default(mod_full, level = 0.95)[-1,])
-
-1/exp(cbind("OR" = coef(mod_full), confint.default(mod_full, level = 0.95)))[-1,]
-
-
 # report
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
          main=sprintf("phe~nALT\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                       ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "nALT")
+table_models = rbind(table_models, mod_tau$model_table)
+table_modvar = rbind(table_modvar, mod_tau$variable_table)
+
 
 dev.off()
 
@@ -152,8 +158,11 @@ dev.off()
 
 
 #### GLM model with A65S and G280S data ####
-# manual genotypes:
 
+source("../scripts_other/glmodelling.R")
+source("../scripts_other/summarise_model_OR.R")
+
+# manual genotypes:
 # load data: genotypes in each sample
 data = read.table("Genotype_3492074_G280S.csv", header = T)
 colnames(data) = c("ox_code", "population", "G280S", "phenotype")
@@ -183,36 +192,27 @@ mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
 mod_tot = glm(phenotype ~ ., data = data, family = "binomial")
 # stepwise removal using BIC criterion
 mod_BIC = step(mod_tot, direction = "both", steps = 1e6, trace = F, k = log(nrow(data))) # k=log(num_obs) for BIC
-mod_BIC_sum = summary(mod_BIC)
-mod_tot_sum = summary(mod_tot)
 
-# summary table BIC
-mod_BIC_out = as.data.frame(mod_BIC_sum$coefficients)
-colnames(mod_BIC_out) = c("BIC_coef","BIC_se", "BIC_z", "BIC_p_chisq")
-mod_BIC_out$variant   = rownames(mod_BIC_out)
-mod_BIC_out$BIC_OR    = 1/exp(mod_BIC_out$BIC_coef)
-mod_BIC_signif = anova(mod_BIC, mod_null, test = 'Chisq')
-mod_BIC_out$pval_chisq_v_null = mod_BIC_signif$`Pr(>Chi)`[2]
-
-write.table(mod_BIC_out, "Fig3ABCsup_model_GLM_stepBIC_CIcol.csv" , quote = F, sep="\t", row.names = F)
+# save model table
+mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "BIC")
+table_models = rbind(table_models, mod_tau$model_table)
+table_modvar = rbind(table_modvar, mod_tau$variable_table)
 
 
 ### BACKWARD ELIMINATION
-source("../scripts_other/glmodelling.R")
 mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "CNV", "estimated_n_ALT"),
                       rescolumn = "phenotype", glm.function = "glm", verbose = F)
 
-mod_BKE_sum = summary(mod_BKE$final.model)
-mod_BKE_out = as.data.frame(mod_BKE_sum$coefficients)
-colnames(mod_BKE_out) = c("coef","se", "zscore", "p_chisq")
-mod_BKE_out$variant   = rownames(mod_BKE_out)
-mod_BKE_out$OR    = 1/exp(mod_BKE_out$coef)
-mod_BKE_out$model_pval = mod_BKE$final.sig$P
-mod_BKE_out$model_deviance = mod_BKE$final.sig$deviance
-
-write.table(mod_BKE_out, "Fig3ABCsup_model_GLM_BKE_CIcol.csv" , quote = F, sep="\t")
+# save model table
+mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "BKE")
+table_models = rbind(table_models, mod_tau$model_table)
+table_modvar = rbind(table_modvar, mod_tau$variable_table)
 
 
+
+# save models tables as csv
+write.table(table_models, file = "Fig3ABC_G280S_model_summaries.csv", quote = F, sep = "\t", row.names = F)
+write.table(table_modvar, file = "Fig3ABC_G280S_model_variables.csv", quote = F, sep = "\t", row.names = F)
 
 message("FI CIcol")
 

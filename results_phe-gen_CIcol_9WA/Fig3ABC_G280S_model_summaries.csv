@@ -1,0 +1,5 @@
+model	n	p	anova_test	ci	variables
+CNV	0	6.42562274154862e-10	Chisq	0.95	glm(formula = phenotype ~ ., family = "binomial", data = data)
+nALT	0	8.96420990668906e-10	Chisq	0.95	glm(formula = phenotype ~ ., family = "binomial", data = data)
+BIC	0	8.96420990668906e-10	Chisq	0.95	glm(formula = phenotype ~ ., family = "binomial", data = data)
+BKE	0	6.42562274154862e-10	Chisq	0.95	glm(formula = phenotype ~ CNV, family = binomial, data = data)

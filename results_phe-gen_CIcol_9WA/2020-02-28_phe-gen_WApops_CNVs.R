@@ -13,6 +13,10 @@ dac = dac[dac$is_either_outlier == 0,]
 dac$population = paste(dac$species, dac$Location)
 pop_order = sort(unique(dac$population))
 
+# empty tables for model data
+table_models = data.frame()
+table_modvar = data.frame()
+
 
 # convert CNV estimate (number of copies relative to Kisumu, where wt copy number = 2) to CNV as in Lucas et al
 dac$CNV = dac$CNV_estimate * 2 
@@ -93,6 +97,11 @@ plot(data$phenotype, data$ratio_FAM_HEX, main="all", ylab="ratio", ylim=c(0,15),
      )
 )
 
+# save model in a table
+mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = "all", anova_p_col = "Pr(>Chisq)")
+table_models = rbind(table_models, mod_tau$model_table)
+table_modvar = rbind(table_modvar, mod_tau$variable_table)
+
 
 
 #### Species ####
@@ -156,6 +165,12 @@ for (pop in c("col","gam")){
        )
   )
   
+  # save model in a table
+  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("BKE",pop), anova_p_col = "Pr(>Chisq)")
+  table_models = rbind(table_models, mod_tau$model_table)
+  table_modvar = rbind(table_modvar, mod_tau$variable_table)
+  
+  
 }
 
 
@@ -193,6 +208,7 @@ for (pop in pop_order) {
   mod_signif_cnv_p = mod_signif_cnv$`Pr(>Chi)`[2]
   mod_signif_rat_p = mod_signif_rat$`Pr(>Chi)`[2]
   
+  
   # some diagnostic plots
   layout(c(1,2,3), widths = 2)
   plot(data$phenotype, main=pop, ylab="ratio", col="slategray2", names=NA,
@@ -223,8 +239,19 @@ for (pop in pop_order) {
        )
   )
   
+  # save model in a table
+  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("BKE",pop))
+  table_models = rbind(table_models, mod_tau$model_table)
+  table_modvar = rbind(table_modvar, mod_tau$variable_table)
+  
 }
 
 dev.off()
+
+
+# save models tables as csv
+write.table(table_models, file = "Fig3Esup_CNV_GLMs_model_summaries.csv", quote = F, sep = "\t", row.names = F)
+write.table(table_modvar, file = "Fig3Esup_CNV_GLMs_model_variables.csv", quote = F, sep = "\t", row.names = F)
+
 
 message("FI")
