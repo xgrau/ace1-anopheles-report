@@ -98,7 +98,7 @@ plot(data$phenotype, data$ratio_FAM_HEX, main="all", ylab="ratio", ylim=c(0,15),
 )
 
 # save model table
-mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste("allpops","CNV+ratio"), model_type = "glmer")
+mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste("allpops","CNV+ratio"), model_type = "glmer")
 write.table(file="Fig3Esup_CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = F)
 write.table(file="Fig3Esup_CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
 
@@ -166,7 +166,7 @@ for (pop in c("col","gam")){
   )
   
   # save model table
-  mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"CNV+ratio"), model_type = "glmer")
+  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste(pop,"CNV+ratio"), model_type = "glmer")
   write.table(file="Fig3Esup_CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
   write.table(file="Fig3Esup_CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
@@ -241,7 +241,7 @@ for (pop in pop_order) {
   )
   
   # save model table
-  mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"CNV+ratio"), model_type = "glm")
+  mod_tau = glm_tables(model=mod_BKE$final.model, null=mod_null, model_name = paste(pop,"CNV+ratio"), model_type = "glm")
   write.table(file="Fig3Esup_CNV_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
   write.table(file="Fig3Esup_CNV_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
   

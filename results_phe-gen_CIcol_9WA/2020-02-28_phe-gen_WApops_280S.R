@@ -3,6 +3,7 @@
 # libraries
 library(gmodels)
 library(pheatmap)
+library(lme4)
 source("../scripts_other/summarise_model_OR.R")
 
 # input: genotyped/phenotyped samples from Biobank 
@@ -76,13 +77,19 @@ for (pop in c("gam","col")) {
     
     # GLM model
     # used to calculate ORs for the resistance genotypes
-    data = dai[, c("phenotype","Ace1_G119S")]
-    colnames(data) = c("phenotype","Ace1")
-    mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
-    mod_full = glm(phenotype ~ ., data = data, family = "binomial")
+    data = dai[, c("phenotype","Location","Ace1_G119S")]
+    colnames(data) = c("phenotype","Location","Ace1")
+    mod_null = glmer(phenotype ~ (1 | Location), data = data, family = "binomial")
+    mod_full = glmer(phenotype ~ Ace1 + (1 | Location), data = data, family = "binomial")
     mod_signif = anova(mod_full, mod_null, test = 'Chisq')
     # pval string
-    mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
+    mod_pval_chisq_v_null = mod_signif$`Pr(>Chisq)`[2]
+    
+    # save model table
+    mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"G280S"), model_type = "glmer")
+    write.table(file="Fig3Esup_G280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+    write.table(file="Fig3Esup_G280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+    
     
     # report
     pheatmap(tei$t, color = col.fun(20), breaks = seq(0,30,length.out = 20),
@@ -91,11 +98,6 @@ for (pop in c("gam","col")) {
              main=sprintf("phe~G280S\n%s\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
                           pop, tei$fisher.ts$p.value,mod_pval_chisq_v_null, 
                           summarise_model_report_string(mod_full)))
-    
-    # save model table
-    mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"G280S"))
-    write.table(file="Fig3Esup_G280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-    write.table(file="Fig3Esup_G280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
     
   }
 }
