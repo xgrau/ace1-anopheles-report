@@ -51,7 +51,7 @@ glm_tables = function(model, null, ci=0.95, anova_test = "Chisq", model_name = "
   
   model_table = data.frame(
     model = model_name,
-    n = num_obs,
+    num_obs = num_obs,
     anova_test = anova_test,
     p = pval,
     deviance_residual = deviance,
