@@ -24,6 +24,14 @@ pdf(file="Fig3A_CIcol_phe-gty.pdf",height=12,width=12)
 # Fisher test
 ta = CrossTable(gtd[gtd$population == "CIcol",]$genotype, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 
+# add 1 to 0 cell in the contingency table to be able to calculate fake ORs
+fake_ta = ta$t
+fake_ta[1,1] = 1
+fake_ta[1,2] = fake_ta[1,2] - 1
+fake_fish = fisher.test(fake_ta)
+fake_OR = 1/fake_fish$estimate
+fake_ORci = 1/fake_fish$conf.int
+
 # GLM model
 # used to calculate ORs for the resistance genotypes
 data = gtd[gtd$population == "CIcol",][, c("phenotype","genotype")]
@@ -38,8 +46,8 @@ mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~G280S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
-                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+         main=sprintf("phe~G280S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s\napprox OR: %.3f ( %.3f - %.3f) p = %.3f",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full), fake_OR, fake_ORci[2], fake_ORci[1], fake_fish$p.value))
 
 # save model table
 mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol G280S~resistance")

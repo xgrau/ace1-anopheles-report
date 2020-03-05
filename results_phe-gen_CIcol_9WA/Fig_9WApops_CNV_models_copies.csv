@@ -1,0 +1,420 @@
+model	col Aboisso number of Ace1 copies, binomial GLM
+num_obs	11
+anova_test	Chisq
+p	0.361307
+deviance_residual	14.32486
+df_residual	9
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Aboisso number of Ace1 copies, binomial GLM	Intercept	0.284227644650155	0.0188554595410496	4.28445426150977	1.25797979623356	-1.45499318373099	3.97095277619812	0.908816679010579	0.363446900946469
+col Aboisso number of Ace1 copies, binomial GLM	CNV	1.28826026894763	0.733642691734763	2.26215641380509	-0.253292679432643	-0.816318523758232	0.309733164892946	-0.881743767606773	0.37791538680951
+model	col Korle-Bu number of Ace1 copies, binomial GLM
+num_obs	46
+anova_test	Chisq
+p	0.0001010198
+deviance_residual	48.30373
+df_residual	44
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Korle-Bu number of Ace1 copies, binomial GLM	Intercept	0.0674490002726878	0.0125341099760929	0.362958969281612	2.69638351819229	1.01346548338798	4.3793015529966	3.14026855430235	0.00168793022865105
+col Korle-Bu number of Ace1 copies, binomial GLM	CNV	1.80081737933462	1.24373715268551	2.60741847802115	-0.588240661460431	-0.95836064298263	-0.218120679938231	-3.11501828667229	0.00183933506480317
+model	col Weija number of Ace1 copies, binomial GLM
+num_obs	21
+anova_test	Chisq
+p	0.01368369
+deviance_residual	22.98604
+df_residual	19
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Weija number of Ace1 copies, binomial GLM	Intercept	13.5584842677922	0.906925335073834	202.698599907348	-2.6070124966031	-5.31172014621825	0.0976951530120624	-1.88916927909563	0.0588691497583498
+col Weija number of Ace1 copies, binomial GLM	CNV	0.513763273659187	0.263139395545477	1.0030907793713	0.665992676699254	-0.00308601273196507	1.33507136613047	1.95092398086631	0.0510660894760096
+model	gam Aboisso number of Ace1 copies, binomial GLM
+num_obs	31
+anova_test	Chisq
+p	0.9330784
+deviance_residual	38.97851
+df_residual	29
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Aboisso number of Ace1 copies, binomial GLM	Intercept	1.92329379340167	0.214828507380498	17.2186599480754	-0.654039233617186	-2.84599367646367	1.5379152092293	-0.584817511399182	0.558670428406083
+gam Aboisso number of Ace1 copies, binomial GLM	CNV	1.01785338170612	0.671889356400009	1.54195850370607	-0.0176958819266592	-0.433053364082584	0.397661600229266	-0.0835022667002425	0.933452175122505
+model	gam Baguida number of Ace1 copies, binomial GLM
+num_obs	13
+anova_test	Chisq
+p	0.3500778
+deviance_residual	17.07165
+df_residual	11
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Baguida number of Ace1 copies, binomial GLM	Intercept	0.201911628796506	0.00360054080424694	11.3228284470962	1.59992515850917	-2.42682090438221	5.62667122140055	0.778741852518476	0.436131796734189
+gam Baguida number of Ace1 copies, binomial GLM	CNV	1.35323973318481	0.693824450324839	2.63936760172222	-0.302501519882364	-0.970539343660595	0.365536303895867	-0.887512747234628	0.374802906321436
+model	gam Madina number of Ace1 copies, binomial GLM
+num_obs	19
+anova_test	Chisq
+p	0.007742323
+deviance_residual	19.19481
+df_residual	17
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Madina number of Ace1 copies, binomial GLM	Intercept	0.00353028300141701	1.62075023734561e-05	0.768958583680668	5.64637724087731	0.262718168299197	11.0300363134554	2.05560862715376	0.0398202555648154
+gam Madina number of Ace1 copies, binomial GLM	CNV	5.23001410443426	1.14391090713041	23.9118688020893	-1.65441397490575	-3.17437493826908	-0.134453011542415	-2.13333887151936	0.0328969376580749
+model	gam Obuasi number of Ace1 copies, binomial GLM
+num_obs	26
+anova_test	Chisq
+p	0.0374577
+deviance_residual	17.99532
+df_residual	24
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Obuasi number of Ace1 copies, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584184	7.75371731653409	2.5235735986198	0.0116168740530897
+gam Obuasi number of Ace1 copies, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.840244382773051	0.0235283619430287	-1.85318881177464	0.0638553007324918
+model	col Aboisso number of Ace1 copies, binomial GLM
+num_obs	11
+anova_test	Chisq
+p	0.361307
+deviance_residual	14.32486
+df_residual	9
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Aboisso number of Ace1 copies, binomial GLM	Intercept	0.284227644650155	0.0188554595410496	4.28445426150977	1.25797979623356	-1.45499318373099	3.97095277619812	0.908816679010579	0.363446900946469
+col Aboisso number of Ace1 copies, binomial GLM	CNV	1.28826026894763	0.733642691734763	2.26215641380509	-0.253292679432643	-0.816318523758232	0.309733164892946	-0.881743767606773	0.37791538680951
+model	col Korle-Bu number of Ace1 copies, binomial GLM
+num_obs	46
+anova_test	Chisq
+p	0.0001010198
+deviance_residual	48.30373
+df_residual	44
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Korle-Bu number of Ace1 copies, binomial GLM	Intercept	0.0674490002726878	0.0125341099760929	0.362958969281612	2.69638351819229	1.01346548338798	4.3793015529966	3.14026855430235	0.00168793022865105
+col Korle-Bu number of Ace1 copies, binomial GLM	CNV	1.80081737933462	1.24373715268551	2.60741847802115	-0.588240661460431	-0.95836064298263	-0.218120679938231	-3.11501828667229	0.00183933506480317
+model	col Weija number of Ace1 copies, binomial GLM
+num_obs	21
+anova_test	Chisq
+p	0.01368369
+deviance_residual	22.98604
+df_residual	19
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Weija number of Ace1 copies, binomial GLM	Intercept	13.5584842677922	0.906925335073834	202.698599907348	-2.6070124966031	-5.31172014621825	0.0976951530120624	-1.88916927909563	0.0588691497583498
+col Weija number of Ace1 copies, binomial GLM	CNV	0.513763273659187	0.263139395545477	1.0030907793713	0.665992676699254	-0.00308601273196507	1.33507136613047	1.95092398086631	0.0510660894760096
+model	gam Aboisso number of Ace1 copies, binomial GLM
+num_obs	31
+anova_test	Chisq
+p	0.9330784
+deviance_residual	38.97851
+df_residual	29
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Aboisso number of Ace1 copies, binomial GLM	Intercept	1.92329379340167	0.214828507380498	17.2186599480754	-0.654039233617186	-2.84599367646367	1.5379152092293	-0.584817511399182	0.558670428406083
+gam Aboisso number of Ace1 copies, binomial GLM	CNV	1.01785338170612	0.671889356400009	1.54195850370607	-0.0176958819266592	-0.433053364082584	0.397661600229266	-0.0835022667002425	0.933452175122505
+model	gam Baguida number of Ace1 copies, binomial GLM
+num_obs	13
+anova_test	Chisq
+p	0.3500778
+deviance_residual	17.07165
+df_residual	11
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Baguida number of Ace1 copies, binomial GLM	Intercept	0.201911628796506	0.00360054080424694	11.3228284470962	1.59992515850917	-2.42682090438221	5.62667122140055	0.778741852518476	0.436131796734189
+gam Baguida number of Ace1 copies, binomial GLM	CNV	1.35323973318481	0.693824450324839	2.63936760172222	-0.302501519882364	-0.970539343660595	0.365536303895867	-0.887512747234628	0.374802906321436
+model	gam Madina number of Ace1 copies, binomial GLM
+num_obs	19
+anova_test	Chisq
+p	0.007742323
+deviance_residual	19.19481
+df_residual	17
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Madina number of Ace1 copies, binomial GLM	Intercept	0.00353028300141701	1.62075023734561e-05	0.768958583680668	5.64637724087731	0.262718168299197	11.0300363134554	2.05560862715376	0.0398202555648154
+gam Madina number of Ace1 copies, binomial GLM	CNV	5.23001410443426	1.14391090713041	23.9118688020893	-1.65441397490575	-3.17437493826908	-0.134453011542415	-2.13333887151936	0.0328969376580749
+model	gam Obuasi number of Ace1 copies, binomial GLM
+num_obs	26
+anova_test	Chisq
+p	0.0374577
+deviance_residual	17.99532
+df_residual	24
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Obuasi number of Ace1 copies, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584184	7.75371731653409	2.5235735986198	0.0116168740530897
+gam Obuasi number of Ace1 copies, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.840244382773051	0.0235283619430287	-1.85318881177464	0.0638553007324918
+model	col Aboisso number of Ace1 copies, binomial GLM
+num_obs	11
+anova_test	Chisq
+p	0.361307
+deviance_residual	14.32486
+df_residual	9
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Aboisso number of Ace1 copies, binomial GLM	Intercept	0.284227644650155	0.0188554595410496	4.28445426150977	1.25797979623356	-1.45499318373099	3.97095277619812	0.908816679010579	0.363446900946469
+col Aboisso number of Ace1 copies, binomial GLM	CNV	1.28826026894763	0.733642691734763	2.26215641380509	-0.253292679432643	-0.816318523758232	0.309733164892946	-0.881743767606773	0.37791538680951
+model	col Korle-Bu number of Ace1 copies, binomial GLM
+num_obs	46
+anova_test	Chisq
+p	0.0001010198
+deviance_residual	48.30373
+df_residual	44
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Korle-Bu number of Ace1 copies, binomial GLM	Intercept	0.0674490002726878	0.0125341099760929	0.362958969281612	2.69638351819229	1.01346548338798	4.3793015529966	3.14026855430235	0.00168793022865105
+col Korle-Bu number of Ace1 copies, binomial GLM	CNV	1.80081737933462	1.24373715268551	2.60741847802115	-0.588240661460431	-0.95836064298263	-0.218120679938231	-3.11501828667229	0.00183933506480317
+model	col Weija number of Ace1 copies, binomial GLM
+num_obs	21
+anova_test	Chisq
+p	0.01368369
+deviance_residual	22.98604
+df_residual	19
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Weija number of Ace1 copies, binomial GLM	Intercept	13.5584842677922	0.906925335073834	202.698599907348	-2.6070124966031	-5.31172014621825	0.0976951530120624	-1.88916927909563	0.0588691497583498
+col Weija number of Ace1 copies, binomial GLM	CNV	0.513763273659187	0.263139395545477	1.0030907793713	0.665992676699254	-0.00308601273196507	1.33507136613047	1.95092398086631	0.0510660894760096
+model	gam Aboisso number of Ace1 copies, binomial GLM
+num_obs	31
+anova_test	Chisq
+p	0.9330784
+deviance_residual	38.97851
+df_residual	29
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Aboisso number of Ace1 copies, binomial GLM	Intercept	1.92329379340167	0.214828507380498	17.2186599480754	-0.654039233617186	-2.84599367646367	1.5379152092293	-0.584817511399182	0.558670428406083
+gam Aboisso number of Ace1 copies, binomial GLM	CNV	1.01785338170612	0.671889356400009	1.54195850370607	-0.0176958819266592	-0.433053364082584	0.397661600229266	-0.0835022667002425	0.933452175122505
+model	gam Baguida number of Ace1 copies, binomial GLM
+num_obs	13
+anova_test	Chisq
+p	0.3500778
+deviance_residual	17.07165
+df_residual	11
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Baguida number of Ace1 copies, binomial GLM	Intercept	0.201911628796506	0.00360054080424694	11.3228284470962	1.59992515850917	-2.42682090438221	5.62667122140055	0.778741852518476	0.436131796734189
+gam Baguida number of Ace1 copies, binomial GLM	CNV	1.35323973318481	0.693824450324839	2.63936760172222	-0.302501519882364	-0.970539343660595	0.365536303895867	-0.887512747234628	0.374802906321436
+model	gam Madina number of Ace1 copies, binomial GLM
+num_obs	19
+anova_test	Chisq
+p	0.007742323
+deviance_residual	19.19481
+df_residual	17
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Madina number of Ace1 copies, binomial GLM	Intercept	0.00353028300141701	1.62075023734561e-05	0.768958583680668	5.64637724087731	0.262718168299197	11.0300363134554	2.05560862715376	0.0398202555648154
+gam Madina number of Ace1 copies, binomial GLM	CNV	5.23001410443426	1.14391090713041	23.9118688020893	-1.65441397490575	-3.17437493826908	-0.134453011542415	-2.13333887151936	0.0328969376580749
+model	gam Obuasi number of Ace1 copies, binomial GLM
+num_obs	26
+anova_test	Chisq
+p	0.0374577
+deviance_residual	17.99532
+df_residual	24
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Obuasi number of Ace1 copies, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584184	7.75371731653409	2.5235735986198	0.0116168740530897
+gam Obuasi number of Ace1 copies, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.840244382773051	0.0235283619430287	-1.85318881177464	0.0638553007324918
+model	col Aboisso number of Ace1 copies, binomial GLM
+num_obs	11
+anova_test	Chisq
+p	0.361307
+deviance_residual	14.32486
+df_residual	9
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Aboisso number of Ace1 copies, binomial GLM	Intercept	0.284227644650155	0.0188554595410496	4.28445426150977	1.25797979623356	-1.45499318373099	3.97095277619812	0.908816679010579	0.363446900946469
+col Aboisso number of Ace1 copies, binomial GLM	CNV	1.28826026894763	0.733642691734763	2.26215641380509	-0.253292679432643	-0.816318523758232	0.309733164892946	-0.881743767606773	0.37791538680951
+model	col Korle-Bu number of Ace1 copies, binomial GLM
+num_obs	46
+anova_test	Chisq
+p	0.0001010198
+deviance_residual	48.30373
+df_residual	44
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Korle-Bu number of Ace1 copies, binomial GLM	Intercept	0.0674490002726878	0.0125341099760929	0.362958969281612	2.69638351819229	1.01346548338798	4.3793015529966	3.14026855430235	0.00168793022865105
+col Korle-Bu number of Ace1 copies, binomial GLM	CNV	1.80081737933462	1.24373715268551	2.60741847802115	-0.588240661460431	-0.95836064298263	-0.218120679938231	-3.11501828667229	0.00183933506480317
+model	col Weija number of Ace1 copies, binomial GLM
+num_obs	21
+anova_test	Chisq
+p	0.01368369
+deviance_residual	22.98604
+df_residual	19
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Weija number of Ace1 copies, binomial GLM	Intercept	13.5584842677922	0.906925335073834	202.698599907348	-2.6070124966031	-5.31172014621825	0.0976951530120624	-1.88916927909563	0.0588691497583498
+col Weija number of Ace1 copies, binomial GLM	CNV	0.513763273659187	0.263139395545477	1.0030907793713	0.665992676699254	-0.00308601273196507	1.33507136613047	1.95092398086631	0.0510660894760096
+model	gam Aboisso number of Ace1 copies, binomial GLM
+num_obs	31
+anova_test	Chisq
+p	0.9330784
+deviance_residual	38.97851
+df_residual	29
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Aboisso number of Ace1 copies, binomial GLM	Intercept	1.92329379340167	0.214828507380498	17.2186599480754	-0.654039233617186	-2.84599367646367	1.5379152092293	-0.584817511399182	0.558670428406083
+gam Aboisso number of Ace1 copies, binomial GLM	CNV	1.01785338170612	0.671889356400009	1.54195850370607	-0.0176958819266592	-0.433053364082584	0.397661600229266	-0.0835022667002425	0.933452175122505
+model	gam Baguida number of Ace1 copies, binomial GLM
+num_obs	13
+anova_test	Chisq
+p	0.3500778
+deviance_residual	17.07165
+df_residual	11
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Baguida number of Ace1 copies, binomial GLM	Intercept	0.201911628796506	0.00360054080424694	11.3228284470962	1.59992515850917	-2.42682090438221	5.62667122140055	0.778741852518476	0.436131796734189
+gam Baguida number of Ace1 copies, binomial GLM	CNV	1.35323973318481	0.693824450324839	2.63936760172222	-0.302501519882364	-0.970539343660595	0.365536303895867	-0.887512747234628	0.374802906321436
+model	gam Madina number of Ace1 copies, binomial GLM
+num_obs	19
+anova_test	Chisq
+p	0.007742323
+deviance_residual	19.19481
+df_residual	17
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Madina number of Ace1 copies, binomial GLM	Intercept	0.00353028300141701	1.62075023734561e-05	0.768958583680668	5.64637724087731	0.262718168299197	11.0300363134554	2.05560862715376	0.0398202555648154
+gam Madina number of Ace1 copies, binomial GLM	CNV	5.23001410443426	1.14391090713041	23.9118688020893	-1.65441397490575	-3.17437493826908	-0.134453011542415	-2.13333887151936	0.0328969376580749
+model	gam Obuasi number of Ace1 copies, binomial GLM
+num_obs	26
+anova_test	Chisq
+p	0.0374577
+deviance_residual	17.99532
+df_residual	24
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Obuasi number of Ace1 copies, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584184	7.75371731653409	2.5235735986198	0.0116168740530897
+gam Obuasi number of Ace1 copies, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.840244382773051	0.0235283619430287	-1.85318881177464	0.0638553007324918
+model	col Aboisso number of Ace1 copies, binomial GLM
+num_obs	11
+anova_test	Chisq
+p	0.361307
+deviance_residual	14.32486
+df_residual	9
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Aboisso number of Ace1 copies, binomial GLM	Intercept	0.284227644650155	0.0188554595410496	4.28445426150977	1.25797979623356	-1.45499318373099	3.97095277619812	0.908816679010579	0.363446900946469
+col Aboisso number of Ace1 copies, binomial GLM	CNV	1.28826026894763	0.733642691734763	2.26215641380509	-0.253292679432643	-0.816318523758232	0.309733164892946	-0.881743767606773	0.37791538680951
+model	col Korle-Bu number of Ace1 copies, binomial GLM
+num_obs	46
+anova_test	Chisq
+p	0.0001010198
+deviance_residual	48.30373
+df_residual	44
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Korle-Bu number of Ace1 copies, binomial GLM	Intercept	0.0674490002726878	0.0125341099760929	0.362958969281612	2.69638351819229	1.01346548338798	4.3793015529966	3.14026855430235	0.00168793022865105
+col Korle-Bu number of Ace1 copies, binomial GLM	CNV	1.80081737933462	1.24373715268551	2.60741847802115	-0.588240661460431	-0.95836064298263	-0.218120679938231	-3.11501828667229	0.00183933506480317
+model	col Weija number of Ace1 copies, binomial GLM
+num_obs	21
+anova_test	Chisq
+p	0.01368369
+deviance_residual	22.98604
+df_residual	19
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Weija number of Ace1 copies, binomial GLM	Intercept	13.5584842677922	0.906925335073834	202.698599907348	-2.6070124966031	-5.31172014621825	0.0976951530120624	-1.88916927909563	0.0588691497583498
+col Weija number of Ace1 copies, binomial GLM	CNV	0.513763273659187	0.263139395545477	1.0030907793713	0.665992676699254	-0.00308601273196507	1.33507136613047	1.95092398086631	0.0510660894760096
+model	gam Aboisso number of Ace1 copies, binomial GLM
+num_obs	31
+anova_test	Chisq
+p	0.9330784
+deviance_residual	38.97851
+df_residual	29
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Aboisso number of Ace1 copies, binomial GLM	Intercept	1.92329379340167	0.214828507380498	17.2186599480754	-0.654039233617186	-2.84599367646367	1.5379152092293	-0.584817511399182	0.558670428406083
+gam Aboisso number of Ace1 copies, binomial GLM	CNV	1.01785338170612	0.671889356400009	1.54195850370607	-0.0176958819266592	-0.433053364082584	0.397661600229266	-0.0835022667002425	0.933452175122505
+model	gam Baguida number of Ace1 copies, binomial GLM
+num_obs	13
+anova_test	Chisq
+p	0.3500778
+deviance_residual	17.07165
+df_residual	11
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Baguida number of Ace1 copies, binomial GLM	Intercept	0.201911628796506	0.00360054080424694	11.3228284470962	1.59992515850917	-2.42682090438221	5.62667122140055	0.778741852518476	0.436131796734189
+gam Baguida number of Ace1 copies, binomial GLM	CNV	1.35323973318481	0.693824450324839	2.63936760172222	-0.302501519882364	-0.970539343660595	0.365536303895867	-0.887512747234628	0.374802906321436
+model	gam Madina number of Ace1 copies, binomial GLM
+num_obs	19
+anova_test	Chisq
+p	0.007742323
+deviance_residual	19.19481
+df_residual	17
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Madina number of Ace1 copies, binomial GLM	Intercept	0.00353028300141701	1.62075023734561e-05	0.768958583680668	5.64637724087731	0.262718168299197	11.0300363134554	2.05560862715376	0.0398202555648154
+gam Madina number of Ace1 copies, binomial GLM	CNV	5.23001410443426	1.14391090713041	23.9118688020893	-1.65441397490575	-3.17437493826908	-0.134453011542415	-2.13333887151936	0.0328969376580749
+model	gam Obuasi number of Ace1 copies, binomial GLM
+num_obs	26
+anova_test	Chisq
+p	0.0374577
+deviance_residual	17.99532
+df_residual	24
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Obuasi number of Ace1 copies, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584184	7.75371731653409	2.5235735986198	0.0116168740530897
+gam Obuasi number of Ace1 copies, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.840244382773051	0.0235283619430287	-1.85318881177464	0.0638553007324918
