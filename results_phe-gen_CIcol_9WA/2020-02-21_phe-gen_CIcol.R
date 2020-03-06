@@ -238,6 +238,8 @@ mod_null = glm(phenotype ~ 1, data = data, family = "binomial")
 ### BIC PROCEDURE
 # initial model (with all variables)
 mod_tot = glm(phenotype ~ ., data = data, family = "binomial")
+mod_cnv = glm(phenotype ~ CNV, data = data, family = "binomial")
+mod_rat = glm(phenotype ~ estimated_n_ALT, data = data, family = "binomial")
 # stepwise removal using BIC criterion
 mod_BIC = step(mod_tot, direction = "both", steps = 1e6, trace = F, k = log(nrow(data))) # k=log(num_obs) for BIC
 

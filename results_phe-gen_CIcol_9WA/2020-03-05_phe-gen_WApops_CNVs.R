@@ -80,6 +80,7 @@ for (pop in pop_order) {
   mod_min_signif = glm_tables(model = mod_min, null = mod_nul, model_name = paste(pop,"BIC minimal model, binomial GLM"))
   mod_cnv_signif = glm_tables(model = mod_cnv, null = mod_nul, model_name = paste(pop,"number of Ace1 copies, binomial GLM"))
   mod_rat_signif = glm_tables(model = mod_rat, null = mod_nul, model_name = paste(pop,"280S allele ratio, binomial GLM"))
+  mod_tot_signif = glm_tables(model = mod_tot, null = mod_nul, model_name = paste(pop,"full model, binomial GLM"))
   
   
   # write tables
@@ -96,6 +97,11 @@ for (pop in pop_order) {
   write.table(file="Fig_9WApops_CNV_models_RAT.csv", t(mod_rat_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
   write.table(file="Fig_9WApops_CNV_models_RAT.csv", mod_rat_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
   write.table(file="Fig_9WApops_CNV_models_RAT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  
+  # write tables
+  write.table(file="Fig_9WApops_CNV_models_TOT.csv", t(mod_tot_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_TOT.csv", mod_tot_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_TOT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
 }
 
