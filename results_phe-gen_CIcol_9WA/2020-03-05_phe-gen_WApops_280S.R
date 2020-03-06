@@ -11,6 +11,7 @@ source("../scripts_other/summarise_model_OR.R")
 dat_fn = "biobank_data_1080samples_9WA.csv"
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
+graphics.off()
 
 #### Genotype-phenotype associations: 119S ####
 
@@ -33,6 +34,9 @@ pop_order = rownames(tat$t)
 # table genotype-phenotype associations
 # loop with all tests
 pdf(file="Fig_9WApops_association_G280S.pdf",height=4,width=4)
+
+table_modvar_min = data.frame()
+table_models_min = data.frame()
 
 for (pop in pop_order) {
   dai = dat[dat$population == pop,]
@@ -61,11 +65,17 @@ for (pop in pop_order) {
     
     # save model table
     mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"G280S"))
-    write.table(file="Fig_9WApops_association_G280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-    write.table(file="Fig_9WApops_association_G280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+
+    # write tables
+    write.table(file="Fig_9WApops_280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+    write.table(file="Fig_9WApops_280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+    write.table(file="Fig_9WApops_280S_models.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+    
     
   }
 }
+
+
 
 dev.off()
 

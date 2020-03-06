@@ -26,15 +26,17 @@ serr <- function(x) sd(x)/sqrt(length(x))
 
 
 pdf(file="Fig_9WApops_mean_CNV_variables_pop.pdf",height=4,width=3)
-# plot means of ratios and CNV number
-# ratios
+# plot number of samples
+dac_aggregate_sum = aggregate(!is.na(dac$population), by = list(dac$population), FUN = sum)
+ploti = barplot(height = dac_aggregate_sum$x,names.arg = dac_aggregate_sum$Group.1, horiz = T, las=1, xlab="num samples", col="slategray2",  main="num samples")
+text(x=0,ploti,labels = dac_aggregate_sum$x, col="red",pos=4)
+# plot means of ratios
 plot(as.factor(dac$population), dac$ratio_FAM_HEX, las=2, ylab="280S allele ratio", col="slategray2", main="ratios")
 dac_aggregate_mean = aggregate(dac$ratio_FAM_HEX, by = list(dac$population), FUN = mean)
 dac_aggregate_serr = aggregate(dac$ratio_FAM_HEX, by = list(dac$population), FUN = serr)
-barplot(height = dac_aggregate_mean$x,names.arg = dac_aggregate_mean$Group.1, horiz = T, las=1, xlab="280S allele ratio", col="slategray2",  main="ratios")
+ploti = barplot(height = dac_aggregate_mean$x,names.arg = dac_aggregate_mean$Group.1, horiz = T, las=1, xlab="280S allele ratio", col="slategray2",  main="ratios")
 text(x=0,ploti,labels = paste(signif(dac_aggregate_mean$x, 3),"+/-", signif(dac_aggregate_serr$x,3), "SE"), col="red",pos=4)
-
-# cnvs
+# same with cnvs
 plot(as.factor(dac$population), dac$CNV, las=2, ylab="copies", col="slategray2", main="Ace1 copies")
 dac_aggregate_mean = aggregate(dac$CNV, by = list(dac$population), FUN = mean)
 dac_aggregate_serr = aggregate(dac$CNV, by = list(dac$population), FUN = serr)
@@ -48,6 +50,14 @@ dev.off()
 #### Population ####
 # test association of FAMHEX ratio and CNVs with resistance independently
 # and then use a joint model + BKE reduction
+
+table_models_min = data.frame()
+table_modvar_min = data.frame()
+table_models_cnv = data.frame()
+table_modvar_cnv = data.frame()
+table_models_rat = data.frame()
+table_modvar_rat = data.frame()
+
 for (pop in pop_order) {
   
   # variables for model
@@ -71,19 +81,24 @@ for (pop in pop_order) {
   mod_cnv_signif = glm_tables(model = mod_cnv, null = mod_nul, model_name = paste(pop,"number of Ace1 copies, binomial GLM"))
   mod_rat_signif = glm_tables(model = mod_rat, null = mod_nul, model_name = paste(pop,"280S allele ratio, binomial GLM"))
   
-  # save model tables: for copies
-  write.table(file="Fig_9WApops_CNV_models_copies.csv", t(mod_cnv_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_copies.csv", mod_cnv_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
-  # save model tables: for ratios
-  write.table(file="Fig_9WApops_CNV_models_ratios.csv", t(mod_rat_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_ratios.csv", mod_rat_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  # write tables
+  write.table(file="Fig_9WApops_CNV_models_BIC.csv", t(mod_min_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_BIC.csv", mod_min_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_BIC.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
-  # save model tables: for minimal model
-  write.table(file="Fig_9WApops_CNV_models_minimal.csv", t(mod_min_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_minimal.csv", mod_min_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  # write tables
+  write.table(file="Fig_9WApops_CNV_models_CNV.csv", t(mod_cnv_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_CNV.csv", mod_cnv_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_CNV.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  
+  # write tables
+  write.table(file="Fig_9WApops_CNV_models_RAT.csv", t(mod_rat_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_RAT.csv", mod_rat_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_RAT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
 }
+
 
 
 message("FI")
