@@ -7,6 +7,8 @@ pop1        = "alive"
 pop2        = "dead"
 sampf       = "../metadata/samples.meta_phenotypes.txt"
 
+graphics.off()
+
 # libraries
 library(gmodels)
 library(pheatmap)
@@ -19,14 +21,15 @@ getmode = function(v) {
 
 
 
-popl = c("AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam","GM","GNcol","GNgam","GQgam","GW","KE","UGgam")
+popl = c("AOcol","BFcol","CIcol","GHcol","GNcol","BFgam","CMgam","FRgam","GAgam","GHgam","GNgam","GQgam","UGgam","GM","GW","KE")
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
 
 ##### Frequency of non-syn variants in Ace1 #####
 # per population
 # load allele freqs
-allel   = read.table("input_Ace1due.AlleleFq_tab.csv",header = T,sep="\t")
+allel   = read.table("../results_hap_analysis/AlleleFq_tab.csv",header = T,sep="\t")
+# allel   = read.table("input_Ace1due.AlleleFq_tab.csv",header = T,sep="\t")
 popl_fq = paste(popl,"fqmin",sep="_")
 
 # is allele nonsyn?
@@ -41,7 +44,7 @@ allel$is_nonsyn = allel$REF_aa != allel$ALT_aa
 allel_f = allel[allel$gene_eff == "AGAP001356" & allel$is_nonsyn & !is.na(allel$is_nonsyn),]
 allel_f[,popl_fq][is.na(allel_f[,popl_fq])] = 0
 allel_f = allel_f[apply(allel_f[,popl_fq], 1, FUN=max) > 0.05,]
-rownames(allel_f) = paste(allel_f$chr,":",allel_f$POS," ",gsub("n.","",allel_f$CDS_eff)," ",gsub("p.","",allel_f$PEP_eff),sep="")
+rownames(allel_f) = paste(allel_f$chr,":",allel_f$POS," ",gsub("n.","",allel_f$CDS_eff)," ",gsub("p.","",allel_f$PEP_eff)," | reverse",rowMeans(allel_f[,popl_fq])>0.5,sep="")
 
 # canvia major a minor a un allel concret
 allel_f[rowMeans(allel_f[,popl_fq])>0.5,popl_fq] = 1-allel_f[rowMeans(allel_f[,popl_fq])>0.5,popl_fq]
@@ -232,3 +235,5 @@ pheatmap(t(dupf_f), color = col.fun(20), breaks = seq(0,1,length.out = 20),
          main=paste("dup freqs"))
 dev.off()
 
+
+print("FI!")
