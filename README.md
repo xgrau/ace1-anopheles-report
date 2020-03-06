@@ -12,7 +12,7 @@ Genome variation data for this project has been generated as part of the [***Ano
 
 All main analyses are organised in `ipython` notebooks, that you can run/examine in the following order:
 
-1. `s01_haplotype_analysis_Ace1_2020-02-14.ipynb` can be used to calculate genotype frequencies, build haplotype networks, perfom positive selection scans along the gene & chromosome, and to obtain haplotype alignments. Output goes to `results_hap_analysis`.
+1. `s01a_Ace1_mutfreq.ipynb` and `s01b_haplotype_analysis_Ace1_2020-02-14.ipynb` can be used to calculate genotype frequencies, build haplotype networks and perfom positive selection scans along the duplication region. Output goes to `results_hap_analysis`.
 
 2. `s02_admixture_Ace1_arab_2020-02-14.ipynb`: perform Patterson's D tests of introgression (aka ABBA-BABA test) between various pairs of populations. Output goes to `results_admixture`. There are four scripts, using *arab*, *quad*, *mela* and *meru* as outgroups.
 
