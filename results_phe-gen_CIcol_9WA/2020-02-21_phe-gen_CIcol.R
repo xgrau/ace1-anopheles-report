@@ -1,6 +1,7 @@
 library(gmodels)
 library(pheatmap)
 library(stringr)
+library(pairwiseCI)
 source("../scripts_other/summarise_model_OR.R")
 
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
@@ -25,14 +26,8 @@ pdf(file="Fig3A_CIcol_phe-gty.pdf",height=4,width=4)
 
 # Fisher test
 ta = CrossTable(gtd[gtd$population == "CIcol",]$genotype, gtd[gtd$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta_corr = pairwiseCI::Prop.or(ta$t[1,], ta$t[2,], conf.level = 0.95, CImethod = "Woolf")
 
-# add 1 to 0 cell in the contingency table to be able to calculate fake ORs
-fake_ta = ta$t
-fake_ta[1,1] = 1
-fake_ta[1,2] = fake_ta[1,2] - 1
-fake_fish = fisher.test(fake_ta)
-fake_OR = 1/fake_fish$estimate
-fake_ORci = 1/fake_fish$conf.int
 
 # GLM model
 # used to calculate ORs for the resistance genotypes
@@ -48,8 +43,9 @@ mod_pval_chisq_v_null = mod_signif$`Pr(>Chi)`[2]
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~G280S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s\napprox OR: %.3f ( %.3f - %.3f) p = %.3f",
-                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full), fake_OR, fake_ORci[2], fake_ORci[1], fake_fish$p.value))
+         main=sprintf("phe~G280S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s\nWoolf approx OR: %.3f ( %.3f - %.3f)",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full), 
+                      1/ta_corr$estimate, 1/ta_corr$conf.int[2], 1/ta_corr$conf.int[1]))
 
 # save model table
 mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = "CIcol G280S~resistance")
@@ -60,6 +56,8 @@ write.table(file="Fig3_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, a
 # same but ONLY THOSE WITH multiple wt and 1 280S
 # Fisher test
 ta = CrossTable(gtd[gtd$population == "CIcol" & gtd$estimated_n_ALT <= 1 ,]$genotype, gtd[gtd$population == "CIcol" & gtd$estimated_n_ALT <= 1,]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta_corr = pairwiseCI::Prop.or(ta$t[1,], ta$t[2,], conf.level = 0.95, CImethod = "Woolf")
+
 
 # GLM model
 # used to calculate ORs for the resistance genotypes
@@ -82,12 +80,15 @@ write.table(file="Fig3_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, a
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~G280S (1 280S only)\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
-                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+         main=sprintf("phe~G280S (1 ALT allele only)\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s\nWoolf approx OR: %.3f ( %.3f - %.3f)",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full), 
+                      1/ta_corr$estimate, 1/ta_corr$conf.int[2], 1/ta_corr$conf.int[1]))
 
 # same with S65A
 # Fisher
 ta = CrossTable(data_A65S[data_A65S$population == "CIcol",]$genotype, data_A65S[data_A65S$population == "CIcol",]$phenotype, fisher = T, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
+ta_corr = pairwiseCI::Prop.or(ta$t[1,], ta$t[2,], conf.level = 0.95, CImethod = "Woolf")
+
 
 # GLM model
 # used to calculate ORs for the resistance genotypes
@@ -110,8 +111,9 @@ write.table(file="Fig3_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, a
 pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "aliceblue",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,number_format = "%i",
-         main=sprintf("phe~A65S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s",
-                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full)))
+         main=sprintf("phe~A65S\nFisher's exact test p = %.3E\nGLM p = %.3E\n%s\nWoolf approx OR: %.3f ( %.3f - %.3f)",
+                      ta$fisher.ts$p.value,mod_pval_chisq_v_null, summarise_model_report_string(mod_full), 
+                      1/ta_corr$estimate, 1/ta_corr$conf.int[2], 1/ta_corr$conf.int[1]))
 dev.off()
 
 
