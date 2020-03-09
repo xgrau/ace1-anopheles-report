@@ -16,8 +16,24 @@ graphics.off()
 #### Genotype-phenotype associations: 119S ####
 
 dat = read.table(dat_fn, header = T, sep="\t")
+
+# drop unclear sps id
 dat = dat[!is.na(dat$Species),]
 dat = dat[!dat$Species == "gamcol",]
+
+# drop exceptions: a few samples from Weija that
+# weren't phenotyped at the right concentration
+dat = dat[ 
+  (dat$Location == "Weija" & dat$Concentration_x == "0.5x")
+  | dat$Location != "Weija" , ]
+# drop exceptions: a few samples from Korle-Bu that
+# weren't phenotyped at the right concentration
+dat = dat[ 
+  (dat$Location == "Korle-Bu" & dat$Concentration_x == "1x" & dat$phenotype == "Alive") 
+  | (dat$Location == "Korle-Bu" & dat$Concentration_x == "0.5x" & dat$phenotype == "Dead") 
+  | dat$Location != "Korle-Bu" , ]
+
+# define population ids
 dat$population = paste(dat$Species, dat$Location, dat$Country)
 
 pdf(file="Fig_9WApops_genotypes_per_population.pdf",height=4,width=4)

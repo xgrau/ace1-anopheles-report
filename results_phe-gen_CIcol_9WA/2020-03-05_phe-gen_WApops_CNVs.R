@@ -1,6 +1,6 @@
 # libraries
 source("../scripts_other/summarise_model_OR.R")
-
+source("../scripts_other/glmodelling.R")
 
 # input
 dac = read.table("biobank_data_172subset_CNVs.csv", sep="\t", header = T)
@@ -72,12 +72,17 @@ for (pop in pop_order) {
   # reduce full model using BIC
   mod_min = step(mod_tot, direction = "both", steps = 1e6, trace = F, k = log(nrow(data))) # k=log(num_obs) for BIC
   
+  # reduce full model using BKE
+  mod_bke = glmodelling(input.table = data,list.of.markers = c("CNV","ratio_FAM_HEX"), 
+                        rescolumn = "phenotype",glm.function = "glm")
+                        
   # GLMs for each variable
   mod_cnv = glm(phenotype ~ CNV, data = data, family = "binomial")
   mod_rat = glm(phenotype ~ ratio_FAM_HEX, data = data, family = "binomial")
   
   # significance of all models
   mod_min_signif = glm_tables(model = mod_min, null = mod_nul, model_name = paste(pop,"BIC minimal model, binomial GLM"))
+  mod_bke_signif = glm_tables(model = mod_bke$final.model, null = mod_nul, model_name = paste(pop,"BKE minimal model, binomial GLM"))
   mod_cnv_signif = glm_tables(model = mod_cnv, null = mod_nul, model_name = paste(pop,"number of Ace1 copies, binomial GLM"))
   mod_rat_signif = glm_tables(model = mod_rat, null = mod_nul, model_name = paste(pop,"280S allele ratio, binomial GLM"))
   mod_tot_signif = glm_tables(model = mod_tot, null = mod_nul, model_name = paste(pop,"full model, binomial GLM"))
@@ -87,6 +92,11 @@ for (pop in pop_order) {
   write.table(file="Fig_9WApops_CNV_models_BIC.csv", t(mod_min_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
   write.table(file="Fig_9WApops_CNV_models_BIC.csv", mod_min_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
   write.table(file="Fig_9WApops_CNV_models_BIC.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  
+  # write tables
+  write.table(file="Fig_9WApops_CNV_models_BKE.csv", t(mod_bke_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_BKE.csv", mod_bke_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_9WApops_CNV_models_BKE.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
   # write tables
   write.table(file="Fig_9WApops_CNV_models_CNV.csv", t(mod_cnv_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
