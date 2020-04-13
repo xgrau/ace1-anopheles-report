@@ -7,7 +7,7 @@ getyf       = "ace1_genotypes.csv"
 dupsf       = "ace1_duplications.csv"
 pop1        = "alive"
 pop2        = "dead"
-sampf       = "Fig3_CIcol_CNV-ALTallele.csv"
+sampf       = "freq_CIcol_CNV-ALTallele.csv"
 
 graphics.off()
 

@@ -151,7 +151,7 @@ dev.off()
 
 #### frequency of ALT alleles per sample ####
 write.table(gtd, "freq_CIcol_CNV-ALTallele.csv", sep="\t",quote = F, row.names = F)
-pdf(file="frq_ALTallele.pdf",height=8,width=12)
+pdf(file="freq_CIcol_CNV-ALTallele.pdf",height=8,width=12)
 layout(matrix(1:6,nrow=2))
 
 
