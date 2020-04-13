@@ -9,7 +9,7 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 graphics.off()
 
 # read input (run 2020-02-17_heatmaps.R to produce this table)
-gtd = read.table("../results_tables/Fig3_CIcol_CNV-ALTallele.csv", header = T)
+gtd = read.table("../results_tables/freq_CIcol_CNV-ALTallele.csv", header = T)
 
 
 gtd$genotype = stringr::str_replace(string = gtd$genotype, pattern = "wt/wt", replacement = "GG")
@@ -189,7 +189,7 @@ barplot(t(ta$t), col= c("springgreen3","magenta3"), xlab = "nALT", ylim = c(0,30
 
 plot(jitter(gtd[gtd$population == "CIcol",]$CNV, factor=0.6), 
      jitter(gtd[gtd$population == "CIcol",]$estimated_n_ALT, factor=0.6), 
-     xlab="Ace1 copies",  ylab="280S copies", las=1,xlim=c(2,5),
+     xlab="Ace1 copies",  ylab="280S copies", las=1, xlim=c(2,5),
      main="280S and CNV",
      col=c("springgreen3","magenta3")[gtd[gtd$population == "CIcol",]$phenotype])
 abline(h=1.5, lty=2, col="red")
