@@ -98,16 +98,16 @@ popl = c("AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam"
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
 
-# plot duplications Fig1A
-pdf(file="Fig1A_freqs_nonsyn.pdf",height=12,width=12)
+# plot duplications
+pdf(file="freqs_nonsyn.pdf",height=12,width=12)
 pheatmap(t(allel_f[,popl_fq]), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "red",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
          main=paste("nonsyn freqs"))
 dev.off()
 
-# 119S genotypes per population Fig1B
-pdf(file="Fig1B_freqs_119Sgty_per_pop.pdf",height=12,width=12)
+# 119S genotypes per population
+pdf(file="freqs_119Sgty_per_pop.pdf",height=12,width=12)
 ta = CrossTable(gtd$population, gtd$genotype,fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 ta$t = cbind(ta$t,rowSums(ta$t))
 pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
@@ -116,8 +116,8 @@ pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20),
          main=paste("genotype~pop"))
 dev.off()
 
-# number of Ace1 copies per population Fig2A
-pdf(file="Fig2A_freqs_CNV_per_pop.pdf",height=12,width=12)
+# number of Ace1 copies per population
+pdf(file="freqs_CNV_per_pop.pdf",height=12,width=12)
 ta = CrossTable(gtd$population, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 ta$t = cbind(ta$t,rowSums(ta$t))
 pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
@@ -126,8 +126,8 @@ pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20),
          main=paste("CNV~pop"))
 dev.off()
 
-# number of Ace1 copies per 119S genotype Fig2B
-pdf(file="Fig2B_freqs_CNV_per_gty.pdf",height=12,width=12)
+# number of Ace1 copies per 119S genotype
+pdf(file="freqs_CNV_per_gty.pdf",height=12,width=12)
 ta = CrossTable(gtd$genotype, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 ta$t = cbind(ta$t,rowSums(ta$t))
 pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
@@ -137,8 +137,8 @@ pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20),
 dev.off()
 
 
-# fig10 summary duplications
-pdf(file="Fig2C_summarydups.pdf",height=12,width=12)
+# summary duplications
+pdf(file="summarydups.pdf",height=12,width=12)
 ta = CrossTable(gtd$estimated_n_ALT, gtd$CNV, fisher = F, prop.r = F, prop.c = F, prop.t = F ,prop.chisq = F)
 ta$t = cbind(ta$t,rowSums(ta$t))
 pheatmap(ta$t, color = col.fun(20), breaks = seq(0,10,length.out = 20), 
@@ -149,9 +149,9 @@ dev.off()
 
 
 
-#### frequency of ALT alleles per sample (fig2CD) ####
-write.table(gtd, "Fig3_CIcol_CNV-ALTallele.csv", sep="\t",quote = F, row.names = F)
-pdf(file="Fig2CD_ALTallele.pdf",height=8,width=12)
+#### frequency of ALT alleles per sample ####
+write.table(gtd, "freq_CIcol_CNV-ALTallele.csv", sep="\t",quote = F, row.names = F)
+pdf(file="frq_ALTallele.pdf",height=8,width=12)
 layout(matrix(1:6,nrow=2))
 
 
@@ -228,7 +228,7 @@ dupf_id = paste(dupf$chr,":",dupf$start,"-",dupf$end," ",dupf$CNV_id,sep="")
 rownames(dupf_f) = dupf_id
 
 # plot duplications
-pdf(file=paste("FigXX_minor_duplications.pdf",sep=""),height=12,width=12)
+pdf(file=paste("minor_duplications.pdf",sep=""),height=12,width=12)
 pheatmap(t(dupf_f), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
          cellwidth = 18, cellheight = 12,
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
