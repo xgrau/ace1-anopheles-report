@@ -185,28 +185,48 @@ pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20),
 barplot(t(ta$t), col= c("springgreen3","magenta3"), xlab = "nALT", ylim = c(0,30), las=1)
 
 
-## both
-
-plot(jitter(gtd[gtd$population == "CIcol",]$CNV, factor=0.6), 
-     jitter(gtd[gtd$population == "CIcol",]$estimated_n_ALT, factor=0.6), 
+## scatter plots
+# CIcol only
+plot(jitter(gtd[gtd$population == "CIcol",]$CNV, factor=0.5), 
+     jitter(gtd[gtd$population == "CIcol",]$estimated_n_ALT, factor=0.5), 
      xlab="Ace1 copies",  ylab="280S copies", las=1, xlim=c(2,5),
      main="280S and CNV",
      col=c("springgreen3","magenta3")[gtd[gtd$population == "CIcol",]$phenotype])
 abline(h=1.5, lty=2, col="red")
 abline(v=3.5, lty=2, col="red")
 
-plot(jitter(gtd[gtd$population == "CIcol",]$CNV, factor=0.1), 
-     gtd[gtd$population == "CIcol",]$proportion, factor=0.6, 
-     main="ratio and CNV",
-     xlab="Ace1 copies",  ylab="Fraction 280S alleles", las=1, ylim=c(0,1),xlim=c(2,5),
+plot(jitter(gtd[gtd$population == "CIcol",]$CNV, factor=0.5), 
+     gtd[gtd$population == "CIcol",]$proportion, factor=0.5, 
+     main="280S fraction and CNV",
+     xlab="# Ace1 copies",  ylab="Fraction 280S reads", las=1, ylim=c(0,1),xlim=c(2,5),
      col=c("springgreen3","magenta3")[gtd[gtd$population == "CIcol",]$phenotype])
 abline(v=3.5, lty=2, col="red")
 
+# all pops (no phenotype)
+gtd$phenotype = as.vector(gtd$phenotype)
+gtd[is.na(gtd$phenotype),"phenotype"] = "none"
+gtd$phenotype[gtd$insecticide == "Bendiocarb"] = "none"
+gtd$phenotype = as.factor(gtd$phenotype)
+gtd$species = as.vector(gtd$m_s)
+gtd[is.na(gtd$species),"species"] = "M/S"
+gtd$species = as.factor(gtd$species)
+
+plot(jitter(gtd$CNV, factor=0.5), 
+     jitter(gtd$estimated_n_ALT, factor=0.5), 
+     xlab="Ace1 copies",  ylab="280S copies", las=1, xlim=c(2,10), ylim = c(0,10),
+     main="280S and CNV",
+     col=c("blue","gray","orange")[gtd$species])
+abline(h=1.5, lty=2, col="red")
+abline(v=3.5, lty=2, col="red")
+
+plot(jitter(gtd$CNV, factor=0.5), 
+     gtd$proportion, factor=0.5, 
+     main="280S fraction and CNV",
+     xlab="# Ace1 copies",  ylab="Fraction 280S reads", las=1, ylim=c(0,1),xlim=c(2,10),
+     col=c("blue","gray","orange")[gtd$species])
+abline(v=3.5, lty=2, col="red")
+
 dev.off()
-
-
-
-
 
 #### GLM model with A65S and G280S data ####
 
