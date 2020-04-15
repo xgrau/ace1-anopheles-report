@@ -50,6 +50,9 @@ names(gff_gr_gene) = gff_gr_gene$ID
 
 # adjust pvalues (FDR)
 gen$PBS_p_adj = fdrtool(gen$PBS_p, statistic = 'pvalue', plot = F)$qval
+write.table(gen, file = sprintf("differentiation_output_wFDR.csv", outcode), 
+            sep="\t", quote = F, row.names = F)
+
 
 # find regions pval<0.001
 gef = gen[gen$PBS_p_adj < 0.001 & gen$PBS > 0, ]
