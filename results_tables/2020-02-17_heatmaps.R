@@ -43,10 +43,10 @@ allel$is_nonsyn = allel$REF_aa != allel$ALT_aa
 # find nonsyn in Ace1
 allel_f = allel[allel$gene_eff == "AGAP001356" & allel$is_nonsyn & !is.na(allel$is_nonsyn),]
 allel_f[,popl_fq][is.na(allel_f[,popl_fq])] = 0
-allel_f = allel_f[apply(allel_f[,popl_fq], 1, FUN=max) > 0.05,]
+allel_f = allel_f[apply(allel_f[,popl_fq], 1, FUN=max) > 0.01,]
 rownames(allel_f) = paste(allel_f$chr,":",allel_f$POS," ",gsub("n.","",allel_f$CDS_eff)," ",gsub("p.","",allel_f$PEP_eff)," | reverse",rowMeans(allel_f[,popl_fq])>0.5,sep="")
 
-# canvia major a minor a un allel concret
+# canvia major a minor a un allel concret (S65A)
 allel_f[rowMeans(allel_f[,popl_fq])>0.5,popl_fq] = 1-allel_f[rowMeans(allel_f[,popl_fq])>0.5,popl_fq]
 
 

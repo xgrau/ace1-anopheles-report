@@ -8,7 +8,7 @@ source("../scripts_other/summarise_model_OR.R")
 # input: genotyped/phenotyped samples from Biobank 
 # genotypes:Dimitra Pipini, Emily Rippon, 
 # phenotypes: Samuel Dadzie, Alexander Egyir-Yawson, John Essandoh, Joseph Chabi, Luc Djogbénou
-dat_fn = "biobank_data_1080samples_9WA.csv"
+dat_fn = "biobank_data_1080samples_WA.csv"
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
 graphics.off()
@@ -32,11 +32,15 @@ dat = dat[
   (dat$Location == "Korle-Bu" & dat$Concentration_x == "1x" & dat$phenotype == "Alive") 
   | (dat$Location == "Korle-Bu" & dat$Concentration_x == "0.5x" & dat$phenotype == "Dead") 
   | dat$Location != "Korle-Bu" , ]
+# drop exceptions: a few samples from Madina that can't be analysed because they
+# lack paired experiments, and a Togo gambiae samples (only 6 totally wt!)
+dat = dat[ ! (dat$Location == "Madina" & dat$Species == "col") , ]
+dat = dat[ ! (dat$Location == "Baguida" & dat$Species == "col") , ]
 
 # define population ids
 dat$population = paste(dat$Species, dat$Location, dat$Country)
 
-pdf(file="Fig_9WApops_genotypes_per_population.pdf",height=4,width=4)
+pdf(file="Fig_WApops_genotypes_per_population.pdf",height=4,width=4)
 tat = CrossTable(dat$population, dat$Ace1_G119S)
 pheatmap(tat$t, color = col.fun(20), breaks = seq(0,50,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "red",
@@ -49,7 +53,7 @@ pop_order = rownames(tat$t)
 
 # table genotype-phenotype associations
 # loop with all tests
-pdf(file="Fig_9WApops_association_G280S.pdf",height=4,width=4)
+pdf(file="Fig_WApops_association_G280S.pdf",height=4,width=4)
 
 table_modvar_min = data.frame()
 table_models_min = data.frame()
@@ -83,9 +87,9 @@ for (pop in pop_order) {
     mod_tau = glm_tables(model=mod_full, null=mod_null, model_name = paste(pop,"G280S"))
 
     # write tables
-    write.table(file="Fig_9WApops_280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-    write.table(file="Fig_9WApops_280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
-    write.table(file="Fig_9WApops_280S_models.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+    write.table(file="Fig_WApops_280S_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+    write.table(file="Fig_WApops_280S_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+    write.table(file="Fig_WApops_280S_models.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
     
     
   }

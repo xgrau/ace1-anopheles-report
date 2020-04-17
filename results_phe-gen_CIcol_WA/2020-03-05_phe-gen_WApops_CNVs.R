@@ -25,7 +25,7 @@ serr <- function(x) sd(x)/sqrt(length(x))
 
 
 
-pdf(file="Fig_9WApops_mean_CNV_variables_pop.pdf",height=4,width=3)
+pdf(file="Fig_WApops_mean_CNV_variables_pop.pdf",height=4,width=3)
 # plot number of samples
 dac_aggregate_sum = aggregate(!is.na(dac$population), by = list(dac$population), FUN = sum)
 ploti = barplot(height = dac_aggregate_sum$x,names.arg = dac_aggregate_sum$Group.1, horiz = T, las=1, xlab="num samples", col="slategray2",  main="num samples")
@@ -44,6 +44,7 @@ ploti = barplot(height = dac_aggregate_mean$x,names.arg = dac_aggregate_mean$Gro
 text(x=0,ploti,labels = signif(dac_aggregate_mean$x, 3), col="red",pos=4)
 text(x=0,ploti,labels = paste(signif(dac_aggregate_mean$x, 3),"+/-", signif(dac_aggregate_serr$x,3), "SE"), col="red",pos=4)
 dev.off()
+
 
 #### Genotype-phenotype associations: CNVs ####
 
@@ -89,29 +90,29 @@ for (pop in pop_order) {
   
   
   # write tables
-  write.table(file="Fig_9WApops_CNV_models_BIC.csv", t(mod_min_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_BIC.csv", mod_min_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_BIC.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_BIC.csv", t(mod_min_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_BIC.csv", mod_min_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_BIC.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
   # write tables
-  write.table(file="Fig_9WApops_CNV_models_BKE.csv", t(mod_bke_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_BKE.csv", mod_bke_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_BKE.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_BKE.csv", t(mod_bke_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_BKE.csv", mod_bke_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_BKE.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
   # write tables
-  write.table(file="Fig_9WApops_CNV_models_CNV.csv", t(mod_cnv_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_CNV.csv", mod_cnv_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_CNV.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_CNV.csv", t(mod_cnv_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_CNV.csv", mod_cnv_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_CNV.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
   # write tables
-  write.table(file="Fig_9WApops_CNV_models_RAT.csv", t(mod_rat_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_RAT.csv", mod_rat_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_RAT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_RAT.csv", t(mod_rat_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_RAT.csv", mod_rat_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_RAT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
   # write tables
-  write.table(file="Fig_9WApops_CNV_models_TOT.csv", t(mod_tot_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_TOT.csv", mod_tot_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
-  write.table(file="Fig_9WApops_CNV_models_TOT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_TOT.csv", t(mod_tot_signif$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_TOT.csv", mod_tot_signif$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+  write.table(file="Fig_WApops_CNV_models_TOT.csv", data.frame(), quote=FALSE, sep="\t", row.names=FALSE, append = T)
   
 }
 
