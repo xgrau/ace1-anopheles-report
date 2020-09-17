@@ -14,7 +14,7 @@ import scipy.stats
 # input files
 chromlist  = ["2R","2L","3R","3L","X"]
 metasam_fn = "metadata/samples.meta_phenotypes.txt"
-callset_fn = "/home/xavi/dades/Variation/phase2.AR1/variation/main/zarr2/ag1000g.phase2.ar1.pass/"
+callset_fn = "/home/xavi/Documents/VariationAg1k/data/phase2.AR1/variation/main/zarr2/ag1000g.phase2.ar1.pass/"
 results_fo = "results_differentiation_CIcol"
 anngene_fn = "metadata/Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.9.gff3"
 
@@ -238,6 +238,27 @@ for i,chrom in enumerate(chromlist):
 # write output
 df_out.to_csv("%s/differentiation_output.csv" % results_fo, sep="\t", index=False)
 
+## Fst differentiation dead~alive
+# loop per chromosome, store per-SNP data
+plt.figure(figsize=(24,2))
+plt.subplots_adjust(wspace=0.3,hspace=0.6)
+fst_b_esti = dict()
+df_outi = pd.DataFrame()
+for i,chrom in enumerate(chromlist):
+
+	# Hudson Fst, block-wise
+	df_start = allel.moving_statistic(genvars_seg[chrom]["POS"], np.min, size=1, step=1)
+	fst_b_esti[chrom] = allel.moving_hudson_fst(genalco_seg[chrom]["alive"], genalco_seg[chrom]["dead"], size=1, step=1)
+
+	df_oui = pd.DataFrame({
+		"chrom" : chrom,
+		"pos": df_start,
+		"Fst": fst_b_esti[chrom]
+	})
+	df_outi = pd.concat([df_out, df_oui])
+
+# write output
+df_outi.to_csv("%s/differentiation_output_perbase.csv" % results_fo, sep="\t", index=False)
 
 
 ## PCA
