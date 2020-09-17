@@ -54,7 +54,8 @@ ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/
 Notes on data download:
 
 * All genome genome variation ised in the scripts above need to be **specified at the beginning of each python notebook**. Once you've downloaded them, edit the scripts to point to the relevant files.
-* Data is available for download in various formats (VCFs, zarr, and HDF5). The scripts above use the zarr arrays and HDF5 files, which are highly compressed and very handy to use compared to VCFs. The python scripts require some special libraries to deal with these formats, mostly implemented in the `scikit-allel`, `zarr` and `h5py` libraries (see dependencies below).
+* Data is available for download in various formats (VCFs, zarr, and HDF5). The scripts above use the zarr arrays and HDF5 files, which are highly compressed and very handy to use compared to VCFs. The python scripts require some special libraries to deal with these formats, mostly implemented in the `
+-allel`, `zarr` and `h5py` libraries (see dependencies below).
 * **phased variants** are available under the `haplotype/main` subfolder:
 
 ```bash
@@ -75,12 +76,12 @@ ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/samples/
 
 ## Dependencies
 
-**Python** notebooks work with Python 3.7.4 and the following libraries, which can all be installed using `conda`:
+**Python** notebooks work with Python 3.7.4 and the following libraries, which can all be installed using `conda`, using `conda install <library>`.
 
 * numpy 1.17.3
 * zarr 2.3.2
 * pandas 0.25.3
-* scikit-allel, allel 1.2.1
+* scikit-allel 1.2.1 (from `bioconda` channel; use `conda install -c bioconda scikit-allel`)
 * h5py 2.10.0
 * scipy 1.3.2
 * bcolz 1.2.1
