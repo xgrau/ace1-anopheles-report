@@ -81,7 +81,7 @@ ftp://ngs.sanger.ac.uk/production/ag1000g/phase2/AR1/samples/
 * numpy 1.17.3
 * zarr 2.3.2
 * pandas 0.25.3
-* scikit-allel 1.2.1 (from `bioconda` channel; use `conda install -c bioconda scikit-allel`)
+* scikit-allel 1.2.1 (from `conda-forge` channel; use `conda install -c conda-forge scikit-allel`)
 * h5py 2.10.0
 * scipy 1.3.2
 * bcolz 1.2.1
