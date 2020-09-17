@@ -255,7 +255,7 @@ for i,chrom in enumerate(chromlist):
 		"pos": df_start,
 		"Fst": fst_b_esti[chrom]
 	})
-	df_outi = pd.concat([df_out, df_oui])
+	df_outi = pd.concat([df_outi, df_oui])
 
 # write output
 df_outi.to_csv("%s/differentiation_output_perbase.csv" % results_fo, sep="\t", index=False)
