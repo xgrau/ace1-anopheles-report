@@ -63,7 +63,8 @@ gef_gr = makeGRangesFromDataFrame(gef,keep.extra.columns = T,start.field = "star
 ov_gef_gr = findOverlapPairs(query=gef_gr,subject=gff_gr_gene,type="any",select="all",ignore.strand=T)
 ov_gef_df = data.frame(
   chrom   = seqnames(ov_gef_gr@first),
-  window  = start(ov_gef_gr@first),
+  window_s  = start(ov_gef_gr@first),
+  window_e  = end(ov_gef_gr@first),
   gene    = names(ov_gef_gr@second),
   start_g = start(ov_gef_gr@second),
   end_g   = end(ov_gef_gr@second),
