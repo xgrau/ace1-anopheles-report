@@ -185,7 +185,7 @@ pheatmap(t(ta$t), color = col.fun(20), breaks = seq(0,10,length.out = 20),
 barplot(t(ta$t), col= c("springgreen3","magenta3"), xlab = "nALT", ylim = c(0,30), las=1)
 
 
-## scatter plots
+#### scatter plots ####
 # CIcol only
 plot(jitter(gtd[gtd$population == "CIcol",]$CNV, factor=0.5), 
      jitter(gtd[gtd$population == "CIcol",]$estimated_n_ALT, factor=0.5), 
@@ -227,6 +227,8 @@ plot(jitter(gtd$CNV, factor=0.5),
 abline(v=3.5, lty=2, col="red")
 
 dev.off()
+
+
 
 #### GLM model with A65S and G280S data ####
 
@@ -277,6 +279,37 @@ write.table(file="Fig3_CIcol_phe-gty_all_models.csv", mod_tau$variable_table, qu
 write.table(file="Fig3_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = T)
 
 
+
+mod_rat = glm(phenotype ~ estimated_n_ALT, data = data, family = "binomial")
+mod_cnv = glm(phenotype ~ CNV, data = data, family = "binomial")
+mod_ratcnv = glm(phenotype ~ estimated_n_ALT+CNV, data = data, family = "binomial")
+mod_mgs = glm(phenotype ~ G280S, data = data, family = "binomial")
+mod_mgsrat = glm(phenotype ~ G280S+estimated_n_ALT, data = data, family = "binomial")
+mod_mgscnv = glm(phenotype ~ G280S+CNV, data = data, family = "binomial")
+mod_mgsratcnv = glm(phenotype ~ G280S+estimated_n_ALT+CNV, data = data, family = "binomial")
+
+
+anova(mod_cnv, mod_ratcnv, test = "Chisq")
+anova(mod_rat, mod_ratcnv, test = "Chisq")
+anova(mod_mgscnv, mod_mgs, test = "Chisq")
+anova(mod_mgsrat, mod_mgs, test = "Chisq")
+
+# nALT+G280S v G280S
+glm_tables(model=mod_mgsrat, null=mod_mgs, model_name = "model")        
+# nALT+G280S+CNV v nALT+G280S
+glm_tables(model=mod_mgsratcnv, null=mod_mgsrat, model_name = "model")        
+
+# CNV+G280S v G280S
+glm_tables(model=mod_mgscnv, null=mod_mgs, model_name = "model")        
+# nALT+G280S+CNV v CNV+G280S
+glm_tables(model=mod_mgsratcnv, null=mod_mgscnv, model_name = "model")        
+
+# nALT+G280S+CNV v nALT+G280S
+glm_tables(model=mod_mgscnv, null=mod_mgs, model_name = "model")        
+glm_tables(model=mod_mgsratcnv, null=mod_cnv, model_name = "model")        
+
+glm_tables(model=mod_mgsratcnv, null=mod_mgsrat, model_name = "model")        
+glm_tables(model=mod_mgsratcnv, null=mod_mgscnv, model_name = "model")        
 
 # ### BACKWARD ELIMINATION
 # mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "CNV", "estimated_n_ALT"),
