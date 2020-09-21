@@ -12,7 +12,6 @@ graphics.off()
 # libraries
 library(gmodels)
 library(pheatmap)
-library(Rfast)
 library(stringr)
 getmode = function(v) {
   uniqv <- unique(v)
@@ -31,6 +30,7 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 allel   = read.table("../results_hap_analysis/AlleleFq_tab.csv",header = T,sep="\t")
 # allel   = read.table("input_Ace1due.AlleleFq_tab.csv",header = T,sep="\t")
 popl_fq = paste(popl,"fqmin",sep="_")
+popl_co = paste(popl,"comin",sep="_")
 
 # is allele nonsyn?
 aa_ALT = sapply(stringr::str_split(allel$PEP_eff, pattern="[0-9]+"), "[", 2)
@@ -76,6 +76,10 @@ dup_co = base::which(dup$Position > loci_sta & dup$Position < loci_end)
 dup_a  = dup[dup_co,]
 dup_a  = aggregate(.~id,data=dup_i, getmode)
 
+# how many copies of Ace1 do we have in each population?
+dup_a_pop = merge(dup_a, sam, by.x = "id", by.y="ox_code")
+dup_sum = aggregate(dup_a_pop$CNV, by=list(dup_a_pop$population), sum)
+colnames(dup_sum) = c("population","num_copies")
 
 # merge genotype with CNV state
 gty$id = rownames(gty)
@@ -97,6 +101,10 @@ gtd$estimated_n_ALT = apply(gtd,1, FUN = function(x) {
 popl = c("AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam","GM","GNcol","GNgam","GQgam","GW","KE","UGgam")
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
+# allel_f_comin = allel_f[,popl_co]
+# colnames(allel_f_comin) = stringr::str_replace(colnames(allel_f_comin), pattern = "_comin",replacement = "")
+# allel_f_comin = t(allel_f_comin)
+# allel_f_comin_percnvnum = allel_f_comin / dup_sum$num_copies
 
 # plot duplications
 pdf(file="freqs_nonsyn.pdf",height=12,width=12)
@@ -105,6 +113,7 @@ pheatmap(t(allel_f[,popl_fq]), color = col.fun(20), breaks = seq(0,1,length.out 
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
          main=paste("nonsyn freqs"))
 dev.off()
+
 
 # 119S genotypes per population
 pdf(file="freqs_119Sgty_per_pop.pdf",height=12,width=12)
