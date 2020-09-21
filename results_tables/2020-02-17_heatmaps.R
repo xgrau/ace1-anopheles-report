@@ -98,7 +98,6 @@ gtd$estimated_n_ALT = apply(gtd,1, FUN = function(x) {
 
 ##### heatmaps with genotype and duplication frequencies #####
 
-popl = c("AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam","GM","GNcol","GNgam","GQgam","GW","KE","UGgam")
 col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerblue4"))
 
 # allel_f_comin = allel_f[,popl_co]
@@ -106,14 +105,47 @@ col.fun = colorRampPalette(interpolate="l",c("aliceblue","deepskyblue","dodgerbl
 # allel_f_comin = t(allel_f_comin)
 # allel_f_comin_percnvnum = allel_f_comin / dup_sum$num_copies
 
-# plot duplications
+# plot diploid frequencies
 pdf(file="freqs_nonsyn.pdf",height=12,width=12)
 pheatmap(t(allel_f[,popl_fq]), color = col.fun(20), breaks = seq(0,1,length.out = 20), 
          cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "red",
          border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
-         main=paste("nonsyn freqs"))
+         main=paste("ALT1 allele freqs assuming diploidy"))
+
+# plot ALT allele presence frequencies
+allel_nalt = read.table("genotypes_per_sample_Ace1nonsyn_gts.csv", sep = "\t", header = T, stringsAsFactors = F)
+allel_nalt_alt1_presence = subset(allel_nalt, select = -1)
+has_alt1 = sapply(allel_nalt_alt1_presence, function(x) grepl(pattern = "1", x=x))
+allel_nalt_alt1_presence[!has_alt1] = 0
+allel_nalt_alt1_presence[has_alt1] = 1
+allel_nalt_alt1_presence = data.frame(apply(allel_nalt_alt1_presence, 2, function(x) as.numeric(as.character(x))))
+rownames(allel_nalt_alt1_presence) = allel_nalt$X
+
+sam_pops = sam[,c("population","ox_code")]
+allel_nalt = merge(allel_nalt, sam_pops, by.x="X",by.y="ox_code")
+allel_nalt$population = factor(allel_nalt$population, levels = popl)
+
+allel_nalt_alt1_presence_popcounts = data.frame(aggregate(allel_nalt_alt1_presence ,by = list(allel_nalt$population), FUN = sum))
+rownames(allel_nalt_alt1_presence_popcounts) = allel_nalt_alt1_presence_popcounts$Group.1
+allel_nalt_alt1_presence_popcounts = subset(allel_nalt_alt1_presence_popcounts, select = -c(1))
+allel_nalt_alt1_presence_popsizes  = data.frame(aggregate(allel_nalt$population ,by = list(allel_nalt$population), FUN = length))
+allel_nalt_alt1_presence_popsizes = allel_nalt_alt1_presence_popsizes$x
+allel_nalt_alt1_presence_popfreqs = data.frame(apply(allel_nalt_alt1_presence_popcounts, 2, function(x) x/allel_nalt_alt1_presence_popsizes ))
+
+allel_nalt_alt1_presence_popfreqs$X3489405 = 1- allel_nalt_alt1_presence_popfreqs$X3489405
+
+pheatmap(allel_nalt_alt1_presence_popfreqs[popl,], color = col.fun(20), breaks = seq(0,1,length.out = 20), 
+         cellwidth = 18, cellheight = 12, na_col = "dodgerblue4",number_color = "red",
+         border_color = "white", cluster_cols=F, cluster_rows=F,display_numbers = T,
+         main=paste("ALT1 allele freqs (% specimens with 1 or more ALT)"))
 dev.off()
 
+
+allel_nalt_alt1_presence_popcounts/allel_nalt_alt1_presence_popsizes
+
+data.frame(apply(allel_nalt_alt1_presence, 2, function(x) aggregate(allel_nalt_alt1_presence ,by = list(allel_nalt$population), FUN = sum)))
+
+allel_nalt_alt1_presence_tab = unique(allel_nalt_alt1_presence[,2:ncol(allel_nalt_alt1_presence)])
 
 # 119S genotypes per population
 pdf(file="freqs_119Sgty_per_pop.pdf",height=12,width=12)
