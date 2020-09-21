@@ -34,7 +34,7 @@ dat = dat[
   | dat$Location != "Korle-Bu" , ]
 # drop exceptions: a few samples from Madina that can't be analysed because they
 # lack paired experiments, and a Togo gambiae samples (only 6 totally wt!)
-dat = dat[ ! (dat$Location == "Madina" & dat$Species == "col") , ]
+# dat = dat[ ! (dat$Location == "Madina" & dat$Species == "col") , ]
 dat = dat[ ! (dat$Location == "Baguida" & dat$Species == "col") , ]
 
 # define population ids

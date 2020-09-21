@@ -90,3 +90,108 @@ model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
 gam Obuasi BIC minimal model, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584182	7.75371731653409	2.5235735986198	0.0116168740530898
 gam Obuasi BIC minimal model, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.84024438277305	0.0235283619430288	-1.85318881177464	0.0638553007324918
 
+model	col Aboisso BIC minimal model, binomial GLM
+num_obs	11
+anova_test	Chisq
+p	0.001333097
+deviance_residual	4.862077
+df_residual	9
+CI	0.95
+variables	ratio_FAM_HEX
+call	glm(formula = phenotype ~ ratio_FAM_HEX, family = "binomial",     data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Aboisso BIC minimal model, binomial GLM	Intercept	2.98822516570943e-07	4.03475776505294e-22	221314144.76284	15.0234160298638	-19.2150937196657	49.2619257793933	0.860006891617103	0.389785243604022
+col Aboisso BIC minimal model, binomial GLM	ratio_FAM_HEX	52.9271621051235	0.0127786378059992	219216.205281826	-3.96891666843257	-12.2978137605288	4.35998042366363	-0.933969244877625	0.350319757774586
+
+model	col Korle-Bu BIC minimal model, binomial GLM
+num_obs	46
+anova_test	Chisq
+p	3.037671e-07
+deviance_residual	33.40727
+df_residual	43
+CI	0.95
+variables	CNV,ratio_FAM_HEX
+call	glm(formula = phenotype ~ CNV + ratio_FAM_HEX, family = "binomial",     data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Korle-Bu BIC minimal model, binomial GLM	Intercept	0.00574641695648124	0.000364386862978693	0.0906215651349263	5.15917875640732	2.40106306848503	7.91729444432961	3.66620029632615	0.000246181131125263
+col Korle-Bu BIC minimal model, binomial GLM	CNV	1.49031410515733	0.97447599641199	2.27921071448525	-0.398986906570734	-0.823829205175618	0.025855392034151	-1.84068293046538	0.065668036797537
+col Korle-Bu BIC minimal model, binomial GLM	ratio_FAM_HEX	2.30973116095427	1.32766312155554	4.01823169542633	-0.837131137221683	-1.39084192909715	-0.283420345346217	-2.96318385584324	0.00304474647824332
+
+model	col Madina BIC minimal model, binomial GLM
+num_obs	34
+anova_test	Chisq
+p	0.0009861591
+deviance_residual	28.44531
+df_residual	32
+CI	0.95
+variables	ratio_FAM_HEX
+call	glm(formula = phenotype ~ ratio_FAM_HEX, family = "binomial",     data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Madina BIC minimal model, binomial GLM	Intercept	0.010340756444092	0.00064321730351531	0.166244352027893	4.57166225550884	1.79429657278782	7.34902793822986	3.22618423134686	0.00125452576484274
+col Madina BIC minimal model, binomial GLM	ratio_FAM_HEX	71.5409372001869	3.32385989930618	1539.80788918012	-4.27026983411111	-7.33941294034045	-1.20112672788177	-2.72700711222561	0.00639116614949404
+
+model	col Weija BIC minimal model, binomial GLM
+num_obs	21
+anova_test	Chisq
+p	0.002971551
+deviance_residual	17.4272
+df_residual	18
+CI	0.95
+variables	CNV,ratio_FAM_HEX
+call	glm(formula = phenotype ~ CNV + ratio_FAM_HEX, family = "binomial",     data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+col Weija BIC minimal model, binomial GLM	Intercept	0.00126079738249605	2.13436956113254e-08	74.4767948651505	6.67601091492876	-4.31048759854594	17.6625094284035	1.19098372767343	0.233659973024432
+col Weija BIC minimal model, binomial GLM	CNV	0.373306057322816	0.126766300275333	1.09932538956509	0.985356666772631	-0.0946967094563106	2.06541004300157	1.78811864423209	0.0737568682189214
+col Weija BIC minimal model, binomial GLM	ratio_FAM_HEX	50.7749943230704	0.271236159483423	9505.00130004015	-3.92740399566084	-9.15957339169687	1.30476540037519	-1.47120052918503	0.1412368941283
+
+model	gam Aboisso BIC minimal model, binomial GLM
+num_obs	31
+anova_test	Chisq
+p	NA
+deviance_residual	38.98556
+df_residual	30
+CI	0.95
+variables	
+call	glm(formula = phenotype ~ 1, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Aboisso BIC minimal model, binomial GLM	Intercept	2.09999999999918	0.988956813183806	4.45924426750161	-0.741937344728986	-1.49497930492573	0.0111046154677605	-1.93106168223901	0.0534754248825634
+
+model	gam Baguida BIC minimal model, binomial GLM
+num_obs	13
+anova_test	Chisq
+p	NA
+deviance_residual	17.94483
+df_residual	12
+CI	0.95
+variables	
+call	glm(formula = phenotype ~ 1, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Baguida BIC minimal model, binomial GLM	Intercept	1.16666666656486	0.392087354691329	3.4714486315048	-0.154150679739991	-1.24457197989727	0.936270620417291	-0.277076191045766	0.781721603174236
+
+model	gam Madina BIC minimal model, binomial GLM
+num_obs	19
+anova_test	Chisq
+p	1.958232e-06
+deviance_residual	2.59532e-09
+df_residual	16
+CI	0.95
+variables	CNV,ratio_FAM_HEX
+call	glm(formula = phenotype ~ CNV + ratio_FAM_HEX, family = "binomial",     data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Madina BIC minimal model, binomial GLM	Intercept	5.50988339274812e-191	0	Inf	438.087209301762	-678340.156120237	679216.33053884	0.00126497152900385	0.998990699016325
+gam Madina BIC minimal model, binomial GLM	CNV	8.74082874988559e-20	0	Inf	43.8836968520675	-82129.875407935	82217.6428016391	0.0010466901633263	0.999164862231228
+gam Madina BIC minimal model, binomial GLM	ratio_FAM_HEX	5.51350180994334e+45	0	Inf	-105.323529143223	-163010.295242046	162799.648183759	-0.00126718246640856	0.998988934944919
+
+model	gam Obuasi BIC minimal model, binomial GLM
+num_obs	26
+anova_test	Chisq
+p	0.0374577
+deviance_residual	17.99532
+df_residual	24
+CI	0.95
+variables	CNV
+call	glm(formula = phenotype ~ CNV, family = "binomial", data = data)
+model	var	OR	OR_CIdo	OR_CIup	coef	coef_CIdo	coef_CIup	zscore	p
+gam Obuasi BIC minimal model, binomial GLM	Intercept	0.0127247696921363	0.00042914430661885	0.377308428005597	4.36420481555914	0.974692314584182	7.75371731653409	2.5235735986198	0.0116168740530898
+gam Obuasi BIC minimal model, binomial GLM	CNV	1.50434563618006	0.976746271853877	2.31693312614204	-0.408358010415011	-0.84024438277305	0.0235283619430288	-1.85318881177464	0.0638553007324918
+
