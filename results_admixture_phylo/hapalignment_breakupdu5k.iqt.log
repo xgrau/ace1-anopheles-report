@@ -4330,3 +4330,1058 @@ BETTER TREE FOUND at iteration 22853: -42295.949
 Iteration 22860 / LogL: -42325.932 / Time: 71h:36m:16s (0h:17m:28s left)
 Iteration 22870 / LogL: -42347.072 / Time: 71h:39m:39s (0h:15m:36s left)
 Iteration 22880 / LogL: -42454.420 / Time: 71h:43m:6s (0h:13m:43s left)
+Iteration 22890 / LogL: -42369.584 / Time: 71h:46m:33s (0h:11m:51s left)
+Iteration 22900 / LogL: -42334.506 / Time: 71h:50m:4s (0h:9m:58s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 22910 / LogL: -42341.247 / Time: 71h:53m:33s (0h:16m:56s left)
+Iteration 22920 / LogL: -42327.350 / Time: 71h:57m:1s (0h:15m:4s left)
+Iteration 22930 / LogL: -42320.019 / Time: 72h:0m:29s (0h:13m:11s left)
+Iteration 22940 / LogL: -42330.006 / Time: 72h:3m:55s (0h:11m:18s left)
+Iteration 22950 / LogL: -42304.963 / Time: 72h:7m:22s (0h:9m:25s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 22960 / LogL: -42311.897 / Time: 72h:10m:58s (0h:7m:32s left)
+Iteration 22970 / LogL: -42319.151 / Time: 72h:14m:25s (0h:5m:39s left)
+Iteration 22980 / LogL: -42307.926 / Time: 72h:17m:48s (0h:3m:46s left)
+Iteration 22990 / LogL: -42310.776 / Time: 72h:21m:10s (0h:1m:53s left)
+Iteration 23000 / LogL: -42371.413 / Time: 72h:24m:31s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23010 / LogL: -42348.963 / Time: 72h:27m:49s (0h:17m:0s left)
+Iteration 23020 / LogL: -42321.782 / Time: 72h:31m:5s (0h:15m:7s left)
+Iteration 23030 / LogL: -42389.644 / Time: 72h:34m:20s (0h:13m:14s left)
+Iteration 23040 / LogL: -42314.078 / Time: 72h:37m:35s (0h:11m:20s left)
+Iteration 23050 / LogL: -42337.269 / Time: 72h:40m:50s (0h:9m:27s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23060 / LogL: -42340.100 / Time: 72h:44m:8s (0h:7m:34s left)
+Iteration 23070 / LogL: -42388.055 / Time: 72h:47m:25s (0h:5m:40s left)
+Iteration 23080 / LogL: -42396.286 / Time: 72h:50m:40s (0h:3m:47s left)
+Iteration 23090 / LogL: -42318.094 / Time: 72h:53m:55s (0h:1m:53s left)
+Iteration 23100 / LogL: -42310.224 / Time: 72h:57m:12s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23110 / LogL: -42303.793 / Time: 73h:0m:30s (0h:17m:3s left)
+Iteration 23120 / LogL: -42401.788 / Time: 73h:3m:47s (0h:15m:10s left)
+Iteration 23130 / LogL: -42320.698 / Time: 73h:7m:3s (0h:13m:16s left)
+Iteration 23140 / LogL: -42304.981 / Time: 73h:10m:26s (0h:11m:23s left)
+Iteration 23150 / LogL: -42330.353 / Time: 73h:13m:50s (0h:9m:29s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23160 / LogL: -42349.628 / Time: 73h:17m:15s (0h:7m:35s left)
+Iteration 23170 / LogL: -42357.903 / Time: 73h:20m:37s (0h:5m:41s left)
+Iteration 23180 / LogL: -42326.834 / Time: 73h:24m:0s (0h:3m:48s left)
+Iteration 23190 / LogL: -42307.455 / Time: 73h:27m:21s (0h:1m:54s left)
+Iteration 23200 / LogL: -42347.231 / Time: 73h:30m:46s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23210 / LogL: -42306.139 / Time: 73h:34m:11s (0h:17m:7s left)
+Iteration 23220 / LogL: -42381.548 / Time: 73h:37m:33s (0h:15m:13s left)
+Iteration 23230 / LogL: -42305.403 / Time: 73h:40m:54s (0h:13m:19s left)
+Iteration 23240 / LogL: -42333.285 / Time: 73h:44m:16s (0h:11m:25s left)
+Iteration 23250 / LogL: -42326.046 / Time: 73h:47m:44s (0h:9m:31s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23260 / LogL: -42364.704 / Time: 73h:51m:15s (0h:7m:37s left)
+Iteration 23270 / LogL: -42299.150 / Time: 73h:54m:43s (0h:5m:43s left)
+Iteration 23280 / LogL: -42317.426 / Time: 73h:58m:16s (0h:3m:48s left)
+Iteration 23290 / LogL: -42313.904 / Time: 74h:1m:42s (0h:1m:54s left)
+Iteration 23300 / LogL: -42355.231 / Time: 74h:5m:12s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23310 / LogL: -42305.699 / Time: 74h:8m:41s (0h:17m:10s left)
+Iteration 23320 / LogL: -42320.625 / Time: 74h:12m:13s (0h:15m:16s left)
+Iteration 23330 / LogL: -42310.392 / Time: 74h:15m:40s (0h:13m:22s left)
+Iteration 23340 / LogL: -42304.893 / Time: 74h:19m:11s (0h:11m:27s left)
+Iteration 23350 / LogL: -42334.708 / Time: 74h:22m:42s (0h:9m:33s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23360 / LogL: -42313.896 / Time: 74h:26m:10s (0h:7m:38s left)
+Iteration 23370 / LogL: -42336.589 / Time: 74h:29m:39s (0h:5m:44s left)
+Iteration 23380 / LogL: -42316.413 / Time: 74h:33m:11s (0h:3m:49s left)
+Iteration 23390 / LogL: -42313.263 / Time: 74h:36m:41s (0h:1m:54s left)
+Iteration 23400 / LogL: -42330.471 / Time: 74h:40m:17s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23410 / LogL: -42313.282 / Time: 74h:43m:52s (0h:17m:14s left)
+Iteration 23420 / LogL: -42357.987 / Time: 74h:47m:24s (0h:15m:19s left)
+Iteration 23430 / LogL: -42336.867 / Time: 74h:50m:59s (0h:13m:25s left)
+Iteration 23440 / LogL: -42320.441 / Time: 74h:54m:35s (0h:11m:30s left)
+Iteration 23450 / LogL: -42299.981 / Time: 74h:58m:24s (0h:9m:35s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23460 / LogL: -42374.504 / Time: 75h:3m:38s (0h:7m:40s left)
+Iteration 23470 / LogL: -42320.558 / Time: 75h:8m:5s (0h:5m:45s left)
+Iteration 23480 / LogL: -42324.483 / Time: 75h:12m:49s (0h:3m:50s left)
+Iteration 23490 / LogL: -42340.776 / Time: 75h:17m:20s (0h:1m:55s left)
+Iteration 23500 / LogL: -42343.957 / Time: 75h:22m:10s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23510 / LogL: -42357.203 / Time: 75h:27m:30s (0h:17m:19s left)
+Iteration 23520 / LogL: -42370.643 / Time: 75h:32m:32s (0h:15m:25s left)
+Iteration 23530 / LogL: -42332.517 / Time: 75h:36m:54s (0h:13m:29s left)
+Iteration 23540 / LogL: -42322.878 / Time: 75h:41m:20s (0h:11m:34s left)
+Iteration 23550 / LogL: -42309.127 / Time: 75h:45m:29s (0h:9m:39s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23560 / LogL: -42332.313 / Time: 75h:49m:37s (0h:7m:43s left)
+Iteration 23570 / LogL: -42329.492 / Time: 75h:53m:43s (0h:5m:47s left)
+Iteration 23580 / LogL: -42329.086 / Time: 75h:57m:16s (0h:3m:51s left)
+Iteration 23590 / LogL: -42352.184 / Time: 76h:0m:39s (0h:1m:56s left)
+Iteration 23600 / LogL: -42313.957 / Time: 76h:3m:57s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23610 / LogL: -42382.118 / Time: 76h:7m:19s (0h:17m:24s left)
+Iteration 23620 / LogL: -42354.677 / Time: 76h:10m:54s (0h:15m:28s left)
+Iteration 23630 / LogL: -42357.008 / Time: 76h:14m:24s (0h:13m:33s left)
+Iteration 23640 / LogL: -42323.590 / Time: 76h:17m:53s (0h:11m:37s left)
+Iteration 23650 / LogL: -42407.057 / Time: 76h:21m:33s (0h:9m:41s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23660 / LogL: -42353.938 / Time: 76h:25m:12s (0h:7m:45s left)
+Iteration 23670 / LogL: -42323.664 / Time: 76h:28m:50s (0h:5m:48s left)
+Iteration 23680 / LogL: -42340.507 / Time: 76h:32m:30s (0h:3m:52s left)
+Iteration 23690 / LogL: -42319.197 / Time: 76h:36m:4s (0h:1m:56s left)
+Iteration 23700 / LogL: -42314.168 / Time: 76h:39m:41s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23710 / LogL: -42335.737 / Time: 76h:43m:21s (0h:17m:28s left)
+Iteration 23720 / LogL: -42316.161 / Time: 76h:46m:54s (0h:15m:32s left)
+Iteration 23730 / LogL: -42317.318 / Time: 76h:50m:30s (0h:13m:36s left)
+Iteration 23740 / LogL: -42309.943 / Time: 76h:54m:8s (0h:11m:39s left)
+Iteration 23750 / LogL: -42336.097 / Time: 76h:57m:37s (0h:9m:43s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23752: -42295.508
+Iteration 23760 / LogL: -42344.646 / Time: 77h:1m:8s (0h:17m:53s left)
+Iteration 23770 / LogL: -42315.499 / Time: 77h:4m:36s (0h:15m:57s left)
+Iteration 23780 / LogL: -42374.702 / Time: 77h:8m:3s (0h:14m:0s left)
+Iteration 23790 / LogL: -42335.474 / Time: 77h:11m:36s (0h:12m:4s left)
+Iteration 23800 / LogL: -42398.766 / Time: 77h:15m:5s (0h:10m:7s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23810 / LogL: -42332.570 / Time: 77h:18m:41s (0h:17m:32s left)
+Iteration 23820 / LogL: -42331.828 / Time: 77h:22m:10s (0h:15m:35s left)
+Iteration 23830 / LogL: -42426.601 / Time: 77h:25m:34s (0h:13m:38s left)
+Iteration 23840 / LogL: -42301.176 / Time: 77h:29m:1s (0h:11m:42s left)
+Iteration 23850 / LogL: -42369.282 / Time: 77h:32m:24s (0h:9m:45s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23860 / LogL: -42314.743 / Time: 77h:35m:49s (0h:7m:48s left)
+Iteration 23870 / LogL: -42331.931 / Time: 77h:39m:9s (0h:5m:51s left)
+Iteration 23880 / LogL: -42308.044 / Time: 77h:42m:28s (0h:3m:54s left)
+Iteration 23890 / LogL: -42328.419 / Time: 77h:45m:48s (0h:1m:57s left)
+Iteration 23900 / LogL: -42318.145 / Time: 77h:49m:9s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 23910 / LogL: -42321.640 / Time: 77h:52m:33s (0h:17m:35s left)
+Iteration 23920 / LogL: -42379.807 / Time: 77h:55m:54s (0h:15m:38s left)
+Iteration 23930 / LogL: -42322.340 / Time: 77h:59m:13s (0h:13m:41s left)
+Iteration 23940 / LogL: -42369.293 / Time: 78h:2m:34s (0h:11m:44s left)
+Iteration 23950 / LogL: -42332.556 / Time: 78h:5m:54s (0h:9m:46s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 23960 / LogL: -42340.465 / Time: 78h:9m:17s (0h:7m:49s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23961: -42289.573
+Iteration 23970 / LogL: -42314.109 / Time: 78h:12m:42s (0h:17m:48s left)
+Iteration 23980 / LogL: -42378.024 / Time: 78h:16m:4s (0h:15m:51s left)
+Iteration 23990 / LogL: -42322.906 / Time: 78h:19m:25s (0h:13m:54s left)
+Iteration 24000 / LogL: -42318.195 / Time: 78h:22m:44s (0h:11m:57s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24010 / LogL: -42303.880 / Time: 78h:26m:6s (0h:17m:38s left)
+Iteration 24020 / LogL: -42337.472 / Time: 78h:29m:27s (0h:15m:41s left)
+Iteration 24030 / LogL: -42332.191 / Time: 78h:32m:48s (0h:13m:43s left)
+Iteration 24040 / LogL: -42430.901 / Time: 78h:36m:9s (0h:11m:46s left)
+Iteration 24050 / LogL: -42390.282 / Time: 78h:39m:31s (0h:9m:48s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24060 / LogL: -42332.396 / Time: 78h:42m:54s (0h:7m:51s left)
+Iteration 24070 / LogL: -42314.712 / Time: 78h:46m:18s (0h:5m:53s left)
+Iteration 24080 / LogL: -42345.649 / Time: 78h:49m:40s (0h:3m:55s left)
+Iteration 24090 / LogL: -42330.443 / Time: 78h:53m:2s (0h:1m:57s left)
+Iteration 24100 / LogL: -42335.120 / Time: 78h:56m:22s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.949
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24110 / LogL: -42379.046 / Time: 78h:59m:45s (0h:17m:41s left)
+Iteration 24120 / LogL: -42490.251 / Time: 79h:3m:5s (0h:15m:43s left)
+Iteration 24130 / LogL: -42318.928 / Time: 79h:6m:28s (0h:13m:46s left)
+Iteration 24140 / LogL: -42327.390 / Time: 79h:9m:55s (0h:11m:48s left)
+Iteration 24150 / LogL: -42323.286 / Time: 79h:13m:18s (0h:9m:50s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24160 / LogL: -42350.885 / Time: 79h:16m:43s (0h:7m:52s left)
+Iteration 24170 / LogL: -42294.149 / Time: 79h:20m:6s (0h:5m:54s left)
+Iteration 24180 / LogL: -42313.425 / Time: 79h:23m:28s (0h:3m:56s left)
+Iteration 24190 / LogL: -42300.616 / Time: 79h:26m:51s (0h:1m:58s left)
+Iteration 24200 / LogL: -42292.332 / Time: 79h:30m:15s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.948
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24210 / LogL: -42302.980 / Time: 79h:33m:41s (0h:17m:44s left)
+Iteration 24220 / LogL: -42327.461 / Time: 79h:37m:3s (0h:15m:46s left)
+Iteration 24230 / LogL: -42323.406 / Time: 79h:40m:26s (0h:13m:48s left)
+Iteration 24240 / LogL: -42315.158 / Time: 79h:43m:49s (0h:11m:50s left)
+Iteration 24250 / LogL: -42302.417 / Time: 79h:47m:13s (0h:9m:52s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24260 / LogL: -42324.611 / Time: 79h:50m:38s (0h:7m:53s left)
+Iteration 24270 / LogL: -42335.446 / Time: 79h:54m:2s (0h:5m:55s left)
+Iteration 24280 / LogL: -42389.570 / Time: 79h:57m:25s (0h:3m:57s left)
+Iteration 24290 / LogL: -42321.849 / Time: 80h:0m:47s (0h:1m:58s left)
+Iteration 24300 / LogL: -42293.970 / Time: 80h:4m:13s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.947
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24310 / LogL: -42364.991 / Time: 80h:7m:38s (0h:17m:47s left)
+Iteration 24320 / LogL: -42323.883 / Time: 80h:11m:7s (0h:15m:49s left)
+Iteration 24330 / LogL: -42360.964 / Time: 80h:14m:31s (0h:13m:51s left)
+Iteration 24340 / LogL: -42344.259 / Time: 80h:17m:56s (0h:11m:52s left)
+Iteration 24350 / LogL: -42323.435 / Time: 80h:21m:21s (0h:9m:54s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24360 / LogL: -42365.505 / Time: 80h:24m:46s (0h:7m:55s left)
+Iteration 24370 / LogL: -42315.659 / Time: 80h:28m:9s (0h:5m:56s left)
+Iteration 24380 / LogL: -42352.451 / Time: 80h:31m:31s (0h:3m:57s left)
+Iteration 24390 / LogL: -42300.857 / Time: 80h:34m:55s (0h:1m:58s left)
+Iteration 24400 / LogL: -42348.915 / Time: 80h:38m:19s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.946
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24410 / LogL: -42328.140 / Time: 80h:41m:45s (0h:17m:51s left)
+Iteration 24420 / LogL: -42346.327 / Time: 80h:45m:9s (0h:15m:52s left)
+Iteration 24430 / LogL: -42340.184 / Time: 80h:48m:33s (0h:13m:53s left)
+Iteration 24440 / LogL: -42329.538 / Time: 80h:51m:58s (0h:11m:54s left)
+Iteration 24450 / LogL: -42343.696 / Time: 80h:55m:22s (0h:9m:55s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24460 / LogL: -42364.484 / Time: 80h:58m:48s (0h:7m:56s left)
+Iteration 24470 / LogL: -42333.276 / Time: 81h:2m:12s (0h:5m:57s left)
+Iteration 24480 / LogL: -42334.580 / Time: 81h:5m:36s (0h:3m:58s left)
+Iteration 24490 / LogL: -42293.060 / Time: 81h:9m:1s (0h:1m:59s left)
+Iteration 24500 / LogL: -42305.344 / Time: 81h:12m:31s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.946
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24510 / LogL: -42339.500 / Time: 81h:16m:0s (0h:17m:54s left)
+Iteration 24520 / LogL: -42311.251 / Time: 81h:19m:25s (0h:15m:55s left)
+Iteration 24530 / LogL: -42338.926 / Time: 81h:22m:50s (0h:13m:56s left)
+Iteration 24540 / LogL: -42368.811 / Time: 81h:26m:15s (0h:11m:56s left)
+Iteration 24550 / LogL: -42337.113 / Time: 81h:29m:40s (0h:9m:57s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24560 / LogL: -42366.661 / Time: 81h:33m:7s (0h:7m:58s left)
+Iteration 24570 / LogL: -42345.997 / Time: 81h:36m:32s (0h:5m:58s left)
+Iteration 24580 / LogL: -42312.057 / Time: 81h:39m:57s (0h:3m:59s left)
+Iteration 24590 / LogL: -42338.665 / Time: 81h:43m:22s (0h:1m:59s left)
+Iteration 24600 / LogL: -42351.334 / Time: 81h:46m:48s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.945
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24610 / LogL: -42309.182 / Time: 81h:50m:15s (0h:17m:57s left)
+Iteration 24620 / LogL: -42327.051 / Time: 81h:53m:42s (0h:15m:58s left)
+Iteration 24630 / LogL: -42362.122 / Time: 81h:57m:8s (0h:13m:58s left)
+Iteration 24640 / LogL: -42323.758 / Time: 82h:0m:34s (0h:11m:58s left)
+Iteration 24650 / LogL: -42303.290 / Time: 82h:4m:0s (0h:9m:59s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24660 / LogL: -42318.120 / Time: 82h:7m:29s (0h:7m:59s left)
+Iteration 24670 / LogL: -42308.838 / Time: 82h:11m:2s (0h:5m:59s left)
+Iteration 24680 / LogL: -42309.735 / Time: 82h:14m:28s (0h:3m:59s left)
+Iteration 24690 / LogL: -42326.887 / Time: 82h:17m:54s (0h:2m:0s left)
+Iteration 24700 / LogL: -42359.334 / Time: 82h:21m:20s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.945
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24710 / LogL: -42314.635 / Time: 82h:24m:49s (0h:18m:0s left)
+Iteration 24720 / LogL: -42305.874 / Time: 82h:28m:16s (0h:16m:0s left)
+Iteration 24730 / LogL: -42293.905 / Time: 82h:31m:44s (0h:14m:1s left)
+Iteration 24740 / LogL: -42406.279 / Time: 82h:35m:10s (0h:12m:1s left)
+Iteration 24750 / LogL: -42391.630 / Time: 82h:38m:38s (0h:10m:1s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24760 / LogL: -42351.978 / Time: 82h:42m:5s (0h:8m:0s left)
+Iteration 24770 / LogL: -42305.161 / Time: 82h:45m:32s (0h:6m:0s left)
+Iteration 24780 / LogL: -42304.280 / Time: 82h:49m:0s (0h:4m:0s left)
+Iteration 24790 / LogL: -42306.548 / Time: 82h:52m:26s (0h:2m:0s left)
+Iteration 24800 / LogL: -42360.019 / Time: 82h:55m:52s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.944
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24810 / LogL: -42344.924 / Time: 82h:59m:20s (0h:18m:3s left)
+Iteration 24820 / LogL: -42337.019 / Time: 83h:2m:47s (0h:16m:3s left)
+Iteration 24830 / LogL: -42304.076 / Time: 83h:6m:16s (0h:14m:3s left)
+Iteration 24840 / LogL: -42299.101 / Time: 83h:9m:43s (0h:12m:3s left)
+Iteration 24850 / LogL: -42326.639 / Time: 83h:13m:16s (0h:10m:2s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24860 / LogL: -42383.221 / Time: 83h:16m:47s (0h:8m:2s left)
+Iteration 24870 / LogL: -42306.718 / Time: 83h:20m:12s (0h:6m:1s left)
+Iteration 24880 / LogL: -42392.263 / Time: 83h:23m:41s (0h:4m:1s left)
+Iteration 24890 / LogL: -42311.549 / Time: 83h:27m:10s (0h:2m:0s left)
+Iteration 24900 / LogL: -42310.727 / Time: 83h:30m:38s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.944
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 24910 / LogL: -42368.316 / Time: 83h:34m:9s (0h:18m:7s left)
+Iteration 24920 / LogL: -42312.585 / Time: 83h:37m:37s (0h:16m:6s left)
+Iteration 24930 / LogL: -42319.441 / Time: 83h:41m:5s (0h:14m:5s left)
+Iteration 24940 / LogL: -42335.728 / Time: 83h:44m:34s (0h:12m:5s left)
+Iteration 24950 / LogL: -42314.299 / Time: 83h:48m:2s (0h:10m:4s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 24960 / LogL: -42371.108 / Time: 83h:51m:34s (0h:8m:3s left)
+Iteration 24970 / LogL: -42335.962 / Time: 83h:55m:3s (0h:6m:2s left)
+Iteration 24980 / LogL: -42333.060 / Time: 83h:58m:30s (0h:4m:2s left)
+Iteration 24990 / LogL: -42305.242 / Time: 84h:1m:59s (0h:2m:1s left)
+Iteration 25000 / LogL: -42344.631 / Time: 84h:5m:29s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.943
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25010 / LogL: -42322.400 / Time: 84h:9m:1s (0h:18m:10s left)
+Iteration 25020 / LogL: -42321.062 / Time: 84h:12m:35s (0h:16m:9s left)
+Iteration 25030 / LogL: -42479.348 / Time: 84h:16m:3s (0h:14m:8s left)
+Iteration 25040 / LogL: -42347.487 / Time: 84h:19m:33s (0h:12m:7s left)
+Iteration 25050 / LogL: -42320.538 / Time: 84h:23m:3s (0h:10m:6s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25060 / LogL: -42320.107 / Time: 84h:26m:34s (0h:8m:5s left)
+Iteration 25070 / LogL: -42344.175 / Time: 84h:30m:3s (0h:6m:4s left)
+Iteration 25080 / LogL: -42315.089 / Time: 84h:33m:33s (0h:4m:2s left)
+Iteration 25090 / LogL: -42329.855 / Time: 84h:37m:4s (0h:2m:1s left)
+Iteration 25100 / LogL: -42319.107 / Time: 84h:40m:33s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.942
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25110 / LogL: -42335.694 / Time: 84h:44m:5s (0h:18m:13s left)
+Iteration 25120 / LogL: -42362.681 / Time: 84h:47m:34s (0h:16m:12s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25129: -42288.907
+Iteration 25130 / LogL: -42372.483 / Time: 84h:51m:6s (0h:20m:3s left)
+Iteration 25140 / LogL: -42321.688 / Time: 84h:54m:36s (0h:18m:2s left)
+Iteration 25150 / LogL: -42384.514 / Time: 84h:58m:7s (0h:16m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25160 / LogL: -42334.600 / Time: 85h:1m:39s (0h:13m:59s left)
+Iteration 25170 / LogL: -42301.249 / Time: 85h:5m:8s (0h:11m:58s left)
+Iteration 25180 / LogL: -42302.948 / Time: 85h:8m:38s (0h:9m:56s left)
+Iteration 25190 / LogL: -42321.381 / Time: 85h:12m:13s (0h:7m:54s left)
+Iteration 25200 / LogL: -42348.937 / Time: 85h:15m:43s (0h:5m:53s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.942
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25210 / LogL: -42327.589 / Time: 85h:19m:14s (0h:18m:16s left)
+Iteration 25220 / LogL: -42306.673 / Time: 85h:22m:45s (0h:16m:15s left)
+Iteration 25230 / LogL: -42311.450 / Time: 85h:26m:16s (0h:14m:13s left)
+Iteration 25240 / LogL: -42356.698 / Time: 85h:29m:45s (0h:12m:11s left)
+Iteration 25250 / LogL: -42372.188 / Time: 85h:33m:17s (0h:10m:9s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25260 / LogL: -42338.450 / Time: 85h:36m:49s (0h:8m:8s left)
+Iteration 25270 / LogL: -42349.913 / Time: 85h:40m:20s (0h:6m:6s left)
+Iteration 25280 / LogL: -42327.519 / Time: 85h:43m:50s (0h:4m:4s left)
+Iteration 25290 / LogL: -42348.225 / Time: 85h:47m:20s (0h:2m:2s left)
+Iteration 25300 / LogL: -42315.780 / Time: 85h:50m:53s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.941
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25310 / LogL: -42333.506 / Time: 85h:54m:25s (0h:18m:19s left)
+Iteration 25320 / LogL: -42352.483 / Time: 85h:57m:57s (0h:16m:17s left)
+Iteration 25330 / LogL: -42343.439 / Time: 86h:1m:28s (0h:14m:15s left)
+Iteration 25340 / LogL: -42365.534 / Time: 86h:5m:0s (0h:12m:13s left)
+Iteration 25350 / LogL: -42363.981 / Time: 86h:8m:33s (0h:10m:11s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25360 / LogL: -42327.037 / Time: 86h:12m:10s (0h:8m:9s left)
+Iteration 25370 / LogL: -42354.750 / Time: 86h:15m:42s (0h:6m:7s left)
+Iteration 25380 / LogL: -42312.770 / Time: 86h:19m:14s (0h:4m:4s left)
+Iteration 25390 / LogL: -42315.832 / Time: 86h:22m:45s (0h:2m:2s left)
+Iteration 25400 / LogL: -42340.541 / Time: 86h:26m:17s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.941
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25406: -42287.578
+Iteration 25410 / LogL: -42351.110 / Time: 86h:29m:50s (0h:19m:36s left)
+Iteration 25420 / LogL: -42298.837 / Time: 86h:33m:22s (0h:17m:34s left)
+Iteration 25430 / LogL: -42334.461 / Time: 86h:36m:57s (0h:15m:31s left)
+Iteration 25440 / LogL: -42371.320 / Time: 86h:40m:29s (0h:13m:29s left)
+Iteration 25450 / LogL: -42311.292 / Time: 86h:44m:2s (0h:11m:27s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25460 / LogL: -42306.561 / Time: 86h:47m:37s (0h:9m:24s left)
+Iteration 25470 / LogL: -42325.637 / Time: 86h:51m:9s (0h:7m:21s left)
+Iteration 25480 / LogL: -42354.996 / Time: 86h:54m:40s (0h:5m:19s left)
+Iteration 25490 / LogL: -42377.986 / Time: 86h:58m:13s (0h:3m:16s left)
+Iteration 25500 / LogL: -42299.511 / Time: 87h:1m:45s (0h:1m:13s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.941
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25510 / LogL: -42374.950 / Time: 87h:5m:19s (0h:18m:26s left)
+Iteration 25520 / LogL: -42360.668 / Time: 87h:8m:51s (0h:16m:23s left)
+Iteration 25530 / LogL: -42307.657 / Time: 87h:12m:28s (0h:14m:20s left)
+Iteration 25540 / LogL: -42330.489 / Time: 87h:16m:2s (0h:12m:18s left)
+Iteration 25550 / LogL: -42336.019 / Time: 87h:19m:34s (0h:10m:15s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25560 / LogL: -42343.352 / Time: 87h:23m:9s (0h:8m:12s left)
+Iteration 25570 / LogL: -42332.725 / Time: 87h:26m:42s (0h:6m:9s left)
+Iteration 25580 / LogL: -42333.231 / Time: 87h:30m:13s (0h:4m:6s left)
+Iteration 25590 / LogL: -42368.152 / Time: 87h:33m:46s (0h:2m:3s left)
+Iteration 25600 / LogL: -42310.273 / Time: 87h:37m:20s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.940
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25610 / LogL: -42333.420 / Time: 87h:40m:54s (0h:18m:29s left)
+Iteration 25620 / LogL: -42307.985 / Time: 87h:44m:27s (0h:16m:26s left)
+Iteration 25630 / LogL: -42296.857 / Time: 87h:48m:1s (0h:14m:23s left)
+Iteration 25640 / LogL: -42323.027 / Time: 87h:51m:34s (0h:12m:20s left)
+Iteration 25650 / LogL: -42378.461 / Time: 87h:55m:6s (0h:10m:16s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25660 / LogL: -42353.881 / Time: 87h:58m:42s (0h:8m:13s left)
+Iteration 25670 / LogL: -42368.431 / Time: 88h:2m:16s (0h:6m:10s left)
+Iteration 25680 / LogL: -42382.868 / Time: 88h:5m:50s (0h:4m:7s left)
+Iteration 25690 / LogL: -42331.767 / Time: 88h:9m:24s (0h:2m:3s left)
+Iteration 25700 / LogL: -42305.979 / Time: 88h:13m:2s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.940
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25710 / LogL: -42336.829 / Time: 88h:16m:38s (0h:18m:32s left)
+Iteration 25720 / LogL: -42381.953 / Time: 88h:20m:12s (0h:16m:29s left)
+Iteration 25730 / LogL: -42379.415 / Time: 88h:23m:46s (0h:14m:25s left)
+Iteration 25740 / LogL: -42326.189 / Time: 88h:27m:21s (0h:12m:22s left)
+Iteration 25750 / LogL: -42302.920 / Time: 88h:30m:56s (0h:10m:18s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25760 / LogL: -42340.751 / Time: 88h:34m:33s (0h:8m:15s left)
+Iteration 25770 / LogL: -42360.964 / Time: 88h:38m:8s (0h:6m:11s left)
+Iteration 25780 / LogL: -42317.094 / Time: 88h:41m:42s (0h:4m:7s left)
+Iteration 25790 / LogL: -42358.022 / Time: 88h:45m:17s (0h:2m:3s left)
+Iteration 25800 / LogL: -42301.639 / Time: 88h:48m:53s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.939
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25810 / LogL: -42363.660 / Time: 88h:52m:29s (0h:18m:35s left)
+Iteration 25820 / LogL: -42312.991 / Time: 88h:56m:5s (0h:16m:32s left)
+Iteration 25830 / LogL: -42340.520 / Time: 88h:59m:39s (0h:14m:28s left)
+Iteration 25840 / LogL: -42332.785 / Time: 89h:3m:13s (0h:12m:24s left)
+Iteration 25850 / LogL: -42395.912 / Time: 89h:6m:47s (0h:10m:20s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25860 / LogL: -42299.728 / Time: 89h:10m:23s (0h:8m:16s left)
+Iteration 25870 / LogL: -42309.229 / Time: 89h:14m:3s (0h:6m:12s left)
+Iteration 25880 / LogL: -42336.295 / Time: 89h:17m:39s (0h:4m:8s left)
+Iteration 25890 / LogL: -42322.513 / Time: 89h:21m:15s (0h:2m:4s left)
+Iteration 25900 / LogL: -42366.041 / Time: 89h:24m:51s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.939
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 25910 / LogL: -42326.501 / Time: 89h:28m:29s (0h:18m:38s left)
+Iteration 25920 / LogL: -42315.965 / Time: 89h:32m:4s (0h:16m:34s left)
+Iteration 25930 / LogL: -42311.405 / Time: 89h:35m:40s (0h:14m:30s left)
+Iteration 25940 / LogL: -42304.467 / Time: 89h:39m:16s (0h:12m:26s left)
+Iteration 25950 / LogL: -42339.542 / Time: 89h:42m:51s (0h:10m:22s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 25960 / LogL: -42323.267 / Time: 89h:46m:29s (0h:8m:17s left)
+Iteration 25970 / LogL: -42341.150 / Time: 89h:50m:5s (0h:6m:13s left)
+Iteration 25980 / LogL: -42313.371 / Time: 89h:53m:39s (0h:4m:9s left)
+Iteration 25990 / LogL: -42483.857 / Time: 89h:57m:15s (0h:2m:4s left)
+Iteration 26000 / LogL: -42351.141 / Time: 90h:0m:51s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.939
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26010 / LogL: -42337.497 / Time: 90h:4m:30s (0h:18m:42s left)
+Iteration 26020 / LogL: -42321.740 / Time: 90h:8m:6s (0h:16m:37s left)
+Iteration 26030 / LogL: -42308.818 / Time: 90h:11m:44s (0h:14m:33s left)
+Iteration 26040 / LogL: -42322.697 / Time: 90h:15m:27s (0h:12m:28s left)
+Iteration 26050 / LogL: -42338.498 / Time: 90h:19m:1s (0h:10m:24s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26060 / LogL: -42350.668 / Time: 90h:22m:40s (0h:8m:19s left)
+Iteration 26070 / LogL: -42388.414 / Time: 90h:26m:17s (0h:6m:14s left)
+Iteration 26080 / LogL: -42348.173 / Time: 90h:29m:54s (0h:4m:9s left)
+Iteration 26090 / LogL: -42320.331 / Time: 90h:33m:30s (0h:2m:4s left)
+Iteration 26100 / LogL: -42382.632 / Time: 90h:37m:8s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.938
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26110 / LogL: -42330.821 / Time: 90h:40m:47s (0h:18m:45s left)
+Iteration 26120 / LogL: -42334.887 / Time: 90h:44m:26s (0h:16m:40s left)
+Iteration 26130 / LogL: -42321.960 / Time: 90h:48m:2s (0h:14m:35s left)
+Iteration 26140 / LogL: -42341.293 / Time: 90h:51m:39s (0h:12m:30s left)
+Iteration 26150 / LogL: -42317.317 / Time: 90h:55m:17s (0h:10m:25s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26160 / LogL: -42318.780 / Time: 90h:58m:54s (0h:8m:20s left)
+Iteration 26170 / LogL: -42314.770 / Time: 91h:2m:32s (0h:6m:15s left)
+Iteration 26180 / LogL: -42313.272 / Time: 91h:6m:7s (0h:4m:10s left)
+Iteration 26190 / LogL: -42323.271 / Time: 91h:9m:43s (0h:2m:5s left)
+Iteration 26200 / LogL: -42326.065 / Time: 91h:13m:26s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.938
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26210 / LogL: -42308.947 / Time: 91h:17m:6s (0h:18m:48s left)
+Iteration 26220 / LogL: -42315.681 / Time: 91h:20m:45s (0h:16m:43s left)
+Iteration 26230 / LogL: -42314.275 / Time: 91h:24m:22s (0h:14m:38s left)
+Iteration 26240 / LogL: -42334.830 / Time: 91h:28m:0s (0h:12m:32s left)
+Iteration 26250 / LogL: -42321.359 / Time: 91h:31m:39s (0h:10m:27s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26260 / LogL: -42342.994 / Time: 91h:35m:19s (0h:8m:22s left)
+Iteration 26270 / LogL: -42315.052 / Time: 91h:38m:58s (0h:6m:16s left)
+Iteration 26280 / LogL: -42309.008 / Time: 91h:42m:37s (0h:4m:11s left)
+Iteration 26290 / LogL: -42384.691 / Time: 91h:46m:14s (0h:2m:5s left)
+Iteration 26300 / LogL: -42304.542 / Time: 91h:49m:53s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.938
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26310 / LogL: -42353.799 / Time: 91h:53m:33s (0h:18m:51s left)
+Iteration 26320 / LogL: -42319.507 / Time: 91h:57m:11s (0h:16m:46s left)
+Iteration 26330 / LogL: -42336.100 / Time: 92h:0m:48s (0h:14m:40s left)
+Iteration 26340 / LogL: -42345.748 / Time: 92h:4m:28s (0h:12m:35s left)
+Iteration 26350 / LogL: -42295.827 / Time: 92h:8m:7s (0h:10m:29s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26360 / LogL: -42297.092 / Time: 92h:11m:46s (0h:8m:23s left)
+Iteration 26370 / LogL: -42344.530 / Time: 92h:15m:30s (0h:6m:17s left)
+Iteration 26380 / LogL: -42327.314 / Time: 92h:19m:10s (0h:4m:11s left)
+Iteration 26390 / LogL: -42318.347 / Time: 92h:22m:49s (0h:2m:6s left)
+Iteration 26400 / LogL: -42332.448 / Time: 92h:26m:28s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.938
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26410 / LogL: -42325.295 / Time: 92h:30m:9s (0h:18m:54s left)
+Iteration 26420 / LogL: -42334.623 / Time: 92h:33m:48s (0h:16m:49s left)
+Iteration 26430 / LogL: -42343.030 / Time: 92h:37m:30s (0h:14m:43s left)
+Iteration 26440 / LogL: -42334.265 / Time: 92h:41m:11s (0h:12m:37s left)
+Iteration 26450 / LogL: -42301.237 / Time: 92h:44m:50s (0h:10m:31s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26460 / LogL: -42310.229 / Time: 92h:48m:31s (0h:8m:25s left)
+Iteration 26470 / LogL: -42316.610 / Time: 92h:52m:12s (0h:6m:18s left)
+Iteration 26480 / LogL: -42294.644 / Time: 92h:55m:52s (0h:4m:12s left)
+Iteration 26490 / LogL: -42350.151 / Time: 92h:59m:30s (0h:2m:6s left)
+Iteration 26500 / LogL: -42338.055 / Time: 93h:3m:10s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.937
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26510 / LogL: -42316.045 / Time: 93h:6m:52s (0h:18m:58s left)
+Iteration 26520 / LogL: -42313.339 / Time: 93h:10m:32s (0h:16m:51s left)
+Iteration 26530 / LogL: -42305.427 / Time: 93h:14m:17s (0h:14m:45s left)
+Iteration 26540 / LogL: -42350.553 / Time: 93h:17m:56s (0h:12m:39s left)
+Iteration 26550 / LogL: -42302.061 / Time: 93h:21m:37s (0h:10m:32s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26560 / LogL: -42330.200 / Time: 93h:25m:18s (0h:8m:26s left)
+Iteration 26570 / LogL: -42332.041 / Time: 93h:28m:58s (0h:6m:19s left)
+Iteration 26580 / LogL: -42317.450 / Time: 93h:32m:39s (0h:4m:13s left)
+Iteration 26590 / LogL: -42346.998 / Time: 93h:36m:19s (0h:2m:6s left)
+Iteration 26600 / LogL: -42312.987 / Time: 93h:39m:58s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.937
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26610 / LogL: -42340.016 / Time: 93h:43m:40s (0h:19m:1s left)
+Iteration 26620 / LogL: -42336.627 / Time: 93h:47m:20s (0h:16m:54s left)
+Iteration 26630 / LogL: -42353.683 / Time: 93h:51m:1s (0h:14m:48s left)
+Iteration 26640 / LogL: -42319.560 / Time: 93h:54m:41s (0h:12m:41s left)
+Iteration 26650 / LogL: -42337.286 / Time: 93h:58m:22s (0h:10m:34s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26660 / LogL: -42320.956 / Time: 94h:2m:5s (0h:8m:27s left)
+Iteration 26670 / LogL: -42305.871 / Time: 94h:5m:45s (0h:6m:21s left)
+Iteration 26680 / LogL: -42362.118 / Time: 94h:9m:28s (0h:4m:14s left)
+Iteration 26690 / LogL: -42351.344 / Time: 94h:13m:13s (0h:2m:7s left)
+Iteration 26700 / LogL: -42327.733 / Time: 94h:16m:54s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.937
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26710 / LogL: -42306.746 / Time: 94h:20m:38s (0h:19m:4s left)
+Iteration 26720 / LogL: -42319.081 / Time: 94h:24m:21s (0h:16m:57s left)
+Iteration 26730 / LogL: -42338.715 / Time: 94h:28m:2s (0h:14m:50s left)
+Iteration 26740 / LogL: -42360.479 / Time: 94h:31m:43s (0h:12m:43s left)
+Iteration 26750 / LogL: -42318.773 / Time: 94h:35m:25s (0h:10m:36s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26760 / LogL: -42311.607 / Time: 94h:39m:9s (0h:8m:29s left)
+Iteration 26770 / LogL: -42299.713 / Time: 94h:42m:51s (0h:6m:22s left)
+Iteration 26780 / LogL: -42354.194 / Time: 94h:46m:32s (0h:4m:14s left)
+Iteration 26790 / LogL: -42353.486 / Time: 94h:50m:12s (0h:2m:7s left)
+Iteration 26800 / LogL: -42321.402 / Time: 94h:53m:54s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.936
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26810 / LogL: -42409.835 / Time: 94h:57m:37s (0h:19m:7s left)
+Iteration 26820 / LogL: -42314.343 / Time: 95h:1m:19s (0h:17m:0s left)
+Iteration 26830 / LogL: -42315.878 / Time: 95h:5m:0s (0h:14m:53s left)
+Iteration 26840 / LogL: -42372.904 / Time: 95h:8m:42s (0h:12m:45s left)
+Iteration 26850 / LogL: -42302.319 / Time: 95h:12m:25s (0h:10m:38s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26860 / LogL: -42329.427 / Time: 95h:16m:14s (0h:8m:30s left)
+Iteration 26870 / LogL: -42318.299 / Time: 95h:19m:56s (0h:6m:23s left)
+Iteration 26880 / LogL: -42307.936 / Time: 95h:23m:38s (0h:4m:15s left)
+Iteration 26890 / LogL: -42308.246 / Time: 95h:27m:22s (0h:2m:7s left)
+Iteration 26900 / LogL: -42324.138 / Time: 95h:31m:5s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.936
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 26910 / LogL: -42333.315 / Time: 95h:34m:50s (0h:19m:10s left)
+Iteration 26920 / LogL: -42459.404 / Time: 95h:38m:32s (0h:17m:3s left)
+Iteration 26930 / LogL: -42308.115 / Time: 95h:42m:17s (0h:14m:55s left)
+Iteration 26940 / LogL: -42305.931 / Time: 95h:46m:0s (0h:12m:47s left)
+Iteration 26950 / LogL: -42341.566 / Time: 95h:49m:43s (0h:10m:40s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 26960 / LogL: -42303.363 / Time: 95h:53m:28s (0h:8m:32s left)
+Iteration 26970 / LogL: -42327.547 / Time: 95h:57m:12s (0h:6m:24s left)
+Iteration 26980 / LogL: -42320.323 / Time: 96h:0m:55s (0h:4m:16s left)
+Iteration 26990 / LogL: -42328.462 / Time: 96h:4m:39s (0h:2m:8s left)
+Iteration 27000 / LogL: -42345.898 / Time: 96h:8m:23s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.936
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27010 / LogL: -42322.009 / Time: 96h:12m:8s (0h:19m:14s left)
+Iteration 27020 / LogL: -42342.282 / Time: 96h:15m:57s (0h:17m:6s left)
+Iteration 27030 / LogL: -42319.922 / Time: 96h:19m:40s (0h:14m:58s left)
+Iteration 27040 / LogL: -42365.368 / Time: 96h:23m:23s (0h:12m:50s left)
+Iteration 27050 / LogL: -42309.989 / Time: 96h:27m:6s (0h:10m:41s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27060 / LogL: -42318.335 / Time: 96h:30m:51s (0h:8m:33s left)
+Iteration 27070 / LogL: -42326.261 / Time: 96h:34m:34s (0h:6m:25s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27079: -42287.066
+Iteration 27080 / LogL: -42300.557 / Time: 96h:38m:18s (0h:21m:11s left)
+Iteration 27090 / LogL: -42312.035 / Time: 96h:42m:1s (0h:19m:3s left)
+Iteration 27100 / LogL: -42288.764 / Time: 96h:45m:44s (0h:16m:55s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.936
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27110 / LogL: -42310.021 / Time: 96h:49m:30s (0h:19m:17s left)
+Iteration 27120 / LogL: -42330.374 / Time: 96h:53m:15s (0h:17m:8s left)
+Iteration 27130 / LogL: -42304.064 / Time: 96h:56m:58s (0h:15m:0s left)
+Iteration 27140 / LogL: -42352.473 / Time: 97h:0m:42s (0h:12m:52s left)
+Iteration 27150 / LogL: -42390.280 / Time: 97h:4m:27s (0h:10m:43s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27160 / LogL: -42321.614 / Time: 97h:8m:14s (0h:8m:35s left)
+Iteration 27170 / LogL: -42294.403 / Time: 97h:11m:58s (0h:6m:26s left)
+Iteration 27180 / LogL: -42335.668 / Time: 97h:15m:49s (0h:4m:17s left)
+Iteration 27190 / LogL: -42372.141 / Time: 97h:19m:35s (0h:2m:8s left)
+Iteration 27200 / LogL: -42349.069 / Time: 97h:23m:21s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27210 / LogL: -42331.485 / Time: 97h:27m:7s (0h:19m:20s left)
+Iteration 27220 / LogL: -42342.383 / Time: 97h:30m:52s (0h:17m:11s left)
+Iteration 27230 / LogL: -42306.743 / Time: 97h:34m:36s (0h:15m:3s left)
+Iteration 27240 / LogL: -42334.697 / Time: 97h:38m:22s (0h:12m:54s left)
+Iteration 27250 / LogL: -42348.257 / Time: 97h:42m:23s (0h:10m:45s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27260 / LogL: -42342.264 / Time: 97h:46m:32s (0h:8m:36s left)
+Iteration 27270 / LogL: -42329.656 / Time: 97h:50m:36s (0h:6m:27s left)
+Iteration 27280 / LogL: -42340.616 / Time: 97h:54m:45s (0h:4m:18s left)
+Iteration 27290 / LogL: -42338.356 / Time: 97h:58m:42s (0h:2m:9s left)
+Iteration 27300 / LogL: -42305.920 / Time: 98h:2m:40s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27310 / LogL: -42362.558 / Time: 98h:6m:40s (0h:19m:24s left)
+Iteration 27320 / LogL: -42327.881 / Time: 98h:10m:41s (0h:17m:15s left)
+Iteration 27330 / LogL: -42357.941 / Time: 98h:14m:46s (0h:15m:5s left)
+Iteration 27340 / LogL: -42346.933 / Time: 98h:18m:47s (0h:12m:56s left)
+Iteration 27350 / LogL: -42323.984 / Time: 98h:22m:46s (0h:10m:47s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27360 / LogL: -42360.680 / Time: 98h:26m:41s (0h:8m:38s left)
+Iteration 27370 / LogL: -42298.338 / Time: 98h:30m:34s (0h:6m:28s left)
+Iteration 27380 / LogL: -42307.687 / Time: 98h:34m:29s (0h:4m:19s left)
+Iteration 27390 / LogL: -42316.474 / Time: 98h:38m:22s (0h:2m:9s left)
+Iteration 27400 / LogL: -42324.292 / Time: 98h:42m:14s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27410 / LogL: -42325.984 / Time: 98h:46m:4s (0h:19m:27s left)
+Iteration 27420 / LogL: -42328.923 / Time: 98h:49m:53s (0h:17m:18s left)
+Iteration 27430 / LogL: -42312.610 / Time: 98h:53m:40s (0h:15m:8s left)
+Iteration 27440 / LogL: -42374.253 / Time: 98h:57m:28s (0h:12m:58s left)
+Iteration 27450 / LogL: -42321.753 / Time: 99h:1m:18s (0h:10m:49s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27460 / LogL: -42317.337 / Time: 99h:5m:9s (0h:8m:39s left)
+Iteration 27470 / LogL: -42294.876 / Time: 99h:8m:57s (0h:6m:29s left)
+Iteration 27480 / LogL: -42314.994 / Time: 99h:12m:47s (0h:4m:19s left)
+Iteration 27490 / LogL: -42296.611 / Time: 99h:16m:42s (0h:2m:10s left)
+Iteration 27500 / LogL: -42316.635 / Time: 99h:20m:31s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27510 / LogL: -42311.514 / Time: 99h:24m:23s (0h:19m:30s left)
+Iteration 27520 / LogL: -42336.396 / Time: 99h:28m:14s (0h:17m:21s left)
+Iteration 27530 / LogL: -42302.099 / Time: 99h:32m:3s (0h:15m:11s left)
+Iteration 27540 / LogL: -42344.060 / Time: 99h:35m:52s (0h:13m:1s left)
+Iteration 27550 / LogL: -42312.558 / Time: 99h:39m:44s (0h:10m:51s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27560 / LogL: -42305.255 / Time: 99h:43m:53s (0h:8m:41s left)
+Iteration 27570 / LogL: -42292.845 / Time: 99h:47m:58s (0h:6m:30s left)
+Iteration 27580 / LogL: -42332.961 / Time: 99h:52m:9s (0h:4m:20s left)
+Iteration 27590 / LogL: -42301.123 / Time: 99h:56m:13s (0h:2m:10s left)
+Iteration 27600 / LogL: -42307.305 / Time: 100h:0m:15s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27610 / LogL: -42412.932 / Time: 100h:4m:17s (0h:19m:34s left)
+Iteration 27620 / LogL: -42402.749 / Time: 100h:8m:19s (0h:17m:24s left)
+Iteration 27630 / LogL: -42310.231 / Time: 100h:12m:22s (0h:15m:13s left)
+Iteration 27640 / LogL: -42356.840 / Time: 100h:16m:30s (0h:13m:3s left)
+Iteration 27650 / LogL: -42325.400 / Time: 100h:20m:31s (0h:10m:53s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27660 / LogL: -42292.731 / Time: 100h:24m:34s (0h:8m:42s left)
+Iteration 27670 / LogL: -42342.251 / Time: 100h:28m:37s (0h:6m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27679: -42286.973
+Iteration 27680 / LogL: -42347.287 / Time: 100h:32m:39s (0h:21m:34s left)
+Iteration 27690 / LogL: -42338.553 / Time: 100h:36m:41s (0h:19m:24s left)
+Iteration 27700 / LogL: -42342.413 / Time: 100h:40m:45s (0h:17m:13s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27710 / LogL: -42352.745 / Time: 100h:44m:43s (0h:19m:38s left)
+Iteration 27720 / LogL: -42331.245 / Time: 100h:48m:42s (0h:17m:27s left)
+Iteration 27730 / LogL: -42317.473 / Time: 100h:52m:40s (0h:15m:16s left)
+Iteration 27740 / LogL: -42300.859 / Time: 100h:56m:37s (0h:13m:6s left)
+Iteration 27750 / LogL: -42325.855 / Time: 101h:0m:33s (0h:10m:55s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27760 / LogL: -42334.683 / Time: 101h:4m:36s (0h:8m:44s left)
+Iteration 27770 / LogL: -42361.632 / Time: 101h:8m:33s (0h:6m:33s left)
+Iteration 27780 / LogL: -42314.672 / Time: 101h:12m:29s (0h:4m:22s left)
+Iteration 27790 / LogL: -42304.679 / Time: 101h:16m:26s (0h:2m:11s left)
+Iteration 27800 / LogL: -42323.818 / Time: 101h:20m:21s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27810 / LogL: -42325.704 / Time: 101h:24m:19s (0h:19m:41s left)
+Iteration 27820 / LogL: -42309.913 / Time: 101h:28m:18s (0h:17m:30s left)
+Iteration 27830 / LogL: -42332.995 / Time: 101h:32m:16s (0h:15m:19s left)
+Iteration 27840 / LogL: -42302.374 / Time: 101h:36m:15s (0h:13m:8s left)
+Iteration 27850 / LogL: -42300.385 / Time: 101h:40m:13s (0h:10m:57s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27860 / LogL: -42293.648 / Time: 101h:44m:14s (0h:8m:45s left)
+Iteration 27870 / LogL: -42307.516 / Time: 101h:48m:11s (0h:6m:34s left)
+Iteration 27880 / LogL: -42317.875 / Time: 101h:52m:10s (0h:4m:23s left)
+Iteration 27890 / LogL: -42329.668 / Time: 101h:56m:8s (0h:2m:11s left)
+Iteration 27900 / LogL: -42309.610 / Time: 102h:0m:6s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42584.837
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.935
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 27910 / LogL: -42303.045 / Time: 102h:4m:4s (0h:19m:44s left)
+Iteration 27920 / LogL: -42326.227 / Time: 102h:8m:6s (0h:17m:33s left)
+Iteration 27930 / LogL: -42351.812 / Time: 102h:12m:2s (0h:15m:22s left)
+Iteration 27940 / LogL: -42345.261 / Time: 102h:16m:2s (0h:13m:10s left)
+Iteration 27950 / LogL: -42301.664 / Time: 102h:19m:54s (0h:10m:59s left)
+Log-likelihood cutoff on original alignment: -42584.837
+Iteration 27960 / LogL: -42349.967 / Time: 102h:23m:46s (0h:8m:47s left)
+Iteration 27970 / LogL: -42301.609 / Time: 102h:27m:37s (0h:6m:35s left)
+Iteration 27980 / LogL: -42336.822 / Time: 102h:31m:28s (0h:4m:23s left)
+Iteration 27990 / LogL: -42323.908 / Time: 102h:35m:18s (0h:2m:11s left)
+Iteration 28000 / LogL: -42379.284 / Time: 102h:39m:10s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.934
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28010 / LogL: -42323.738 / Time: 102h:43m:10s (0h:19m:48s left)
+Iteration 28020 / LogL: -42322.565 / Time: 102h:47m:12s (0h:17m:36s left)
+Iteration 28030 / LogL: -42313.843 / Time: 102h:51m:12s (0h:15m:24s left)
+Iteration 28040 / LogL: -42295.672 / Time: 102h:55m:9s (0h:13m:12s left)
+Iteration 28050 / LogL: -42322.580 / Time: 102h:59m:1s (0h:11m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28060 / LogL: -42310.277 / Time: 103h:2m:55s (0h:8m:48s left)
+Iteration 28070 / LogL: -42303.341 / Time: 103h:6m:46s (0h:6m:36s left)
+Iteration 28080 / LogL: -42321.774 / Time: 103h:10m:37s (0h:4m:24s left)
+Iteration 28090 / LogL: -42370.575 / Time: 103h:14m:34s (0h:2m:12s left)
+Iteration 28100 / LogL: -42314.705 / Time: 103h:18m:26s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28110 / LogL: -42355.990 / Time: 103h:22m:20s (0h:19m:51s left)
+Iteration 28120 / LogL: -42314.815 / Time: 103h:26m:13s (0h:17m:39s left)
+Iteration 28130 / LogL: -42378.946 / Time: 103h:30m:5s (0h:15m:27s left)
+Iteration 28140 / LogL: -42317.335 / Time: 103h:33m:56s (0h:13m:14s left)
+Iteration 28150 / LogL: -42304.216 / Time: 103h:37m:48s (0h:11m:2s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28160 / LogL: -42341.062 / Time: 103h:41m:42s (0h:8m:50s left)
+Iteration 28170 / LogL: -42306.749 / Time: 103h:45m:33s (0h:6m:37s left)
+Iteration 28180 / LogL: -42304.406 / Time: 103h:49m:25s (0h:4m:25s left)
+Iteration 28190 / LogL: -42335.428 / Time: 103h:53m:17s (0h:2m:12s left)
+Iteration 28200 / LogL: -42319.388 / Time: 103h:57m:9s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28210 / LogL: -42332.984 / Time: 104h:1m:2s (0h:19m:54s left)
+Iteration 28220 / LogL: -42357.013 / Time: 104h:4m:56s (0h:17m:42s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28230: -42286.933
+Iteration 28230 / LogL: -42286.933 / Time: 104h:8m:47s (0h:22m:8s left)
+Iteration 28240 / LogL: -42324.575 / Time: 104h:12m:40s (0h:19m:55s left)
+Iteration 28250 / LogL: -42303.661 / Time: 104h:16m:38s (0h:17m:43s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28260 / LogL: -42323.598 / Time: 104h:20m:32s (0h:15m:30s left)
+Iteration 28270 / LogL: -42332.892 / Time: 104h:24m:25s (0h:13m:17s left)
+Iteration 28280 / LogL: -42318.913 / Time: 104h:28m:17s (0h:11m:4s left)
+Iteration 28290 / LogL: -42326.706 / Time: 104h:32m:9s (0h:8m:52s left)
+Iteration 28300 / LogL: -42298.724 / Time: 104h:36m:2s (0h:6m:39s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28310 / LogL: -42315.670 / Time: 104h:39m:55s (0h:19m:57s left)
+Iteration 28320 / LogL: -42328.512 / Time: 104h:43m:47s (0h:17m:45s left)
+Iteration 28330 / LogL: -42342.597 / Time: 104h:47m:41s (0h:15m:32s left)
+Iteration 28340 / LogL: -42287.144 / Time: 104h:51m:36s (0h:13m:19s left)
+Iteration 28350 / LogL: -42327.692 / Time: 104h:55m:29s (0h:11m:6s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28360 / LogL: -42306.578 / Time: 104h:59m:24s (0h:8m:53s left)
+Iteration 28370 / LogL: -42321.309 / Time: 105h:3m:18s (0h:6m:39s left)
+Iteration 28380 / LogL: -42334.696 / Time: 105h:7m:11s (0h:4m:26s left)
+Iteration 28390 / LogL: -42313.714 / Time: 105h:11m:4s (0h:2m:13s left)
+Iteration 28400 / LogL: -42324.300 / Time: 105h:15m:4s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28410 / LogL: -42334.380 / Time: 105h:18m:59s (0h:20m:1s left)
+Iteration 28420 / LogL: -42310.450 / Time: 105h:22m:51s (0h:17m:47s left)
+Iteration 28430 / LogL: -42306.274 / Time: 105h:26m:44s (0h:15m:34s left)
+Iteration 28440 / LogL: -42356.107 / Time: 105h:30m:38s (0h:13m:21s left)
+Iteration 28450 / LogL: -42369.835 / Time: 105h:34m:31s (0h:11m:7s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28460 / LogL: -42366.566 / Time: 105h:38m:25s (0h:8m:54s left)
+Iteration 28470 / LogL: -42300.185 / Time: 105h:42m:17s (0h:6m:41s left)
+Iteration 28480 / LogL: -42305.391 / Time: 105h:46m:12s (0h:4m:27s left)
+Iteration 28490 / LogL: -42314.165 / Time: 105h:50m:6s (0h:2m:13s left)
+Iteration 28500 / LogL: -42321.196 / Time: 105h:53m:59s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28510 / LogL: -42305.257 / Time: 105h:57m:54s (0h:20m:4s left)
+Iteration 28520 / LogL: -42323.930 / Time: 106h:1m:47s (0h:17m:50s left)
+Iteration 28530 / LogL: -42328.104 / Time: 106h:5m:40s (0h:15m:37s left)
+Iteration 28540 / LogL: -42313.301 / Time: 106h:9m:36s (0h:13m:23s left)
+Iteration 28550 / LogL: -42331.065 / Time: 106h:13m:30s (0h:11m:9s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28560 / LogL: -42322.494 / Time: 106h:17m:32s (0h:8m:55s left)
+Iteration 28570 / LogL: -42293.174 / Time: 106h:21m:26s (0h:6m:42s left)
+Iteration 28580 / LogL: -42371.949 / Time: 106h:25m:21s (0h:4m:28s left)
+Iteration 28590 / LogL: -42368.850 / Time: 106h:29m:14s (0h:2m:14s left)
+Iteration 28600 / LogL: -42328.393 / Time: 106h:33m:9s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28610 / LogL: -42354.853 / Time: 106h:37m:7s (0h:20m:7s left)
+Iteration 28620 / LogL: -42394.946 / Time: 106h:41m:2s (0h:17m:53s left)
+Iteration 28630 / LogL: -42306.187 / Time: 106h:44m:57s (0h:15m:39s left)
+Iteration 28640 / LogL: -42325.949 / Time: 106h:48m:51s (0h:13m:25s left)
+Iteration 28650 / LogL: -42315.581 / Time: 106h:52m:45s (0h:11m:11s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28660 / LogL: -42297.523 / Time: 106h:56m:42s (0h:8m:57s left)
+Iteration 28670 / LogL: -42337.265 / Time: 107h:0m:38s (0h:6m:43s left)
+Iteration 28680 / LogL: -42300.988 / Time: 107h:4m:33s (0h:4m:28s left)
+Iteration 28690 / LogL: -42312.446 / Time: 107h:8m:27s (0h:2m:14s left)
+Iteration 28700 / LogL: -42331.302 / Time: 107h:12m:21s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28710 / LogL: -42306.028 / Time: 107h:16m:24s (0h:20m:10s left)
+Iteration 28720 / LogL: -42327.251 / Time: 107h:20m:19s (0h:17m:56s left)
+Iteration 28730 / LogL: -42362.036 / Time: 107h:24m:15s (0h:15m:42s left)
+Iteration 28740 / LogL: -42308.629 / Time: 107h:28m:11s (0h:13m:27s left)
+Iteration 28750 / LogL: -42330.038 / Time: 107h:32m:6s (0h:11m:13s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28760 / LogL: -42307.546 / Time: 107h:36m:5s (0h:8m:58s left)
+Iteration 28770 / LogL: -42330.153 / Time: 107h:40m:1s (0h:6m:44s left)
+Iteration 28780 / LogL: -42327.572 / Time: 107h:43m:57s (0h:4m:29s left)
+Iteration 28790 / LogL: -42332.135 / Time: 107h:47m:53s (0h:2m:14s left)
+Iteration 28800 / LogL: -42312.660 / Time: 107h:51m:48s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28810 / LogL: -42336.120 / Time: 107h:55m:46s (0h:20m:13s left)
+Iteration 28820 / LogL: -42311.517 / Time: 107h:59m:41s (0h:17m:59s left)
+Iteration 28830 / LogL: -42302.110 / Time: 108h:3m:36s (0h:15m:44s left)
+Iteration 28840 / LogL: -42328.059 / Time: 108h:7m:31s (0h:13m:29s left)
+Iteration 28850 / LogL: -42334.385 / Time: 108h:11m:27s (0h:11m:15s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28860 / LogL: -42346.078 / Time: 108h:15m:31s (0h:9m:0s left)
+Iteration 28870 / LogL: -42372.809 / Time: 108h:19m:26s (0h:6m:45s left)
+Iteration 28880 / LogL: -42353.888 / Time: 108h:23m:23s (0h:4m:30s left)
+Iteration 28890 / LogL: -42374.361 / Time: 108h:27m:19s (0h:2m:15s left)
+Iteration 28900 / LogL: -42304.001 / Time: 108h:31m:15s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 28910 / LogL: -42308.982 / Time: 108h:35m:13s (0h:20m:16s left)
+Iteration 28920 / LogL: -42309.756 / Time: 108h:39m:10s (0h:18m:2s left)
+Iteration 28930 / LogL: -42325.289 / Time: 108h:43m:8s (0h:15m:47s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28932: -42286.389
+Iteration 28940 / LogL: -42301.521 / Time: 108h:47m:6s (0h:20m:45s left)
+Iteration 28950 / LogL: -42309.046 / Time: 108h:51m:2s (0h:18m:29s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 28960 / LogL: -42315.240 / Time: 108h:54m:59s (0h:16m:14s left)
+Iteration 28970 / LogL: -42389.000 / Time: 108h:58m:57s (0h:13m:59s left)
+Iteration 28980 / LogL: -42315.699 / Time: 109h:2m:55s (0h:11m:44s left)
+Iteration 28990 / LogL: -42327.620 / Time: 109h:6m:51s (0h:9m:29s left)
+Iteration 29000 / LogL: -42315.398 / Time: 109h:10m:48s (0h:7m:13s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29010 / LogL: -42334.919 / Time: 109h:14m:47s (0h:20m:20s left)
+Iteration 29020 / LogL: -42314.933 / Time: 109h:18m:51s (0h:18m:4s left)
+Iteration 29030 / LogL: -42309.285 / Time: 109h:22m:48s (0h:15m:49s left)
+Iteration 29040 / LogL: -42317.947 / Time: 109h:26m:45s (0h:13m:34s left)
+Iteration 29050 / LogL: -42319.751 / Time: 109h:30m:42s (0h:11m:18s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29060 / LogL: -42365.304 / Time: 109h:34m:43s (0h:9m:3s left)
+Iteration 29070 / LogL: -42313.511 / Time: 109h:38m:41s (0h:6m:47s left)
+Iteration 29080 / LogL: -42387.913 / Time: 109h:42m:38s (0h:4m:31s left)
+Iteration 29090 / LogL: -42341.613 / Time: 109h:46m:36s (0h:2m:15s left)
+Iteration 29100 / LogL: -42312.651 / Time: 109h:50m:34s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 29104: -42285.980
+Iteration 29110 / LogL: -42299.635 / Time: 109h:54m:36s (0h:21m:17s left)
+Iteration 29120 / LogL: -42319.359 / Time: 109h:58m:35s (0h:19m:2s left)
+Iteration 29130 / LogL: -42308.345 / Time: 110h:2m:33s (0h:16m:46s left)
+Iteration 29140 / LogL: -42296.086 / Time: 110h:6m:30s (0h:14m:30s left)
+Iteration 29150 / LogL: -42347.616 / Time: 110h:10m:28s (0h:12m:14s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29160 / LogL: -42323.248 / Time: 110h:14m:30s (0h:9m:58s left)
+Iteration 29170 / LogL: -42395.121 / Time: 110h:18m:35s (0h:7m:42s left)
+Iteration 29180 / LogL: -42507.550 / Time: 110h:22m:33s (0h:5m:26s left)
+Iteration 29190 / LogL: -42301.274 / Time: 110h:26m:32s (0h:3m:10s left)
+Iteration 29200 / LogL: -42315.639 / Time: 110h:30m:31s (0h:0m:54s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29210 / LogL: -42351.181 / Time: 110h:34m:31s (0h:20m:26s left)
+Iteration 29220 / LogL: -42293.248 / Time: 110h:38m:29s (0h:18m:10s left)
+Iteration 29230 / LogL: -42353.583 / Time: 110h:42m:28s (0h:15m:54s left)
+Iteration 29240 / LogL: -42426.994 / Time: 110h:46m:26s (0h:13m:38s left)
+Iteration 29250 / LogL: -42330.653 / Time: 110h:50m:25s (0h:11m:22s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29260 / LogL: -42315.974 / Time: 110h:54m:25s (0h:9m:5s left)
+Iteration 29270 / LogL: -42340.987 / Time: 110h:58m:25s (0h:6m:49s left)
+Iteration 29280 / LogL: -42296.920 / Time: 111h:2m:23s (0h:4m:33s left)
+Iteration 29290 / LogL: -42330.763 / Time: 111h:6m:22s (0h:2m:16s left)
+Iteration 29300 / LogL: -42304.750 / Time: 111h:10m:22s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29310 / LogL: -42306.929 / Time: 111h:14m:22s (0h:20m:29s left)
+Iteration 29320 / LogL: -42385.327 / Time: 111h:18m:27s (0h:18m:13s left)
+Iteration 29330 / LogL: -42307.118 / Time: 111h:22m:26s (0h:15m:56s left)
+Iteration 29340 / LogL: -42320.889 / Time: 111h:26m:27s (0h:13m:40s left)
+Iteration 29350 / LogL: -42324.020 / Time: 111h:30m:27s (0h:11m:23s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29360 / LogL: -42290.655 / Time: 111h:34m:28s (0h:9m:7s left)
+Iteration 29370 / LogL: -42323.056 / Time: 111h:38m:27s (0h:6m:50s left)
+Iteration 29380 / LogL: -42337.767 / Time: 111h:42m:27s (0h:4m:33s left)
+Iteration 29390 / LogL: -42343.988 / Time: 111h:46m:27s (0h:2m:16s left)
+Iteration 29400 / LogL: -42319.332 / Time: 111h:50m:28s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29410 / LogL: -42301.775 / Time: 111h:54m:29s (0h:20m:32s left)
+Iteration 29420 / LogL: -42314.690 / Time: 111h:58m:30s (0h:18m:16s left)
+Iteration 29430 / LogL: -42366.975 / Time: 112h:2m:31s (0h:15m:59s left)
+Iteration 29440 / LogL: -42353.436 / Time: 112h:6m:34s (0h:13m:42s left)
+Iteration 29450 / LogL: -42318.482 / Time: 112h:10m:36s (0h:11m:25s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29460 / LogL: -42338.462 / Time: 112h:14m:39s (0h:9m:8s left)
+Iteration 29470 / LogL: -42328.230 / Time: 112h:18m:45s (0h:6m:51s left)
+Iteration 29480 / LogL: -42319.238 / Time: 112h:22m:45s (0h:4m:34s left)
+Iteration 29490 / LogL: -42311.241 / Time: 112h:26m:47s (0h:2m:17s left)
+Iteration 29500 / LogL: -42292.054 / Time: 112h:30m:49s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29510 / LogL: -42339.849 / Time: 112h:34m:51s (0h:20m:36s left)
+Iteration 29520 / LogL: -42332.031 / Time: 112h:38m:53s (0h:18m:19s left)
+Iteration 29530 / LogL: -42294.878 / Time: 112h:42m:54s (0h:16m:1s left)
+Iteration 29540 / LogL: -42326.694 / Time: 112h:46m:54s (0h:13m:44s left)
+Iteration 29550 / LogL: -42334.142 / Time: 112h:50m:54s (0h:11m:27s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29560 / LogL: -42397.800 / Time: 112h:54m:57s (0h:9m:10s left)
+Iteration 29570 / LogL: -42313.242 / Time: 112h:58m:57s (0h:6m:52s left)
+Iteration 29580 / LogL: -42304.699 / Time: 113h:2m:58s (0h:4m:35s left)
+Iteration 29590 / LogL: -42344.260 / Time: 113h:7m:0s (0h:2m:17s left)
+Iteration 29600 / LogL: -42300.299 / Time: 113h:11m:3s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29610 / LogL: -42299.187 / Time: 113h:15m:6s (0h:20m:39s left)
+Iteration 29620 / LogL: -42347.002 / Time: 113h:19m:12s (0h:18m:21s left)
+Iteration 29630 / LogL: -42326.079 / Time: 113h:23m:13s (0h:16m:4s left)
+Iteration 29640 / LogL: -42317.317 / Time: 113h:27m:16s (0h:13m:46s left)
+Iteration 29650 / LogL: -42305.278 / Time: 113h:31m:16s (0h:11m:29s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29660 / LogL: -42322.320 / Time: 113h:35m:20s (0h:9m:11s left)
+Iteration 29670 / LogL: -42366.273 / Time: 113h:39m:21s (0h:6m:53s left)
+Iteration 29680 / LogL: -42382.915 / Time: 113h:43m:24s (0h:4m:35s left)
+Iteration 29690 / LogL: -42319.063 / Time: 113h:47m:26s (0h:2m:17s left)
+Iteration 29700 / LogL: -42373.575 / Time: 113h:51m:28s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29710 / LogL: -42299.564 / Time: 113h:55m:33s (0h:20m:42s left)
+Iteration 29720 / LogL: -42350.558 / Time: 113h:59m:35s (0h:18m:24s left)
+Iteration 29730 / LogL: -42332.134 / Time: 114h:3m:37s (0h:16m:6s left)
+Iteration 29740 / LogL: -42331.078 / Time: 114h:7m:39s (0h:13m:48s left)
+Iteration 29750 / LogL: -42324.749 / Time: 114h:11m:41s (0h:11m:30s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29760 / LogL: -42355.679 / Time: 114h:15m:45s (0h:9m:12s left)
+Iteration 29770 / LogL: -42337.394 / Time: 114h:19m:54s (0h:6m:54s left)
+Iteration 29780 / LogL: -42344.965 / Time: 114h:23m:56s (0h:4m:36s left)
+Iteration 29790 / LogL: -42303.018 / Time: 114h:28m:0s (0h:2m:18s left)
+Iteration 29800 / LogL: -42313.284 / Time: 114h:32m:2s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29810 / LogL: -42302.836 / Time: 114h:36m:7s (0h:20m:45s left)
+Iteration 29820 / LogL: -42329.078 / Time: 114h:40m:11s (0h:18m:27s left)
+Iteration 29830 / LogL: -42327.875 / Time: 114h:44m:14s (0h:16m:9s left)
+Iteration 29840 / LogL: -42314.415 / Time: 114h:48m:19s (0h:13m:51s left)
+Iteration 29850 / LogL: -42349.926 / Time: 114h:52m:22s (0h:11m:32s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29860 / LogL: -42376.720 / Time: 114h:56m:28s (0h:9m:14s left)
+Iteration 29870 / LogL: -42287.967 / Time: 115h:0m:31s (0h:6m:55s left)
+Iteration 29880 / LogL: -42311.689 / Time: 115h:4m:34s (0h:4m:37s left)
+Iteration 29890 / LogL: -42331.484 / Time: 115h:8m:37s (0h:2m:18s left)
+Iteration 29900 / LogL: -42323.039 / Time: 115h:12m:43s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 29910 / LogL: -42299.583 / Time: 115h:16m:52s (0h:20m:48s left)
+Iteration 29920 / LogL: -42319.095 / Time: 115h:20m:56s (0h:18m:30s left)
+Iteration 29930 / LogL: -42424.808 / Time: 115h:24m:58s (0h:16m:11s left)
+Iteration 29940 / LogL: -42309.108 / Time: 115h:29m:2s (0h:13m:53s left)
+Iteration 29950 / LogL: -42367.149 / Time: 115h:33m:6s (0h:11m:34s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 29960 / LogL: -42305.983 / Time: 115h:37m:12s (0h:9m:15s left)
+Iteration 29970 / LogL: -42318.417 / Time: 115h:41m:17s (0h:6m:56s left)
+Iteration 29980 / LogL: -42382.553 / Time: 115h:45m:20s (0h:4m:38s left)
+Iteration 29990 / LogL: -42294.892 / Time: 115h:49m:25s (0h:2m:19s left)
+Iteration 30000 / LogL: -42322.506 / Time: 115h:53m:29s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 30010 / LogL: -42331.039 / Time: 115h:57m:33s (0h:20m:51s left)
+Iteration 30020 / LogL: -42310.073 / Time: 116h:1m:36s (0h:18m:33s left)
+Iteration 30030 / LogL: -42337.132 / Time: 116h:5m:41s (0h:16m:14s left)
+Iteration 30040 / LogL: -42308.159 / Time: 116h:9m:46s (0h:13m:55s left)
+Iteration 30050 / LogL: -42313.922 / Time: 116h:13m:50s (0h:11m:36s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 30060 / LogL: -42312.007 / Time: 116h:18m:3s (0h:9m:17s left)
+Iteration 30070 / LogL: -42308.856 / Time: 116h:22m:7s (0h:6m:57s left)
+Iteration 30080 / LogL: -42339.074 / Time: 116h:26m:12s (0h:4m:38s left)
+Iteration 30090 / LogL: -42313.199 / Time: 116h:30m:17s (0h:2m:19s left)
+Iteration 30100 / LogL: -42337.340 / Time: 116h:34m:22s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 30110 / LogL: -42302.712 / Time: 116h:38m:29s (0h:20m:55s left)
+Iteration 30120 / LogL: -42327.101 / Time: 116h:42m:35s (0h:18m:35s left)
+Iteration 30130 / LogL: -42297.515 / Time: 116h:46m:45s (0h:16m:16s left)
+Iteration 30140 / LogL: -42300.133 / Time: 116h:51m:11s (0h:13m:57s left)
+Iteration 30150 / LogL: -42314.152 / Time: 116h:55m:25s (0h:11m:38s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 30160 / LogL: -42372.352 / Time: 116h:59m:34s (0h:9m:18s left)
+Iteration 30170 / LogL: -42324.018 / Time: 117h:3m:40s (0h:6m:59s left)
+Iteration 30180 / LogL: -42295.863 / Time: 117h:7m:47s (0h:4m:39s left)
+Iteration 30190 / LogL: -42311.460 / Time: 117h:11m:52s (0h:2m:19s left)
+Iteration 30200 / LogL: -42302.454 / Time: 117h:15m:56s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -42571.291
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.931
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 30210 / LogL: -42320.619 / Time: 117h:20m:11s (0h:20m:58s left)
+Iteration 30220 / LogL: -42315.285 / Time: 117h:24m:17s (0h:18m:38s left)
+Iteration 30230 / LogL: -42337.419 / Time: 117h:28m:23s (0h:16m:19s left)
+Iteration 30240 / LogL: -42323.058 / Time: 117h:32m:28s (0h:13m:59s left)
+Iteration 30250 / LogL: -42312.296 / Time: 117h:36m:34s (0h:11m:39s left)
+Log-likelihood cutoff on original alignment: -42571.291
+Iteration 30260 / LogL: -42326.449 / Time: 117h:40m:43s (0h:9m:20s left)
+Iteration 30270 / LogL: -42351.336 / Time: 117h:44m:49s (0h:7m:0s left)
+Iteration 30280 / LogL: -42307.191 / Time: 117h:48m:58s (0h:4m:40s left)
+Iteration 30290 / LogL: -42301.226 / Time: 117h:53m:8s (0h:2m:20s left)
