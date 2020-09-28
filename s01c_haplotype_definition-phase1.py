@@ -133,7 +133,7 @@ import umap
 
 # train UMAP embedding with test data
 print("# UMAP")
-p1_mapper = umap.UMAP(n_neighbors=10, n_components=4).fit(p1_dat, np.array(p1_response))
+p1_mapper = umap.UMAP(n_neighbors=15, n_components=4, metric="hamming").fit(p1_dat, np.array(p1_response))
 p1_embedding = p1_mapper.embedding_
 
 # map test data with the trained embedder
