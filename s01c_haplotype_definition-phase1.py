@@ -47,13 +47,23 @@ p2_sampleh = pd.DataFrame(data = {
 })
 
 ## POPULATION DICTIONARIES
-# population dictionary
-poplist = ["AOcol","BFcol","BFgam","CIcol","CMgam","FRgam","GAgam","GHcol","GHgam","GM","GNcol","GNgam","GQgam","GW","KE","UGgam"]
-popdict = dict()
-popdict["all"] = []
-for pop in poplist:
-	popdict[pop]   = p2_samples[  p2_samples["population"] == pop ].index.tolist()
-	popdict["all"] = popdict["all"] + popdict[pop]
+# population dictionary for phase 2
+p2_poplist = ["BFcol","CIcol","GHcol","BFgam","GHgam","GNgam"]
+# p2_poplist = ["BFgam","GHgam","GNgam"]
+p2_popdich = dict()
+p2_popdich["all"] = []
+for pop in p2_poplist:
+	p2_popdich[pop]   = p2_sampleh[  p2_sampleh["population"] == pop ].index.tolist()
+	p2_popdich["all"] = p2_popdich["all"] + p2_popdich[pop]
+
+# population dictionary for phase 2
+p1_poplist = ["BFS","BFM","GNS"]
+# p1_poplist = ["BFS","GNS"]
+p1_popdich = dict()
+p1_popdich["all"] = []
+for pop in p1_poplist:
+	p1_popdich[pop]   = p1_sampleh[  p1_sampleh["population"] == pop ].index.tolist()
+	p1_popdich["all"] = p1_popdich["all"] + p1_popdich[pop]
 
 # load phase1 data
 p1_callset = h5py.File(p1_callset_fn,mode="r")
@@ -61,7 +71,7 @@ p1_genvars = allel.VariantChunkedTable( p1_callset[chrom]["variants"], names=["P
 p1_genotyp = allel.GenotypeChunkedArray(p1_callset[chrom]["calldata"]["genotype"])
 p1_samlist = p1_callset[chrom]["samples"][:].astype(str)
 # expand to haplotypes
-p1_samlilh = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p1_samlist ])))
+# p1_samlilh = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p1_samlist ])))
 
 # load phase2 data
 p2_callset = zarr.open(p2_callset_fn)
@@ -74,19 +84,44 @@ p2_samlilh = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p2_saml
 flanking_bp = 1e5
 p1_var_boo = ((p1_genvars["POS"][:] > ace_dups - flanking_bp) & (p1_genvars["POS"][:] < ace_dups)) | ((p1_genvars["POS"][:] > ace_dupe) & (p1_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p1_genvars["POS"] == ace_119S)
 p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups)) | ((p2_genvars["POS"][:] > ace_dupe) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
+
+# # ...or variants in the duplication?
+# flanking_bp = 1e4
+# p1_var_boo = ((p1_genvars["POS"][:] > ace_dups - flanking_bp) & (p1_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p1_genvars["POS"] == ace_119S)
+# p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
+
+# # ...or variants in the downstream region?
+# flanking_bp = 2e5
+# p1_var_boo = ((p1_genvars["POS"][:] > ace_dupe) & (p1_genvars["POS"][:] < ace_dupe + flanking_bp )) | (p1_genvars["POS"] == ace_119S)
+# p2_var_boo = ((p2_genvars["POS"][:] > ace_dupe) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp )) | (p2_genvars["POS"] == ace_119S)
+
+# # ...or variants in the upstream region?
+# flanking_bp = 1e5
+# p1_var_boo = ((p1_genvars["POS"][:] > ace_dups - flanking_bp) & (p1_genvars["POS"][:] < ace_dups )) | (p1_genvars["POS"] == ace_119S)
+# p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups )) | (p2_genvars["POS"] == ace_119S)
+
+# compress
 p1_genvars_sub = p1_genvars[:].compress(p1_var_boo)
 p2_genvars_sub = p2_genvars[:].compress(p2_var_boo)
 
 # expand to haplotyes
-p1_genotyp_sub = p1_genotyp.compress(p1_var_boo)
+p1_genotyp_sub = p1_genotyp.compress(p1_var_boo, axis=0)
 p1_haploty_sub = p1_genotyp_sub.to_haplotypes()
-p2_genotyp_sub = p2_genotyp.compress(p2_var_boo)
+p2_genotyp_sub = p2_genotyp.compress(p2_var_boo, axis=0)
 p2_haploty_sub = p2_genotyp_sub.to_haplotypes()
 
-# get segregating from phase 2
-p2_hapalco_sub = p2_haploty_sub.count_alleles()
-p2_is_seg = p2_hapalco_sub.is_segregating()
-p2_haploty_sub_seg = p2_haploty_sub.compress(p2_is_seg, axis=0)
+
+# restrict to populations of interest
+p1_pop_ixs = p1_popdich["all"]
+p2_pop_ixs = p2_popdich["all"]
+
+p1_haploty_sub = np.take(a=p1_haploty_sub, indices = p1_pop_ixs, axis=1)
+p2_haploty_sub = np.take(a=p2_haploty_sub, indices = p2_pop_ixs, axis=1)
+
+# # get segregating from phase 2
+# p2_hapalco_sub = p2_haploty_sub.count_alleles()
+# p2_is_seg = p2_hapalco_sub.is_segregating()
+# p2_haploty_sub_seg = p2_haploty_sub.compress(p2_is_seg, axis=0)
 
 # # find problem haplotyes
 # p2_haps_from_samples_with_mut = p2_sampleh[p2_sampleh["genotype"] != "wt"]["ox_code"].values
@@ -99,12 +134,12 @@ p1_focal_snp_ref = p1_genvars_sub["REF"][p1_focal_snp_ix].astype(str)
 
 # lists of p1 haplotypes with REF and ALT alleles
 p1_haps_with_alt_ix = np.where(p1_haploty_sub[p1_focal_snp_ix,] == 1)[0]
-p1_haps_with_alt = p1_samlilh[p1_haps_with_alt_ix]
-p1_haps_with_ref_ix = np.where(p1_haploty_sub[p1_focal_snp_ix,] == 0)[0]
-p1_haps_with_ref = p1_samlilh[p1_haps_with_ref_ix]
+# p1_haps_with_alt = p1_samlilh[p1_haps_with_alt_ix]
+# p1_haps_with_ref_ix = np.where(p1_haploty_sub[p1_focal_snp_ix,] == 0)[0]
+# p1_haps_with_ref = p1_samlilh[p1_haps_with_ref_ix]
 
 # p1 response array
-p1_response = np.zeros(shape=p1_samlilh.shape).astype(int)
+p1_response = np.zeros(shape=len(p1_popdich["all"])).astype(int)
 p1_response[ p1_haps_with_alt_ix ] = 1
 np.unique(p1_response, return_counts=True)
 
@@ -133,7 +168,8 @@ import umap
 
 # train UMAP embedding with test data
 print("# UMAP")
-p1_mapper = umap.UMAP(n_neighbors=15, n_components=4, metric="hamming").fit(p1_dat, np.array(p1_response))
+# p1_mapper = umap.UMAP(n_neighbors=20, n_components=2, metric="hamming").fit(p1_dat, np.array(p1_response))
+p1_mapper = umap.UMAP(n_neighbors=10, n_components=2, metric="hamming", target_weight=1.0).fit(p1_dat, np.array(p1_response))
 p1_embedding = p1_mapper.embedding_
 
 # map test data with the trained embedder
@@ -155,7 +191,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # train decision tree
 print("# Decision tree")
-dtc = DecisionTreeClassifier(max_depth=10, min_samples_split=10, class_weight="balanced")
+dtc = DecisionTreeClassifier(max_depth=None, min_samples_split=10, class_weight="balanced", criterion="entropy")
 dtc.fit(p1_embedding, p1_response)
 p2_dtc_prediction = dtc.predict(p2_embedding)
 
@@ -169,7 +205,7 @@ print(np.unique(p2_dtc_prediction, return_counts=True))
 
 # try the same with a more complex random forest
 print("# Random forest")
-rfc = RandomForestClassifier(max_depth=10, min_samples_split=10, n_estimators=100, class_weight="balanced", bootstrap=False)
+rfc = RandomForestClassifier(max_depth=None, min_samples_split=10, n_estimators=100, class_weight="balanced", bootstrap=True, criterion="entropy")
 rfc.fit(p1_embedding, p1_response)
 p2_rfc_prediction = rfc.predict(p2_embedding)
 
@@ -180,11 +216,38 @@ print(classification_report(p1_response, rfc.predict(p1_embedding)))
 print("# prediction counts")
 print(np.unique(p2_rfc_prediction, return_counts=True))
 
-# store UMAP coordinates
+# # try a random forest on the original data (prone to over-fitting)
+# print("# Random forest on original data")
+# rfcd = RandomForestClassifier(max_depth=None, min_samples_split=10, n_estimators=100, class_weight="balanced", bootstrap=True, criterion="entropy")
+# rfcd.fit(p1_dat, p1_response)
+# p2_rfcd_prediction = rfcd.predict(p2_dat)
+
+# print("# accuracy score =", accuracy_score(p1_response, rfcd.predict(p1_dat)))
+# print("# confusion matrix")
+# print(confusion_matrix(p1_response, rfcd.predict(p1_dat)))
+# print(classification_report(p1_response, rfcd.predict(p1_dat)))
+# print("# prediction counts")
+# print(np.unique(p2_rfcd_prediction, return_counts=True))
+
+# store UMAP-based predictions
 p2_prediction = pd.DataFrame()
 p2_prediction["ox_code"] = p2_samlilh
-p2_prediction["p2_dtc_prediction"] = p2_dtc_prediction
-p2_prediction["p2_rfc_prediction"] = p2_rfc_prediction
+p2_prediction["p2_dtc_prediction"] = 0
+p2_prediction["p2_dtc_prediction"].loc[p2_pop_ixs] = p2_dtc_prediction
+p2_prediction["p2_rfc_prediction"] = 0
+p2_prediction["p2_rfc_prediction"].loc[p2_pop_ixs] = p2_rfc_prediction
+
+# add p2 embeddings
+for i in range(p2_embedding.shape[1]):
+	p2_prediction["p2_umap_%i" % i] = np.inf
+	p2_prediction["p2_umap_%i" % i].loc[p2_pop_ixs] = p2_embedding[:,i]
+
+# print
+p2_prediction.to_csv("%s/umap_classification.csv" % (results_fo), index=False, sep="\t")
+
+
+# p2_prediction["p2_rfc_prediction"] = p2_rfc_prediction
+# p2_prediction["p2_rfc_prediction_from_vars"] = p2_rfcd_prediction
 
 # # add phase1 calls
 # # MEANINGLESS BECAUSE PHASING IS INDEPENDENT AND THEREFORE ab LABELS CANNOT BE COMPARED
@@ -192,11 +255,7 @@ p2_prediction["p2_rfc_prediction"] = p2_rfc_prediction
 # p2_prediction["p1_calls"] [ np.isin(p2_prediction["ox_code"] , p1_haps_with_ref) ] = 0
 # p2_prediction["p1_calls"] [ np.isin(p2_prediction["ox_code"] , p1_haps_with_alt) ] = 1
 
-# add p2 embeddings
-for i in range(p2_embedding.shape[1]):
-	p2_prediction["p2_umap_%i" % i] = p2_embedding[:,i]
-
-p2_prediction.to_csv("%s/umap_classification.csv" % (results_fo), index=False, sep="\t")
+# p2_prediction.to_csv("%s/umap_classification.csv" % (results_fo), index=False, sep="\t")
 
 
 # # subset p2 to keep only haplotypes from 
