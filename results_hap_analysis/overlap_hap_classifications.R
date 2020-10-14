@@ -10,7 +10,7 @@ c_umap$ox_code_sample = stringr::str_replace(c_umap$ox_code, pattern = "[a|b]$",
 # get lists of haps
 c_umap_280S = c_umap[c_umap$p2_dtc_prediction == 1,"ox_code"]
 c_umap_280S = c_umap[c_umap$p2_rfc_prediction == 1,"ox_code"]
-# c_umap_280S = c_umap[c_umap$p2_umap_0 < -12 & c_umap$p2_umap_1 < 0 ,"ox_code"]
+c_umap_280S = c_umap[c_umap$p2_umap_0 >6 & c_umap$p2_umap_1 >20 & c_umap$p2_umap_1 < 40 ,"ox_code"]
 
 for (ldi in c("out_Ace1.Hapnet_mst_var_3465693_ALT.haps.list",
               "out_Ace1.Hapnet_mst_var_3469441_ALT.haps.list",

@@ -38,9 +38,13 @@ ace_dupe  = 3639600 # end duplication
 p2_samples = pd.read_csv(p2_metasam_fn, sep='\t')
 p1_sampleh = pd.read_csv(p1_metasam_fn, sep='\t')
 
+# samples with mutation presence
+sample_119S_list = p2_samples[p2_samples["119Sgen"] == "119S"]["ox_code"].values
+
 # sample: haplotypes
 p2_sampleh = pd.DataFrame(data = {
 	"ox_code" : np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p2_samples["ox_code"] ]))),
+	"ox_code_sam" : np.array(list(itertools.chain(*[[s , s ] for s in p2_samples["ox_code"] ]))),
 	"population": np.array(list(itertools.chain(*[[s , s] for s in p2_samples["population"] ]))),
 	"phenotype": np.array(list(itertools.chain(*[[s , s] for s in p2_samples["phenotype"] ]))),
 	"genotype": np.array(list(itertools.chain(*[[s , s] for s in p2_samples["119Sgen"] ])))
@@ -81,7 +85,7 @@ p2_samlist = p2_callset[chrom]["samples"][:].astype(str)
 p2_samlilh = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p2_samlist ])))
 
 # compress to haplotypes around duplication
-flanking_bp = 1e5
+flanking_bp = 1e4
 p1_var_boo = ((p1_genvars["POS"][:] > ace_dups - flanking_bp) & (p1_genvars["POS"][:] < ace_dups)) | ((p1_genvars["POS"][:] > ace_dupe) & (p1_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p1_genvars["POS"] == ace_119S)
 p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups)) | ((p2_genvars["POS"][:] > ace_dupe) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
 
@@ -112,11 +116,15 @@ p2_haploty_sub = p2_genotyp_sub.to_haplotypes()
 
 
 # restrict to populations of interest
-p1_pop_ixs = p1_popdich["all"]
-p2_pop_ixs = p2_popdich["all"]
+p1_sam_ixs = p1_popdich["all"]
+p2_sam_ixs = p2_popdich["all"]
 
-p1_haploty_sub = np.take(a=p1_haploty_sub, indices = p1_pop_ixs, axis=1)
-p2_haploty_sub = np.take(a=p2_haploty_sub, indices = p2_pop_ixs, axis=1)
+# restrict to samples of interest
+p1_sam_ixs = np.where(np.isin(p1_sampleh["ox_code"], sample_119S_list))[0]
+p2_sam_ixs = np.where(np.isin(p2_sampleh["ox_code_sam"], sample_119S_list))[0]
+
+p1_haploty_sub = np.take(a=p1_haploty_sub, indices = p1_sam_ixs, axis=1)
+p2_haploty_sub = np.take(a=p2_haploty_sub, indices = p2_sam_ixs, axis=1)
 
 # # get segregating from phase 2
 # p2_hapalco_sub = p2_haploty_sub.count_alleles()
@@ -139,7 +147,7 @@ p1_haps_with_alt_ix = np.where(p1_haploty_sub[p1_focal_snp_ix,] == 1)[0]
 # p1_haps_with_ref = p1_samlilh[p1_haps_with_ref_ix]
 
 # p1 response array
-p1_response = np.zeros(shape=len(p1_popdich["all"])).astype(int)
+p1_response = np.zeros(shape=p1_haploty_sub.shape[1]).astype(int)
 p1_response[ p1_haps_with_alt_ix ] = 1
 np.unique(p1_response, return_counts=True)
 
@@ -157,11 +165,9 @@ p2m_haploty_sub = p2_haploty_sub.compress(p2_in_p1_boo)
 
 # p1 train data
 p1_dat = np.transpose(p1m_haploty_sub)
-p1_dat.shape
 
 # p2 problem array
 p2_dat = np.transpose(p2m_haploty_sub)
-p2_dat.shape
 
 # supervised learning UMAP
 import umap
@@ -233,14 +239,14 @@ print(np.unique(p2_rfc_prediction, return_counts=True))
 p2_prediction = pd.DataFrame()
 p2_prediction["ox_code"] = p2_samlilh
 p2_prediction["p2_dtc_prediction"] = 0
-p2_prediction["p2_dtc_prediction"].loc[p2_pop_ixs] = p2_dtc_prediction
+p2_prediction["p2_dtc_prediction"].loc[p2_sam_ixs] = p2_dtc_prediction
 p2_prediction["p2_rfc_prediction"] = 0
-p2_prediction["p2_rfc_prediction"].loc[p2_pop_ixs] = p2_rfc_prediction
+p2_prediction["p2_rfc_prediction"].loc[p2_sam_ixs] = p2_rfc_prediction
 
 # add p2 embeddings
 for i in range(p2_embedding.shape[1]):
 	p2_prediction["p2_umap_%i" % i] = np.inf
-	p2_prediction["p2_umap_%i" % i].loc[p2_pop_ixs] = p2_embedding[:,i]
+	p2_prediction["p2_umap_%i" % i].loc[p2_sam_ixs] = p2_embedding[:,i]
 
 # print
 p2_prediction.to_csv("%s/umap_classification.csv" % (results_fo), index=False, sep="\t")
