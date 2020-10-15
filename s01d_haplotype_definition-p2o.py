@@ -75,12 +75,12 @@ p2_samlist = p2_callset[chrom]["samples"][:].astype(str)
 p2_samlilh = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p2_samlist ])))
 
 # compress to haplotypes around duplication
-# flanking_bp = 1e4
-# p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups + flanking_bp)) | ((p2_genvars["POS"][:] > ace_dupe - flanking_bp) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
+flanking_bp = 1e4
+p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups + flanking_bp)) | ((p2_genvars["POS"][:] > ace_dupe - flanking_bp) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
 
 # # ...or variants in the duplication?
-flanking_bp = 0
-p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
+# flanking_bp = 0
+# p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
 
 # ...or variants in the downstream region?
 # flanking_bp = 1e4
@@ -137,7 +137,7 @@ for i in range(p2_haploty_sub.shape[1]):
 	arr_prob_puwt = np.transpose(np.vstack((np.transpose(p2_genotyp_purewt_nalt_bin), p2_haploty_sub[:,i] )))
 	out_pairdist = allel.pairwise_distance(arr_prob_puwt, metric="cityblock")
 	out_pairdisq =  scipy.spatial.distance.squareform(out_pairdist)
-	dis_to_purewt_r[i] = np.mean(out_pairdisq[-1][:-1])
+	dis_to_purewt_r[i] = np.min(out_pairdisq[-1][:-1])
 
 
 quantile = .05
