@@ -118,6 +118,8 @@ p2_genotyp_purewt_vect = np.sum(p2_genotyp_purewt_nalt>0, axis=1)
 p2_genotyp_purewt_vect = (np.sum(p2_genotyp_purewt_nalt>0, axis=1) > 0) * 1
 
 
+#### TRY DIVERGENCE
+
 #### TRY DISTANCE
 
 # out_purewt_dxy = allel.pairwise_dxy(pos=p2_genvars_sub["POS"], gac=p2_genotyp_purewt.to_allele_counts())
