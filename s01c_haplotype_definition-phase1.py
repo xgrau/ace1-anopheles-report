@@ -85,9 +85,9 @@ p2_samlist = p2_callset[chrom]["samples"][:].astype(str)
 p2_samlilh = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in p2_samlist ])))
 
 # compress to haplotypes around duplication
-flanking_bp = 1e4
-p1_var_boo = ((p1_genvars["POS"][:] > ace_dups - flanking_bp) & (p1_genvars["POS"][:] < ace_dups)) | ((p1_genvars["POS"][:] > ace_dupe) & (p1_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p1_genvars["POS"] == ace_119S)
-p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups)) | ((p2_genvars["POS"][:] > ace_dupe) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
+flanking_bp = 1e3
+p1_var_boo = ((p1_genvars["POS"][:] > ace_dups - flanking_bp) & (p1_genvars["POS"][:] < ace_dups + flanking_bp)) | ((p1_genvars["POS"][:] > ace_dupe - flanking_bp) & (p1_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p1_genvars["POS"] == ace_119S)
+p2_var_boo = ((p2_genvars["POS"][:] > ace_dups - flanking_bp) & (p2_genvars["POS"][:] < ace_dups + flanking_bp)) | ((p2_genvars["POS"][:] > ace_dupe - flanking_bp) & (p2_genvars["POS"][:] < ace_dupe + flanking_bp)) | (p2_genvars["POS"] == ace_119S)
 
 # # ...or variants in the duplication?
 # flanking_bp = 1e4
@@ -222,18 +222,18 @@ print(classification_report(p1_response, rfc.predict(p1_embedding)))
 print("# prediction counts")
 print(np.unique(p2_rfc_prediction, return_counts=True))
 
-# # try a random forest on the original data (prone to over-fitting)
-# print("# Random forest on original data")
-# rfcd = RandomForestClassifier(max_depth=None, min_samples_split=10, n_estimators=100, class_weight="balanced", bootstrap=True, criterion="entropy")
-# rfcd.fit(p1_dat, p1_response)
-# p2_rfcd_prediction = rfcd.predict(p2_dat)
+# try a random forest on the original data (prone to over-fitting)
+print("# Random forest on original data")
+rfcd = RandomForestClassifier(max_depth=None, min_samples_split=10, n_estimators=1000, class_weight="balanced", bootstrap=False, criterion="gini")
+rfcd.fit(p1_dat, p1_response)
+p2_rfcd_prediction = rfcd.predict(p2_dat)
 
-# print("# accuracy score =", accuracy_score(p1_response, rfcd.predict(p1_dat)))
-# print("# confusion matrix")
-# print(confusion_matrix(p1_response, rfcd.predict(p1_dat)))
-# print(classification_report(p1_response, rfcd.predict(p1_dat)))
-# print("# prediction counts")
-# print(np.unique(p2_rfcd_prediction, return_counts=True))
+print("# accuracy score =", accuracy_score(p1_response, rfcd.predict(p1_dat)))
+print("# confusion matrix")
+print(confusion_matrix(p1_response, rfcd.predict(p1_dat)))
+print(classification_report(p1_response, rfcd.predict(p1_dat)))
+print("# prediction counts")
+print(np.unique(p2_rfcd_prediction, return_counts=True))
 
 # store UMAP-based predictions
 p2_prediction = pd.DataFrame()
@@ -242,6 +242,8 @@ p2_prediction["p2_dtc_prediction"] = 0
 p2_prediction["p2_dtc_prediction"].loc[p2_sam_ixs] = p2_dtc_prediction
 p2_prediction["p2_rfc_prediction"] = 0
 p2_prediction["p2_rfc_prediction"].loc[p2_sam_ixs] = p2_rfc_prediction
+p2_prediction["p2_rfcd_prediction"] = 0
+p2_prediction["p2_rfcd_prediction"].loc[p2_sam_ixs] = p2_rfcd_prediction
 
 # add p2 embeddings
 for i in range(p2_embedding.shape[1]):
@@ -298,6 +300,8 @@ p2_prediction.to_csv("%s/umap_classification.csv" % (results_fo), index=False, s
 # cbar = plt.colorbar(boundaries=np.arange(4))
 # cbar.set_ticklabels([-1,0,1])
 # plt.show()
+
+
 
 
 

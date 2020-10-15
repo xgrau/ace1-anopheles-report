@@ -1,2329 +1,2329 @@
-ox_code	p2_dtc_prediction	p2_rfc_prediction	p2_umap_0	p2_umap_1
-AA0040-Ca	0	0	inf	inf
-AA0040-Cb	0	0	inf	inf
-AA0041-Ca	0	0	inf	inf
-AA0041-Cb	0	0	inf	inf
-AA0042-Ca	0	0	inf	inf
-AA0042-Cb	0	0	inf	inf
-AA0043-Ca	0	0	inf	inf
-AA0043-Cb	0	0	inf	inf
-AA0044-Ca	0	0	inf	inf
-AA0044-Cb	0	0	inf	inf
-AA0048-Ca	0	0	-4.565323829650879	15.184865951538086
-AA0048-Cb	0	0	-6.441573619842529	16.19617462158203
-AA0049-Ca	0	0	-4.409407138824463	15.016094207763672
-AA0049-Cb	0	0	-4.526615619659424	14.909490585327148
-AA0050-Ca	0	0	-5.9168171882629395	16.776134490966797
-AA0050-Cb	0	0	-6.069239139556885	16.532470703125
-AA0051-Ca	0	0	inf	inf
-AA0051-Cb	0	0	inf	inf
-AA0052-Ca	0	0	inf	inf
-AA0052-Cb	0	0	inf	inf
-AA0053-Ca	0	0	inf	inf
-AA0053-Cb	0	0	inf	inf
-AA0054-Ca	0	0	inf	inf
-AA0054-Cb	0	0	inf	inf
-AA0055-Ca	0	0	inf	inf
-AA0055-Cb	0	0	inf	inf
-AA0056-Ca	0	0	inf	inf
-AA0056-Cb	0	0	inf	inf
-AA0060-Ca	0	0	-4.520584583282471	16.25608253479004
-AA0060-Cb	0	0	-6.192646503448486	16.39065170288086
-AA0061-Ca	0	0	-6.221160888671875	16.583349227905273
-AA0061-Cb	0	0	-5.930713176727295	16.8143310546875
-AA0063-Ca	0	0	inf	inf
-AA0063-Cb	0	0	inf	inf
-AA0064-Ca	0	0	inf	inf
-AA0064-Cb	0	0	inf	inf
-AA0066-Ca	0	0	inf	inf
-AA0066-Cb	0	0	inf	inf
-AA0067-Ca	0	0	inf	inf
-AA0067-Cb	0	0	inf	inf
-AA0068-Ca	0	0	inf	inf
-AA0068-Cb	0	0	inf	inf
-AA0072-Ca	0	0	-2.6859755516052246	15.21777629852295
-AA0072-Cb	0	0	-4.578005790710449	15.270480155944824
-AA0073-Ca	1	1	4.471002578735352	12.209248542785645
-AA0073-Cb	0	0	-5.978331089019775	16.644672393798828
-AA0074-Ca	0	0	inf	inf
-AA0074-Cb	0	0	inf	inf
-AA0075-Ca	0	0	inf	inf
-AA0075-Cb	0	0	inf	inf
-AA0076-Ca	0	0	inf	inf
-AA0076-Cb	0	0	inf	inf
-AA0077-Ca	0	0	inf	inf
-AA0077-Cb	0	0	inf	inf
-AA0080-Ca	0	0	inf	inf
-AA0080-Cb	0	0	inf	inf
-AA0084-Ca	0	0	-6.319957256317139	16.2824649810791
-AA0084-Cb	0	0	-6.101080894470215	16.62419891357422
-AA0085-Ca	0	0	-2.652282238006592	14.897730827331543
-AA0085-Cb	0	0	-6.120708465576172	16.64706802368164
-AA0086-Ca	0	0	inf	inf
-AA0086-Cb	0	0	inf	inf
-AA0087-Ca	0	0	inf	inf
-AA0087-Cb	0	0	inf	inf
-AA0088-Ca	0	0	inf	inf
-AA0088-Cb	0	0	inf	inf
-AA0089-Ca	0	0	inf	inf
-AA0089-Cb	0	0	inf	inf
-AA0090-Ca	0	0	inf	inf
-AA0090-Cb	0	0	inf	inf
-AA0091-Ca	0	0	inf	inf
-AA0091-Cb	0	0	inf	inf
-AA0096-Ca	0	0	-2.7968389987945557	14.820832252502441
-AA0096-Cb	0	0	-6.048079490661621	16.64006805419922
-AA0097-Ca	1	1	4.317439556121826	12.997234344482422
-AA0097-Cb	0	0	-1.9310840368270874	14.530585289001465
-AA0098-Ca	0	0	-1.5724334716796875	14.61799144744873
-AA0098-Cb	1	0	4.238071918487549	12.491716384887695
-AA0099-Ca	0	0	inf	inf
-AA0099-Cb	0	0	inf	inf
-AA0100-Ca	0	0	inf	inf
-AA0100-Cb	0	0	inf	inf
-AA0101-Ca	0	0	inf	inf
-AA0101-Cb	0	0	inf	inf
-AA0102-Ca	0	0	inf	inf
-AA0102-Cb	0	0	inf	inf
-AA0103-Ca	0	0	inf	inf
-AA0103-Cb	0	0	inf	inf
-AA0104-Ca	0	0	inf	inf
-AA0104-Cb	0	0	inf	inf
-AA0107-Ca	0	0	inf	inf
-AA0107-Cb	0	0	inf	inf
-AA0108-Ca	0	0	-6.193453788757324	16.558385848999023
-AA0108-Cb	0	0	-6.36618709564209	16.348920822143555
-AA0109-Ca	0	0	inf	inf
-AA0109-Cb	0	0	inf	inf
-AA0110-Ca	0	0	inf	inf
-AA0110-Cb	0	0	inf	inf
-AA0111-Ca	0	0	inf	inf
-AA0111-Cb	0	0	inf	inf
-AA0113-Ca	0	0	inf	inf
-AA0113-Cb	0	0	inf	inf
-AA0114-Ca	0	0	inf	inf
-AA0114-Cb	0	0	inf	inf
-AA0115-Ca	0	0	inf	inf
-AA0115-Cb	0	0	inf	inf
-AA0116-Ca	0	0	inf	inf
-AA0116-Cb	0	0	inf	inf
-AA0122-Ca	0	0	inf	inf
-AA0122-Cb	0	0	inf	inf
-AA0123-Ca	0	0	inf	inf
-AA0123-Cb	0	0	inf	inf
-AA0124-Ca	0	0	inf	inf
-AA0124-Cb	0	0	inf	inf
-AA0125-Ca	0	0	inf	inf
-AA0125-Cb	0	0	inf	inf
-AA0127-Ca	0	0	inf	inf
-AA0127-Cb	0	0	inf	inf
-AA0132-Ca	0	0	-6.360707759857178	16.36870765686035
-AA0132-Cb	0	0	-4.7676682472229	16.590993881225586
-AA0133-Ca	0	0	-4.476398468017578	15.230520248413086
-AA0133-Cb	0	0	-2.7226195335388184	15.040135383605957
-AA0134-Ca	0	0	inf	inf
-AA0134-Cb	0	0	inf	inf
-AA0135-Ca	0	0	inf	inf
-AA0135-Cb	0	0	inf	inf
-AA0136-Ca	0	0	inf	inf
-AA0136-Cb	0	0	inf	inf
-AA0139-Ca	0	0	inf	inf
-AA0139-Cb	0	0	inf	inf
-AA0140-Ca	0	0	-2.6238434314727783	14.771977424621582
-AA0140-Cb	1	0	4.211225986480713	12.633549690246582
-AA0141-Ca	1	1	5.326150417327881	12.195948600769043
-AA0141-Cb	0	0	-5.022371768951416	16.67450523376465
-AB0085-Ca	0	0	inf	inf
-AB0085-Cb	0	0	inf	inf
-AB0087-Ca	0	0	inf	inf
-AB0087-Cb	0	0	inf	inf
-AB0088-Ca	0	0	inf	inf
-AB0088-Cb	0	0	inf	inf
-AB0089-Ca	0	0	inf	inf
-AB0089-Cb	0	0	inf	inf
-AB0090-Ca	0	0	inf	inf
-AB0090-Cb	0	0	inf	inf
-AB0091-Ca	0	0	inf	inf
-AB0091-Cb	0	0	inf	inf
-AB0092-Ca	0	0	inf	inf
-AB0092-Cb	0	0	inf	inf
-AB0094-Ca	0	0	inf	inf
-AB0094-Cb	0	0	inf	inf
-AB0095-Ca	0	0	inf	inf
-AB0095-Cb	0	0	inf	inf
-AB0097-Ca	0	0	inf	inf
-AB0097-Cb	0	0	inf	inf
-AB0098-Ca	0	0	inf	inf
-AB0098-Cb	0	0	inf	inf
-AB0099-Ca	0	0	inf	inf
-AB0099-Cb	0	0	inf	inf
-AB0100-Ca	0	0	inf	inf
-AB0100-Cb	0	0	inf	inf
-AB0101-Ca	0	0	1.9238543510437012	13.332154273986816
-AB0101-Cb	0	0	-5.0181050300598145	16.835920333862305
-AB0103-Ca	0	0	inf	inf
-AB0103-Cb	0	0	inf	inf
-AB0104-Ca	0	0	inf	inf
-AB0104-Cb	0	0	inf	inf
-AB0108-Ca	0	0	inf	inf
-AB0108-Cb	0	0	inf	inf
-AB0109-Ca	0	0	inf	inf
-AB0109-Cb	0	0	inf	inf
-AB0110-Ca	0	0	inf	inf
-AB0110-Cb	0	0	inf	inf
-AB0111-Ca	0	0	inf	inf
-AB0111-Cb	0	0	inf	inf
-AB0112-Ca	0	0	inf	inf
-AB0112-Cb	0	0	inf	inf
-AB0113-Ca	0	0	1.5485105514526367	13.376723289489746
-AB0113-Cb	1	1	12.167064666748047	9.840997695922852
-AB0114-Ca	0	0	inf	inf
-AB0114-Cb	0	0	inf	inf
-AB0115-Ca	0	0	inf	inf
-AB0115-Cb	0	0	inf	inf
-AB0117-Ca	0	0	-0.530709981918335	14.871726989746094
-AB0117-Cb	0	0	0.44246339797973633	11.653796195983887
-AB0118-Ca	0	0	inf	inf
-AB0118-Cb	0	0	inf	inf
-AB0119-Ca	0	0	-2.978360652923584	12.013529777526855
-AB0119-Cb	1	1	10.21363353729248	21.036224365234375
-AB0122-Ca	0	0	inf	inf
-AB0122-Cb	0	0	inf	inf
-AB0123-Ca	0	0	inf	inf
-AB0123-Cb	0	0	inf	inf
-AB0124-Ca	0	0	inf	inf
-AB0124-Cb	0	0	inf	inf
-AB0126-Ca	0	0	inf	inf
-AB0126-Cb	0	0	inf	inf
-AB0127-Ca	0	0	inf	inf
-AB0127-Cb	0	0	inf	inf
-AB0128-Ca	0	0	inf	inf
-AB0128-Cb	0	0	inf	inf
-AB0129-Ca	0	0	inf	inf
-AB0129-Cb	0	0	inf	inf
-AB0130-Ca	0	0	inf	inf
-AB0130-Cb	0	0	inf	inf
-AB0133-Ca	0	0	-4.584852695465088	15.638511657714844
-AB0133-Cb	1	1	11.725435256958008	9.924932479858398
-AB0134-Ca	0	0	-2.337836503982544	14.494902610778809
-AB0134-Cb	1	1	17.653059005737305	27.063295364379883
-AB0135-Ca	1	1	6.88620138168335	13.971413612365723
-AB0135-Cb	1	1	4.681902885437012	15.585659980773926
-AB0136-Ca	1	1	17.385700225830078	26.990489959716797
-AB0136-Cb	0	0	-4.648545265197754	16.55027198791504
-AB0137-Ca	0	0	inf	inf
-AB0137-Cb	0	0	inf	inf
-AB0138-Ca	0	0	inf	inf
-AB0138-Cb	0	0	inf	inf
-AB0139-Ca	0	0	inf	inf
-AB0139-Cb	0	0	inf	inf
-AB0140-Ca	0	0	inf	inf
-AB0140-Cb	0	0	inf	inf
-AB0142-Ca	0	0	inf	inf
-AB0142-Cb	0	0	inf	inf
-AB0143-Ca	0	0	-6.3066816329956055	16.49361228942871
-AB0143-Cb	0	0	-2.14176869392395	11.404003143310547
-AB0145-Ca	1	1	17.539140701293945	27.054561614990234
-AB0145-Cb	1	1	17.760679244995117	26.954626083374023
-AB0146-Ca	0	0	-4.656262397766113	16.211837768554688
-AB0146-Cb	1	1	9.642631530761719	19.508638381958008
-AB0147-Ca	0	0	inf	inf
-AB0147-Cb	0	0	inf	inf
-AB0148-Ca	0	0	inf	inf
-AB0148-Cb	0	0	inf	inf
-AB0150-Ca	0	0	-3.5267746448516846	10.801755905151367
-AB0150-Cb	1	1	17.095102310180664	27.172574996948242
-AB0151-Ca	0	0	inf	inf
-AB0151-Cb	0	0	inf	inf
-AB0153-Ca	0	0	-4.408638954162598	15.792049407958984
-AB0153-Cb	0	0	-6.404184341430664	16.116361618041992
-AB0155-Ca	0	0	inf	inf
-AB0155-Cb	0	0	inf	inf
-AB0157-Ca	1	1	17.75400161743164	26.972166061401367
-AB0157-Cb	1	1	17.08500862121582	27.858476638793945
-AB0158-Ca	1	1	12.559412002563477	23.661237716674805
-AB0158-Cb	1	1	4.900720119476318	13.909648895263672
-AB0159-Ca	0	0	-3.5658063888549805	10.37430477142334
-AB0159-Cb	0	0	-3.402332067489624	13.391785621643066
-AB0160-Ca	1	1	12.042281150817871	10.407941818237305
-AB0160-Cb	0	0	-3.52968168258667	10.560969352722168
-AB0161-Ca	0	0	inf	inf
-AB0161-Cb	0	0	inf	inf
-AB0162-Ca	0	0	inf	inf
-AB0162-Cb	0	0	inf	inf
-AB0164-Ca	0	0	inf	inf
-AB0164-Cb	0	0	inf	inf
-AB0165-Ca	0	0	inf	inf
-AB0165-Cb	0	0	inf	inf
-AB0166-Ca	0	0	inf	inf
-AB0166-Cb	0	0	inf	inf
-AB0167-Ca	0	0	inf	inf
-AB0167-Cb	0	0	inf	inf
-AB0169-Ca	0	0	inf	inf
-AB0169-Cb	0	0	inf	inf
-AB0170-Ca	0	0	-5.423672199249268	11.945512771606445
-AB0170-Cb	0	0	3.7771482467651367	14.922686576843262
-AB0171-Ca	0	0	inf	inf
-AB0171-Cb	0	0	inf	inf
-AB0172-Ca	0	0	inf	inf
-AB0172-Cb	0	0	inf	inf
-AB0173-Ca	0	0	inf	inf
-AB0173-Cb	0	0	inf	inf
-AB0174-Ca	0	0	inf	inf
-AB0174-Cb	0	0	inf	inf
-AB0175-Ca	0	0	inf	inf
-AB0175-Cb	0	0	inf	inf
-AB0176-Ca	0	0	inf	inf
-AB0176-Cb	0	0	inf	inf
-AB0177-Ca	0	0	inf	inf
-AB0177-Cb	0	0	inf	inf
-AB0178-Ca	0	0	inf	inf
-AB0178-Cb	0	0	inf	inf
-AB0179-Ca	0	0	inf	inf
-AB0179-Cb	0	0	inf	inf
-AB0181-Ca	0	0	inf	inf
-AB0181-Cb	0	0	inf	inf
-AB0182-Ca	0	0	inf	inf
-AB0182-Cb	0	0	inf	inf
-AB0183-Ca	0	0	inf	inf
-AB0183-Cb	0	0	inf	inf
-AB0184-Ca	0	0	inf	inf
-AB0184-Cb	0	0	inf	inf
-AB0185-Ca	0	0	inf	inf
-AB0185-Cb	0	0	inf	inf
-AB0186-Ca	0	0	inf	inf
-AB0186-Cb	0	0	inf	inf
-AB0187-Ca	0	0	inf	inf
-AB0187-Cb	0	0	inf	inf
-AB0188-Ca	0	0	inf	inf
-AB0188-Cb	0	0	inf	inf
-AB0189-Ca	0	0	inf	inf
-AB0189-Cb	0	0	inf	inf
-AB0190-Ca	0	0	inf	inf
-AB0190-Cb	0	0	inf	inf
-AB0191-Ca	0	0	inf	inf
-AB0191-Cb	0	0	inf	inf
-AB0192-Ca	0	0	inf	inf
-AB0192-Cb	0	0	inf	inf
-AB0195-Ca	0	0	inf	inf
-AB0195-Cb	0	0	inf	inf
-AB0196-Ca	0	0	inf	inf
-AB0196-Cb	0	0	inf	inf
-AB0197-Ca	0	0	-4.688957214355469	16.41072654724121
-AB0197-Cb	1	1	9.724891662597656	10.947037696838379
-AB0198-Ca	1	1	17.314544677734375	27.128807067871094
-AB0198-Cb	1	1	11.746390342712402	10.20155143737793
-AB0199-Ca	0	0	inf	inf
-AB0199-Cb	0	0	inf	inf
-AB0200-Ca	0	0	inf	inf
-AB0200-Cb	0	0	inf	inf
-AB0201-Ca	0	0	inf	inf
-AB0201-Cb	0	0	inf	inf
-AB0202-Ca	0	0	inf	inf
-AB0202-Cb	0	0	inf	inf
-AB0203-Ca	0	0	inf	inf
-AB0203-Cb	0	0	inf	inf
-AB0204-Ca	0	0	inf	inf
-AB0204-Cb	0	0	inf	inf
-AB0205-Ca	0	0	inf	inf
-AB0205-Cb	0	0	inf	inf
-AB0206-Ca	0	0	inf	inf
-AB0206-Cb	0	0	inf	inf
-AB0207-Ca	0	0	inf	inf
-AB0207-Cb	0	0	inf	inf
-AB0208-Ca	0	0	-3.399466037750244	11.713699340820312
-AB0208-Cb	1	1	17.14864730834961	27.2452335357666
-AB0209-Ca	0	0	inf	inf
-AB0209-Cb	0	0	inf	inf
-AB0210-Ca	0	0	inf	inf
-AB0210-Cb	0	0	inf	inf
-AB0211-Ca	1	1	9.672773361206055	19.351703643798828
-AB0211-Cb	1	1	9.351029396057129	19.643495559692383
-AB0212-Ca	0	0	inf	inf
-AB0212-Cb	0	0	inf	inf
-AB0213-Ca	0	0	inf	inf
-AB0213-Cb	0	0	inf	inf
-AB0215-Ca	0	0	inf	inf
-AB0215-Cb	0	0	inf	inf
-AB0217-Ca	0	0	-1.6318897008895874	11.671786308288574
-AB0217-Cb	1	1	10.23137092590332	22.647445678710938
-AB0218-Ca	0	0	inf	inf
-AB0218-Cb	0	0	inf	inf
-AB0219-Ca	0	0	inf	inf
-AB0219-Cb	0	0	inf	inf
-AB0221-Ca	0	0	inf	inf
-AB0221-Cb	0	0	inf	inf
-AB0222-Ca	0	0	inf	inf
-AB0222-Cb	0	0	inf	inf
-AB0223-Ca	0	0	inf	inf
-AB0223-Cb	0	0	inf	inf
-AB0224-Ca	0	0	inf	inf
-AB0224-Cb	0	0	inf	inf
-AB0226-Ca	0	0	inf	inf
-AB0226-Cb	0	0	inf	inf
-AB0227-Ca	0	0	inf	inf
-AB0227-Cb	0	0	inf	inf
-AB0228-Ca	0	0	-5.254696369171143	16.81709098815918
-AB0228-Cb	1	1	5.2998433113098145	12.3890380859375
-AB0229-Ca	0	0	inf	inf
-AB0229-Cb	0	0	inf	inf
-AB0231-Ca	0	0	inf	inf
-AB0231-Cb	0	0	inf	inf
-AB0232-Ca	0	0	inf	inf
-AB0232-Cb	0	0	inf	inf
-AB0233-Ca	0	0	inf	inf
-AB0233-Cb	0	0	inf	inf
-AB0234-Ca	0	0	inf	inf
-AB0234-Cb	0	0	inf	inf
-AB0235-Ca	0	0	-3.7998135089874268	12.392084121704102
-AB0235-Cb	1	1	4.360860347747803	12.172128677368164
-AB0236-Ca	0	0	inf	inf
-AB0236-Cb	0	0	inf	inf
-AB0237-Ca	0	0	inf	inf
-AB0237-Cb	0	0	inf	inf
-AB0238-Ca	1	1	18.058956146240234	27.128618240356445
-AB0238-Cb	1	1	17.167503356933594	27.10319709777832
-AB0239-Ca	0	0	-3.4205875396728516	11.298308372497559
-AB0239-Cb	1	1	5.629864692687988	12.12336254119873
-AB0240-Ca	0	0	inf	inf
-AB0240-Cb	0	0	inf	inf
-AB0241-Ca	0	0	-2.4945850372314453	15.046917915344238
-AB0241-Cb	0	0	-4.4741291999816895	15.808558464050293
-AB0242-Ca	0	0	inf	inf
-AB0242-Cb	0	0	inf	inf
-AB0243-Ca	0	0	inf	inf
-AB0243-Cb	0	0	inf	inf
-AB0244-Ca	0	0	inf	inf
-AB0244-Cb	0	0	inf	inf
-AB0246-Ca	0	0	inf	inf
-AB0246-Cb	0	0	inf	inf
-AB0247-Ca	0	0	inf	inf
-AB0247-Cb	0	0	inf	inf
-AB0248-Ca	0	0	inf	inf
-AB0248-Cb	0	0	inf	inf
-AB0249-Ca	0	0	inf	inf
-AB0249-Cb	0	0	inf	inf
-AB0250-Ca	0	0	inf	inf
-AB0250-Cb	0	0	inf	inf
-AB0251-Ca	0	0	inf	inf
-AB0251-Cb	0	0	inf	inf
-AB0252-Ca	0	0	inf	inf
-AB0252-Cb	0	0	inf	inf
-AB0253-Ca	0	0	-4.132418155670166	15.123322486877441
-AB0253-Cb	1	1	17.340808868408203	27.11833381652832
-AB0255-Ca	0	0	inf	inf
-AB0255-Cb	0	0	inf	inf
-AB0256-Ca	0	0	inf	inf
-AB0256-Cb	0	0	inf	inf
-AB0257-Ca	0	0	inf	inf
-AB0257-Cb	0	0	inf	inf
-AB0258-Ca	0	0	inf	inf
-AB0258-Cb	0	0	inf	inf
-AB0260-Ca	0	0	inf	inf
-AB0260-Cb	0	0	inf	inf
-AB0261-Ca	0	0	inf	inf
-AB0261-Cb	0	0	inf	inf
-AB0262-Ca	0	0	inf	inf
-AB0262-Cb	0	0	inf	inf
-AB0263-Ca	0	0	inf	inf
-AB0263-Cb	0	0	inf	inf
-AB0264-Ca	0	0	inf	inf
-AB0264-Cb	0	0	inf	inf
-AB0265-Ca	0	0	inf	inf
-AB0265-Cb	0	0	inf	inf
-AB0266-Ca	0	0	inf	inf
-AB0266-Cb	0	0	inf	inf
-AB0267-Ca	0	0	inf	inf
-AB0267-Cb	0	0	inf	inf
-AB0268-Ca	0	0	inf	inf
-AB0268-Cb	0	0	inf	inf
-AB0270-Ca	0	0	inf	inf
-AB0270-Cb	0	0	inf	inf
-AB0271-Ca	0	0	inf	inf
-AB0271-Cb	0	0	inf	inf
-AB0272-Ca	0	0	inf	inf
-AB0272-Cb	0	0	inf	inf
-AB0273-Ca	0	0	inf	inf
-AB0273-Cb	0	0	inf	inf
-AB0274-Ca	0	0	-3.655313730239868	12.271269798278809
-AB0274-Cb	1	1	4.284999847412109	12.073966979980469
-AB0275-Ca	0	0	inf	inf
-AB0275-Cb	0	0	inf	inf
-AB0276-Ca	0	0	inf	inf
-AB0276-Cb	0	0	inf	inf
-AB0277-Ca	0	0	inf	inf
-AB0277-Cb	0	0	inf	inf
-AB0278-Ca	0	0	inf	inf
-AB0278-Cb	0	0	inf	inf
-AB0279-Ca	1	1	17.647151947021484	26.92734718322754
-AB0279-Cb	0	0	-4.68239688873291	15.51630973815918
-AB0280-Ca	0	0	inf	inf
-AB0280-Cb	0	0	inf	inf
-AB0281-Ca	0	0	inf	inf
-AB0281-Cb	0	0	inf	inf
-AB0282-Ca	0	0	inf	inf
-AB0282-Cb	0	0	inf	inf
-AB0283-Ca	0	0	inf	inf
-AB0283-Cb	0	0	inf	inf
-AB0284-Ca	1	1	4.973505020141602	13.205838203430176
-AB0284-Cb	0	0	-4.553800106048584	14.437211036682129
-AC0089-Ca	0	0	inf	inf
-AC0089-Cb	0	0	inf	inf
-AC0090-Ca	0	0	inf	inf
-AC0090-Cb	0	0	inf	inf
-AC0091-Ca	0	0	inf	inf
-AC0091-Cb	0	0	inf	inf
-AC0092-Ca	0	0	inf	inf
-AC0092-Cb	0	0	inf	inf
-AC0093-Ca	0	0	inf	inf
-AC0093-Cb	0	0	inf	inf
-AC0094-Ca	0	0	inf	inf
-AC0094-Cb	0	0	inf	inf
-AC0095-Ca	0	0	inf	inf
-AC0095-Cb	0	0	inf	inf
-AC0096-Ca	0	0	inf	inf
-AC0096-Cb	0	0	inf	inf
-AC0097-Ca	0	0	inf	inf
-AC0097-Cb	0	0	inf	inf
-AC0098-Ca	0	0	inf	inf
-AC0098-Cb	0	0	inf	inf
-AC0099-Ca	0	0	inf	inf
-AC0099-Cb	0	0	inf	inf
-AC0100-Ca	0	0	inf	inf
-AC0100-Cb	0	0	inf	inf
-AC0101-Ca	0	0	inf	inf
-AC0101-Cb	0	0	inf	inf
-AC0102-Ca	0	0	inf	inf
-AC0102-Cb	0	0	inf	inf
-AC0103-Ca	0	0	inf	inf
-AC0103-Cb	0	0	inf	inf
-AC0104-Ca	0	0	inf	inf
-AC0104-Cb	0	0	inf	inf
-AC0105-Ca	0	0	inf	inf
-AC0105-Cb	0	0	inf	inf
-AC0106-Ca	0	0	inf	inf
-AC0106-Cb	0	0	inf	inf
-AC0107-Ca	0	0	inf	inf
-AC0107-Cb	0	0	inf	inf
-AC0108-Ca	0	0	inf	inf
-AC0108-Cb	0	0	inf	inf
-AC0109-Ca	0	0	inf	inf
-AC0109-Cb	0	0	inf	inf
-AC0110-Ca	0	0	inf	inf
-AC0110-Cb	0	0	inf	inf
-AC0111-Ca	0	0	inf	inf
-AC0111-Cb	0	0	inf	inf
-AC0112-Ca	0	0	inf	inf
-AC0112-Cb	0	0	inf	inf
-AC0113-Ca	0	0	inf	inf
-AC0113-Cb	0	0	inf	inf
-AC0114-Ca	0	0	inf	inf
-AC0114-Cb	0	0	inf	inf
-AC0115-Ca	0	0	inf	inf
-AC0115-Cb	0	0	inf	inf
-AC0116-Ca	0	0	inf	inf
-AC0116-Cb	0	0	inf	inf
-AC0117-Ca	0	0	inf	inf
-AC0117-Cb	0	0	inf	inf
-AC0118-Ca	0	0	inf	inf
-AC0118-Cb	0	0	inf	inf
-AC0119-Ca	0	0	inf	inf
-AC0119-Cb	0	0	inf	inf
-AC0120-Ca	0	0	inf	inf
-AC0120-Cb	0	0	inf	inf
-AC0121-Ca	0	0	inf	inf
-AC0121-Cb	0	0	inf	inf
-AC0122-Ca	0	0	inf	inf
-AC0122-Cb	0	0	inf	inf
-AC0123-Ca	0	0	inf	inf
-AC0123-Cb	0	0	inf	inf
-AC0124-Ca	0	0	inf	inf
-AC0124-Cb	0	0	inf	inf
-AC0125-Ca	0	0	inf	inf
-AC0125-Cb	0	0	inf	inf
-AC0126-Ca	0	0	inf	inf
-AC0126-Cb	0	0	inf	inf
-AC0127-Ca	0	0	inf	inf
-AC0127-Cb	0	0	inf	inf
-AC0128-Ca	0	0	inf	inf
-AC0128-Cb	0	0	inf	inf
-AC0129-Ca	0	0	inf	inf
-AC0129-Cb	0	0	inf	inf
-AC0130-Ca	0	0	inf	inf
-AC0130-Cb	0	0	inf	inf
-AC0131-Ca	0	0	inf	inf
-AC0131-Cb	0	0	inf	inf
-AC0132-Ca	0	0	inf	inf
-AC0132-Cb	0	0	inf	inf
-AC0133-Ca	0	0	inf	inf
-AC0133-Cb	0	0	inf	inf
-AC0134-Ca	0	0	inf	inf
-AC0134-Cb	0	0	inf	inf
-AC0135-Ca	0	0	inf	inf
-AC0135-Cb	0	0	inf	inf
-AC0136-Ca	0	0	inf	inf
-AC0136-Cb	0	0	inf	inf
-AC0137-Ca	0	0	inf	inf
-AC0137-Cb	0	0	inf	inf
-AC0138-Ca	0	0	inf	inf
-AC0138-Cb	0	0	inf	inf
-AC0139-Ca	0	0	inf	inf
-AC0139-Cb	0	0	inf	inf
-AC0140-Ca	0	0	inf	inf
-AC0140-Cb	0	0	inf	inf
-AC0141-Ca	0	0	inf	inf
-AC0141-Cb	0	0	inf	inf
-AC0142-Ca	0	0	inf	inf
-AC0142-Cb	0	0	inf	inf
-AC0143-Ca	0	0	inf	inf
-AC0143-Cb	0	0	inf	inf
-AC0144-Ca	0	0	inf	inf
-AC0144-Cb	0	0	inf	inf
-AC0145-Ca	0	0	inf	inf
-AC0145-Cb	0	0	inf	inf
-AC0146-Ca	0	0	inf	inf
-AC0146-Cb	0	0	inf	inf
-AC0147-Ca	0	0	inf	inf
-AC0147-Cb	0	0	inf	inf
-AC0148-Ca	0	0	inf	inf
-AC0148-Cb	0	0	inf	inf
-AC0149-Ca	0	0	inf	inf
-AC0149-Cb	0	0	inf	inf
-AC0150-Ca	0	0	inf	inf
-AC0150-Cb	0	0	inf	inf
-AC0151-Ca	0	0	inf	inf
-AC0151-Cb	0	0	inf	inf
-AC0152-Ca	0	0	inf	inf
-AC0152-Cb	0	0	inf	inf
-AC0153-Ca	0	0	inf	inf
-AC0153-Cb	0	0	inf	inf
-AC0154-Ca	0	0	inf	inf
-AC0154-Cb	0	0	inf	inf
-AC0155-Ca	0	0	inf	inf
-AC0155-Cb	0	0	inf	inf
-AC0156-Ca	0	0	inf	inf
-AC0156-Cb	0	0	inf	inf
-AC0157-Ca	0	0	inf	inf
-AC0157-Cb	0	0	inf	inf
-AC0158-Ca	0	0	inf	inf
-AC0158-Cb	0	0	inf	inf
-AC0159-Ca	0	0	inf	inf
-AC0159-Cb	0	0	inf	inf
-AC0160-Ca	0	0	inf	inf
-AC0160-Cb	0	0	inf	inf
-AC0161-Ca	0	0	inf	inf
-AC0161-Cb	0	0	inf	inf
-AC0162-Ca	0	0	inf	inf
-AC0162-Cb	0	0	inf	inf
-AC0163-Ca	0	0	inf	inf
-AC0163-Cb	0	0	inf	inf
-AC0164-Ca	0	0	inf	inf
-AC0164-Cb	0	0	inf	inf
-AC0166-Ca	0	0	inf	inf
-AC0166-Cb	0	0	inf	inf
-AC0167-Ca	0	0	inf	inf
-AC0167-Cb	0	0	inf	inf
-AC0168-Ca	0	0	inf	inf
-AC0168-Cb	0	0	inf	inf
-AC0169-Ca	0	0	inf	inf
-AC0169-Cb	0	0	inf	inf
-AC0170-Ca	0	0	inf	inf
-AC0170-Cb	0	0	inf	inf
-AC0171-Ca	0	0	inf	inf
-AC0171-Cb	0	0	inf	inf
-AC0172-Ca	0	0	inf	inf
-AC0172-Cb	0	0	inf	inf
-AC0173-Ca	0	0	inf	inf
-AC0173-Cb	0	0	inf	inf
-AC0174-Ca	0	0	inf	inf
-AC0174-Cb	0	0	inf	inf
-AC0176-Ca	0	0	inf	inf
-AC0176-Cb	0	0	inf	inf
-AC0177-Ca	0	0	inf	inf
-AC0177-Cb	0	0	inf	inf
-AC0178-Ca	0	0	inf	inf
-AC0178-Cb	0	0	inf	inf
-AC0179-Ca	0	0	inf	inf
-AC0179-Cb	0	0	inf	inf
-AC0180-Ca	0	0	inf	inf
-AC0180-Cb	0	0	inf	inf
-AC0181-Ca	0	0	inf	inf
-AC0181-Cb	0	0	inf	inf
-AC0182-Ca	0	0	inf	inf
-AC0182-Cb	0	0	inf	inf
-AC0183-Ca	0	0	inf	inf
-AC0183-Cb	0	0	inf	inf
-AC0184-Ca	0	0	inf	inf
-AC0184-Cb	0	0	inf	inf
-AC0185-Ca	0	0	inf	inf
-AC0185-Cb	0	0	inf	inf
-AC0186-Ca	0	0	inf	inf
-AC0186-Cb	0	0	inf	inf
-AC0187-Ca	0	0	inf	inf
-AC0187-Cb	0	0	inf	inf
-AC0188-Ca	0	0	inf	inf
-AC0188-Cb	0	0	inf	inf
-AC0189-Ca	0	0	inf	inf
-AC0189-Cb	0	0	inf	inf
-AC0190-Ca	0	0	inf	inf
-AC0190-Cb	0	0	inf	inf
-AC0191-Ca	0	0	inf	inf
-AC0191-Cb	0	0	inf	inf
-AC0192-Ca	0	0	inf	inf
-AC0192-Cb	0	0	inf	inf
-AC0193-Ca	0	0	inf	inf
-AC0193-Cb	0	0	inf	inf
-AC0194-Ca	0	0	inf	inf
-AC0194-Cb	0	0	inf	inf
-AC0195-Ca	0	0	inf	inf
-AC0195-Cb	0	0	inf	inf
-AC0196-Ca	0	0	inf	inf
-AC0196-Cb	0	0	inf	inf
-AC0197-Ca	0	0	inf	inf
-AC0197-Cb	0	0	inf	inf
-AC0199-Ca	0	0	inf	inf
-AC0199-Cb	0	0	inf	inf
-AC0200-Ca	0	0	inf	inf
-AC0200-Cb	0	0	inf	inf
-AC0201-Ca	0	0	inf	inf
-AC0201-Cb	0	0	inf	inf
-AC0202-Ca	0	0	inf	inf
-AC0202-Cb	0	0	inf	inf
-AC0203-Ca	0	0	inf	inf
-AC0203-Cb	0	0	inf	inf
-AG0082-Ca	0	0	inf	inf
-AG0082-Cb	0	0	inf	inf
-AG0085-Ca	0	0	inf	inf
-AG0085-Cb	0	0	inf	inf
-AG0089-Ca	0	0	inf	inf
-AG0089-Cb	0	0	inf	inf
-AG0096-Ca	0	0	inf	inf
-AG0096-Cb	0	0	inf	inf
-AG0097-Ca	0	0	inf	inf
-AG0097-Cb	0	0	inf	inf
-AG0098-Ca	0	0	inf	inf
-AG0098-Cb	0	0	inf	inf
-AG0100-Ca	0	0	inf	inf
-AG0100-Cb	0	0	inf	inf
-AG0102-Ca	0	0	inf	inf
-AG0102-Cb	0	0	inf	inf
-AG0104-Ca	0	0	inf	inf
-AG0104-Cb	0	0	inf	inf
-AG0106-Ca	0	0	inf	inf
-AG0106-Cb	0	0	inf	inf
-AG0108-Ca	0	0	inf	inf
-AG0108-Cb	0	0	inf	inf
-AG0109-Ca	0	0	inf	inf
-AG0109-Cb	0	0	inf	inf
-AG0111-Ca	0	0	inf	inf
-AG0111-Cb	0	0	inf	inf
-AG0118-Ca	0	0	inf	inf
-AG0118-Cb	0	0	inf	inf
-AG0120-Ca	0	0	inf	inf
-AG0120-Cb	0	0	inf	inf
-AG0121-Ca	0	0	inf	inf
-AG0121-Cb	0	0	inf	inf
-AG0123-Ca	0	0	inf	inf
-AG0123-Cb	0	0	inf	inf
-AG0125-Ca	0	0	inf	inf
-AG0125-Cb	0	0	inf	inf
-AG0126-Ca	0	0	inf	inf
-AG0126-Cb	0	0	inf	inf
-AG0127-Ca	0	0	inf	inf
-AG0127-Cb	0	0	inf	inf
-AG0128-Ca	0	0	inf	inf
-AG0128-Cb	0	0	inf	inf
-AG0129-Ca	0	0	inf	inf
-AG0129-Cb	0	0	inf	inf
-AG0133-Ca	0	0	inf	inf
-AG0133-Cb	0	0	inf	inf
-AG0134-Ca	0	0	inf	inf
-AG0134-Cb	0	0	inf	inf
-AG0136-Ca	0	0	inf	inf
-AG0136-Cb	0	0	inf	inf
-AG0137-Ca	0	0	inf	inf
-AG0137-Cb	0	0	inf	inf
-AG0138-Ca	0	0	inf	inf
-AG0138-Cb	0	0	inf	inf
-AG0139-Ca	0	0	inf	inf
-AG0139-Cb	0	0	inf	inf
-AG0141-Ca	0	0	inf	inf
-AG0141-Cb	0	0	inf	inf
-AG0142-Ca	0	0	inf	inf
-AG0142-Cb	0	0	inf	inf
-AG0143-Ca	0	0	inf	inf
-AG0143-Cb	0	0	inf	inf
-AG0144-Ca	0	0	inf	inf
-AG0144-Cb	0	0	inf	inf
-AG0145-Ca	0	0	inf	inf
-AG0145-Cb	0	0	inf	inf
-AG0146-Ca	0	0	inf	inf
-AG0146-Cb	0	0	inf	inf
-AG0147-Ca	0	0	inf	inf
-AG0147-Cb	0	0	inf	inf
-AG0148-Ca	0	0	inf	inf
-AG0148-Cb	0	0	inf	inf
-AG0152-Ca	0	0	inf	inf
-AG0152-Cb	0	0	inf	inf
-AG0153-Ca	0	0	inf	inf
-AG0153-Cb	0	0	inf	inf
-AG0156-Ca	0	0	inf	inf
-AG0156-Cb	0	0	inf	inf
-AG0159-Ca	0	0	inf	inf
-AG0159-Cb	0	0	inf	inf
-AG0162-Ca	0	0	inf	inf
-AG0162-Cb	0	0	inf	inf
-AG0163-Ca	0	0	inf	inf
-AG0163-Cb	0	0	inf	inf
-AG0169-Ca	0	0	inf	inf
-AG0169-Cb	0	0	inf	inf
-AG0170-Ca	0	0	inf	inf
-AG0170-Cb	0	0	inf	inf
-AG0172-Ca	0	0	inf	inf
-AG0172-Cb	0	0	inf	inf
-AG0178-Ca	0	0	inf	inf
-AG0178-Cb	0	0	inf	inf
-AG0179-Ca	0	0	inf	inf
-AG0179-Cb	0	0	inf	inf
-AG0181-Ca	0	0	inf	inf
-AG0181-Cb	0	0	inf	inf
-AG0183-Ca	0	0	inf	inf
-AG0183-Cb	0	0	inf	inf
-AG0195-Ca	0	0	inf	inf
-AG0195-Cb	0	0	inf	inf
-AG0197-Ca	0	0	inf	inf
-AG0197-Cb	0	0	inf	inf
-AG0202-Ca	0	0	inf	inf
-AG0202-Cb	0	0	inf	inf
-AG0203-Ca	0	0	inf	inf
-AG0203-Cb	0	0	inf	inf
-AG0204-Ca	0	0	inf	inf
-AG0204-Cb	0	0	inf	inf
-AG0206-Ca	0	0	inf	inf
-AG0206-Cb	0	0	inf	inf
-AG0208-Ca	0	0	inf	inf
-AG0208-Cb	0	0	inf	inf
-AG0214-Ca	0	0	inf	inf
-AG0214-Cb	0	0	inf	inf
-AG0221-Ca	0	0	inf	inf
-AG0221-Cb	0	0	inf	inf
-AG0223-Ca	0	0	inf	inf
-AG0223-Cb	0	0	inf	inf
-AG0227-Ca	0	0	inf	inf
-AG0227-Cb	0	0	inf	inf
-AG0229-Ca	0	0	inf	inf
-AG0229-Cb	0	0	inf	inf
-AG0230-Ca	0	0	inf	inf
-AG0230-Cb	0	0	inf	inf
-AG0231-Ca	0	0	inf	inf
-AG0231-Cb	0	0	inf	inf
-AG0232-Ca	0	0	inf	inf
-AG0232-Cb	0	0	inf	inf
-AG0263-Ca	0	0	inf	inf
-AG0263-Cb	0	0	inf	inf
-AJ0023-Ca	0	0	inf	inf
-AJ0023-Cb	0	0	inf	inf
-AJ0024-Ca	0	0	inf	inf
-AJ0024-Cb	0	0	inf	inf
-AJ0028-Ca	0	0	inf	inf
-AJ0028-Cb	0	0	inf	inf
-AJ0032-Ca	0	0	inf	inf
-AJ0032-Cb	0	0	inf	inf
-AJ0035-Ca	0	0	inf	inf
-AJ0035-Cb	0	0	inf	inf
-AJ0036-Ca	0	0	inf	inf
-AJ0036-Cb	0	0	inf	inf
-AJ0037-Ca	0	0	inf	inf
-AJ0037-Cb	0	0	inf	inf
-AJ0038-Ca	0	0	inf	inf
-AJ0038-Cb	0	0	inf	inf
-AJ0039-Ca	0	0	inf	inf
-AJ0039-Cb	0	0	inf	inf
-AJ0043-Ca	0	0	inf	inf
-AJ0043-Cb	0	0	inf	inf
-AJ0044-Ca	0	0	inf	inf
-AJ0044-Cb	0	0	inf	inf
-AJ0045-Ca	0	0	inf	inf
-AJ0045-Cb	0	0	inf	inf
-AJ0047-Ca	0	0	inf	inf
-AJ0047-Cb	0	0	inf	inf
-AJ0051-Ca	0	0	inf	inf
-AJ0051-Cb	0	0	inf	inf
-AJ0052-Ca	0	0	inf	inf
-AJ0052-Cb	0	0	inf	inf
-AJ0056-Ca	0	0	inf	inf
-AJ0056-Cb	0	0	inf	inf
-AJ0059-Ca	0	0	inf	inf
-AJ0059-Cb	0	0	inf	inf
-AJ0060-Ca	0	0	inf	inf
-AJ0060-Cb	0	0	inf	inf
-AJ0061-Ca	0	0	inf	inf
-AJ0061-Cb	0	0	inf	inf
-AJ0063-Ca	0	0	inf	inf
-AJ0063-Cb	0	0	inf	inf
-AJ0064-Ca	0	0	inf	inf
-AJ0064-Cb	0	0	inf	inf
-AJ0066-Ca	0	0	inf	inf
-AJ0066-Cb	0	0	inf	inf
-AJ0068-Ca	0	0	inf	inf
-AJ0068-Cb	0	0	inf	inf
-AJ0070-Ca	0	0	inf	inf
-AJ0070-Cb	0	0	inf	inf
-AJ0071-Ca	0	0	inf	inf
-AJ0071-Cb	0	0	inf	inf
-AJ0072-Ca	0	0	inf	inf
-AJ0072-Cb	0	0	inf	inf
-AJ0074-Ca	0	0	inf	inf
-AJ0074-Cb	0	0	inf	inf
-AJ0075-Ca	0	0	inf	inf
-AJ0075-Cb	0	0	inf	inf
-AJ0076-Ca	0	0	inf	inf
-AJ0076-Cb	0	0	inf	inf
-AJ0077-Ca	0	0	inf	inf
-AJ0077-Cb	0	0	inf	inf
-AJ0078-Ca	0	0	inf	inf
-AJ0078-Cb	0	0	inf	inf
-AJ0080-Ca	0	0	inf	inf
-AJ0080-Cb	0	0	inf	inf
-AJ0081-Ca	0	0	inf	inf
-AJ0081-Cb	0	0	inf	inf
-AJ0084-Ca	0	0	inf	inf
-AJ0084-Cb	0	0	inf	inf
-AJ0085-Ca	0	0	inf	inf
-AJ0085-Cb	0	0	inf	inf
-AJ0086-Ca	0	0	inf	inf
-AJ0086-Cb	0	0	inf	inf
-AJ0087-Ca	0	0	inf	inf
-AJ0087-Cb	0	0	inf	inf
-AJ0088-Ca	0	0	inf	inf
-AJ0088-Cb	0	0	inf	inf
-AJ0090-Ca	0	0	inf	inf
-AJ0090-Cb	0	0	inf	inf
-AJ0092-Ca	0	0	inf	inf
-AJ0092-Cb	0	0	inf	inf
-AJ0093-Ca	0	0	inf	inf
-AJ0093-Cb	0	0	inf	inf
-AJ0095-Ca	0	0	inf	inf
-AJ0095-Cb	0	0	inf	inf
-AJ0096-Ca	0	0	inf	inf
-AJ0096-Cb	0	0	inf	inf
-AJ0097-Ca	0	0	inf	inf
-AJ0097-Cb	0	0	inf	inf
-AJ0098-Ca	0	0	inf	inf
-AJ0098-Cb	0	0	inf	inf
-AJ0099-Ca	0	0	inf	inf
-AJ0099-Cb	0	0	inf	inf
-AJ0100-Ca	0	0	inf	inf
-AJ0100-Cb	0	0	inf	inf
-AJ0101-Ca	0	0	inf	inf
-AJ0101-Cb	0	0	inf	inf
-AJ0102-Ca	0	0	inf	inf
-AJ0102-Cb	0	0	inf	inf
-AJ0103-Ca	0	0	inf	inf
-AJ0103-Cb	0	0	inf	inf
-AJ0105-Ca	0	0	inf	inf
-AJ0105-Cb	0	0	inf	inf
-AJ0107-Ca	0	0	inf	inf
-AJ0107-Cb	0	0	inf	inf
-AJ0109-Ca	0	0	inf	inf
-AJ0109-Cb	0	0	inf	inf
-AJ0113-Ca	0	0	inf	inf
-AJ0113-Cb	0	0	inf	inf
-AJ0115-Ca	0	0	inf	inf
-AJ0115-Cb	0	0	inf	inf
-AJ0116-Ca	0	0	inf	inf
-AJ0116-Cb	0	0	inf	inf
-AJ0117-Ca	0	0	inf	inf
-AJ0117-Cb	0	0	inf	inf
-AJ0119-Ca	0	0	inf	inf
-AJ0119-Cb	0	0	inf	inf
-AJ0128-Ca	0	0	inf	inf
-AJ0128-Cb	0	0	inf	inf
-AJ0129-Ca	0	0	inf	inf
-AJ0129-Cb	0	0	inf	inf
-AJ0130-Ca	0	0	inf	inf
-AJ0130-Cb	0	0	inf	inf
-AJ0131-Ca	0	0	inf	inf
-AJ0131-Cb	0	0	inf	inf
-AJ0132-Ca	0	0	inf	inf
-AJ0132-Cb	0	0	inf	inf
-AJ0133-Ca	0	0	inf	inf
-AJ0133-Cb	0	0	inf	inf
-AJ0134-Ca	0	0	inf	inf
-AJ0134-Cb	0	0	inf	inf
-AJ0135-Ca	0	0	inf	inf
-AJ0135-Cb	0	0	inf	inf
-AJ0136-Ca	0	0	inf	inf
-AJ0136-Cb	0	0	inf	inf
-AJ0137-Ca	0	0	inf	inf
-AJ0137-Cb	0	0	inf	inf
-AJ0138-Ca	0	0	inf	inf
-AJ0138-Cb	0	0	inf	inf
-AJ0139-Ca	0	0	inf	inf
-AJ0139-Cb	0	0	inf	inf
-AJ0140-Ca	0	0	inf	inf
-AJ0140-Cb	0	0	inf	inf
-AJ0141-Ca	0	0	inf	inf
-AJ0141-Cb	0	0	inf	inf
-AJ0142-Ca	0	0	inf	inf
-AJ0142-Cb	0	0	inf	inf
-AJ0143-Ca	0	0	inf	inf
-AJ0143-Cb	0	0	inf	inf
-AJ0144-Ca	0	0	inf	inf
-AJ0144-Cb	0	0	inf	inf
-AJ0145-Ca	0	0	inf	inf
-AJ0145-Cb	0	0	inf	inf
-AJ0146-Ca	0	0	inf	inf
-AJ0146-Cb	0	0	inf	inf
-AJ0147-Ca	0	0	inf	inf
-AJ0147-Cb	0	0	inf	inf
-AJ0148-Ca	0	0	inf	inf
-AJ0148-Cb	0	0	inf	inf
-AJ0149-Ca	0	0	inf	inf
-AJ0149-Cb	0	0	inf	inf
-AJ0150-Ca	0	0	inf	inf
-AJ0150-Cb	0	0	inf	inf
-AJ0151-Ca	0	0	inf	inf
-AJ0151-Cb	0	0	inf	inf
-AJ0152-Ca	0	0	inf	inf
-AJ0152-Cb	0	0	inf	inf
-AJ0153-Ca	0	0	inf	inf
-AJ0153-Cb	0	0	inf	inf
-AJ0154-Ca	0	0	inf	inf
-AJ0154-Cb	0	0	inf	inf
-AJ0155-Ca	0	0	inf	inf
-AJ0155-Cb	0	0	inf	inf
-AJ0156-Ca	0	0	inf	inf
-AJ0156-Cb	0	0	inf	inf
-AJ0157-Ca	0	0	inf	inf
-AJ0157-Cb	0	0	inf	inf
-AJ0158-Ca	0	0	inf	inf
-AJ0158-Cb	0	0	inf	inf
-AJ0159-Ca	0	0	inf	inf
-AJ0159-Cb	0	0	inf	inf
-AJ0161-Ca	0	0	inf	inf
-AJ0161-Cb	0	0	inf	inf
-AK0060-Ca	0	0	inf	inf
-AK0060-Cb	0	0	inf	inf
-AK0062-Ca	0	0	inf	inf
-AK0062-Cb	0	0	inf	inf
-AK0065-Ca	0	0	inf	inf
-AK0065-Cb	0	0	inf	inf
-AK0066-Ca	0	0	inf	inf
-AK0066-Cb	0	0	inf	inf
-AK0067-Ca	0	0	inf	inf
-AK0067-Cb	0	0	inf	inf
-AK0068-Ca	0	0	inf	inf
-AK0068-Cb	0	0	inf	inf
-AK0069-Ca	0	0	inf	inf
-AK0069-Cb	0	0	inf	inf
-AK0070-Ca	0	0	inf	inf
-AK0070-Cb	0	0	inf	inf
-AK0072-Ca	0	0	inf	inf
-AK0072-Cb	0	0	inf	inf
-AK0073-Ca	0	0	inf	inf
-AK0073-Cb	0	0	inf	inf
-AK0074-Ca	0	0	inf	inf
-AK0074-Cb	0	0	inf	inf
-AK0075-Ca	0	0	inf	inf
-AK0075-Cb	0	0	inf	inf
-AK0076-Ca	0	0	inf	inf
-AK0076-Cb	0	0	inf	inf
-AK0077-Ca	0	0	inf	inf
-AK0077-Cb	0	0	inf	inf
-AK0078-Ca	0	0	inf	inf
-AK0078-Cb	0	0	inf	inf
-AK0079-Ca	0	0	inf	inf
-AK0079-Cb	0	0	inf	inf
-AK0080-Ca	0	0	inf	inf
-AK0080-Cb	0	0	inf	inf
-AK0081-Ca	0	0	inf	inf
-AK0081-Cb	0	0	inf	inf
-AK0082-Ca	0	0	inf	inf
-AK0082-Cb	0	0	inf	inf
-AK0085-Ca	0	0	inf	inf
-AK0085-Cb	0	0	inf	inf
-AK0086-Ca	0	0	inf	inf
-AK0086-Cb	0	0	inf	inf
-AK0087-Ca	0	0	inf	inf
-AK0087-Cb	0	0	inf	inf
-AK0088-Ca	0	0	inf	inf
-AK0088-Cb	0	0	inf	inf
-AK0089-Ca	0	0	inf	inf
-AK0089-Cb	0	0	inf	inf
-AK0090-Ca	0	0	inf	inf
-AK0090-Cb	0	0	inf	inf
-AK0091-Ca	0	0	inf	inf
-AK0091-Cb	0	0	inf	inf
-AK0092-Ca	0	0	inf	inf
-AK0092-Cb	0	0	inf	inf
-AK0093-Ca	0	0	inf	inf
-AK0093-Cb	0	0	inf	inf
-AK0094-Ca	0	0	inf	inf
-AK0094-Cb	0	0	inf	inf
-AK0095-Ca	0	0	inf	inf
-AK0095-Cb	0	0	inf	inf
-AK0096-Ca	0	0	inf	inf
-AK0096-Cb	0	0	inf	inf
-AK0098-Ca	0	0	inf	inf
-AK0098-Cb	0	0	inf	inf
-AK0099-Ca	0	0	inf	inf
-AK0099-Cb	0	0	inf	inf
-AK0100-Ca	0	0	inf	inf
-AK0100-Cb	0	0	inf	inf
-AK0101-Ca	0	0	inf	inf
-AK0101-Cb	0	0	inf	inf
-AK0102-Ca	0	0	inf	inf
-AK0102-Cb	0	0	inf	inf
-AK0103-Ca	0	0	inf	inf
-AK0103-Cb	0	0	inf	inf
-AK0104-Ca	0	0	inf	inf
-AK0104-Cb	0	0	inf	inf
-AK0105-Ca	0	0	inf	inf
-AK0105-Cb	0	0	inf	inf
-AK0106-Ca	0	0	inf	inf
-AK0106-Cb	0	0	inf	inf
-AK0107-Ca	0	0	inf	inf
-AK0107-Cb	0	0	inf	inf
-AK0108-Ca	0	0	inf	inf
-AK0108-Cb	0	0	inf	inf
-AK0109-Ca	0	0	inf	inf
-AK0109-Cb	0	0	inf	inf
-AK0110-Ca	0	0	inf	inf
-AK0110-Cb	0	0	inf	inf
-AK0116-Ca	0	0	inf	inf
-AK0116-Cb	0	0	inf	inf
-AK0117-Ca	0	0	inf	inf
-AK0117-Cb	0	0	inf	inf
-AK0119-Ca	0	0	inf	inf
-AK0119-Cb	0	0	inf	inf
-AK0127-Ca	0	0	inf	inf
-AK0127-Cb	0	0	inf	inf
-AN0007-Ca	0	0	inf	inf
-AN0007-Cb	0	0	inf	inf
-AN0008-Ca	0	0	inf	inf
-AN0008-Cb	0	0	inf	inf
-AN0009-Ca	0	0	inf	inf
-AN0009-Cb	0	0	inf	inf
-AN0010-Ca	0	0	inf	inf
-AN0010-Cb	0	0	inf	inf
-AN0011-Ca	0	0	inf	inf
-AN0011-Cb	0	0	inf	inf
-AN0012-Ca	0	0	inf	inf
-AN0012-Cb	0	0	inf	inf
-AN0013-Ca	0	0	inf	inf
-AN0013-Cb	0	0	inf	inf
-AN0014-Ca	0	0	inf	inf
-AN0014-Cb	0	0	inf	inf
-AN0015-Ca	0	0	inf	inf
-AN0015-Cb	0	0	inf	inf
-AN0016-Ca	0	0	inf	inf
-AN0016-Cb	0	0	inf	inf
-AN0017-Ca	0	0	inf	inf
-AN0017-Cb	0	0	inf	inf
-AN0018-Ca	0	0	inf	inf
-AN0018-Cb	0	0	inf	inf
-AN0019-Ca	0	0	inf	inf
-AN0019-Cb	0	0	inf	inf
-AN0020-Ca	0	0	inf	inf
-AN0020-Cb	0	0	inf	inf
-AN0022-Ca	0	0	inf	inf
-AN0022-Cb	0	0	inf	inf
-AN0023-Ca	0	0	inf	inf
-AN0023-Cb	0	0	inf	inf
-AN0024-Ca	0	0	inf	inf
-AN0024-Cb	0	0	inf	inf
-AN0025-Ca	0	0	inf	inf
-AN0025-Cb	0	0	inf	inf
-AN0026-Ca	0	0	inf	inf
-AN0026-Cb	0	0	inf	inf
-AN0027-Ca	0	0	inf	inf
-AN0027-Cb	0	0	inf	inf
-AN0028-Ca	0	0	inf	inf
-AN0028-Cb	0	0	inf	inf
-AN0029-Ca	0	0	inf	inf
-AN0029-Cb	0	0	inf	inf
-AN0030-Ca	0	0	inf	inf
-AN0030-Cb	0	0	inf	inf
-AN0031-Ca	0	0	inf	inf
-AN0031-Cb	0	0	inf	inf
-AN0032-Ca	0	0	inf	inf
-AN0032-Cb	0	0	inf	inf
-AN0033-Ca	0	0	inf	inf
-AN0033-Cb	0	0	inf	inf
-AN0034-Ca	0	0	inf	inf
-AN0034-Cb	0	0	inf	inf
-AN0035-Ca	0	0	inf	inf
-AN0035-Cb	0	0	inf	inf
-AN0036-Ca	0	0	inf	inf
-AN0036-Cb	0	0	inf	inf
-AN0037-Ca	0	0	inf	inf
-AN0037-Cb	0	0	inf	inf
-AN0038-Ca	0	0	inf	inf
-AN0038-Cb	0	0	inf	inf
-AN0039-Ca	0	0	inf	inf
-AN0039-Cb	0	0	inf	inf
-AN0040-Ca	0	0	inf	inf
-AN0040-Cb	0	0	inf	inf
-AN0041-Ca	0	0	inf	inf
-AN0041-Cb	0	0	inf	inf
-AN0042-Ca	0	0	inf	inf
-AN0042-Cb	0	0	inf	inf
-AN0043-Ca	0	0	inf	inf
-AN0043-Cb	0	0	inf	inf
-AN0044-Ca	0	0	inf	inf
-AN0044-Cb	0	0	inf	inf
-AN0045-Ca	0	0	inf	inf
-AN0045-Cb	0	0	inf	inf
-AN0046-Ca	0	0	inf	inf
-AN0046-Cb	0	0	inf	inf
-AN0047-Ca	0	0	inf	inf
-AN0047-Cb	0	0	inf	inf
-AN0048-Ca	0	0	inf	inf
-AN0048-Cb	0	0	inf	inf
-AN0049-Ca	0	0	inf	inf
-AN0049-Cb	0	0	inf	inf
-AN0050-Ca	0	0	inf	inf
-AN0050-Cb	0	0	inf	inf
-AN0051-Ca	0	0	inf	inf
-AN0051-Cb	0	0	inf	inf
-AN0053-Ca	0	0	inf	inf
-AN0053-Cb	0	0	inf	inf
-AN0054-Ca	0	0	inf	inf
-AN0054-Cb	0	0	inf	inf
-AN0055-Ca	0	0	inf	inf
-AN0055-Cb	0	0	inf	inf
-AN0056-Ca	0	0	inf	inf
-AN0056-Cb	0	0	inf	inf
-AN0057-Ca	0	0	inf	inf
-AN0057-Cb	0	0	inf	inf
-AN0058-Ca	0	0	inf	inf
-AN0058-Cb	0	0	inf	inf
-AN0059-Ca	0	0	inf	inf
-AN0059-Cb	0	0	inf	inf
-AN0060-Ca	0	0	inf	inf
-AN0060-Cb	0	0	inf	inf
-AN0061-Ca	0	0	inf	inf
-AN0061-Cb	0	0	inf	inf
-AN0062-Ca	0	0	inf	inf
-AN0062-Cb	0	0	inf	inf
-AN0063-Ca	0	0	inf	inf
-AN0063-Cb	0	0	inf	inf
-AN0064-Ca	0	0	inf	inf
-AN0064-Cb	0	0	inf	inf
-AN0065-Ca	0	0	inf	inf
-AN0065-Cb	0	0	inf	inf
-AN0066-Ca	0	0	inf	inf
-AN0066-Cb	0	0	inf	inf
-AN0067-Ca	0	0	inf	inf
-AN0067-Cb	0	0	inf	inf
-AN0068-Ca	0	0	inf	inf
-AN0068-Cb	0	0	inf	inf
-AN0069-Ca	0	0	inf	inf
-AN0069-Cb	0	0	inf	inf
-AN0070-Ca	0	0	inf	inf
-AN0070-Cb	0	0	inf	inf
-AN0071-Ca	0	0	inf	inf
-AN0071-Cb	0	0	inf	inf
-AN0072-Ca	0	0	inf	inf
-AN0072-Cb	0	0	inf	inf
-AN0073-Ca	0	0	inf	inf
-AN0073-Cb	0	0	inf	inf
-AN0074-Ca	0	0	inf	inf
-AN0074-Cb	0	0	inf	inf
-AN0075-Ca	0	0	inf	inf
-AN0075-Cb	0	0	inf	inf
-AN0076-Ca	0	0	inf	inf
-AN0076-Cb	0	0	inf	inf
-AN0077-Ca	0	0	inf	inf
-AN0077-Cb	0	0	inf	inf
-AN0079-Ca	0	0	inf	inf
-AN0079-Cb	0	0	inf	inf
-AN0080-Ca	0	0	inf	inf
-AN0080-Cb	0	0	inf	inf
-AN0081-Ca	0	0	inf	inf
-AN0081-Cb	0	0	inf	inf
-AN0082-Ca	0	0	inf	inf
-AN0082-Cb	0	0	inf	inf
-AN0083-Ca	0	0	inf	inf
-AN0083-Cb	0	0	inf	inf
-AN0084-Ca	0	0	inf	inf
-AN0084-Cb	0	0	inf	inf
-AN0085-Ca	0	0	inf	inf
-AN0085-Cb	0	0	inf	inf
-AN0086-Ca	0	0	inf	inf
-AN0086-Cb	0	0	inf	inf
-AN0087-Ca	0	0	inf	inf
-AN0087-Cb	0	0	inf	inf
-AN0088-Ca	0	0	inf	inf
-AN0088-Cb	0	0	inf	inf
-AN0089-Ca	0	0	inf	inf
-AN0089-Cb	0	0	inf	inf
-AN0090-Ca	0	0	inf	inf
-AN0090-Cb	0	0	inf	inf
-AN0091-Ca	0	0	inf	inf
-AN0091-Cb	0	0	inf	inf
-AN0092-Ca	0	0	inf	inf
-AN0092-Cb	0	0	inf	inf
-AN0093-Ca	0	0	inf	inf
-AN0093-Cb	0	0	inf	inf
-AN0094-Ca	0	0	inf	inf
-AN0094-Cb	0	0	inf	inf
-AN0095-Ca	0	0	inf	inf
-AN0095-Cb	0	0	inf	inf
-AN0096-Ca	0	0	inf	inf
-AN0096-Cb	0	0	inf	inf
-AN0097-Ca	0	0	inf	inf
-AN0097-Cb	0	0	inf	inf
-AN0098-Ca	0	0	inf	inf
-AN0098-Cb	0	0	inf	inf
-AN0099-Ca	0	0	inf	inf
-AN0099-Cb	0	0	inf	inf
-AN0100-Ca	0	0	inf	inf
-AN0100-Cb	0	0	inf	inf
-AN0101-Ca	0	0	inf	inf
-AN0101-Cb	0	0	inf	inf
-AN0102-Ca	0	0	inf	inf
-AN0102-Cb	0	0	inf	inf
-AN0103-Ca	0	0	inf	inf
-AN0103-Cb	0	0	inf	inf
-AN0104-Ca	0	0	inf	inf
-AN0104-Cb	0	0	inf	inf
-AN0105-Ca	0	0	inf	inf
-AN0105-Cb	0	0	inf	inf
-AN0106-Ca	0	0	inf	inf
-AN0106-Cb	0	0	inf	inf
-AN0107-Ca	0	0	inf	inf
-AN0107-Cb	0	0	inf	inf
-AN0108-Ca	0	0	inf	inf
-AN0108-Cb	0	0	inf	inf
-AN0109-Ca	0	0	inf	inf
-AN0109-Cb	0	0	inf	inf
-AN0111-Ca	0	0	inf	inf
-AN0111-Cb	0	0	inf	inf
-AN0112-Ca	0	0	inf	inf
-AN0112-Cb	0	0	inf	inf
-AN0113-Ca	0	0	inf	inf
-AN0113-Cb	0	0	inf	inf
-AN0114-Ca	0	0	inf	inf
-AN0114-Cb	0	0	inf	inf
-AN0115-Ca	0	0	inf	inf
-AN0115-Cb	0	0	inf	inf
-AN0117-Ca	0	0	inf	inf
-AN0117-Cb	0	0	inf	inf
-AN0118-Ca	0	0	inf	inf
-AN0118-Cb	0	0	inf	inf
-AN0119-Ca	0	0	inf	inf
-AN0119-Cb	0	0	inf	inf
-AN0120-Ca	0	0	inf	inf
-AN0120-Cb	0	0	inf	inf
-AN0121-Ca	0	0	inf	inf
-AN0121-Cb	0	0	inf	inf
-AN0122-Ca	0	0	inf	inf
-AN0122-Cb	0	0	inf	inf
-AN0123-Ca	0	0	inf	inf
-AN0123-Cb	0	0	inf	inf
-AN0124-Ca	0	0	inf	inf
-AN0124-Cb	0	0	inf	inf
-AN0125-Ca	0	0	inf	inf
-AN0125-Cb	0	0	inf	inf
-AN0126-Ca	0	0	inf	inf
-AN0126-Cb	0	0	inf	inf
-AN0127-Ca	0	0	inf	inf
-AN0127-Cb	0	0	inf	inf
-AN0128-Ca	0	0	inf	inf
-AN0128-Cb	0	0	inf	inf
-AN0129-Ca	0	0	inf	inf
-AN0129-Cb	0	0	inf	inf
-AN0130-Ca	0	0	inf	inf
-AN0130-Cb	0	0	inf	inf
-AN0131-Ca	0	0	inf	inf
-AN0131-Cb	0	0	inf	inf
-AN0132-Ca	0	0	inf	inf
-AN0132-Cb	0	0	inf	inf
-AN0134-Ca	0	0	inf	inf
-AN0134-Cb	0	0	inf	inf
-AN0135-Ca	0	0	inf	inf
-AN0135-Cb	0	0	inf	inf
-AN0136-Ca	0	0	inf	inf
-AN0136-Cb	0	0	inf	inf
-AN0137-Ca	0	0	inf	inf
-AN0137-Cb	0	0	inf	inf
-AN0138-Ca	0	0	inf	inf
-AN0138-Cb	0	0	inf	inf
-AN0139-Ca	0	0	inf	inf
-AN0139-Cb	0	0	inf	inf
-AN0140-Ca	0	0	inf	inf
-AN0140-Cb	0	0	inf	inf
-AN0141-Ca	0	0	inf	inf
-AN0141-Cb	0	0	inf	inf
-AN0142-Ca	0	0	inf	inf
-AN0142-Cb	0	0	inf	inf
-AN0143-Ca	0	0	inf	inf
-AN0143-Cb	0	0	inf	inf
-AN0144-Ca	0	0	inf	inf
-AN0144-Cb	0	0	inf	inf
-AN0147-Ca	0	0	inf	inf
-AN0147-Cb	0	0	inf	inf
-AN0149-Ca	0	0	inf	inf
-AN0149-Cb	0	0	inf	inf
-AN0151-Ca	0	0	inf	inf
-AN0151-Cb	0	0	inf	inf
-AN0152-Ca	0	0	inf	inf
-AN0152-Cb	0	0	inf	inf
-AN0153-Ca	0	0	inf	inf
-AN0153-Cb	0	0	inf	inf
-AN0154-Ca	0	0	inf	inf
-AN0154-Cb	0	0	inf	inf
-AN0155-Ca	0	0	inf	inf
-AN0155-Cb	0	0	inf	inf
-AN0156-Ca	0	0	inf	inf
-AN0156-Cb	0	0	inf	inf
-AN0157-Ca	0	0	inf	inf
-AN0157-Cb	0	0	inf	inf
-AN0158-Ca	0	0	inf	inf
-AN0158-Cb	0	0	inf	inf
-AN0159-Ca	0	0	inf	inf
-AN0159-Cb	0	0	inf	inf
-AN0160-Ca	0	0	inf	inf
-AN0160-Cb	0	0	inf	inf
-AN0162-Ca	0	0	inf	inf
-AN0162-Cb	0	0	inf	inf
-AN0163-Ca	0	0	inf	inf
-AN0163-Cb	0	0	inf	inf
-AN0164-Ca	0	0	inf	inf
-AN0164-Cb	0	0	inf	inf
-AN0165-Ca	0	0	inf	inf
-AN0165-Cb	0	0	inf	inf
-AN0166-Ca	0	0	inf	inf
-AN0166-Cb	0	0	inf	inf
-AN0167-Ca	0	0	inf	inf
-AN0167-Cb	0	0	inf	inf
-AN0168-Ca	0	0	inf	inf
-AN0168-Cb	0	0	inf	inf
-AN0169-Ca	0	0	inf	inf
-AN0169-Cb	0	0	inf	inf
-AN0170-Ca	0	0	inf	inf
-AN0170-Cb	0	0	inf	inf
-AN0171-Ca	0	0	inf	inf
-AN0171-Cb	0	0	inf	inf
-AN0172-Ca	0	0	inf	inf
-AN0172-Cb	0	0	inf	inf
-AN0173-Ca	0	0	inf	inf
-AN0173-Cb	0	0	inf	inf
-AN0174-Ca	0	0	inf	inf
-AN0174-Cb	0	0	inf	inf
-AN0175-Ca	0	0	inf	inf
-AN0175-Cb	0	0	inf	inf
-AN0176-Ca	0	0	inf	inf
-AN0176-Cb	0	0	inf	inf
-AN0177-Ca	0	0	inf	inf
-AN0177-Cb	0	0	inf	inf
-AN0178-Ca	0	0	inf	inf
-AN0178-Cb	0	0	inf	inf
-AN0179-Ca	0	0	inf	inf
-AN0179-Cb	0	0	inf	inf
-AN0180-Ca	0	0	inf	inf
-AN0180-Cb	0	0	inf	inf
-AN0181-Ca	0	0	inf	inf
-AN0181-Cb	0	0	inf	inf
-AN0182-Ca	0	0	inf	inf
-AN0182-Cb	0	0	inf	inf
-AN0183-Ca	0	0	inf	inf
-AN0183-Cb	0	0	inf	inf
-AN0184-Ca	0	0	inf	inf
-AN0184-Cb	0	0	inf	inf
-AN0185-Ca	0	0	inf	inf
-AN0185-Cb	0	0	inf	inf
-AN0186-Ca	0	0	inf	inf
-AN0186-Cb	0	0	inf	inf
-AN0187-Ca	0	0	inf	inf
-AN0187-Cb	0	0	inf	inf
-AN0188-Ca	0	0	inf	inf
-AN0188-Cb	0	0	inf	inf
-AN0189-Ca	0	0	inf	inf
-AN0189-Cb	0	0	inf	inf
-AN0190-Ca	0	0	inf	inf
-AN0190-Cb	0	0	inf	inf
-AN0191-Ca	0	0	inf	inf
-AN0191-Cb	0	0	inf	inf
-AN0192-Ca	0	0	inf	inf
-AN0192-Cb	0	0	inf	inf
-AN0193-Ca	0	0	inf	inf
-AN0193-Cb	0	0	inf	inf
-AN0194-Ca	0	0	inf	inf
-AN0194-Cb	0	0	inf	inf
-AN0196-Ca	0	0	inf	inf
-AN0196-Cb	0	0	inf	inf
-AN0197-Ca	0	0	inf	inf
-AN0197-Cb	0	0	inf	inf
-AN0198-Ca	0	0	inf	inf
-AN0198-Cb	0	0	inf	inf
-AN0199-Ca	0	0	inf	inf
-AN0199-Cb	0	0	inf	inf
-AN0200-Ca	0	0	inf	inf
-AN0200-Cb	0	0	inf	inf
-AN0201-Ca	0	0	inf	inf
-AN0201-Cb	0	0	inf	inf
-AN0202-Ca	0	0	inf	inf
-AN0202-Cb	0	0	inf	inf
-AN0203-Ca	0	0	inf	inf
-AN0203-Cb	0	0	inf	inf
-AN0204-Ca	0	0	inf	inf
-AN0204-Cb	0	0	inf	inf
-AN0205-Ca	0	0	inf	inf
-AN0205-Cb	0	0	inf	inf
-AN0206-Ca	0	0	inf	inf
-AN0206-Cb	0	0	inf	inf
-AN0207-Ca	0	0	inf	inf
-AN0207-Cb	0	0	inf	inf
-AN0208-Ca	0	0	inf	inf
-AN0208-Cb	0	0	inf	inf
-AN0209-Ca	0	0	inf	inf
-AN0209-Cb	0	0	inf	inf
-AN0210-Ca	0	0	inf	inf
-AN0210-Cb	0	0	inf	inf
-AN0212-Ca	0	0	inf	inf
-AN0212-Cb	0	0	inf	inf
-AN0213-Ca	0	0	inf	inf
-AN0213-Cb	0	0	inf	inf
-AN0214-Ca	0	0	inf	inf
-AN0214-Cb	0	0	inf	inf
-AN0215-Ca	0	0	inf	inf
-AN0215-Cb	0	0	inf	inf
-AN0217-Ca	0	0	inf	inf
-AN0217-Cb	0	0	inf	inf
-AN0218-Ca	0	0	inf	inf
-AN0218-Cb	0	0	inf	inf
-AN0219-Ca	0	0	inf	inf
-AN0219-Cb	0	0	inf	inf
-AN0220-Ca	0	0	inf	inf
-AN0220-Cb	0	0	inf	inf
-AN0221-Ca	0	0	inf	inf
-AN0221-Cb	0	0	inf	inf
-AN0222-Ca	0	0	inf	inf
-AN0222-Cb	0	0	inf	inf
-AN0223-Ca	0	0	inf	inf
-AN0223-Cb	0	0	inf	inf
-AN0224-Ca	0	0	inf	inf
-AN0224-Cb	0	0	inf	inf
-AN0225-Ca	0	0	inf	inf
-AN0225-Cb	0	0	inf	inf
-AN0226-Ca	0	0	inf	inf
-AN0226-Cb	0	0	inf	inf
-AN0227-Ca	0	0	inf	inf
-AN0227-Cb	0	0	inf	inf
-AN0228-Ca	0	0	inf	inf
-AN0228-Cb	0	0	inf	inf
-AN0229-Ca	0	0	inf	inf
-AN0229-Cb	0	0	inf	inf
-AN0230-Ca	0	0	inf	inf
-AN0230-Cb	0	0	inf	inf
-AN0231-Ca	0	0	inf	inf
-AN0231-Cb	0	0	inf	inf
-AN0232-Ca	0	0	inf	inf
-AN0232-Cb	0	0	inf	inf
-AN0233-Ca	0	0	inf	inf
-AN0233-Cb	0	0	inf	inf
-AN0234-Ca	0	0	inf	inf
-AN0234-Cb	0	0	inf	inf
-AN0235-Ca	0	0	inf	inf
-AN0235-Cb	0	0	inf	inf
-AN0236-Ca	0	0	inf	inf
-AN0236-Cb	0	0	inf	inf
-AN0237-Ca	0	0	inf	inf
-AN0237-Cb	0	0	inf	inf
-AN0238-Ca	0	0	inf	inf
-AN0238-Cb	0	0	inf	inf
-AN0239-Ca	0	0	inf	inf
-AN0239-Cb	0	0	inf	inf
-AN0240-Ca	0	0	inf	inf
-AN0240-Cb	0	0	inf	inf
-AN0241-Ca	0	0	inf	inf
-AN0241-Cb	0	0	inf	inf
-AN0242-Ca	0	0	inf	inf
-AN0242-Cb	0	0	inf	inf
-AN0243-Ca	0	0	inf	inf
-AN0243-Cb	0	0	inf	inf
-AN0244-Ca	0	0	inf	inf
-AN0244-Cb	0	0	inf	inf
-AN0245-Ca	0	0	inf	inf
-AN0245-Cb	0	0	inf	inf
-AN0246-Ca	0	0	inf	inf
-AN0246-Cb	0	0	inf	inf
-AN0247-Ca	0	0	inf	inf
-AN0247-Cb	0	0	inf	inf
-AN0248-Ca	0	0	inf	inf
-AN0248-Cb	0	0	inf	inf
-AN0250-Ca	0	0	inf	inf
-AN0250-Cb	0	0	inf	inf
-AN0251-Ca	0	0	inf	inf
-AN0251-Cb	0	0	inf	inf
-AN0252-Ca	0	0	inf	inf
-AN0252-Cb	0	0	inf	inf
-AN0253-Ca	0	0	inf	inf
-AN0253-Cb	0	0	inf	inf
-AN0254-Ca	0	0	inf	inf
-AN0254-Cb	0	0	inf	inf
-AN0255-Ca	0	0	inf	inf
-AN0255-Cb	0	0	inf	inf
-AN0256-Ca	0	0	inf	inf
-AN0256-Cb	0	0	inf	inf
-AN0258-Ca	0	0	inf	inf
-AN0258-Cb	0	0	inf	inf
-AN0259-Ca	0	0	inf	inf
-AN0259-Cb	0	0	inf	inf
-AN0260-Ca	0	0	inf	inf
-AN0260-Cb	0	0	inf	inf
-AN0261-Ca	0	0	inf	inf
-AN0261-Cb	0	0	inf	inf
-AN0262-Ca	0	0	inf	inf
-AN0262-Cb	0	0	inf	inf
-AN0263-Ca	0	0	inf	inf
-AN0263-Cb	0	0	inf	inf
-AN0264-Ca	0	0	inf	inf
-AN0264-Cb	0	0	inf	inf
-AN0265-Ca	0	0	inf	inf
-AN0265-Cb	0	0	inf	inf
-AN0266-Ca	0	0	inf	inf
-AN0266-Cb	0	0	inf	inf
-AN0267-Ca	0	0	inf	inf
-AN0267-Cb	0	0	inf	inf
-AN0268-Ca	0	0	inf	inf
-AN0268-Cb	0	0	inf	inf
-AN0269-Ca	0	0	inf	inf
-AN0269-Cb	0	0	inf	inf
-AN0270-Ca	0	0	inf	inf
-AN0270-Cb	0	0	inf	inf
-AN0271-Ca	0	0	inf	inf
-AN0271-Cb	0	0	inf	inf
-AN0272-Ca	0	0	inf	inf
-AN0272-Cb	0	0	inf	inf
-AN0275-Ca	0	0	inf	inf
-AN0275-Cb	0	0	inf	inf
-AN0276-Ca	0	0	inf	inf
-AN0276-Cb	0	0	inf	inf
-AN0277-Ca	0	0	inf	inf
-AN0277-Cb	0	0	inf	inf
-AN0278-Ca	0	0	inf	inf
-AN0278-Cb	0	0	inf	inf
-AN0279-Ca	0	0	inf	inf
-AN0279-Cb	0	0	inf	inf
-AN0280-Ca	0	0	inf	inf
-AN0280-Cb	0	0	inf	inf
-AN0281-Ca	0	0	inf	inf
-AN0281-Cb	0	0	inf	inf
-AN0282-Ca	0	0	inf	inf
-AN0282-Cb	0	0	inf	inf
-AN0283-Ca	0	0	inf	inf
-AN0283-Cb	0	0	inf	inf
-AN0284-Ca	0	0	inf	inf
-AN0284-Cb	0	0	inf	inf
-AN0285-Ca	0	0	inf	inf
-AN0285-Cb	0	0	inf	inf
-AN0286-Ca	0	0	inf	inf
-AN0286-Cb	0	0	inf	inf
-AN0287-Ca	0	0	inf	inf
-AN0287-Cb	0	0	inf	inf
-AN0288-Ca	0	0	inf	inf
-AN0288-Cb	0	0	inf	inf
-AN0289-Ca	0	0	inf	inf
-AN0289-Cb	0	0	inf	inf
-AN0290-Ca	0	0	inf	inf
-AN0290-Cb	0	0	inf	inf
-AN0291-Ca	0	0	inf	inf
-AN0291-Cb	0	0	inf	inf
-AN0292-Ca	0	0	inf	inf
-AN0292-Cb	0	0	inf	inf
-AN0293-Ca	0	0	inf	inf
-AN0293-Cb	0	0	inf	inf
-AN0294-Ca	0	0	inf	inf
-AN0294-Cb	0	0	inf	inf
-AN0295-Ca	0	0	inf	inf
-AN0295-Cb	0	0	inf	inf
-AN0296-Ca	0	0	inf	inf
-AN0296-Cb	0	0	inf	inf
-AN0297-Ca	0	0	inf	inf
-AN0297-Cb	0	0	inf	inf
-AN0298-Ca	0	0	inf	inf
-AN0298-Cb	0	0	inf	inf
-AN0299-Ca	0	0	inf	inf
-AN0299-Cb	0	0	inf	inf
-AN0300-Ca	0	0	inf	inf
-AN0300-Cb	0	0	inf	inf
-AN0301-Ca	0	0	inf	inf
-AN0301-Cb	0	0	inf	inf
-AN0302-Ca	0	0	inf	inf
-AN0302-Cb	0	0	inf	inf
-AN0303-Ca	0	0	inf	inf
-AN0303-Cb	0	0	inf	inf
-AN0304-Ca	0	0	inf	inf
-AN0304-Cb	0	0	inf	inf
-AN0305-Ca	0	0	inf	inf
-AN0305-Cb	0	0	inf	inf
-AN0306-Ca	0	0	inf	inf
-AN0306-Cb	0	0	inf	inf
-AN0307-Ca	0	0	inf	inf
-AN0307-Cb	0	0	inf	inf
-AN0308-Ca	0	0	inf	inf
-AN0308-Cb	0	0	inf	inf
-AN0309-Ca	0	0	inf	inf
-AN0309-Cb	0	0	inf	inf
-AN0310-Ca	0	0	inf	inf
-AN0310-Cb	0	0	inf	inf
-AN0311-Ca	0	0	inf	inf
-AN0311-Cb	0	0	inf	inf
-AN0312-Ca	0	0	inf	inf
-AN0312-Cb	0	0	inf	inf
-AN0313-Ca	0	0	inf	inf
-AN0313-Cb	0	0	inf	inf
-AN0314-Ca	0	0	inf	inf
-AN0314-Cb	0	0	inf	inf
-AN0315-Ca	0	0	inf	inf
-AN0315-Cb	0	0	inf	inf
-AN0316-Ca	0	0	inf	inf
-AN0316-Cb	0	0	inf	inf
-AN0317-Ca	0	0	inf	inf
-AN0317-Cb	0	0	inf	inf
-AN0318-Ca	0	0	inf	inf
-AN0318-Cb	0	0	inf	inf
-AN0319-Ca	0	0	inf	inf
-AN0319-Cb	0	0	inf	inf
-AN0320-Ca	0	0	inf	inf
-AN0320-Cb	0	0	inf	inf
-AN0321-Ca	0	0	inf	inf
-AN0321-Cb	0	0	inf	inf
-AP0002-Ca	0	0	inf	inf
-AP0002-Cb	0	0	inf	inf
-AP0005-Ca	0	0	inf	inf
-AP0005-Cb	0	0	inf	inf
-AP0006-Ca	0	0	inf	inf
-AP0006-Cb	0	0	inf	inf
-AP0007-Ca	0	0	inf	inf
-AP0007-Cb	0	0	inf	inf
-AP0008-Ca	0	0	inf	inf
-AP0008-Cb	0	0	inf	inf
-AP0009-Ca	0	0	inf	inf
-AP0009-Cb	0	0	inf	inf
-AP0010-Ca	0	0	inf	inf
-AP0010-Cb	0	0	inf	inf
-AP0011-Ca	0	0	inf	inf
-AP0011-Cb	0	0	inf	inf
-AP0014-Ca	0	0	inf	inf
-AP0014-Cb	0	0	inf	inf
-AP0017-Ca	0	0	inf	inf
-AP0017-Cb	0	0	inf	inf
-AP0018-Ca	0	0	inf	inf
-AP0018-Cb	0	0	inf	inf
-AP0019-Ca	0	0	inf	inf
-AP0019-Cb	0	0	inf	inf
-AP0020-Ca	0	0	inf	inf
-AP0020-Cb	0	0	inf	inf
-AP0021-Ca	0	0	inf	inf
-AP0021-Cb	0	0	inf	inf
-AP0022-Ca	0	0	inf	inf
-AP0022-Cb	0	0	inf	inf
-AP0023-Ca	0	0	inf	inf
-AP0023-Cb	0	0	inf	inf
-AP0024-Ca	0	0	inf	inf
-AP0024-Cb	0	0	inf	inf
-AP0025-Ca	0	0	inf	inf
-AP0025-Cb	0	0	inf	inf
-AP0030-Ca	0	0	inf	inf
-AP0030-Cb	0	0	inf	inf
-AP0031-Ca	0	0	inf	inf
-AP0031-Cb	0	0	inf	inf
-AP0032-Ca	0	0	inf	inf
-AP0032-Cb	0	0	inf	inf
-AP0033-Ca	0	0	inf	inf
-AP0033-Cb	0	0	inf	inf
-AP0034-Ca	0	0	inf	inf
-AP0034-Cb	0	0	inf	inf
-AP0035-Ca	0	0	inf	inf
-AP0035-Cb	0	0	inf	inf
-AQ0001-Ca	0	0	inf	inf
-AQ0001-Cb	0	0	inf	inf
-AQ0002-Ca	0	0	inf	inf
-AQ0002-Cb	0	0	inf	inf
-AQ0004-Ca	0	0	inf	inf
-AQ0004-Cb	0	0	inf	inf
-AQ0005-Ca	0	0	inf	inf
-AQ0005-Cb	0	0	inf	inf
-AQ0011-Ca	0	0	inf	inf
-AQ0011-Cb	0	0	inf	inf
-AQ0012-Ca	0	0	inf	inf
-AQ0012-Cb	0	0	inf	inf
-AQ0013-Ca	0	0	inf	inf
-AQ0013-Cb	0	0	inf	inf
-AQ0014-Ca	0	0	inf	inf
-AQ0014-Cb	0	0	inf	inf
-AQ0015-Ca	0	0	inf	inf
-AQ0015-Cb	0	0	inf	inf
-AR0001-Ca	0	0	inf	inf
-AR0001-Cb	0	0	inf	inf
-AR0007-Ca	0	0	inf	inf
-AR0007-Cb	0	0	inf	inf
-AR0008-Ca	0	0	inf	inf
-AR0008-Cb	0	0	inf	inf
-AR0009-Ca	0	0	inf	inf
-AR0009-Cb	0	0	inf	inf
-AR0010-Ca	0	0	inf	inf
-AR0010-Cb	0	0	inf	inf
-AR0011-Ca	0	0	inf	inf
-AR0011-Cb	0	0	inf	inf
-AR0012-Ca	0	0	inf	inf
-AR0012-Cb	0	0	inf	inf
-AR0013-Ca	0	0	inf	inf
-AR0013-Cb	0	0	inf	inf
-AR0014-Ca	0	0	inf	inf
-AR0014-Cb	0	0	inf	inf
-AR0015-Ca	0	0	inf	inf
-AR0015-Cb	0	0	inf	inf
-AR0016-Ca	0	0	inf	inf
-AR0016-Cb	0	0	inf	inf
-AR0017-Ca	0	0	inf	inf
-AR0017-Cb	0	0	inf	inf
-AR0018-Ca	0	0	inf	inf
-AR0018-Cb	0	0	inf	inf
-AR0019-Ca	0	0	inf	inf
-AR0019-Cb	0	0	inf	inf
-AR0020-Ca	0	0	inf	inf
-AR0020-Cb	0	0	inf	inf
-AR0021-Ca	0	0	inf	inf
-AR0021-Cb	0	0	inf	inf
-AR0022-Ca	0	0	inf	inf
-AR0022-Cb	0	0	inf	inf
-AR0023-Ca	0	0	inf	inf
-AR0023-Cb	0	0	inf	inf
-AR0024-Ca	0	0	inf	inf
-AR0024-Cb	0	0	inf	inf
-AR0026-Ca	0	0	inf	inf
-AR0026-Cb	0	0	inf	inf
-AR0027-Ca	0	0	inf	inf
-AR0027-Cb	0	0	inf	inf
-AR0034-Ca	0	0	inf	inf
-AR0034-Cb	0	0	inf	inf
-AR0035-Ca	0	0	inf	inf
-AR0035-Cb	0	0	inf	inf
-AR0036-Ca	0	0	inf	inf
-AR0036-Cb	0	0	inf	inf
-AR0038-Ca	0	0	inf	inf
-AR0038-Cb	0	0	inf	inf
-AR0040-Ca	0	0	inf	inf
-AR0040-Cb	0	0	inf	inf
-AR0042-Ca	0	0	inf	inf
-AR0042-Cb	0	0	inf	inf
-AR0043-Ca	0	0	inf	inf
-AR0043-Cb	0	0	inf	inf
-AR0044-Ca	0	0	inf	inf
-AR0044-Cb	0	0	inf	inf
-AR0045-Ca	0	0	inf	inf
-AR0045-Cb	0	0	inf	inf
-AR0046-Ca	0	0	inf	inf
-AR0046-Cb	0	0	inf	inf
-AR0047-Ca	0	0	inf	inf
-AR0047-Cb	0	0	inf	inf
-AR0048-Ca	0	0	inf	inf
-AR0048-Cb	0	0	inf	inf
-AR0049-Ca	0	0	inf	inf
-AR0049-Cb	0	0	inf	inf
-AR0050-Ca	0	0	inf	inf
-AR0050-Cb	0	0	inf	inf
-AR0051-Ca	0	0	inf	inf
-AR0051-Cb	0	0	inf	inf
-AR0052-Ca	0	0	inf	inf
-AR0052-Cb	0	0	inf	inf
-AR0053-Ca	0	0	inf	inf
-AR0053-Cb	0	0	inf	inf
-AR0054-Ca	0	0	inf	inf
-AR0054-Cb	0	0	inf	inf
-AR0057-Ca	0	0	inf	inf
-AR0057-Cb	0	0	inf	inf
-AR0059-Ca	0	0	inf	inf
-AR0059-Cb	0	0	inf	inf
-AR0060-Ca	0	0	inf	inf
-AR0060-Cb	0	0	inf	inf
-AR0061-Ca	0	0	inf	inf
-AR0061-Cb	0	0	inf	inf
-AR0062-Ca	0	0	inf	inf
-AR0062-Cb	0	0	inf	inf
-AR0063-Ca	0	0	inf	inf
-AR0063-Cb	0	0	inf	inf
-AR0064-Ca	0	0	inf	inf
-AR0064-Cb	0	0	inf	inf
-AR0065-Ca	0	0	inf	inf
-AR0065-Cb	0	0	inf	inf
-AR0066-Ca	0	0	inf	inf
-AR0066-Cb	0	0	inf	inf
-AR0069-Ca	0	0	inf	inf
-AR0069-Cb	0	0	inf	inf
-AR0070-Ca	0	0	inf	inf
-AR0070-Cb	0	0	inf	inf
-AR0071-Ca	0	0	inf	inf
-AR0071-Cb	0	0	inf	inf
-AR0072-Ca	0	0	inf	inf
-AR0072-Cb	0	0	inf	inf
-AR0073-Ca	0	0	inf	inf
-AR0073-Cb	0	0	inf	inf
-AR0074-Ca	0	0	inf	inf
-AR0074-Cb	0	0	inf	inf
-AR0075-Ca	0	0	inf	inf
-AR0075-Cb	0	0	inf	inf
-AR0076-Ca	0	0	inf	inf
-AR0076-Cb	0	0	inf	inf
-AR0077-Ca	0	0	inf	inf
-AR0077-Cb	0	0	inf	inf
-AR0078-Ca	0	0	inf	inf
-AR0078-Cb	0	0	inf	inf
-AR0079-Ca	0	0	inf	inf
-AR0079-Cb	0	0	inf	inf
-AR0080-Ca	0	0	inf	inf
-AR0080-Cb	0	0	inf	inf
-AR0081-Ca	0	0	inf	inf
-AR0081-Cb	0	0	inf	inf
-AR0082-Ca	0	0	inf	inf
-AR0082-Cb	0	0	inf	inf
-AR0083-Ca	0	0	inf	inf
-AR0083-Cb	0	0	inf	inf
-AR0084-Ca	0	0	inf	inf
-AR0084-Cb	0	0	inf	inf
-AR0085-Ca	0	0	inf	inf
-AR0085-Cb	0	0	inf	inf
-AR0086-Ca	0	0	inf	inf
-AR0086-Cb	0	0	inf	inf
-AR0087-Ca	0	0	inf	inf
-AR0087-Cb	0	0	inf	inf
-AR0088-Ca	0	0	inf	inf
-AR0088-Cb	0	0	inf	inf
-AR0089-Ca	0	0	inf	inf
-AR0089-Cb	0	0	inf	inf
-AR0090-Ca	0	0	inf	inf
-AR0090-Cb	0	0	inf	inf
-AR0092-Ca	0	0	inf	inf
-AR0092-Cb	0	0	inf	inf
-AR0093-Ca	0	0	inf	inf
-AR0093-Cb	0	0	inf	inf
-AR0095-Ca	0	0	inf	inf
-AR0095-Cb	0	0	inf	inf
-AR0096-Ca	0	0	inf	inf
-AR0096-Cb	0	0	inf	inf
-AR0097-Ca	0	0	inf	inf
-AR0097-Cb	0	0	inf	inf
-AR0098-Ca	0	0	inf	inf
-AR0098-Cb	0	0	inf	inf
-AR0099-Ca	0	0	inf	inf
-AR0099-Cb	0	0	inf	inf
-AR0100-Ca	0	0	inf	inf
-AR0100-Cb	0	0	inf	inf
-AS0001-Ca	0	0	inf	inf
-AS0001-Cb	0	0	inf	inf
-AS0002-Ca	0	0	inf	inf
-AS0002-Cb	0	0	inf	inf
-AS0003-Ca	0	0	inf	inf
-AS0003-Cb	0	0	inf	inf
-AS0004-Ca	0	0	inf	inf
-AS0004-Cb	0	0	inf	inf
-AS0005-Ca	0	0	inf	inf
-AS0005-Cb	0	0	inf	inf
-AS0006-Ca	0	0	inf	inf
-AS0006-Cb	0	0	inf	inf
-AS0007-Ca	0	0	inf	inf
-AS0007-Cb	0	0	inf	inf
-AS0008-Ca	0	0	inf	inf
-AS0008-Cb	0	0	inf	inf
-AS0009-Ca	0	0	inf	inf
-AS0009-Cb	0	0	inf	inf
-AS0010-Ca	0	0	inf	inf
-AS0010-Cb	0	0	inf	inf
-AS0011-Ca	0	0	inf	inf
-AS0011-Cb	0	0	inf	inf
-AS0012-Ca	0	0	inf	inf
-AS0012-Cb	0	0	inf	inf
-AS0013-Ca	0	0	inf	inf
-AS0013-Cb	0	0	inf	inf
-AS0014-Ca	0	0	inf	inf
-AS0014-Cb	0	0	inf	inf
-AS0015-Ca	0	0	inf	inf
-AS0015-Cb	0	0	inf	inf
-AS0016-Ca	0	0	inf	inf
-AS0016-Cb	0	0	inf	inf
-AS0017-Ca	0	0	inf	inf
-AS0017-Cb	0	0	inf	inf
-AS0018-Ca	0	0	inf	inf
-AS0018-Cb	0	0	inf	inf
-AS0019-Ca	0	0	inf	inf
-AS0019-Cb	0	0	inf	inf
-AS0020-Ca	0	0	inf	inf
-AS0020-Cb	0	0	inf	inf
-AS0021-Ca	0	0	inf	inf
-AS0021-Cb	0	0	inf	inf
-AS0022-Ca	0	0	inf	inf
-AS0022-Cb	0	0	inf	inf
-AS0024-Ca	0	0	inf	inf
-AS0024-Cb	0	0	inf	inf
-AS0025-Ca	0	0	inf	inf
-AS0025-Cb	0	0	inf	inf
-AS0026-Ca	0	0	inf	inf
-AS0026-Cb	0	0	inf	inf
-AS0027-Ca	0	0	inf	inf
-AS0027-Cb	0	0	inf	inf
-AS0028-Ca	0	0	inf	inf
-AS0028-Cb	0	0	inf	inf
-AS0029-Ca	0	0	inf	inf
-AS0029-Cb	0	0	inf	inf
-AS0030-Ca	0	0	inf	inf
-AS0030-Cb	0	0	inf	inf
-AS0032-Ca	0	0	inf	inf
-AS0032-Cb	0	0	inf	inf
-AS0033-Ca	0	0	inf	inf
-AS0033-Cb	0	0	inf	inf
-AS0034-Ca	0	0	inf	inf
-AS0034-Cb	0	0	inf	inf
-AS0035-Ca	0	0	inf	inf
-AS0035-Cb	0	0	inf	inf
-AS0036-Ca	0	0	inf	inf
-AS0036-Cb	0	0	inf	inf
-AS0037-Ca	0	0	inf	inf
-AS0037-Cb	0	0	inf	inf
-AS0039-Ca	0	0	inf	inf
-AS0039-Cb	0	0	inf	inf
-AS0040-Ca	0	0	inf	inf
-AS0040-Cb	0	0	inf	inf
-AS0041-Ca	0	0	inf	inf
-AS0041-Cb	0	0	inf	inf
-AS0042-Ca	0	0	inf	inf
-AS0042-Cb	0	0	inf	inf
-AS0044-Ca	0	0	inf	inf
-AS0044-Cb	0	0	inf	inf
-AS0045-Ca	0	0	inf	inf
-AS0045-Cb	0	0	inf	inf
-AS0046-Ca	0	0	inf	inf
-AS0046-Cb	0	0	inf	inf
-AS0047-Ca	0	0	inf	inf
-AS0047-Cb	0	0	inf	inf
-AS0048-Ca	0	0	inf	inf
-AS0048-Cb	0	0	inf	inf
-AS0049-Ca	0	0	inf	inf
-AS0049-Cb	0	0	inf	inf
-AS0051-Ca	0	0	inf	inf
-AS0051-Cb	0	0	inf	inf
-AS0052-Ca	0	0	inf	inf
-AS0052-Cb	0	0	inf	inf
-AS0053-Ca	0	0	inf	inf
-AS0053-Cb	0	0	inf	inf
-AS0054-Ca	0	0	inf	inf
-AS0054-Cb	0	0	inf	inf
-AS0055-Ca	0	0	inf	inf
-AS0055-Cb	0	0	inf	inf
-AS0056-Ca	0	0	inf	inf
-AS0056-Cb	0	0	inf	inf
-AS0057-Ca	0	0	inf	inf
-AS0057-Cb	0	0	inf	inf
-AS0058-Ca	0	0	inf	inf
-AS0058-Cb	0	0	inf	inf
-AS0059-Ca	0	0	inf	inf
-AS0059-Cb	0	0	inf	inf
-AS0060-Ca	0	0	inf	inf
-AS0060-Cb	0	0	inf	inf
-AS0062-Ca	0	0	inf	inf
-AS0062-Cb	0	0	inf	inf
-AS0064-Ca	0	0	inf	inf
-AS0064-Cb	0	0	inf	inf
-AS0065-Ca	0	0	inf	inf
-AS0065-Cb	0	0	inf	inf
-AS0066-Ca	0	0	inf	inf
-AS0066-Cb	0	0	inf	inf
-AS0068-Ca	0	0	inf	inf
-AS0068-Cb	0	0	inf	inf
-AS0069-Ca	0	0	inf	inf
-AS0069-Cb	0	0	inf	inf
-AS0070-Ca	0	0	inf	inf
-AS0070-Cb	0	0	inf	inf
-AS0071-Ca	0	0	inf	inf
-AS0071-Cb	0	0	inf	inf
-AS0072-Ca	0	0	inf	inf
-AS0072-Cb	0	0	inf	inf
-AS0073-Ca	0	0	inf	inf
-AS0073-Cb	0	0	inf	inf
-AS0074-Ca	0	0	inf	inf
-AS0074-Cb	0	0	inf	inf
-AS0076-Ca	0	0	inf	inf
-AS0076-Cb	0	0	inf	inf
-AS0077-Ca	0	0	inf	inf
-AS0077-Cb	0	0	inf	inf
-AS0078-Ca	0	0	inf	inf
-AS0078-Cb	0	0	inf	inf
-AV0001-Ca	0	0	-4.348864555358887	15.676660537719727
-AV0001-Cb	0	0	-3.375014066696167	11.477118492126465
-AV0002-Ca	0	0	inf	inf
-AV0002-Cb	0	0	inf	inf
-AV0003-Ca	0	0	inf	inf
-AV0003-Cb	0	0	inf	inf
-AV0004-Ca	0	0	inf	inf
-AV0004-Cb	0	0	inf	inf
-AV0005-Ca	0	0	-3.450382947921753	11.51760482788086
-AV0005-Cb	0	0	-0.32906854152679443	15.02685546875
-AV0006-Ca	0	0	inf	inf
-AV0006-Cb	0	0	inf	inf
-AV0007-Ca	0	0	inf	inf
-AV0007-Cb	0	0	inf	inf
-AV0008-Ca	0	0	inf	inf
-AV0008-Cb	0	0	inf	inf
-AV0009-Ca	0	0	inf	inf
-AV0009-Cb	0	0	inf	inf
-AV0010-Ca	0	0	inf	inf
-AV0010-Cb	0	0	inf	inf
-AV0011-Ca	0	0	inf	inf
-AV0011-Cb	0	0	inf	inf
-AV0012-Ca	0	0	inf	inf
-AV0012-Cb	0	0	inf	inf
-AV0013-Ca	0	0	inf	inf
-AV0013-Cb	0	0	inf	inf
-AV0014-Ca	0	0	inf	inf
-AV0014-Cb	0	0	inf	inf
-AV0015-Ca	0	0	inf	inf
-AV0015-Cb	0	0	inf	inf
-AV0017-Ca	0	0	inf	inf
-AV0017-Cb	0	0	inf	inf
-AV0018-Ca	0	0	inf	inf
-AV0018-Cb	0	0	inf	inf
-AV0020-Ca	0	0	-1.161368489265442	11.726210594177246
-AV0020-Cb	0	0	-4.739518165588379	16.47793197631836
-AV0021-Ca	0	0	inf	inf
-AV0021-Cb	0	0	inf	inf
-AV0022-Ca	0	0	inf	inf
-AV0022-Cb	0	0	inf	inf
-AV0024-Ca	0	0	inf	inf
-AV0024-Cb	0	0	inf	inf
-AV0025-Ca	0	0	inf	inf
-AV0025-Cb	0	0	inf	inf
-AV0026-Ca	0	0	2.956204891204834	12.772970199584961
-AV0026-Cb	0	0	-3.8034565448760986	12.35618782043457
-AV0027-Ca	0	0	inf	inf
-AV0027-Cb	0	0	inf	inf
-AV0028-Ca	0	0	inf	inf
-AV0028-Cb	0	0	inf	inf
-AV0029-Ca	0	0	-3.588165283203125	10.68623161315918
-AV0029-Cb	0	0	3.148228645324707	12.516332626342773
-AV0030-Ca	0	0	inf	inf
-AV0030-Cb	0	0	inf	inf
-AV0031-Ca	0	0	3.7537004947662354	12.670514106750488
-AV0031-Cb	0	0	-6.289723873138428	14.944745063781738
-AV0032-Ca	0	0	inf	inf
-AV0032-Cb	0	0	inf	inf
-AV0033-Ca	1	1	17.150405883789062	27.21227264404297
-AV0033-Cb	1	1	6.359943389892578	11.462717056274414
-AV0034-Ca	0	0	inf	inf
-AV0034-Cb	0	0	inf	inf
-AV0035-Ca	0	0	inf	inf
-AV0035-Cb	0	0	inf	inf
-AV0036-Ca	1	1	17.46759796142578	26.961793899536133
-AV0036-Cb	0	0	-4.028751373291016	14.741908073425293
-AV0037-Ca	0	0	inf	inf
-AV0037-Cb	0	0	inf	inf
-AV0038-Ca	0	0	inf	inf
-AV0038-Cb	0	0	inf	inf
-AV0039-Ca	0	0	inf	inf
-AV0039-Cb	0	0	inf	inf
-AV0040-Ca	0	0	inf	inf
-AV0040-Cb	0	0	inf	inf
-AV0041-Ca	1	1	13.195860862731934	12.920215606689453
-AV0041-Cb	1	1	5.363572120666504	19.028636932373047
-AV0042-Ca	0	0	inf	inf
-AV0042-Cb	0	0	inf	inf
-AV0043-Ca	0	0	inf	inf
-AV0043-Cb	0	0	inf	inf
-AV0044-Ca	0	0	inf	inf
-AV0044-Cb	0	0	inf	inf
-AV0045-Ca	0	0	inf	inf
-AV0045-Cb	0	0	inf	inf
-AV0046-Ca	0	0	inf	inf
-AV0046-Cb	0	0	inf	inf
-AV0047-Ca	0	0	inf	inf
-AV0047-Cb	0	0	inf	inf
-AY0006-Ca	0	0	inf	inf
-AY0006-Cb	0	0	inf	inf
-AY0007-Ca	1	1	17.180267333984375	27.17438507080078
-AY0007-Cb	1	1	16.89620590209961	27.48591423034668
-AY0010-Ca	0	0	inf	inf
-AY0010-Cb	0	0	inf	inf
-AY0011-Ca	0	0	-4.680924415588379	15.041091918945312
-AY0011-Cb	0	0	-6.192010879516602	16.54224967956543
-AY0012-Ca	0	0	-4.744201183319092	16.650493621826172
-AY0012-Cb	1	1	11.408279418945312	10.148699760437012
-AY0013-Ca	0	0	-4.852596282958984	13.63839054107666
-AY0013-Cb	0	0	-6.0378499031066895	16.696462631225586
-AY0015-Ca	0	0	-2.882539749145508	15.076133728027344
-AY0015-Cb	0	0	-4.348228454589844	15.504942893981934
-AY0016-Ca	0	0	-2.291769027709961	12.517362594604492
-AY0016-Cb	1	1	17.106000900268555	27.17020034790039
-AY0017-Ca	0	0	-1.3634600639343262	14.330799102783203
-AY0017-Cb	0	0	-4.933088779449463	16.66387367248535
-AY0018-Ca	0	0	-4.659298896789551	15.891190528869629
-AY0018-Cb	0	0	-3.890049695968628	12.783026695251465
-AY0019-Ca	0	0	inf	inf
-AY0019-Cb	0	0	inf	inf
-AY0020-Ca	1	1	4.519171714782715	12.71699333190918
-AY0020-Cb	0	0	-5.189451694488525	16.84973907470703
-AY0021-Ca	0	0	inf	inf
-AY0021-Cb	0	0	inf	inf
-AY0023-Ca	0	0	-5.700345039367676	16.85642433166504
-AY0023-Cb	0	0	-3.439150810241699	14.89999771118164
-AY0024-Ca	0	0	-5.008825778961182	16.857650756835938
-AY0024-Cb	0	0	-2.250609874725342	12.233601570129395
-AY0025-Ca	0	0	-3.3158602714538574	11.511378288269043
-AY0025-Cb	1	1	5.421351432800293	11.521953582763672
-AY0026-Ca	1	1	17.87639045715332	27.063871383666992
-AY0026-Cb	0	0	3.9742238521575928	12.700094223022461
-AY0027-Ca	0	0	-1.6594799757003784	14.845470428466797
-AY0027-Cb	1	1	17.10198211669922	28.256973266601562
-AY0029-Ca	0	0	3.68837308883667	13.534258842468262
-AY0029-Cb	1	1	11.717991828918457	10.51491928100586
-AY0031-Ca	0	0	-4.473183631896973	15.994208335876465
-AY0031-Cb	0	0	-3.2340545654296875	11.47109603881836
-AY0032-Ca	0	0	3.8211066722869873	12.918222427368164
-AY0032-Cb	0	0	-4.792992115020752	16.576156616210938
-AY0033-Ca	0	0	-4.5187153816223145	15.192450523376465
-AY0033-Cb	0	0	-6.375741481781006	16.362842559814453
-AY0034-Ca	0	0	-5.680092811584473	16.912494659423828
-AY0034-Cb	0	0	-2.545048713684082	14.993115425109863
-AY0035-Ca	1	1	5.164487361907959	17.559911727905273
-AY0035-Cb	0	0	-6.082144260406494	16.470230102539062
-AY0036-Ca	0	0	-4.590324401855469	15.932095527648926
-AY0036-Cb	1	1	5.786466598510742	16.51154327392578
-AY0038-Ca	0	0	-4.892851829528809	16.646987915039062
-AY0038-Cb	0	0	-6.310453414916992	16.12441062927246
-AY0039-Ca	1	1	5.168910026550293	17.54986000061035
-AY0039-Cb	0	0	-4.990311145782471	14.358829498291016
-AY0040-Ca	0	0	inf	inf
-AY0040-Cb	0	0	inf	inf
-AY0041-Ca	0	0	inf	inf
-AY0041-Cb	0	0	inf	inf
-AY0042-Ca	0	0	-5.510087490081787	16.883296966552734
-AY0042-Cb	0	0	-4.02901554107666	15.141311645507812
-AY0043-Ca	0	0	inf	inf
-AY0043-Cb	0	0	inf	inf
-AY0045-Ca	0	0	-5.136162757873535	16.841644287109375
-AY0045-Cb	0	0	-4.7805352210998535	16.383373260498047
-AY0046-Ca	0	0	-1.2700560092926025	11.895977020263672
-AY0046-Cb	0	0	-0.6614348888397217	13.804424285888672
-AY0047-Ca	1	1	13.873164176940918	9.095626831054688
-AY0047-Cb	0	0	-6.257667541503906	16.41939353942871
-AY0048-Ca	1	1	16.947513580322266	27.425167083740234
-AY0048-Cb	0	0	-5.2285847663879395	16.860233306884766
-AY0049-Ca	0	0	-1.716529130935669	13.989266395568848
-AY0049-Cb	0	0	-5.437555313110352	16.768030166625977
-AY0050-Ca	0	0	-2.2179348468780518	13.485754013061523
-AY0050-Cb	0	0	-0.7456636428833008	14.303947448730469
-AY0052-Ca	1	1	4.288896560668945	11.831964492797852
-AY0052-Cb	1	1	17.731172561645508	27.12424087524414
-AY0053-Ca	0	0	-4.687882423400879	15.366754531860352
-AY0053-Cb	0	0	-6.125872611999512	16.5362491607666
-AY0054-Ca	0	0	inf	inf
-AY0054-Cb	0	0	inf	inf
-AY0055-Ca	0	0	-5.114739894866943	16.85530662536621
-AY0055-Cb	0	0	-4.765193939208984	16.574981689453125
-AY0056-Ca	0	0	-6.191638469696045	16.326820373535156
-AY0056-Cb	0	0	-5.565350532531738	16.786901473999023
-AY0057-Ca	0	0	-5.978826999664307	16.819305419921875
-AY0057-Cb	0	0	-3.172224998474121	14.510490417480469
-AY0058-Ca	0	0	-5.719265937805176	16.861671447753906
-AY0058-Cb	0	0	-4.940741062164307	16.710065841674805
-AY0059-Ca	0	0	-3.460787296295166	10.551278114318848
-AY0059-Cb	0	0	-5.650031566619873	16.872634887695312
-AY0060-Ca	1	1	4.8624491691589355	18.146175384521484
-AY0060-Cb	1	1	4.429909706115723	12.395200729370117
-AY0061-Ca	1	1	17.58918571472168	26.92697525024414
-AY0061-Cb	0	0	-3.1712191104888916	11.338037490844727
-AY0062-Ca	0	0	-1.6919581890106201	14.389116287231445
-AY0062-Cb	0	0	-6.169222354888916	16.488161087036133
-AY0063-Ca	0	0	-3.3723130226135254	15.161240577697754
-AY0063-Cb	0	0	-5.470378398895264	16.988115310668945
-AY0064-Ca	0	0	-4.884969711303711	16.797203063964844
-AY0064-Cb	0	0	-4.872188568115234	16.65250587463379
-AY0065-Ca	0	0	-5.077329158782959	13.924090385437012
-AY0065-Cb	0	0	4.027622699737549	12.800602912902832
-AY0066-Ca	0	0	-4.644459247589111	15.21033000946045
-AY0066-Cb	0	0	-3.521942377090454	10.839847564697266
-AY0067-Ca	0	0	-1.676740288734436	13.851781845092773
-AY0067-Cb	0	0	-6.268303871154785	16.5226993560791
-AY0068-Ca	0	0	-5.161588191986084	16.91037940979004
-AY0068-Cb	0	0	-6.257023811340332	16.376333236694336
-AY0069-Ca	1	1	17.075788497924805	27.30254364013672
-AY0069-Cb	1	1	12.977458953857422	13.37386417388916
-AY0070-Ca	0	0	-6.171502590179443	16.396883010864258
-AY0070-Cb	0	0	-6.163058757781982	16.50412940979004
-AY0072-Ca	0	0	-1.7872626781463623	14.776848793029785
-AY0072-Cb	0	0	-4.480313777923584	15.86143970489502
-AY0074-Ca	1	1	12.14346694946289	10.353619575500488
-AY0074-Cb	0	0	-6.156082630157471	16.68942642211914
-AY0076-Ca	1	1	9.3981294631958	12.553818702697754
-AY0076-Cb	0	0	-4.825381755828857	16.41546058654785
-AY0077-Ca	0	0	-3.731710433959961	14.5784273147583
-AY0077-Cb	1	1	17.000656127929688	27.722946166992188
-AY0078-Ca	1	1	5.153142929077148	17.565940856933594
-AY0078-Cb	0	0	-6.349883079528809	16.2188777923584
-AY0079-Ca	1	1	17.41828155517578	26.92034149169922
-AY0079-Cb	1	1	13.687363624572754	9.240763664245605
-AY0080-Ca	0	0	-5.879796028137207	16.905197143554688
-AY0080-Cb	0	0	-1.8676475286483765	12.394820213317871
-AY0082-Ca	1	1	13.408031463623047	9.176016807556152
-AY0082-Cb	0	0	-4.713093280792236	16.142066955566406
-AY0083-Ca	1	0	4.2652153968811035	11.950489044189453
-AY0083-Cb	1	0	4.145488739013672	12.775553703308105
-AY0085-Ca	0	0	inf	inf
-AY0085-Cb	0	0	inf	inf
-AY0087-Ca	0	0	-4.642077922821045	14.537254333496094
-AY0087-Cb	0	0	-5.040238380432129	16.56293487548828
-AY0088-Ca	0	0	-3.4437625408172607	10.688514709472656
-AY0088-Cb	0	0	-6.072078704833984	16.62061309814453
-AY0089-Ca	1	1	5.147904396057129	17.56844711303711
-AY0089-Cb	1	1	18.116247177124023	27.151161193847656
-AY0090-Ca	1	1	17.403446197509766	27.103883743286133
-AY0090-Cb	1	0	4.1960062980651855	12.654336929321289
-AY0091-Ca	0	0	-2.720437526702881	11.29023265838623
-AY0091-Cb	0	0	-3.3744871616363525	11.29781723022461
-AD0142-Ca	0	0	inf	inf
-AD0142-Cb	0	0	inf	inf
-AD0143-Ca	0	0	inf	inf
-AD0143-Cb	0	0	inf	inf
-AD0231-Ca	0	0	inf	inf
-AD0231-Cb	0	0	inf	inf
-AD0232-Ca	0	0	inf	inf
-AD0232-Cb	0	0	inf	inf
-AD0254-Ca	0	0	inf	inf
-AD0254-Cb	0	0	inf	inf
-AD0255-Ca	0	0	inf	inf
-AD0255-Cb	0	0	inf	inf
-AD0277-Ca	0	0	inf	inf
-AD0277-Cb	0	0	inf	inf
-AD0278-Ca	0	0	inf	inf
-AD0278-Cb	0	0	inf	inf
-AD0305-Ca	0	0	inf	inf
-AD0305-Cb	0	0	inf	inf
-AD0306-Ca	0	0	inf	inf
-AD0306-Cb	0	0	inf	inf
-AD0324-Ca	0	0	inf	inf
-AD0324-Cb	0	0	inf	inf
-AD0325-Ca	0	0	inf	inf
-AD0325-Cb	0	0	inf	inf
-AD0347-Ca	0	0	inf	inf
-AD0347-Cb	0	0	inf	inf
-AD0348-Ca	0	0	inf	inf
-AD0348-Cb	0	0	inf	inf
-AD0371-Ca	0	0	inf	inf
-AD0371-Cb	0	0	inf	inf
-AD0372-Ca	0	0	inf	inf
-AD0372-Cb	0	0	inf	inf
-AD0422-Ca	0	0	inf	inf
-AD0422-Cb	0	0	inf	inf
-AD0423-Ca	0	0	inf	inf
-AD0423-Cb	0	0	inf	inf
-AD0447-Ca	0	0	inf	inf
-AD0447-Cb	0	0	inf	inf
-AD0448-Ca	0	0	inf	inf
-AD0448-Cb	0	0	inf	inf
-AD0473-Ca	0	0	inf	inf
-AD0473-Cb	0	0	inf	inf
-AD0474-Ca	0	0	inf	inf
-AD0474-Cb	0	0	inf	inf
+ox_code	p2_dtc_prediction	p2_rfc_prediction	p2_rfcd_prediction	p2_umap_0	p2_umap_1
+AA0040-Ca	0	0	0	inf	inf
+AA0040-Cb	0	0	0	inf	inf
+AA0041-Ca	0	0	0	inf	inf
+AA0041-Cb	0	0	0	inf	inf
+AA0042-Ca	0	0	0	inf	inf
+AA0042-Cb	0	0	0	inf	inf
+AA0043-Ca	0	0	0	inf	inf
+AA0043-Cb	0	0	0	inf	inf
+AA0044-Ca	0	0	0	inf	inf
+AA0044-Cb	0	0	0	inf	inf
+AA0048-Ca	0	0	1	-1.0427327156066895	15.35543441772461
+AA0048-Cb	0	0	1	-3.6995301246643066	17.7330265045166
+AA0049-Ca	0	0	0	-0.018045062199234962	15.739970207214355
+AA0049-Cb	1	1	1	6.238454341888428	1.2855687141418457
+AA0050-Ca	0	0	1	-1.0570775270462036	15.355443954467773
+AA0050-Cb	0	0	1	-1.117120385169983	15.426118850708008
+AA0051-Ca	0	0	0	inf	inf
+AA0051-Cb	0	0	0	inf	inf
+AA0052-Ca	0	0	0	inf	inf
+AA0052-Cb	0	0	0	inf	inf
+AA0053-Ca	0	0	0	inf	inf
+AA0053-Cb	0	0	0	inf	inf
+AA0054-Ca	0	0	0	inf	inf
+AA0054-Cb	0	0	0	inf	inf
+AA0055-Ca	0	0	0	inf	inf
+AA0055-Cb	0	0	0	inf	inf
+AA0056-Ca	0	0	0	inf	inf
+AA0056-Cb	0	0	0	inf	inf
+AA0060-Ca	0	1	1	1.9670652151107788	9.70931625366211
+AA0060-Cb	0	0	1	-1.300581693649292	15.657878875732422
+AA0061-Ca	0	0	1	-1.1290526390075684	15.446667671203613
+AA0061-Cb	0	0	1	-1.419934868812561	15.52318000793457
+AA0063-Ca	0	0	0	inf	inf
+AA0063-Cb	0	0	0	inf	inf
+AA0064-Ca	0	0	0	inf	inf
+AA0064-Cb	0	0	0	inf	inf
+AA0066-Ca	0	0	0	inf	inf
+AA0066-Cb	0	0	0	inf	inf
+AA0067-Ca	0	0	0	inf	inf
+AA0067-Cb	0	0	0	inf	inf
+AA0068-Ca	0	0	0	inf	inf
+AA0068-Cb	0	0	0	inf	inf
+AA0072-Ca	0	0	1	0.26738154888153076	12.288108825683594
+AA0072-Cb	0	0	1	-1.8579810857772827	15.662257194519043
+AA0073-Ca	0	0	1	0.7531799077987671	10.27670955657959
+AA0073-Cb	0	0	0	-1.3392034769058228	15.7036714553833
+AA0074-Ca	0	0	0	inf	inf
+AA0074-Cb	0	0	0	inf	inf
+AA0075-Ca	0	0	0	inf	inf
+AA0075-Cb	0	0	0	inf	inf
+AA0076-Ca	0	0	0	inf	inf
+AA0076-Cb	0	0	0	inf	inf
+AA0077-Ca	0	0	0	inf	inf
+AA0077-Cb	0	0	0	inf	inf
+AA0080-Ca	0	0	0	inf	inf
+AA0080-Cb	0	0	0	inf	inf
+AA0084-Ca	0	0	1	-1.0830377340316772	15.439115524291992
+AA0084-Cb	0	0	1	-1.0667566061019897	15.297879219055176
+AA0085-Ca	0	0	1	1.728771448135376	7.427621841430664
+AA0085-Cb	0	0	1	-1.2599420547485352	15.505143165588379
+AA0086-Ca	0	0	0	inf	inf
+AA0086-Cb	0	0	0	inf	inf
+AA0087-Ca	0	0	0	inf	inf
+AA0087-Cb	0	0	0	inf	inf
+AA0088-Ca	0	0	0	inf	inf
+AA0088-Cb	0	0	0	inf	inf
+AA0089-Ca	0	0	0	inf	inf
+AA0089-Cb	0	0	0	inf	inf
+AA0090-Ca	0	0	0	inf	inf
+AA0090-Cb	0	0	0	inf	inf
+AA0091-Ca	0	0	0	inf	inf
+AA0091-Cb	0	0	0	inf	inf
+AA0096-Ca	1	1	1	3.508787155151367	6.962176322937012
+AA0096-Cb	0	0	1	-1.0961955785751343	15.456013679504395
+AA0097-Ca	1	1	1	2.2492711544036865	6.99241304397583
+AA0097-Cb	0	0	1	1.8618415594100952	8.36178207397461
+AA0098-Ca	0	0	1	-1.5224852561950684	15.589938163757324
+AA0098-Cb	1	1	1	5.111760139465332	5.371253490447998
+AA0099-Ca	0	0	0	inf	inf
+AA0099-Cb	0	0	0	inf	inf
+AA0100-Ca	0	0	0	inf	inf
+AA0100-Cb	0	0	0	inf	inf
+AA0101-Ca	0	0	0	inf	inf
+AA0101-Cb	0	0	0	inf	inf
+AA0102-Ca	0	0	0	inf	inf
+AA0102-Cb	0	0	0	inf	inf
+AA0103-Ca	0	0	0	inf	inf
+AA0103-Cb	0	0	0	inf	inf
+AA0104-Ca	0	0	0	inf	inf
+AA0104-Cb	0	0	0	inf	inf
+AA0107-Ca	0	0	0	inf	inf
+AA0107-Cb	0	0	0	inf	inf
+AA0108-Ca	0	0	1	1.7101484537124634	10.46883773803711
+AA0108-Cb	0	0	1	-0.06193127483129501	12.999038696289062
+AA0109-Ca	0	0	0	inf	inf
+AA0109-Cb	0	0	0	inf	inf
+AA0110-Ca	0	0	0	inf	inf
+AA0110-Cb	0	0	0	inf	inf
+AA0111-Ca	0	0	0	inf	inf
+AA0111-Cb	0	0	0	inf	inf
+AA0113-Ca	0	0	0	inf	inf
+AA0113-Cb	0	0	0	inf	inf
+AA0114-Ca	0	0	0	inf	inf
+AA0114-Cb	0	0	0	inf	inf
+AA0115-Ca	0	0	0	inf	inf
+AA0115-Cb	0	0	0	inf	inf
+AA0116-Ca	0	0	0	inf	inf
+AA0116-Cb	0	0	0	inf	inf
+AA0122-Ca	0	0	0	inf	inf
+AA0122-Cb	0	0	0	inf	inf
+AA0123-Ca	0	0	0	inf	inf
+AA0123-Cb	0	0	0	inf	inf
+AA0124-Ca	0	0	0	inf	inf
+AA0124-Cb	0	0	0	inf	inf
+AA0125-Ca	0	0	0	inf	inf
+AA0125-Cb	0	0	0	inf	inf
+AA0127-Ca	0	0	0	inf	inf
+AA0127-Cb	0	0	0	inf	inf
+AA0132-Ca	0	0	0	0.05449596419930458	12.565834999084473
+AA0132-Cb	0	0	1	-0.4751831293106079	13.862256050109863
+AA0133-Ca	0	0	1	-1.0247247219085693	15.354555130004883
+AA0133-Cb	0	0	1	-3.602656602859497	17.826553344726562
+AA0134-Ca	0	0	0	inf	inf
+AA0134-Cb	0	0	0	inf	inf
+AA0135-Ca	0	0	0	inf	inf
+AA0135-Cb	0	0	0	inf	inf
+AA0136-Ca	0	0	0	inf	inf
+AA0136-Cb	0	0	0	inf	inf
+AA0139-Ca	0	0	0	inf	inf
+AA0139-Cb	0	0	0	inf	inf
+AA0140-Ca	1	1	0	2.9930803775787354	5.729306221008301
+AA0140-Cb	0	0	1	-2.18288516998291	15.706378936767578
+AA0141-Ca	1	1	1	4.109694957733154	6.127321243286133
+AA0141-Cb	1	1	1	5.579873085021973	3.4049794673919678
+AB0085-Ca	0	0	0	inf	inf
+AB0085-Cb	0	0	0	inf	inf
+AB0087-Ca	0	0	0	inf	inf
+AB0087-Cb	0	0	0	inf	inf
+AB0088-Ca	0	0	0	inf	inf
+AB0088-Cb	0	0	0	inf	inf
+AB0089-Ca	0	0	0	inf	inf
+AB0089-Cb	0	0	0	inf	inf
+AB0090-Ca	0	0	0	inf	inf
+AB0090-Cb	0	0	0	inf	inf
+AB0091-Ca	0	0	0	inf	inf
+AB0091-Cb	0	0	0	inf	inf
+AB0092-Ca	0	0	0	inf	inf
+AB0092-Cb	0	0	0	inf	inf
+AB0094-Ca	0	0	0	inf	inf
+AB0094-Cb	0	0	0	inf	inf
+AB0095-Ca	0	0	0	inf	inf
+AB0095-Cb	0	0	0	inf	inf
+AB0097-Ca	0	0	0	inf	inf
+AB0097-Cb	0	0	0	inf	inf
+AB0098-Ca	0	0	0	inf	inf
+AB0098-Cb	0	0	0	inf	inf
+AB0099-Ca	0	0	0	inf	inf
+AB0099-Cb	0	0	0	inf	inf
+AB0100-Ca	0	0	0	inf	inf
+AB0100-Cb	0	0	0	inf	inf
+AB0101-Ca	0	0	1	0.2618863880634308	11.451380729675293
+AB0101-Cb	0	0	0	-1.4151825904846191	15.776191711425781
+AB0103-Ca	0	0	0	inf	inf
+AB0103-Cb	0	0	0	inf	inf
+AB0104-Ca	0	0	0	inf	inf
+AB0104-Cb	0	0	0	inf	inf
+AB0108-Ca	0	0	0	inf	inf
+AB0108-Cb	0	0	0	inf	inf
+AB0109-Ca	0	0	0	inf	inf
+AB0109-Cb	0	0	0	inf	inf
+AB0110-Ca	0	0	0	inf	inf
+AB0110-Cb	0	0	0	inf	inf
+AB0111-Ca	0	0	0	inf	inf
+AB0111-Cb	0	0	0	inf	inf
+AB0112-Ca	0	0	0	inf	inf
+AB0112-Cb	0	0	0	inf	inf
+AB0113-Ca	0	0	0	-0.6165318489074707	13.703381538391113
+AB0113-Cb	1	1	1	2.666053056716919	7.625985145568848
+AB0114-Ca	0	0	0	inf	inf
+AB0114-Cb	0	0	0	inf	inf
+AB0115-Ca	0	0	0	inf	inf
+AB0115-Cb	0	0	0	inf	inf
+AB0117-Ca	0	0	0	-0.7456061244010925	13.037256240844727
+AB0117-Cb	1	1	1	2.380298376083374	5.9349284172058105
+AB0118-Ca	0	0	0	inf	inf
+AB0118-Cb	0	0	0	inf	inf
+AB0119-Ca	0	1	1	2.0260140895843506	8.351201057434082
+AB0119-Cb	1	1	1	2.095766067504883	8.6099853515625
+AB0122-Ca	0	0	0	inf	inf
+AB0122-Cb	0	0	0	inf	inf
+AB0123-Ca	0	0	0	inf	inf
+AB0123-Cb	0	0	0	inf	inf
+AB0124-Ca	0	0	0	inf	inf
+AB0124-Cb	0	0	0	inf	inf
+AB0126-Ca	0	0	0	inf	inf
+AB0126-Cb	0	0	0	inf	inf
+AB0127-Ca	0	0	0	inf	inf
+AB0127-Cb	0	0	0	inf	inf
+AB0128-Ca	0	0	0	inf	inf
+AB0128-Cb	0	0	0	inf	inf
+AB0129-Ca	0	0	0	inf	inf
+AB0129-Cb	0	0	0	inf	inf
+AB0130-Ca	0	0	0	inf	inf
+AB0130-Cb	0	0	0	inf	inf
+AB0133-Ca	0	0	0	-2.2209928035736084	15.90235424041748
+AB0133-Cb	0	1	1	2.0851283073425293	8.332280158996582
+AB0134-Ca	1	1	0	3.363312005996704	4.6229119300842285
+AB0134-Cb	1	1	1	2.6180784702301025	5.944667339324951
+AB0135-Ca	1	1	1	2.1633687019348145	3.8207857608795166
+AB0135-Cb	0	0	0	-2.0836093425750732	15.982416152954102
+AB0136-Ca	1	1	1	2.958317518234253	5.873982906341553
+AB0136-Cb	0	0	0	-3.6812944412231445	17.72488784790039
+AB0137-Ca	0	0	0	inf	inf
+AB0137-Cb	0	0	0	inf	inf
+AB0138-Ca	0	0	0	inf	inf
+AB0138-Cb	0	0	0	inf	inf
+AB0139-Ca	0	0	0	inf	inf
+AB0139-Cb	0	0	0	inf	inf
+AB0140-Ca	0	0	0	inf	inf
+AB0140-Cb	0	0	0	inf	inf
+AB0142-Ca	0	0	0	inf	inf
+AB0142-Cb	0	0	0	inf	inf
+AB0143-Ca	0	0	0	-0.2828068137168884	15.937432289123535
+AB0143-Cb	0	0	0	-4.034078598022461	19.68695831298828
+AB0145-Ca	1	1	1	3.172872304916382	5.585214614868164
+AB0145-Cb	1	1	1	3.09159255027771	5.777888774871826
+AB0146-Ca	1	1	1	5.368799209594727	3.9166295528411865
+AB0146-Cb	1	1	1	3.3055248260498047	5.3668293952941895
+AB0147-Ca	0	0	0	inf	inf
+AB0147-Cb	0	0	0	inf	inf
+AB0148-Ca	0	0	0	inf	inf
+AB0148-Cb	0	0	0	inf	inf
+AB0150-Ca	0	0	0	-1.710597276687622	14.34251594543457
+AB0150-Cb	1	1	1	3.043527841567993	5.724966049194336
+AB0151-Ca	0	0	0	inf	inf
+AB0151-Cb	0	0	0	inf	inf
+AB0153-Ca	0	0	1	0.010283920913934708	11.559843063354492
+AB0153-Cb	0	0	0	0.7187831401824951	11.439957618713379
+AB0155-Ca	0	0	0	inf	inf
+AB0155-Cb	0	0	0	inf	inf
+AB0157-Ca	1	1	1	2.7115142345428467	6.07039737701416
+AB0157-Cb	1	1	1	3.195842981338501	5.512702465057373
+AB0158-Ca	1	1	1	3.038093090057373	5.736288070678711
+AB0158-Cb	0	0	1	-1.4160161018371582	15.27189826965332
+AB0159-Ca	0	0	0	-4.361454963684082	18.53959083557129
+AB0159-Cb	0	0	1	0.5786175727844238	14.845654487609863
+AB0160-Ca	1	1	1	2.4128224849700928	8.98771858215332
+AB0160-Cb	0	0	0	-4.298184871673584	18.48412322998047
+AB0161-Ca	0	0	0	inf	inf
+AB0161-Cb	0	0	0	inf	inf
+AB0162-Ca	0	0	0	inf	inf
+AB0162-Cb	0	0	0	inf	inf
+AB0164-Ca	0	0	0	inf	inf
+AB0164-Cb	0	0	0	inf	inf
+AB0165-Ca	0	0	0	inf	inf
+AB0165-Cb	0	0	0	inf	inf
+AB0166-Ca	0	0	0	inf	inf
+AB0166-Cb	0	0	0	inf	inf
+AB0167-Ca	0	0	0	inf	inf
+AB0167-Cb	0	0	0	inf	inf
+AB0169-Ca	0	0	0	inf	inf
+AB0169-Cb	0	0	0	inf	inf
+AB0170-Ca	0	0	0	-4.515235900878906	18.68688201904297
+AB0170-Cb	0	0	1	1.0503201484680176	10.67077350616455
+AB0171-Ca	0	0	0	inf	inf
+AB0171-Cb	0	0	0	inf	inf
+AB0172-Ca	0	0	0	inf	inf
+AB0172-Cb	0	0	0	inf	inf
+AB0173-Ca	0	0	0	inf	inf
+AB0173-Cb	0	0	0	inf	inf
+AB0174-Ca	0	0	0	inf	inf
+AB0174-Cb	0	0	0	inf	inf
+AB0175-Ca	0	0	0	inf	inf
+AB0175-Cb	0	0	0	inf	inf
+AB0176-Ca	0	0	0	inf	inf
+AB0176-Cb	0	0	0	inf	inf
+AB0177-Ca	0	0	0	inf	inf
+AB0177-Cb	0	0	0	inf	inf
+AB0178-Ca	0	0	0	inf	inf
+AB0178-Cb	0	0	0	inf	inf
+AB0179-Ca	0	0	0	inf	inf
+AB0179-Cb	0	0	0	inf	inf
+AB0181-Ca	0	0	0	inf	inf
+AB0181-Cb	0	0	0	inf	inf
+AB0182-Ca	0	0	0	inf	inf
+AB0182-Cb	0	0	0	inf	inf
+AB0183-Ca	0	0	0	inf	inf
+AB0183-Cb	0	0	0	inf	inf
+AB0184-Ca	0	0	0	inf	inf
+AB0184-Cb	0	0	0	inf	inf
+AB0185-Ca	0	0	0	inf	inf
+AB0185-Cb	0	0	0	inf	inf
+AB0186-Ca	0	0	0	inf	inf
+AB0186-Cb	0	0	0	inf	inf
+AB0187-Ca	0	0	0	inf	inf
+AB0187-Cb	0	0	0	inf	inf
+AB0188-Ca	0	0	0	inf	inf
+AB0188-Cb	0	0	0	inf	inf
+AB0189-Ca	0	0	0	inf	inf
+AB0189-Cb	0	0	0	inf	inf
+AB0190-Ca	0	0	0	inf	inf
+AB0190-Cb	0	0	0	inf	inf
+AB0191-Ca	0	0	0	inf	inf
+AB0191-Cb	0	0	0	inf	inf
+AB0192-Ca	0	0	0	inf	inf
+AB0192-Cb	0	0	0	inf	inf
+AB0195-Ca	0	0	0	inf	inf
+AB0195-Cb	0	0	0	inf	inf
+AB0196-Ca	0	0	0	inf	inf
+AB0196-Cb	0	0	0	inf	inf
+AB0197-Ca	0	0	1	-1.3056917190551758	15.5587797164917
+AB0197-Cb	1	1	1	2.3186676502227783	6.812193870544434
+AB0198-Ca	1	1	1	3.2134878635406494	5.3201117515563965
+AB0198-Cb	0	0	0	-3.476191520690918	17.74989891052246
+AB0199-Ca	0	0	0	inf	inf
+AB0199-Cb	0	0	0	inf	inf
+AB0200-Ca	0	0	0	inf	inf
+AB0200-Cb	0	0	0	inf	inf
+AB0201-Ca	0	0	0	inf	inf
+AB0201-Cb	0	0	0	inf	inf
+AB0202-Ca	0	0	0	inf	inf
+AB0202-Cb	0	0	0	inf	inf
+AB0203-Ca	0	0	0	inf	inf
+AB0203-Cb	0	0	0	inf	inf
+AB0204-Ca	0	0	0	inf	inf
+AB0204-Cb	0	0	0	inf	inf
+AB0205-Ca	0	0	0	inf	inf
+AB0205-Cb	0	0	0	inf	inf
+AB0206-Ca	0	0	0	inf	inf
+AB0206-Cb	0	0	0	inf	inf
+AB0207-Ca	0	0	0	inf	inf
+AB0207-Cb	0	0	0	inf	inf
+AB0208-Ca	0	0	0	-3.679605007171631	16.715909957885742
+AB0208-Cb	1	1	1	2.6251797676086426	5.920078754425049
+AB0209-Ca	0	0	0	inf	inf
+AB0209-Cb	0	0	0	inf	inf
+AB0210-Ca	0	0	0	inf	inf
+AB0210-Cb	0	0	0	inf	inf
+AB0211-Ca	1	1	1	2.667614221572876	6.052073001861572
+AB0211-Cb	0	0	0	-3.1779778003692627	17.36231231689453
+AB0212-Ca	0	0	0	inf	inf
+AB0212-Cb	0	0	0	inf	inf
+AB0213-Ca	0	0	0	inf	inf
+AB0213-Cb	0	0	0	inf	inf
+AB0215-Ca	0	0	0	inf	inf
+AB0215-Cb	0	0	0	inf	inf
+AB0217-Ca	0	0	0	-2.3309552669525146	15.913773536682129
+AB0217-Cb	1	1	1	3.0079123973846436	5.851373195648193
+AB0218-Ca	0	0	0	inf	inf
+AB0218-Cb	0	0	0	inf	inf
+AB0219-Ca	0	0	0	inf	inf
+AB0219-Cb	0	0	0	inf	inf
+AB0221-Ca	0	0	0	inf	inf
+AB0221-Cb	0	0	0	inf	inf
+AB0222-Ca	0	0	0	inf	inf
+AB0222-Cb	0	0	0	inf	inf
+AB0223-Ca	0	0	0	inf	inf
+AB0223-Cb	0	0	0	inf	inf
+AB0224-Ca	0	0	0	inf	inf
+AB0224-Cb	0	0	0	inf	inf
+AB0226-Ca	0	0	0	inf	inf
+AB0226-Cb	0	0	0	inf	inf
+AB0227-Ca	0	0	0	inf	inf
+AB0227-Cb	0	0	0	inf	inf
+AB0228-Ca	1	1	1	2.416475772857666	8.34716796875
+AB0228-Cb	0	0	1	0.22820772230625153	11.325971603393555
+AB0229-Ca	0	0	0	inf	inf
+AB0229-Cb	0	0	0	inf	inf
+AB0231-Ca	0	0	0	inf	inf
+AB0231-Cb	0	0	0	inf	inf
+AB0232-Ca	0	0	0	inf	inf
+AB0232-Cb	0	0	0	inf	inf
+AB0233-Ca	0	0	0	inf	inf
+AB0233-Cb	0	0	0	inf	inf
+AB0234-Ca	0	0	0	inf	inf
+AB0234-Cb	0	0	0	inf	inf
+AB0235-Ca	0	0	0	-3.8525378704071045	18.278337478637695
+AB0235-Cb	0	0	1	-1.447523593902588	15.589887619018555
+AB0236-Ca	0	0	0	inf	inf
+AB0236-Cb	0	0	0	inf	inf
+AB0237-Ca	0	0	0	inf	inf
+AB0237-Cb	0	0	0	inf	inf
+AB0238-Ca	1	1	1	2.6574976444244385	6.0350022315979
+AB0238-Cb	1	1	1	2.9824042320251465	5.811347007751465
+AB0239-Ca	1	1	0	2.189732074737549	8.49129581451416
+AB0239-Cb	0	0	1	0.25047382712364197	11.688032150268555
+AB0240-Ca	0	0	0	inf	inf
+AB0240-Cb	0	0	0	inf	inf
+AB0241-Ca	0	0	0	-1.1352025270462036	15.841607093811035
+AB0241-Cb	1	1	1	4.939102649688721	5.045267581939697
+AB0242-Ca	0	0	0	inf	inf
+AB0242-Cb	0	0	0	inf	inf
+AB0243-Ca	0	0	0	inf	inf
+AB0243-Cb	0	0	0	inf	inf
+AB0244-Ca	0	0	0	inf	inf
+AB0244-Cb	0	0	0	inf	inf
+AB0246-Ca	0	0	0	inf	inf
+AB0246-Cb	0	0	0	inf	inf
+AB0247-Ca	0	0	0	inf	inf
+AB0247-Cb	0	0	0	inf	inf
+AB0248-Ca	0	0	0	inf	inf
+AB0248-Cb	0	0	0	inf	inf
+AB0249-Ca	0	0	0	inf	inf
+AB0249-Cb	0	0	0	inf	inf
+AB0250-Ca	0	0	0	inf	inf
+AB0250-Cb	0	0	0	inf	inf
+AB0251-Ca	0	0	0	inf	inf
+AB0251-Cb	0	0	0	inf	inf
+AB0252-Ca	0	0	0	inf	inf
+AB0252-Cb	0	0	0	inf	inf
+AB0253-Ca	0	0	1	-0.9934983849525452	14.051804542541504
+AB0253-Cb	1	1	1	3.179677963256836	5.578094959259033
+AB0255-Ca	0	0	0	inf	inf
+AB0255-Cb	0	0	0	inf	inf
+AB0256-Ca	0	0	0	inf	inf
+AB0256-Cb	0	0	0	inf	inf
+AB0257-Ca	0	0	0	inf	inf
+AB0257-Cb	0	0	0	inf	inf
+AB0258-Ca	0	0	0	inf	inf
+AB0258-Cb	0	0	0	inf	inf
+AB0260-Ca	0	0	0	inf	inf
+AB0260-Cb	0	0	0	inf	inf
+AB0261-Ca	0	0	0	inf	inf
+AB0261-Cb	0	0	0	inf	inf
+AB0262-Ca	0	0	0	inf	inf
+AB0262-Cb	0	0	0	inf	inf
+AB0263-Ca	0	0	0	inf	inf
+AB0263-Cb	0	0	0	inf	inf
+AB0264-Ca	0	0	0	inf	inf
+AB0264-Cb	0	0	0	inf	inf
+AB0265-Ca	0	0	0	inf	inf
+AB0265-Cb	0	0	0	inf	inf
+AB0266-Ca	0	0	0	inf	inf
+AB0266-Cb	0	0	0	inf	inf
+AB0267-Ca	0	0	0	inf	inf
+AB0267-Cb	0	0	0	inf	inf
+AB0268-Ca	0	0	0	inf	inf
+AB0268-Cb	0	0	0	inf	inf
+AB0270-Ca	0	0	0	inf	inf
+AB0270-Cb	0	0	0	inf	inf
+AB0271-Ca	0	0	0	inf	inf
+AB0271-Cb	0	0	0	inf	inf
+AB0272-Ca	0	0	0	inf	inf
+AB0272-Cb	0	0	0	inf	inf
+AB0273-Ca	0	0	0	inf	inf
+AB0273-Cb	0	0	0	inf	inf
+AB0274-Ca	0	0	0	-4.151010990142822	19.604793548583984
+AB0274-Cb	1	1	1	6.345076560974121	1.083009958267212
+AB0275-Ca	0	0	0	inf	inf
+AB0275-Cb	0	0	0	inf	inf
+AB0276-Ca	0	0	0	inf	inf
+AB0276-Cb	0	0	0	inf	inf
+AB0277-Ca	0	0	0	inf	inf
+AB0277-Cb	0	0	0	inf	inf
+AB0278-Ca	0	0	0	inf	inf
+AB0278-Cb	0	0	0	inf	inf
+AB0279-Ca	1	1	1	2.9178967475891113	5.717314720153809
+AB0279-Cb	0	0	0	-2.930213212966919	17.177839279174805
+AB0280-Ca	0	0	0	inf	inf
+AB0280-Cb	0	0	0	inf	inf
+AB0281-Ca	0	0	0	inf	inf
+AB0281-Cb	0	0	0	inf	inf
+AB0282-Ca	0	0	0	inf	inf
+AB0282-Cb	0	0	0	inf	inf
+AB0283-Ca	0	0	0	inf	inf
+AB0283-Cb	0	0	0	inf	inf
+AB0284-Ca	0	0	0	-4.527968406677246	19.066696166992188
+AB0284-Cb	0	0	0	1.3072515726089478	8.945596694946289
+AC0089-Ca	0	0	0	inf	inf
+AC0089-Cb	0	0	0	inf	inf
+AC0090-Ca	0	0	0	inf	inf
+AC0090-Cb	0	0	0	inf	inf
+AC0091-Ca	0	0	0	inf	inf
+AC0091-Cb	0	0	0	inf	inf
+AC0092-Ca	0	0	0	inf	inf
+AC0092-Cb	0	0	0	inf	inf
+AC0093-Ca	0	0	0	inf	inf
+AC0093-Cb	0	0	0	inf	inf
+AC0094-Ca	0	0	0	inf	inf
+AC0094-Cb	0	0	0	inf	inf
+AC0095-Ca	0	0	0	inf	inf
+AC0095-Cb	0	0	0	inf	inf
+AC0096-Ca	0	0	0	inf	inf
+AC0096-Cb	0	0	0	inf	inf
+AC0097-Ca	0	0	0	inf	inf
+AC0097-Cb	0	0	0	inf	inf
+AC0098-Ca	0	0	0	inf	inf
+AC0098-Cb	0	0	0	inf	inf
+AC0099-Ca	0	0	0	inf	inf
+AC0099-Cb	0	0	0	inf	inf
+AC0100-Ca	0	0	0	inf	inf
+AC0100-Cb	0	0	0	inf	inf
+AC0101-Ca	0	0	0	inf	inf
+AC0101-Cb	0	0	0	inf	inf
+AC0102-Ca	0	0	0	inf	inf
+AC0102-Cb	0	0	0	inf	inf
+AC0103-Ca	0	0	0	inf	inf
+AC0103-Cb	0	0	0	inf	inf
+AC0104-Ca	0	0	0	inf	inf
+AC0104-Cb	0	0	0	inf	inf
+AC0105-Ca	0	0	0	inf	inf
+AC0105-Cb	0	0	0	inf	inf
+AC0106-Ca	0	0	0	inf	inf
+AC0106-Cb	0	0	0	inf	inf
+AC0107-Ca	0	0	0	inf	inf
+AC0107-Cb	0	0	0	inf	inf
+AC0108-Ca	0	0	0	inf	inf
+AC0108-Cb	0	0	0	inf	inf
+AC0109-Ca	0	0	0	inf	inf
+AC0109-Cb	0	0	0	inf	inf
+AC0110-Ca	0	0	0	inf	inf
+AC0110-Cb	0	0	0	inf	inf
+AC0111-Ca	0	0	0	inf	inf
+AC0111-Cb	0	0	0	inf	inf
+AC0112-Ca	0	0	0	inf	inf
+AC0112-Cb	0	0	0	inf	inf
+AC0113-Ca	0	0	0	inf	inf
+AC0113-Cb	0	0	0	inf	inf
+AC0114-Ca	0	0	0	inf	inf
+AC0114-Cb	0	0	0	inf	inf
+AC0115-Ca	0	0	0	inf	inf
+AC0115-Cb	0	0	0	inf	inf
+AC0116-Ca	0	0	0	inf	inf
+AC0116-Cb	0	0	0	inf	inf
+AC0117-Ca	0	0	0	inf	inf
+AC0117-Cb	0	0	0	inf	inf
+AC0118-Ca	0	0	0	inf	inf
+AC0118-Cb	0	0	0	inf	inf
+AC0119-Ca	0	0	0	inf	inf
+AC0119-Cb	0	0	0	inf	inf
+AC0120-Ca	0	0	0	inf	inf
+AC0120-Cb	0	0	0	inf	inf
+AC0121-Ca	0	0	0	inf	inf
+AC0121-Cb	0	0	0	inf	inf
+AC0122-Ca	0	0	0	inf	inf
+AC0122-Cb	0	0	0	inf	inf
+AC0123-Ca	0	0	0	inf	inf
+AC0123-Cb	0	0	0	inf	inf
+AC0124-Ca	0	0	0	inf	inf
+AC0124-Cb	0	0	0	inf	inf
+AC0125-Ca	0	0	0	inf	inf
+AC0125-Cb	0	0	0	inf	inf
+AC0126-Ca	0	0	0	inf	inf
+AC0126-Cb	0	0	0	inf	inf
+AC0127-Ca	0	0	0	inf	inf
+AC0127-Cb	0	0	0	inf	inf
+AC0128-Ca	0	0	0	inf	inf
+AC0128-Cb	0	0	0	inf	inf
+AC0129-Ca	0	0	0	inf	inf
+AC0129-Cb	0	0	0	inf	inf
+AC0130-Ca	0	0	0	inf	inf
+AC0130-Cb	0	0	0	inf	inf
+AC0131-Ca	0	0	0	inf	inf
+AC0131-Cb	0	0	0	inf	inf
+AC0132-Ca	0	0	0	inf	inf
+AC0132-Cb	0	0	0	inf	inf
+AC0133-Ca	0	0	0	inf	inf
+AC0133-Cb	0	0	0	inf	inf
+AC0134-Ca	0	0	0	inf	inf
+AC0134-Cb	0	0	0	inf	inf
+AC0135-Ca	0	0	0	inf	inf
+AC0135-Cb	0	0	0	inf	inf
+AC0136-Ca	0	0	0	inf	inf
+AC0136-Cb	0	0	0	inf	inf
+AC0137-Ca	0	0	0	inf	inf
+AC0137-Cb	0	0	0	inf	inf
+AC0138-Ca	0	0	0	inf	inf
+AC0138-Cb	0	0	0	inf	inf
+AC0139-Ca	0	0	0	inf	inf
+AC0139-Cb	0	0	0	inf	inf
+AC0140-Ca	0	0	0	inf	inf
+AC0140-Cb	0	0	0	inf	inf
+AC0141-Ca	0	0	0	inf	inf
+AC0141-Cb	0	0	0	inf	inf
+AC0142-Ca	0	0	0	inf	inf
+AC0142-Cb	0	0	0	inf	inf
+AC0143-Ca	0	0	0	inf	inf
+AC0143-Cb	0	0	0	inf	inf
+AC0144-Ca	0	0	0	inf	inf
+AC0144-Cb	0	0	0	inf	inf
+AC0145-Ca	0	0	0	inf	inf
+AC0145-Cb	0	0	0	inf	inf
+AC0146-Ca	0	0	0	inf	inf
+AC0146-Cb	0	0	0	inf	inf
+AC0147-Ca	0	0	0	inf	inf
+AC0147-Cb	0	0	0	inf	inf
+AC0148-Ca	0	0	0	inf	inf
+AC0148-Cb	0	0	0	inf	inf
+AC0149-Ca	0	0	0	inf	inf
+AC0149-Cb	0	0	0	inf	inf
+AC0150-Ca	0	0	0	inf	inf
+AC0150-Cb	0	0	0	inf	inf
+AC0151-Ca	0	0	0	inf	inf
+AC0151-Cb	0	0	0	inf	inf
+AC0152-Ca	0	0	0	inf	inf
+AC0152-Cb	0	0	0	inf	inf
+AC0153-Ca	0	0	0	inf	inf
+AC0153-Cb	0	0	0	inf	inf
+AC0154-Ca	0	0	0	inf	inf
+AC0154-Cb	0	0	0	inf	inf
+AC0155-Ca	0	0	0	inf	inf
+AC0155-Cb	0	0	0	inf	inf
+AC0156-Ca	0	0	0	inf	inf
+AC0156-Cb	0	0	0	inf	inf
+AC0157-Ca	0	0	0	inf	inf
+AC0157-Cb	0	0	0	inf	inf
+AC0158-Ca	0	0	0	inf	inf
+AC0158-Cb	0	0	0	inf	inf
+AC0159-Ca	0	0	0	inf	inf
+AC0159-Cb	0	0	0	inf	inf
+AC0160-Ca	0	0	0	inf	inf
+AC0160-Cb	0	0	0	inf	inf
+AC0161-Ca	0	0	0	inf	inf
+AC0161-Cb	0	0	0	inf	inf
+AC0162-Ca	0	0	0	inf	inf
+AC0162-Cb	0	0	0	inf	inf
+AC0163-Ca	0	0	0	inf	inf
+AC0163-Cb	0	0	0	inf	inf
+AC0164-Ca	0	0	0	inf	inf
+AC0164-Cb	0	0	0	inf	inf
+AC0166-Ca	0	0	0	inf	inf
+AC0166-Cb	0	0	0	inf	inf
+AC0167-Ca	0	0	0	inf	inf
+AC0167-Cb	0	0	0	inf	inf
+AC0168-Ca	0	0	0	inf	inf
+AC0168-Cb	0	0	0	inf	inf
+AC0169-Ca	0	0	0	inf	inf
+AC0169-Cb	0	0	0	inf	inf
+AC0170-Ca	0	0	0	inf	inf
+AC0170-Cb	0	0	0	inf	inf
+AC0171-Ca	0	0	0	inf	inf
+AC0171-Cb	0	0	0	inf	inf
+AC0172-Ca	0	0	0	inf	inf
+AC0172-Cb	0	0	0	inf	inf
+AC0173-Ca	0	0	0	inf	inf
+AC0173-Cb	0	0	0	inf	inf
+AC0174-Ca	0	0	0	inf	inf
+AC0174-Cb	0	0	0	inf	inf
+AC0176-Ca	0	0	0	inf	inf
+AC0176-Cb	0	0	0	inf	inf
+AC0177-Ca	0	0	0	inf	inf
+AC0177-Cb	0	0	0	inf	inf
+AC0178-Ca	0	0	0	inf	inf
+AC0178-Cb	0	0	0	inf	inf
+AC0179-Ca	0	0	0	inf	inf
+AC0179-Cb	0	0	0	inf	inf
+AC0180-Ca	0	0	0	inf	inf
+AC0180-Cb	0	0	0	inf	inf
+AC0181-Ca	0	0	0	inf	inf
+AC0181-Cb	0	0	0	inf	inf
+AC0182-Ca	0	0	0	inf	inf
+AC0182-Cb	0	0	0	inf	inf
+AC0183-Ca	0	0	0	inf	inf
+AC0183-Cb	0	0	0	inf	inf
+AC0184-Ca	0	0	0	inf	inf
+AC0184-Cb	0	0	0	inf	inf
+AC0185-Ca	0	0	0	inf	inf
+AC0185-Cb	0	0	0	inf	inf
+AC0186-Ca	0	0	0	inf	inf
+AC0186-Cb	0	0	0	inf	inf
+AC0187-Ca	0	0	0	inf	inf
+AC0187-Cb	0	0	0	inf	inf
+AC0188-Ca	0	0	0	inf	inf
+AC0188-Cb	0	0	0	inf	inf
+AC0189-Ca	0	0	0	inf	inf
+AC0189-Cb	0	0	0	inf	inf
+AC0190-Ca	0	0	0	inf	inf
+AC0190-Cb	0	0	0	inf	inf
+AC0191-Ca	0	0	0	inf	inf
+AC0191-Cb	0	0	0	inf	inf
+AC0192-Ca	0	0	0	inf	inf
+AC0192-Cb	0	0	0	inf	inf
+AC0193-Ca	0	0	0	inf	inf
+AC0193-Cb	0	0	0	inf	inf
+AC0194-Ca	0	0	0	inf	inf
+AC0194-Cb	0	0	0	inf	inf
+AC0195-Ca	0	0	0	inf	inf
+AC0195-Cb	0	0	0	inf	inf
+AC0196-Ca	0	0	0	inf	inf
+AC0196-Cb	0	0	0	inf	inf
+AC0197-Ca	0	0	0	inf	inf
+AC0197-Cb	0	0	0	inf	inf
+AC0199-Ca	0	0	0	inf	inf
+AC0199-Cb	0	0	0	inf	inf
+AC0200-Ca	0	0	0	inf	inf
+AC0200-Cb	0	0	0	inf	inf
+AC0201-Ca	0	0	0	inf	inf
+AC0201-Cb	0	0	0	inf	inf
+AC0202-Ca	0	0	0	inf	inf
+AC0202-Cb	0	0	0	inf	inf
+AC0203-Ca	0	0	0	inf	inf
+AC0203-Cb	0	0	0	inf	inf
+AG0082-Ca	0	0	0	inf	inf
+AG0082-Cb	0	0	0	inf	inf
+AG0085-Ca	0	0	0	inf	inf
+AG0085-Cb	0	0	0	inf	inf
+AG0089-Ca	0	0	0	inf	inf
+AG0089-Cb	0	0	0	inf	inf
+AG0096-Ca	0	0	0	inf	inf
+AG0096-Cb	0	0	0	inf	inf
+AG0097-Ca	0	0	0	inf	inf
+AG0097-Cb	0	0	0	inf	inf
+AG0098-Ca	0	0	0	inf	inf
+AG0098-Cb	0	0	0	inf	inf
+AG0100-Ca	0	0	0	inf	inf
+AG0100-Cb	0	0	0	inf	inf
+AG0102-Ca	0	0	0	inf	inf
+AG0102-Cb	0	0	0	inf	inf
+AG0104-Ca	0	0	0	inf	inf
+AG0104-Cb	0	0	0	inf	inf
+AG0106-Ca	0	0	0	inf	inf
+AG0106-Cb	0	0	0	inf	inf
+AG0108-Ca	0	0	0	inf	inf
+AG0108-Cb	0	0	0	inf	inf
+AG0109-Ca	0	0	0	inf	inf
+AG0109-Cb	0	0	0	inf	inf
+AG0111-Ca	0	0	0	inf	inf
+AG0111-Cb	0	0	0	inf	inf
+AG0118-Ca	0	0	0	inf	inf
+AG0118-Cb	0	0	0	inf	inf
+AG0120-Ca	0	0	0	inf	inf
+AG0120-Cb	0	0	0	inf	inf
+AG0121-Ca	0	0	0	inf	inf
+AG0121-Cb	0	0	0	inf	inf
+AG0123-Ca	0	0	0	inf	inf
+AG0123-Cb	0	0	0	inf	inf
+AG0125-Ca	0	0	0	inf	inf
+AG0125-Cb	0	0	0	inf	inf
+AG0126-Ca	0	0	0	inf	inf
+AG0126-Cb	0	0	0	inf	inf
+AG0127-Ca	0	0	0	inf	inf
+AG0127-Cb	0	0	0	inf	inf
+AG0128-Ca	0	0	0	inf	inf
+AG0128-Cb	0	0	0	inf	inf
+AG0129-Ca	0	0	0	inf	inf
+AG0129-Cb	0	0	0	inf	inf
+AG0133-Ca	0	0	0	inf	inf
+AG0133-Cb	0	0	0	inf	inf
+AG0134-Ca	0	0	0	inf	inf
+AG0134-Cb	0	0	0	inf	inf
+AG0136-Ca	0	0	0	inf	inf
+AG0136-Cb	0	0	0	inf	inf
+AG0137-Ca	0	0	0	inf	inf
+AG0137-Cb	0	0	0	inf	inf
+AG0138-Ca	0	0	0	inf	inf
+AG0138-Cb	0	0	0	inf	inf
+AG0139-Ca	0	0	0	inf	inf
+AG0139-Cb	0	0	0	inf	inf
+AG0141-Ca	0	0	0	inf	inf
+AG0141-Cb	0	0	0	inf	inf
+AG0142-Ca	0	0	0	inf	inf
+AG0142-Cb	0	0	0	inf	inf
+AG0143-Ca	0	0	0	inf	inf
+AG0143-Cb	0	0	0	inf	inf
+AG0144-Ca	0	0	0	inf	inf
+AG0144-Cb	0	0	0	inf	inf
+AG0145-Ca	0	0	0	inf	inf
+AG0145-Cb	0	0	0	inf	inf
+AG0146-Ca	0	0	0	inf	inf
+AG0146-Cb	0	0	0	inf	inf
+AG0147-Ca	0	0	0	inf	inf
+AG0147-Cb	0	0	0	inf	inf
+AG0148-Ca	0	0	0	inf	inf
+AG0148-Cb	0	0	0	inf	inf
+AG0152-Ca	0	0	0	inf	inf
+AG0152-Cb	0	0	0	inf	inf
+AG0153-Ca	0	0	0	inf	inf
+AG0153-Cb	0	0	0	inf	inf
+AG0156-Ca	0	0	0	inf	inf
+AG0156-Cb	0	0	0	inf	inf
+AG0159-Ca	0	0	0	inf	inf
+AG0159-Cb	0	0	0	inf	inf
+AG0162-Ca	0	0	0	inf	inf
+AG0162-Cb	0	0	0	inf	inf
+AG0163-Ca	0	0	0	inf	inf
+AG0163-Cb	0	0	0	inf	inf
+AG0169-Ca	0	0	0	inf	inf
+AG0169-Cb	0	0	0	inf	inf
+AG0170-Ca	0	0	0	inf	inf
+AG0170-Cb	0	0	0	inf	inf
+AG0172-Ca	0	0	0	inf	inf
+AG0172-Cb	0	0	0	inf	inf
+AG0178-Ca	0	0	0	inf	inf
+AG0178-Cb	0	0	0	inf	inf
+AG0179-Ca	0	0	0	inf	inf
+AG0179-Cb	0	0	0	inf	inf
+AG0181-Ca	0	0	0	inf	inf
+AG0181-Cb	0	0	0	inf	inf
+AG0183-Ca	0	0	0	inf	inf
+AG0183-Cb	0	0	0	inf	inf
+AG0195-Ca	0	0	0	inf	inf
+AG0195-Cb	0	0	0	inf	inf
+AG0197-Ca	0	0	0	inf	inf
+AG0197-Cb	0	0	0	inf	inf
+AG0202-Ca	0	0	0	inf	inf
+AG0202-Cb	0	0	0	inf	inf
+AG0203-Ca	0	0	0	inf	inf
+AG0203-Cb	0	0	0	inf	inf
+AG0204-Ca	0	0	0	inf	inf
+AG0204-Cb	0	0	0	inf	inf
+AG0206-Ca	0	0	0	inf	inf
+AG0206-Cb	0	0	0	inf	inf
+AG0208-Ca	0	0	0	inf	inf
+AG0208-Cb	0	0	0	inf	inf
+AG0214-Ca	0	0	0	inf	inf
+AG0214-Cb	0	0	0	inf	inf
+AG0221-Ca	0	0	0	inf	inf
+AG0221-Cb	0	0	0	inf	inf
+AG0223-Ca	0	0	0	inf	inf
+AG0223-Cb	0	0	0	inf	inf
+AG0227-Ca	0	0	0	inf	inf
+AG0227-Cb	0	0	0	inf	inf
+AG0229-Ca	0	0	0	inf	inf
+AG0229-Cb	0	0	0	inf	inf
+AG0230-Ca	0	0	0	inf	inf
+AG0230-Cb	0	0	0	inf	inf
+AG0231-Ca	0	0	0	inf	inf
+AG0231-Cb	0	0	0	inf	inf
+AG0232-Ca	0	0	0	inf	inf
+AG0232-Cb	0	0	0	inf	inf
+AG0263-Ca	0	0	0	inf	inf
+AG0263-Cb	0	0	0	inf	inf
+AJ0023-Ca	0	0	0	inf	inf
+AJ0023-Cb	0	0	0	inf	inf
+AJ0024-Ca	0	0	0	inf	inf
+AJ0024-Cb	0	0	0	inf	inf
+AJ0028-Ca	0	0	0	inf	inf
+AJ0028-Cb	0	0	0	inf	inf
+AJ0032-Ca	0	0	0	inf	inf
+AJ0032-Cb	0	0	0	inf	inf
+AJ0035-Ca	0	0	0	inf	inf
+AJ0035-Cb	0	0	0	inf	inf
+AJ0036-Ca	0	0	0	inf	inf
+AJ0036-Cb	0	0	0	inf	inf
+AJ0037-Ca	0	0	0	inf	inf
+AJ0037-Cb	0	0	0	inf	inf
+AJ0038-Ca	0	0	0	inf	inf
+AJ0038-Cb	0	0	0	inf	inf
+AJ0039-Ca	0	0	0	inf	inf
+AJ0039-Cb	0	0	0	inf	inf
+AJ0043-Ca	0	0	0	inf	inf
+AJ0043-Cb	0	0	0	inf	inf
+AJ0044-Ca	0	0	0	inf	inf
+AJ0044-Cb	0	0	0	inf	inf
+AJ0045-Ca	0	0	0	inf	inf
+AJ0045-Cb	0	0	0	inf	inf
+AJ0047-Ca	0	0	0	inf	inf
+AJ0047-Cb	0	0	0	inf	inf
+AJ0051-Ca	0	0	0	inf	inf
+AJ0051-Cb	0	0	0	inf	inf
+AJ0052-Ca	0	0	0	inf	inf
+AJ0052-Cb	0	0	0	inf	inf
+AJ0056-Ca	0	0	0	inf	inf
+AJ0056-Cb	0	0	0	inf	inf
+AJ0059-Ca	0	0	0	inf	inf
+AJ0059-Cb	0	0	0	inf	inf
+AJ0060-Ca	0	0	0	inf	inf
+AJ0060-Cb	0	0	0	inf	inf
+AJ0061-Ca	0	0	0	inf	inf
+AJ0061-Cb	0	0	0	inf	inf
+AJ0063-Ca	0	0	0	inf	inf
+AJ0063-Cb	0	0	0	inf	inf
+AJ0064-Ca	0	0	0	inf	inf
+AJ0064-Cb	0	0	0	inf	inf
+AJ0066-Ca	0	0	0	inf	inf
+AJ0066-Cb	0	0	0	inf	inf
+AJ0068-Ca	0	0	0	inf	inf
+AJ0068-Cb	0	0	0	inf	inf
+AJ0070-Ca	0	0	0	inf	inf
+AJ0070-Cb	0	0	0	inf	inf
+AJ0071-Ca	0	0	0	inf	inf
+AJ0071-Cb	0	0	0	inf	inf
+AJ0072-Ca	0	0	0	inf	inf
+AJ0072-Cb	0	0	0	inf	inf
+AJ0074-Ca	0	0	0	inf	inf
+AJ0074-Cb	0	0	0	inf	inf
+AJ0075-Ca	0	0	0	inf	inf
+AJ0075-Cb	0	0	0	inf	inf
+AJ0076-Ca	0	0	0	inf	inf
+AJ0076-Cb	0	0	0	inf	inf
+AJ0077-Ca	0	0	0	inf	inf
+AJ0077-Cb	0	0	0	inf	inf
+AJ0078-Ca	0	0	0	inf	inf
+AJ0078-Cb	0	0	0	inf	inf
+AJ0080-Ca	0	0	0	inf	inf
+AJ0080-Cb	0	0	0	inf	inf
+AJ0081-Ca	0	0	0	inf	inf
+AJ0081-Cb	0	0	0	inf	inf
+AJ0084-Ca	0	0	0	inf	inf
+AJ0084-Cb	0	0	0	inf	inf
+AJ0085-Ca	0	0	0	inf	inf
+AJ0085-Cb	0	0	0	inf	inf
+AJ0086-Ca	0	0	0	inf	inf
+AJ0086-Cb	0	0	0	inf	inf
+AJ0087-Ca	0	0	0	inf	inf
+AJ0087-Cb	0	0	0	inf	inf
+AJ0088-Ca	0	0	0	inf	inf
+AJ0088-Cb	0	0	0	inf	inf
+AJ0090-Ca	0	0	0	inf	inf
+AJ0090-Cb	0	0	0	inf	inf
+AJ0092-Ca	0	0	0	inf	inf
+AJ0092-Cb	0	0	0	inf	inf
+AJ0093-Ca	0	0	0	inf	inf
+AJ0093-Cb	0	0	0	inf	inf
+AJ0095-Ca	0	0	0	inf	inf
+AJ0095-Cb	0	0	0	inf	inf
+AJ0096-Ca	0	0	0	inf	inf
+AJ0096-Cb	0	0	0	inf	inf
+AJ0097-Ca	0	0	0	inf	inf
+AJ0097-Cb	0	0	0	inf	inf
+AJ0098-Ca	0	0	0	inf	inf
+AJ0098-Cb	0	0	0	inf	inf
+AJ0099-Ca	0	0	0	inf	inf
+AJ0099-Cb	0	0	0	inf	inf
+AJ0100-Ca	0	0	0	inf	inf
+AJ0100-Cb	0	0	0	inf	inf
+AJ0101-Ca	0	0	0	inf	inf
+AJ0101-Cb	0	0	0	inf	inf
+AJ0102-Ca	0	0	0	inf	inf
+AJ0102-Cb	0	0	0	inf	inf
+AJ0103-Ca	0	0	0	inf	inf
+AJ0103-Cb	0	0	0	inf	inf
+AJ0105-Ca	0	0	0	inf	inf
+AJ0105-Cb	0	0	0	inf	inf
+AJ0107-Ca	0	0	0	inf	inf
+AJ0107-Cb	0	0	0	inf	inf
+AJ0109-Ca	0	0	0	inf	inf
+AJ0109-Cb	0	0	0	inf	inf
+AJ0113-Ca	0	0	0	inf	inf
+AJ0113-Cb	0	0	0	inf	inf
+AJ0115-Ca	0	0	0	inf	inf
+AJ0115-Cb	0	0	0	inf	inf
+AJ0116-Ca	0	0	0	inf	inf
+AJ0116-Cb	0	0	0	inf	inf
+AJ0117-Ca	0	0	0	inf	inf
+AJ0117-Cb	0	0	0	inf	inf
+AJ0119-Ca	0	0	0	inf	inf
+AJ0119-Cb	0	0	0	inf	inf
+AJ0128-Ca	0	0	0	inf	inf
+AJ0128-Cb	0	0	0	inf	inf
+AJ0129-Ca	0	0	0	inf	inf
+AJ0129-Cb	0	0	0	inf	inf
+AJ0130-Ca	0	0	0	inf	inf
+AJ0130-Cb	0	0	0	inf	inf
+AJ0131-Ca	0	0	0	inf	inf
+AJ0131-Cb	0	0	0	inf	inf
+AJ0132-Ca	0	0	0	inf	inf
+AJ0132-Cb	0	0	0	inf	inf
+AJ0133-Ca	0	0	0	inf	inf
+AJ0133-Cb	0	0	0	inf	inf
+AJ0134-Ca	0	0	0	inf	inf
+AJ0134-Cb	0	0	0	inf	inf
+AJ0135-Ca	0	0	0	inf	inf
+AJ0135-Cb	0	0	0	inf	inf
+AJ0136-Ca	0	0	0	inf	inf
+AJ0136-Cb	0	0	0	inf	inf
+AJ0137-Ca	0	0	0	inf	inf
+AJ0137-Cb	0	0	0	inf	inf
+AJ0138-Ca	0	0	0	inf	inf
+AJ0138-Cb	0	0	0	inf	inf
+AJ0139-Ca	0	0	0	inf	inf
+AJ0139-Cb	0	0	0	inf	inf
+AJ0140-Ca	0	0	0	inf	inf
+AJ0140-Cb	0	0	0	inf	inf
+AJ0141-Ca	0	0	0	inf	inf
+AJ0141-Cb	0	0	0	inf	inf
+AJ0142-Ca	0	0	0	inf	inf
+AJ0142-Cb	0	0	0	inf	inf
+AJ0143-Ca	0	0	0	inf	inf
+AJ0143-Cb	0	0	0	inf	inf
+AJ0144-Ca	0	0	0	inf	inf
+AJ0144-Cb	0	0	0	inf	inf
+AJ0145-Ca	0	0	0	inf	inf
+AJ0145-Cb	0	0	0	inf	inf
+AJ0146-Ca	0	0	0	inf	inf
+AJ0146-Cb	0	0	0	inf	inf
+AJ0147-Ca	0	0	0	inf	inf
+AJ0147-Cb	0	0	0	inf	inf
+AJ0148-Ca	0	0	0	inf	inf
+AJ0148-Cb	0	0	0	inf	inf
+AJ0149-Ca	0	0	0	inf	inf
+AJ0149-Cb	0	0	0	inf	inf
+AJ0150-Ca	0	0	0	inf	inf
+AJ0150-Cb	0	0	0	inf	inf
+AJ0151-Ca	0	0	0	inf	inf
+AJ0151-Cb	0	0	0	inf	inf
+AJ0152-Ca	0	0	0	inf	inf
+AJ0152-Cb	0	0	0	inf	inf
+AJ0153-Ca	0	0	0	inf	inf
+AJ0153-Cb	0	0	0	inf	inf
+AJ0154-Ca	0	0	0	inf	inf
+AJ0154-Cb	0	0	0	inf	inf
+AJ0155-Ca	0	0	0	inf	inf
+AJ0155-Cb	0	0	0	inf	inf
+AJ0156-Ca	0	0	0	inf	inf
+AJ0156-Cb	0	0	0	inf	inf
+AJ0157-Ca	0	0	0	inf	inf
+AJ0157-Cb	0	0	0	inf	inf
+AJ0158-Ca	0	0	0	inf	inf
+AJ0158-Cb	0	0	0	inf	inf
+AJ0159-Ca	0	0	0	inf	inf
+AJ0159-Cb	0	0	0	inf	inf
+AJ0161-Ca	0	0	0	inf	inf
+AJ0161-Cb	0	0	0	inf	inf
+AK0060-Ca	0	0	0	inf	inf
+AK0060-Cb	0	0	0	inf	inf
+AK0062-Ca	0	0	0	inf	inf
+AK0062-Cb	0	0	0	inf	inf
+AK0065-Ca	0	0	0	inf	inf
+AK0065-Cb	0	0	0	inf	inf
+AK0066-Ca	0	0	0	inf	inf
+AK0066-Cb	0	0	0	inf	inf
+AK0067-Ca	0	0	0	inf	inf
+AK0067-Cb	0	0	0	inf	inf
+AK0068-Ca	0	0	0	inf	inf
+AK0068-Cb	0	0	0	inf	inf
+AK0069-Ca	0	0	0	inf	inf
+AK0069-Cb	0	0	0	inf	inf
+AK0070-Ca	0	0	0	inf	inf
+AK0070-Cb	0	0	0	inf	inf
+AK0072-Ca	0	0	0	inf	inf
+AK0072-Cb	0	0	0	inf	inf
+AK0073-Ca	0	0	0	inf	inf
+AK0073-Cb	0	0	0	inf	inf
+AK0074-Ca	0	0	0	inf	inf
+AK0074-Cb	0	0	0	inf	inf
+AK0075-Ca	0	0	0	inf	inf
+AK0075-Cb	0	0	0	inf	inf
+AK0076-Ca	0	0	0	inf	inf
+AK0076-Cb	0	0	0	inf	inf
+AK0077-Ca	0	0	0	inf	inf
+AK0077-Cb	0	0	0	inf	inf
+AK0078-Ca	0	0	0	inf	inf
+AK0078-Cb	0	0	0	inf	inf
+AK0079-Ca	0	0	0	inf	inf
+AK0079-Cb	0	0	0	inf	inf
+AK0080-Ca	0	0	0	inf	inf
+AK0080-Cb	0	0	0	inf	inf
+AK0081-Ca	0	0	0	inf	inf
+AK0081-Cb	0	0	0	inf	inf
+AK0082-Ca	0	0	0	inf	inf
+AK0082-Cb	0	0	0	inf	inf
+AK0085-Ca	0	0	0	inf	inf
+AK0085-Cb	0	0	0	inf	inf
+AK0086-Ca	0	0	0	inf	inf
+AK0086-Cb	0	0	0	inf	inf
+AK0087-Ca	0	0	0	inf	inf
+AK0087-Cb	0	0	0	inf	inf
+AK0088-Ca	0	0	0	inf	inf
+AK0088-Cb	0	0	0	inf	inf
+AK0089-Ca	0	0	0	inf	inf
+AK0089-Cb	0	0	0	inf	inf
+AK0090-Ca	0	0	0	inf	inf
+AK0090-Cb	0	0	0	inf	inf
+AK0091-Ca	0	0	0	inf	inf
+AK0091-Cb	0	0	0	inf	inf
+AK0092-Ca	0	0	0	inf	inf
+AK0092-Cb	0	0	0	inf	inf
+AK0093-Ca	0	0	0	inf	inf
+AK0093-Cb	0	0	0	inf	inf
+AK0094-Ca	0	0	0	inf	inf
+AK0094-Cb	0	0	0	inf	inf
+AK0095-Ca	0	0	0	inf	inf
+AK0095-Cb	0	0	0	inf	inf
+AK0096-Ca	0	0	0	inf	inf
+AK0096-Cb	0	0	0	inf	inf
+AK0098-Ca	0	0	0	inf	inf
+AK0098-Cb	0	0	0	inf	inf
+AK0099-Ca	0	0	0	inf	inf
+AK0099-Cb	0	0	0	inf	inf
+AK0100-Ca	0	0	0	inf	inf
+AK0100-Cb	0	0	0	inf	inf
+AK0101-Ca	0	0	0	inf	inf
+AK0101-Cb	0	0	0	inf	inf
+AK0102-Ca	0	0	0	inf	inf
+AK0102-Cb	0	0	0	inf	inf
+AK0103-Ca	0	0	0	inf	inf
+AK0103-Cb	0	0	0	inf	inf
+AK0104-Ca	0	0	0	inf	inf
+AK0104-Cb	0	0	0	inf	inf
+AK0105-Ca	0	0	0	inf	inf
+AK0105-Cb	0	0	0	inf	inf
+AK0106-Ca	0	0	0	inf	inf
+AK0106-Cb	0	0	0	inf	inf
+AK0107-Ca	0	0	0	inf	inf
+AK0107-Cb	0	0	0	inf	inf
+AK0108-Ca	0	0	0	inf	inf
+AK0108-Cb	0	0	0	inf	inf
+AK0109-Ca	0	0	0	inf	inf
+AK0109-Cb	0	0	0	inf	inf
+AK0110-Ca	0	0	0	inf	inf
+AK0110-Cb	0	0	0	inf	inf
+AK0116-Ca	0	0	0	inf	inf
+AK0116-Cb	0	0	0	inf	inf
+AK0117-Ca	0	0	0	inf	inf
+AK0117-Cb	0	0	0	inf	inf
+AK0119-Ca	0	0	0	inf	inf
+AK0119-Cb	0	0	0	inf	inf
+AK0127-Ca	0	0	0	inf	inf
+AK0127-Cb	0	0	0	inf	inf
+AN0007-Ca	0	0	0	inf	inf
+AN0007-Cb	0	0	0	inf	inf
+AN0008-Ca	0	0	0	inf	inf
+AN0008-Cb	0	0	0	inf	inf
+AN0009-Ca	0	0	0	inf	inf
+AN0009-Cb	0	0	0	inf	inf
+AN0010-Ca	0	0	0	inf	inf
+AN0010-Cb	0	0	0	inf	inf
+AN0011-Ca	0	0	0	inf	inf
+AN0011-Cb	0	0	0	inf	inf
+AN0012-Ca	0	0	0	inf	inf
+AN0012-Cb	0	0	0	inf	inf
+AN0013-Ca	0	0	0	inf	inf
+AN0013-Cb	0	0	0	inf	inf
+AN0014-Ca	0	0	0	inf	inf
+AN0014-Cb	0	0	0	inf	inf
+AN0015-Ca	0	0	0	inf	inf
+AN0015-Cb	0	0	0	inf	inf
+AN0016-Ca	0	0	0	inf	inf
+AN0016-Cb	0	0	0	inf	inf
+AN0017-Ca	0	0	0	inf	inf
+AN0017-Cb	0	0	0	inf	inf
+AN0018-Ca	0	0	0	inf	inf
+AN0018-Cb	0	0	0	inf	inf
+AN0019-Ca	0	0	0	inf	inf
+AN0019-Cb	0	0	0	inf	inf
+AN0020-Ca	0	0	0	inf	inf
+AN0020-Cb	0	0	0	inf	inf
+AN0022-Ca	0	0	0	inf	inf
+AN0022-Cb	0	0	0	inf	inf
+AN0023-Ca	0	0	0	inf	inf
+AN0023-Cb	0	0	0	inf	inf
+AN0024-Ca	0	0	0	inf	inf
+AN0024-Cb	0	0	0	inf	inf
+AN0025-Ca	0	0	0	inf	inf
+AN0025-Cb	0	0	0	inf	inf
+AN0026-Ca	0	0	0	inf	inf
+AN0026-Cb	0	0	0	inf	inf
+AN0027-Ca	0	0	0	inf	inf
+AN0027-Cb	0	0	0	inf	inf
+AN0028-Ca	0	0	0	inf	inf
+AN0028-Cb	0	0	0	inf	inf
+AN0029-Ca	0	0	0	inf	inf
+AN0029-Cb	0	0	0	inf	inf
+AN0030-Ca	0	0	0	inf	inf
+AN0030-Cb	0	0	0	inf	inf
+AN0031-Ca	0	0	0	inf	inf
+AN0031-Cb	0	0	0	inf	inf
+AN0032-Ca	0	0	0	inf	inf
+AN0032-Cb	0	0	0	inf	inf
+AN0033-Ca	0	0	0	inf	inf
+AN0033-Cb	0	0	0	inf	inf
+AN0034-Ca	0	0	0	inf	inf
+AN0034-Cb	0	0	0	inf	inf
+AN0035-Ca	0	0	0	inf	inf
+AN0035-Cb	0	0	0	inf	inf
+AN0036-Ca	0	0	0	inf	inf
+AN0036-Cb	0	0	0	inf	inf
+AN0037-Ca	0	0	0	inf	inf
+AN0037-Cb	0	0	0	inf	inf
+AN0038-Ca	0	0	0	inf	inf
+AN0038-Cb	0	0	0	inf	inf
+AN0039-Ca	0	0	0	inf	inf
+AN0039-Cb	0	0	0	inf	inf
+AN0040-Ca	0	0	0	inf	inf
+AN0040-Cb	0	0	0	inf	inf
+AN0041-Ca	0	0	0	inf	inf
+AN0041-Cb	0	0	0	inf	inf
+AN0042-Ca	0	0	0	inf	inf
+AN0042-Cb	0	0	0	inf	inf
+AN0043-Ca	0	0	0	inf	inf
+AN0043-Cb	0	0	0	inf	inf
+AN0044-Ca	0	0	0	inf	inf
+AN0044-Cb	0	0	0	inf	inf
+AN0045-Ca	0	0	0	inf	inf
+AN0045-Cb	0	0	0	inf	inf
+AN0046-Ca	0	0	0	inf	inf
+AN0046-Cb	0	0	0	inf	inf
+AN0047-Ca	0	0	0	inf	inf
+AN0047-Cb	0	0	0	inf	inf
+AN0048-Ca	0	0	0	inf	inf
+AN0048-Cb	0	0	0	inf	inf
+AN0049-Ca	0	0	0	inf	inf
+AN0049-Cb	0	0	0	inf	inf
+AN0050-Ca	0	0	0	inf	inf
+AN0050-Cb	0	0	0	inf	inf
+AN0051-Ca	0	0	0	inf	inf
+AN0051-Cb	0	0	0	inf	inf
+AN0053-Ca	0	0	0	inf	inf
+AN0053-Cb	0	0	0	inf	inf
+AN0054-Ca	0	0	0	inf	inf
+AN0054-Cb	0	0	0	inf	inf
+AN0055-Ca	0	0	0	inf	inf
+AN0055-Cb	0	0	0	inf	inf
+AN0056-Ca	0	0	0	inf	inf
+AN0056-Cb	0	0	0	inf	inf
+AN0057-Ca	0	0	0	inf	inf
+AN0057-Cb	0	0	0	inf	inf
+AN0058-Ca	0	0	0	inf	inf
+AN0058-Cb	0	0	0	inf	inf
+AN0059-Ca	0	0	0	inf	inf
+AN0059-Cb	0	0	0	inf	inf
+AN0060-Ca	0	0	0	inf	inf
+AN0060-Cb	0	0	0	inf	inf
+AN0061-Ca	0	0	0	inf	inf
+AN0061-Cb	0	0	0	inf	inf
+AN0062-Ca	0	0	0	inf	inf
+AN0062-Cb	0	0	0	inf	inf
+AN0063-Ca	0	0	0	inf	inf
+AN0063-Cb	0	0	0	inf	inf
+AN0064-Ca	0	0	0	inf	inf
+AN0064-Cb	0	0	0	inf	inf
+AN0065-Ca	0	0	0	inf	inf
+AN0065-Cb	0	0	0	inf	inf
+AN0066-Ca	0	0	0	inf	inf
+AN0066-Cb	0	0	0	inf	inf
+AN0067-Ca	0	0	0	inf	inf
+AN0067-Cb	0	0	0	inf	inf
+AN0068-Ca	0	0	0	inf	inf
+AN0068-Cb	0	0	0	inf	inf
+AN0069-Ca	0	0	0	inf	inf
+AN0069-Cb	0	0	0	inf	inf
+AN0070-Ca	0	0	0	inf	inf
+AN0070-Cb	0	0	0	inf	inf
+AN0071-Ca	0	0	0	inf	inf
+AN0071-Cb	0	0	0	inf	inf
+AN0072-Ca	0	0	0	inf	inf
+AN0072-Cb	0	0	0	inf	inf
+AN0073-Ca	0	0	0	inf	inf
+AN0073-Cb	0	0	0	inf	inf
+AN0074-Ca	0	0	0	inf	inf
+AN0074-Cb	0	0	0	inf	inf
+AN0075-Ca	0	0	0	inf	inf
+AN0075-Cb	0	0	0	inf	inf
+AN0076-Ca	0	0	0	inf	inf
+AN0076-Cb	0	0	0	inf	inf
+AN0077-Ca	0	0	0	inf	inf
+AN0077-Cb	0	0	0	inf	inf
+AN0079-Ca	0	0	0	inf	inf
+AN0079-Cb	0	0	0	inf	inf
+AN0080-Ca	0	0	0	inf	inf
+AN0080-Cb	0	0	0	inf	inf
+AN0081-Ca	0	0	0	inf	inf
+AN0081-Cb	0	0	0	inf	inf
+AN0082-Ca	0	0	0	inf	inf
+AN0082-Cb	0	0	0	inf	inf
+AN0083-Ca	0	0	0	inf	inf
+AN0083-Cb	0	0	0	inf	inf
+AN0084-Ca	0	0	0	inf	inf
+AN0084-Cb	0	0	0	inf	inf
+AN0085-Ca	0	0	0	inf	inf
+AN0085-Cb	0	0	0	inf	inf
+AN0086-Ca	0	0	0	inf	inf
+AN0086-Cb	0	0	0	inf	inf
+AN0087-Ca	0	0	0	inf	inf
+AN0087-Cb	0	0	0	inf	inf
+AN0088-Ca	0	0	0	inf	inf
+AN0088-Cb	0	0	0	inf	inf
+AN0089-Ca	0	0	0	inf	inf
+AN0089-Cb	0	0	0	inf	inf
+AN0090-Ca	0	0	0	inf	inf
+AN0090-Cb	0	0	0	inf	inf
+AN0091-Ca	0	0	0	inf	inf
+AN0091-Cb	0	0	0	inf	inf
+AN0092-Ca	0	0	0	inf	inf
+AN0092-Cb	0	0	0	inf	inf
+AN0093-Ca	0	0	0	inf	inf
+AN0093-Cb	0	0	0	inf	inf
+AN0094-Ca	0	0	0	inf	inf
+AN0094-Cb	0	0	0	inf	inf
+AN0095-Ca	0	0	0	inf	inf
+AN0095-Cb	0	0	0	inf	inf
+AN0096-Ca	0	0	0	inf	inf
+AN0096-Cb	0	0	0	inf	inf
+AN0097-Ca	0	0	0	inf	inf
+AN0097-Cb	0	0	0	inf	inf
+AN0098-Ca	0	0	0	inf	inf
+AN0098-Cb	0	0	0	inf	inf
+AN0099-Ca	0	0	0	inf	inf
+AN0099-Cb	0	0	0	inf	inf
+AN0100-Ca	0	0	0	inf	inf
+AN0100-Cb	0	0	0	inf	inf
+AN0101-Ca	0	0	0	inf	inf
+AN0101-Cb	0	0	0	inf	inf
+AN0102-Ca	0	0	0	inf	inf
+AN0102-Cb	0	0	0	inf	inf
+AN0103-Ca	0	0	0	inf	inf
+AN0103-Cb	0	0	0	inf	inf
+AN0104-Ca	0	0	0	inf	inf
+AN0104-Cb	0	0	0	inf	inf
+AN0105-Ca	0	0	0	inf	inf
+AN0105-Cb	0	0	0	inf	inf
+AN0106-Ca	0	0	0	inf	inf
+AN0106-Cb	0	0	0	inf	inf
+AN0107-Ca	0	0	0	inf	inf
+AN0107-Cb	0	0	0	inf	inf
+AN0108-Ca	0	0	0	inf	inf
+AN0108-Cb	0	0	0	inf	inf
+AN0109-Ca	0	0	0	inf	inf
+AN0109-Cb	0	0	0	inf	inf
+AN0111-Ca	0	0	0	inf	inf
+AN0111-Cb	0	0	0	inf	inf
+AN0112-Ca	0	0	0	inf	inf
+AN0112-Cb	0	0	0	inf	inf
+AN0113-Ca	0	0	0	inf	inf
+AN0113-Cb	0	0	0	inf	inf
+AN0114-Ca	0	0	0	inf	inf
+AN0114-Cb	0	0	0	inf	inf
+AN0115-Ca	0	0	0	inf	inf
+AN0115-Cb	0	0	0	inf	inf
+AN0117-Ca	0	0	0	inf	inf
+AN0117-Cb	0	0	0	inf	inf
+AN0118-Ca	0	0	0	inf	inf
+AN0118-Cb	0	0	0	inf	inf
+AN0119-Ca	0	0	0	inf	inf
+AN0119-Cb	0	0	0	inf	inf
+AN0120-Ca	0	0	0	inf	inf
+AN0120-Cb	0	0	0	inf	inf
+AN0121-Ca	0	0	0	inf	inf
+AN0121-Cb	0	0	0	inf	inf
+AN0122-Ca	0	0	0	inf	inf
+AN0122-Cb	0	0	0	inf	inf
+AN0123-Ca	0	0	0	inf	inf
+AN0123-Cb	0	0	0	inf	inf
+AN0124-Ca	0	0	0	inf	inf
+AN0124-Cb	0	0	0	inf	inf
+AN0125-Ca	0	0	0	inf	inf
+AN0125-Cb	0	0	0	inf	inf
+AN0126-Ca	0	0	0	inf	inf
+AN0126-Cb	0	0	0	inf	inf
+AN0127-Ca	0	0	0	inf	inf
+AN0127-Cb	0	0	0	inf	inf
+AN0128-Ca	0	0	0	inf	inf
+AN0128-Cb	0	0	0	inf	inf
+AN0129-Ca	0	0	0	inf	inf
+AN0129-Cb	0	0	0	inf	inf
+AN0130-Ca	0	0	0	inf	inf
+AN0130-Cb	0	0	0	inf	inf
+AN0131-Ca	0	0	0	inf	inf
+AN0131-Cb	0	0	0	inf	inf
+AN0132-Ca	0	0	0	inf	inf
+AN0132-Cb	0	0	0	inf	inf
+AN0134-Ca	0	0	0	inf	inf
+AN0134-Cb	0	0	0	inf	inf
+AN0135-Ca	0	0	0	inf	inf
+AN0135-Cb	0	0	0	inf	inf
+AN0136-Ca	0	0	0	inf	inf
+AN0136-Cb	0	0	0	inf	inf
+AN0137-Ca	0	0	0	inf	inf
+AN0137-Cb	0	0	0	inf	inf
+AN0138-Ca	0	0	0	inf	inf
+AN0138-Cb	0	0	0	inf	inf
+AN0139-Ca	0	0	0	inf	inf
+AN0139-Cb	0	0	0	inf	inf
+AN0140-Ca	0	0	0	inf	inf
+AN0140-Cb	0	0	0	inf	inf
+AN0141-Ca	0	0	0	inf	inf
+AN0141-Cb	0	0	0	inf	inf
+AN0142-Ca	0	0	0	inf	inf
+AN0142-Cb	0	0	0	inf	inf
+AN0143-Ca	0	0	0	inf	inf
+AN0143-Cb	0	0	0	inf	inf
+AN0144-Ca	0	0	0	inf	inf
+AN0144-Cb	0	0	0	inf	inf
+AN0147-Ca	0	0	0	inf	inf
+AN0147-Cb	0	0	0	inf	inf
+AN0149-Ca	0	0	0	inf	inf
+AN0149-Cb	0	0	0	inf	inf
+AN0151-Ca	0	0	0	inf	inf
+AN0151-Cb	0	0	0	inf	inf
+AN0152-Ca	0	0	0	inf	inf
+AN0152-Cb	0	0	0	inf	inf
+AN0153-Ca	0	0	0	inf	inf
+AN0153-Cb	0	0	0	inf	inf
+AN0154-Ca	0	0	0	inf	inf
+AN0154-Cb	0	0	0	inf	inf
+AN0155-Ca	0	0	0	inf	inf
+AN0155-Cb	0	0	0	inf	inf
+AN0156-Ca	0	0	0	inf	inf
+AN0156-Cb	0	0	0	inf	inf
+AN0157-Ca	0	0	0	inf	inf
+AN0157-Cb	0	0	0	inf	inf
+AN0158-Ca	0	0	0	inf	inf
+AN0158-Cb	0	0	0	inf	inf
+AN0159-Ca	0	0	0	inf	inf
+AN0159-Cb	0	0	0	inf	inf
+AN0160-Ca	0	0	0	inf	inf
+AN0160-Cb	0	0	0	inf	inf
+AN0162-Ca	0	0	0	inf	inf
+AN0162-Cb	0	0	0	inf	inf
+AN0163-Ca	0	0	0	inf	inf
+AN0163-Cb	0	0	0	inf	inf
+AN0164-Ca	0	0	0	inf	inf
+AN0164-Cb	0	0	0	inf	inf
+AN0165-Ca	0	0	0	inf	inf
+AN0165-Cb	0	0	0	inf	inf
+AN0166-Ca	0	0	0	inf	inf
+AN0166-Cb	0	0	0	inf	inf
+AN0167-Ca	0	0	0	inf	inf
+AN0167-Cb	0	0	0	inf	inf
+AN0168-Ca	0	0	0	inf	inf
+AN0168-Cb	0	0	0	inf	inf
+AN0169-Ca	0	0	0	inf	inf
+AN0169-Cb	0	0	0	inf	inf
+AN0170-Ca	0	0	0	inf	inf
+AN0170-Cb	0	0	0	inf	inf
+AN0171-Ca	0	0	0	inf	inf
+AN0171-Cb	0	0	0	inf	inf
+AN0172-Ca	0	0	0	inf	inf
+AN0172-Cb	0	0	0	inf	inf
+AN0173-Ca	0	0	0	inf	inf
+AN0173-Cb	0	0	0	inf	inf
+AN0174-Ca	0	0	0	inf	inf
+AN0174-Cb	0	0	0	inf	inf
+AN0175-Ca	0	0	0	inf	inf
+AN0175-Cb	0	0	0	inf	inf
+AN0176-Ca	0	0	0	inf	inf
+AN0176-Cb	0	0	0	inf	inf
+AN0177-Ca	0	0	0	inf	inf
+AN0177-Cb	0	0	0	inf	inf
+AN0178-Ca	0	0	0	inf	inf
+AN0178-Cb	0	0	0	inf	inf
+AN0179-Ca	0	0	0	inf	inf
+AN0179-Cb	0	0	0	inf	inf
+AN0180-Ca	0	0	0	inf	inf
+AN0180-Cb	0	0	0	inf	inf
+AN0181-Ca	0	0	0	inf	inf
+AN0181-Cb	0	0	0	inf	inf
+AN0182-Ca	0	0	0	inf	inf
+AN0182-Cb	0	0	0	inf	inf
+AN0183-Ca	0	0	0	inf	inf
+AN0183-Cb	0	0	0	inf	inf
+AN0184-Ca	0	0	0	inf	inf
+AN0184-Cb	0	0	0	inf	inf
+AN0185-Ca	0	0	0	inf	inf
+AN0185-Cb	0	0	0	inf	inf
+AN0186-Ca	0	0	0	inf	inf
+AN0186-Cb	0	0	0	inf	inf
+AN0187-Ca	0	0	0	inf	inf
+AN0187-Cb	0	0	0	inf	inf
+AN0188-Ca	0	0	0	inf	inf
+AN0188-Cb	0	0	0	inf	inf
+AN0189-Ca	0	0	0	inf	inf
+AN0189-Cb	0	0	0	inf	inf
+AN0190-Ca	0	0	0	inf	inf
+AN0190-Cb	0	0	0	inf	inf
+AN0191-Ca	0	0	0	inf	inf
+AN0191-Cb	0	0	0	inf	inf
+AN0192-Ca	0	0	0	inf	inf
+AN0192-Cb	0	0	0	inf	inf
+AN0193-Ca	0	0	0	inf	inf
+AN0193-Cb	0	0	0	inf	inf
+AN0194-Ca	0	0	0	inf	inf
+AN0194-Cb	0	0	0	inf	inf
+AN0196-Ca	0	0	0	inf	inf
+AN0196-Cb	0	0	0	inf	inf
+AN0197-Ca	0	0	0	inf	inf
+AN0197-Cb	0	0	0	inf	inf
+AN0198-Ca	0	0	0	inf	inf
+AN0198-Cb	0	0	0	inf	inf
+AN0199-Ca	0	0	0	inf	inf
+AN0199-Cb	0	0	0	inf	inf
+AN0200-Ca	0	0	0	inf	inf
+AN0200-Cb	0	0	0	inf	inf
+AN0201-Ca	0	0	0	inf	inf
+AN0201-Cb	0	0	0	inf	inf
+AN0202-Ca	0	0	0	inf	inf
+AN0202-Cb	0	0	0	inf	inf
+AN0203-Ca	0	0	0	inf	inf
+AN0203-Cb	0	0	0	inf	inf
+AN0204-Ca	0	0	0	inf	inf
+AN0204-Cb	0	0	0	inf	inf
+AN0205-Ca	0	0	0	inf	inf
+AN0205-Cb	0	0	0	inf	inf
+AN0206-Ca	0	0	0	inf	inf
+AN0206-Cb	0	0	0	inf	inf
+AN0207-Ca	0	0	0	inf	inf
+AN0207-Cb	0	0	0	inf	inf
+AN0208-Ca	0	0	0	inf	inf
+AN0208-Cb	0	0	0	inf	inf
+AN0209-Ca	0	0	0	inf	inf
+AN0209-Cb	0	0	0	inf	inf
+AN0210-Ca	0	0	0	inf	inf
+AN0210-Cb	0	0	0	inf	inf
+AN0212-Ca	0	0	0	inf	inf
+AN0212-Cb	0	0	0	inf	inf
+AN0213-Ca	0	0	0	inf	inf
+AN0213-Cb	0	0	0	inf	inf
+AN0214-Ca	0	0	0	inf	inf
+AN0214-Cb	0	0	0	inf	inf
+AN0215-Ca	0	0	0	inf	inf
+AN0215-Cb	0	0	0	inf	inf
+AN0217-Ca	0	0	0	inf	inf
+AN0217-Cb	0	0	0	inf	inf
+AN0218-Ca	0	0	0	inf	inf
+AN0218-Cb	0	0	0	inf	inf
+AN0219-Ca	0	0	0	inf	inf
+AN0219-Cb	0	0	0	inf	inf
+AN0220-Ca	0	0	0	inf	inf
+AN0220-Cb	0	0	0	inf	inf
+AN0221-Ca	0	0	0	inf	inf
+AN0221-Cb	0	0	0	inf	inf
+AN0222-Ca	0	0	0	inf	inf
+AN0222-Cb	0	0	0	inf	inf
+AN0223-Ca	0	0	0	inf	inf
+AN0223-Cb	0	0	0	inf	inf
+AN0224-Ca	0	0	0	inf	inf
+AN0224-Cb	0	0	0	inf	inf
+AN0225-Ca	0	0	0	inf	inf
+AN0225-Cb	0	0	0	inf	inf
+AN0226-Ca	0	0	0	inf	inf
+AN0226-Cb	0	0	0	inf	inf
+AN0227-Ca	0	0	0	inf	inf
+AN0227-Cb	0	0	0	inf	inf
+AN0228-Ca	0	0	0	inf	inf
+AN0228-Cb	0	0	0	inf	inf
+AN0229-Ca	0	0	0	inf	inf
+AN0229-Cb	0	0	0	inf	inf
+AN0230-Ca	0	0	0	inf	inf
+AN0230-Cb	0	0	0	inf	inf
+AN0231-Ca	0	0	0	inf	inf
+AN0231-Cb	0	0	0	inf	inf
+AN0232-Ca	0	0	0	inf	inf
+AN0232-Cb	0	0	0	inf	inf
+AN0233-Ca	0	0	0	inf	inf
+AN0233-Cb	0	0	0	inf	inf
+AN0234-Ca	0	0	0	inf	inf
+AN0234-Cb	0	0	0	inf	inf
+AN0235-Ca	0	0	0	inf	inf
+AN0235-Cb	0	0	0	inf	inf
+AN0236-Ca	0	0	0	inf	inf
+AN0236-Cb	0	0	0	inf	inf
+AN0237-Ca	0	0	0	inf	inf
+AN0237-Cb	0	0	0	inf	inf
+AN0238-Ca	0	0	0	inf	inf
+AN0238-Cb	0	0	0	inf	inf
+AN0239-Ca	0	0	0	inf	inf
+AN0239-Cb	0	0	0	inf	inf
+AN0240-Ca	0	0	0	inf	inf
+AN0240-Cb	0	0	0	inf	inf
+AN0241-Ca	0	0	0	inf	inf
+AN0241-Cb	0	0	0	inf	inf
+AN0242-Ca	0	0	0	inf	inf
+AN0242-Cb	0	0	0	inf	inf
+AN0243-Ca	0	0	0	inf	inf
+AN0243-Cb	0	0	0	inf	inf
+AN0244-Ca	0	0	0	inf	inf
+AN0244-Cb	0	0	0	inf	inf
+AN0245-Ca	0	0	0	inf	inf
+AN0245-Cb	0	0	0	inf	inf
+AN0246-Ca	0	0	0	inf	inf
+AN0246-Cb	0	0	0	inf	inf
+AN0247-Ca	0	0	0	inf	inf
+AN0247-Cb	0	0	0	inf	inf
+AN0248-Ca	0	0	0	inf	inf
+AN0248-Cb	0	0	0	inf	inf
+AN0250-Ca	0	0	0	inf	inf
+AN0250-Cb	0	0	0	inf	inf
+AN0251-Ca	0	0	0	inf	inf
+AN0251-Cb	0	0	0	inf	inf
+AN0252-Ca	0	0	0	inf	inf
+AN0252-Cb	0	0	0	inf	inf
+AN0253-Ca	0	0	0	inf	inf
+AN0253-Cb	0	0	0	inf	inf
+AN0254-Ca	0	0	0	inf	inf
+AN0254-Cb	0	0	0	inf	inf
+AN0255-Ca	0	0	0	inf	inf
+AN0255-Cb	0	0	0	inf	inf
+AN0256-Ca	0	0	0	inf	inf
+AN0256-Cb	0	0	0	inf	inf
+AN0258-Ca	0	0	0	inf	inf
+AN0258-Cb	0	0	0	inf	inf
+AN0259-Ca	0	0	0	inf	inf
+AN0259-Cb	0	0	0	inf	inf
+AN0260-Ca	0	0	0	inf	inf
+AN0260-Cb	0	0	0	inf	inf
+AN0261-Ca	0	0	0	inf	inf
+AN0261-Cb	0	0	0	inf	inf
+AN0262-Ca	0	0	0	inf	inf
+AN0262-Cb	0	0	0	inf	inf
+AN0263-Ca	0	0	0	inf	inf
+AN0263-Cb	0	0	0	inf	inf
+AN0264-Ca	0	0	0	inf	inf
+AN0264-Cb	0	0	0	inf	inf
+AN0265-Ca	0	0	0	inf	inf
+AN0265-Cb	0	0	0	inf	inf
+AN0266-Ca	0	0	0	inf	inf
+AN0266-Cb	0	0	0	inf	inf
+AN0267-Ca	0	0	0	inf	inf
+AN0267-Cb	0	0	0	inf	inf
+AN0268-Ca	0	0	0	inf	inf
+AN0268-Cb	0	0	0	inf	inf
+AN0269-Ca	0	0	0	inf	inf
+AN0269-Cb	0	0	0	inf	inf
+AN0270-Ca	0	0	0	inf	inf
+AN0270-Cb	0	0	0	inf	inf
+AN0271-Ca	0	0	0	inf	inf
+AN0271-Cb	0	0	0	inf	inf
+AN0272-Ca	0	0	0	inf	inf
+AN0272-Cb	0	0	0	inf	inf
+AN0275-Ca	0	0	0	inf	inf
+AN0275-Cb	0	0	0	inf	inf
+AN0276-Ca	0	0	0	inf	inf
+AN0276-Cb	0	0	0	inf	inf
+AN0277-Ca	0	0	0	inf	inf
+AN0277-Cb	0	0	0	inf	inf
+AN0278-Ca	0	0	0	inf	inf
+AN0278-Cb	0	0	0	inf	inf
+AN0279-Ca	0	0	0	inf	inf
+AN0279-Cb	0	0	0	inf	inf
+AN0280-Ca	0	0	0	inf	inf
+AN0280-Cb	0	0	0	inf	inf
+AN0281-Ca	0	0	0	inf	inf
+AN0281-Cb	0	0	0	inf	inf
+AN0282-Ca	0	0	0	inf	inf
+AN0282-Cb	0	0	0	inf	inf
+AN0283-Ca	0	0	0	inf	inf
+AN0283-Cb	0	0	0	inf	inf
+AN0284-Ca	0	0	0	inf	inf
+AN0284-Cb	0	0	0	inf	inf
+AN0285-Ca	0	0	0	inf	inf
+AN0285-Cb	0	0	0	inf	inf
+AN0286-Ca	0	0	0	inf	inf
+AN0286-Cb	0	0	0	inf	inf
+AN0287-Ca	0	0	0	inf	inf
+AN0287-Cb	0	0	0	inf	inf
+AN0288-Ca	0	0	0	inf	inf
+AN0288-Cb	0	0	0	inf	inf
+AN0289-Ca	0	0	0	inf	inf
+AN0289-Cb	0	0	0	inf	inf
+AN0290-Ca	0	0	0	inf	inf
+AN0290-Cb	0	0	0	inf	inf
+AN0291-Ca	0	0	0	inf	inf
+AN0291-Cb	0	0	0	inf	inf
+AN0292-Ca	0	0	0	inf	inf
+AN0292-Cb	0	0	0	inf	inf
+AN0293-Ca	0	0	0	inf	inf
+AN0293-Cb	0	0	0	inf	inf
+AN0294-Ca	0	0	0	inf	inf
+AN0294-Cb	0	0	0	inf	inf
+AN0295-Ca	0	0	0	inf	inf
+AN0295-Cb	0	0	0	inf	inf
+AN0296-Ca	0	0	0	inf	inf
+AN0296-Cb	0	0	0	inf	inf
+AN0297-Ca	0	0	0	inf	inf
+AN0297-Cb	0	0	0	inf	inf
+AN0298-Ca	0	0	0	inf	inf
+AN0298-Cb	0	0	0	inf	inf
+AN0299-Ca	0	0	0	inf	inf
+AN0299-Cb	0	0	0	inf	inf
+AN0300-Ca	0	0	0	inf	inf
+AN0300-Cb	0	0	0	inf	inf
+AN0301-Ca	0	0	0	inf	inf
+AN0301-Cb	0	0	0	inf	inf
+AN0302-Ca	0	0	0	inf	inf
+AN0302-Cb	0	0	0	inf	inf
+AN0303-Ca	0	0	0	inf	inf
+AN0303-Cb	0	0	0	inf	inf
+AN0304-Ca	0	0	0	inf	inf
+AN0304-Cb	0	0	0	inf	inf
+AN0305-Ca	0	0	0	inf	inf
+AN0305-Cb	0	0	0	inf	inf
+AN0306-Ca	0	0	0	inf	inf
+AN0306-Cb	0	0	0	inf	inf
+AN0307-Ca	0	0	0	inf	inf
+AN0307-Cb	0	0	0	inf	inf
+AN0308-Ca	0	0	0	inf	inf
+AN0308-Cb	0	0	0	inf	inf
+AN0309-Ca	0	0	0	inf	inf
+AN0309-Cb	0	0	0	inf	inf
+AN0310-Ca	0	0	0	inf	inf
+AN0310-Cb	0	0	0	inf	inf
+AN0311-Ca	0	0	0	inf	inf
+AN0311-Cb	0	0	0	inf	inf
+AN0312-Ca	0	0	0	inf	inf
+AN0312-Cb	0	0	0	inf	inf
+AN0313-Ca	0	0	0	inf	inf
+AN0313-Cb	0	0	0	inf	inf
+AN0314-Ca	0	0	0	inf	inf
+AN0314-Cb	0	0	0	inf	inf
+AN0315-Ca	0	0	0	inf	inf
+AN0315-Cb	0	0	0	inf	inf
+AN0316-Ca	0	0	0	inf	inf
+AN0316-Cb	0	0	0	inf	inf
+AN0317-Ca	0	0	0	inf	inf
+AN0317-Cb	0	0	0	inf	inf
+AN0318-Ca	0	0	0	inf	inf
+AN0318-Cb	0	0	0	inf	inf
+AN0319-Ca	0	0	0	inf	inf
+AN0319-Cb	0	0	0	inf	inf
+AN0320-Ca	0	0	0	inf	inf
+AN0320-Cb	0	0	0	inf	inf
+AN0321-Ca	0	0	0	inf	inf
+AN0321-Cb	0	0	0	inf	inf
+AP0002-Ca	0	0	0	inf	inf
+AP0002-Cb	0	0	0	inf	inf
+AP0005-Ca	0	0	0	inf	inf
+AP0005-Cb	0	0	0	inf	inf
+AP0006-Ca	0	0	0	inf	inf
+AP0006-Cb	0	0	0	inf	inf
+AP0007-Ca	0	0	0	inf	inf
+AP0007-Cb	0	0	0	inf	inf
+AP0008-Ca	0	0	0	inf	inf
+AP0008-Cb	0	0	0	inf	inf
+AP0009-Ca	0	0	0	inf	inf
+AP0009-Cb	0	0	0	inf	inf
+AP0010-Ca	0	0	0	inf	inf
+AP0010-Cb	0	0	0	inf	inf
+AP0011-Ca	0	0	0	inf	inf
+AP0011-Cb	0	0	0	inf	inf
+AP0014-Ca	0	0	0	inf	inf
+AP0014-Cb	0	0	0	inf	inf
+AP0017-Ca	0	0	0	inf	inf
+AP0017-Cb	0	0	0	inf	inf
+AP0018-Ca	0	0	0	inf	inf
+AP0018-Cb	0	0	0	inf	inf
+AP0019-Ca	0	0	0	inf	inf
+AP0019-Cb	0	0	0	inf	inf
+AP0020-Ca	0	0	0	inf	inf
+AP0020-Cb	0	0	0	inf	inf
+AP0021-Ca	0	0	0	inf	inf
+AP0021-Cb	0	0	0	inf	inf
+AP0022-Ca	0	0	0	inf	inf
+AP0022-Cb	0	0	0	inf	inf
+AP0023-Ca	0	0	0	inf	inf
+AP0023-Cb	0	0	0	inf	inf
+AP0024-Ca	0	0	0	inf	inf
+AP0024-Cb	0	0	0	inf	inf
+AP0025-Ca	0	0	0	inf	inf
+AP0025-Cb	0	0	0	inf	inf
+AP0030-Ca	0	0	0	inf	inf
+AP0030-Cb	0	0	0	inf	inf
+AP0031-Ca	0	0	0	inf	inf
+AP0031-Cb	0	0	0	inf	inf
+AP0032-Ca	0	0	0	inf	inf
+AP0032-Cb	0	0	0	inf	inf
+AP0033-Ca	0	0	0	inf	inf
+AP0033-Cb	0	0	0	inf	inf
+AP0034-Ca	0	0	0	inf	inf
+AP0034-Cb	0	0	0	inf	inf
+AP0035-Ca	0	0	0	inf	inf
+AP0035-Cb	0	0	0	inf	inf
+AQ0001-Ca	0	0	0	inf	inf
+AQ0001-Cb	0	0	0	inf	inf
+AQ0002-Ca	0	0	0	inf	inf
+AQ0002-Cb	0	0	0	inf	inf
+AQ0004-Ca	0	0	0	inf	inf
+AQ0004-Cb	0	0	0	inf	inf
+AQ0005-Ca	0	0	0	inf	inf
+AQ0005-Cb	0	0	0	inf	inf
+AQ0011-Ca	0	0	0	inf	inf
+AQ0011-Cb	0	0	0	inf	inf
+AQ0012-Ca	0	0	0	inf	inf
+AQ0012-Cb	0	0	0	inf	inf
+AQ0013-Ca	0	0	0	inf	inf
+AQ0013-Cb	0	0	0	inf	inf
+AQ0014-Ca	0	0	0	inf	inf
+AQ0014-Cb	0	0	0	inf	inf
+AQ0015-Ca	0	0	0	inf	inf
+AQ0015-Cb	0	0	0	inf	inf
+AR0001-Ca	0	0	0	inf	inf
+AR0001-Cb	0	0	0	inf	inf
+AR0007-Ca	0	0	0	inf	inf
+AR0007-Cb	0	0	0	inf	inf
+AR0008-Ca	0	0	0	inf	inf
+AR0008-Cb	0	0	0	inf	inf
+AR0009-Ca	0	0	0	inf	inf
+AR0009-Cb	0	0	0	inf	inf
+AR0010-Ca	0	0	0	inf	inf
+AR0010-Cb	0	0	0	inf	inf
+AR0011-Ca	0	0	0	inf	inf
+AR0011-Cb	0	0	0	inf	inf
+AR0012-Ca	0	0	0	inf	inf
+AR0012-Cb	0	0	0	inf	inf
+AR0013-Ca	0	0	0	inf	inf
+AR0013-Cb	0	0	0	inf	inf
+AR0014-Ca	0	0	0	inf	inf
+AR0014-Cb	0	0	0	inf	inf
+AR0015-Ca	0	0	0	inf	inf
+AR0015-Cb	0	0	0	inf	inf
+AR0016-Ca	0	0	0	inf	inf
+AR0016-Cb	0	0	0	inf	inf
+AR0017-Ca	0	0	0	inf	inf
+AR0017-Cb	0	0	0	inf	inf
+AR0018-Ca	0	0	0	inf	inf
+AR0018-Cb	0	0	0	inf	inf
+AR0019-Ca	0	0	0	inf	inf
+AR0019-Cb	0	0	0	inf	inf
+AR0020-Ca	0	0	0	inf	inf
+AR0020-Cb	0	0	0	inf	inf
+AR0021-Ca	0	0	0	inf	inf
+AR0021-Cb	0	0	0	inf	inf
+AR0022-Ca	0	0	0	inf	inf
+AR0022-Cb	0	0	0	inf	inf
+AR0023-Ca	0	0	0	inf	inf
+AR0023-Cb	0	0	0	inf	inf
+AR0024-Ca	0	0	0	inf	inf
+AR0024-Cb	0	0	0	inf	inf
+AR0026-Ca	0	0	0	inf	inf
+AR0026-Cb	0	0	0	inf	inf
+AR0027-Ca	0	0	0	inf	inf
+AR0027-Cb	0	0	0	inf	inf
+AR0034-Ca	0	0	0	inf	inf
+AR0034-Cb	0	0	0	inf	inf
+AR0035-Ca	0	0	0	inf	inf
+AR0035-Cb	0	0	0	inf	inf
+AR0036-Ca	0	0	0	inf	inf
+AR0036-Cb	0	0	0	inf	inf
+AR0038-Ca	0	0	0	inf	inf
+AR0038-Cb	0	0	0	inf	inf
+AR0040-Ca	0	0	0	inf	inf
+AR0040-Cb	0	0	0	inf	inf
+AR0042-Ca	0	0	0	inf	inf
+AR0042-Cb	0	0	0	inf	inf
+AR0043-Ca	0	0	0	inf	inf
+AR0043-Cb	0	0	0	inf	inf
+AR0044-Ca	0	0	0	inf	inf
+AR0044-Cb	0	0	0	inf	inf
+AR0045-Ca	0	0	0	inf	inf
+AR0045-Cb	0	0	0	inf	inf
+AR0046-Ca	0	0	0	inf	inf
+AR0046-Cb	0	0	0	inf	inf
+AR0047-Ca	0	0	0	inf	inf
+AR0047-Cb	0	0	0	inf	inf
+AR0048-Ca	0	0	0	inf	inf
+AR0048-Cb	0	0	0	inf	inf
+AR0049-Ca	0	0	0	inf	inf
+AR0049-Cb	0	0	0	inf	inf
+AR0050-Ca	0	0	0	inf	inf
+AR0050-Cb	0	0	0	inf	inf
+AR0051-Ca	0	0	0	inf	inf
+AR0051-Cb	0	0	0	inf	inf
+AR0052-Ca	0	0	0	inf	inf
+AR0052-Cb	0	0	0	inf	inf
+AR0053-Ca	0	0	0	inf	inf
+AR0053-Cb	0	0	0	inf	inf
+AR0054-Ca	0	0	0	inf	inf
+AR0054-Cb	0	0	0	inf	inf
+AR0057-Ca	0	0	0	inf	inf
+AR0057-Cb	0	0	0	inf	inf
+AR0059-Ca	0	0	0	inf	inf
+AR0059-Cb	0	0	0	inf	inf
+AR0060-Ca	0	0	0	inf	inf
+AR0060-Cb	0	0	0	inf	inf
+AR0061-Ca	0	0	0	inf	inf
+AR0061-Cb	0	0	0	inf	inf
+AR0062-Ca	0	0	0	inf	inf
+AR0062-Cb	0	0	0	inf	inf
+AR0063-Ca	0	0	0	inf	inf
+AR0063-Cb	0	0	0	inf	inf
+AR0064-Ca	0	0	0	inf	inf
+AR0064-Cb	0	0	0	inf	inf
+AR0065-Ca	0	0	0	inf	inf
+AR0065-Cb	0	0	0	inf	inf
+AR0066-Ca	0	0	0	inf	inf
+AR0066-Cb	0	0	0	inf	inf
+AR0069-Ca	0	0	0	inf	inf
+AR0069-Cb	0	0	0	inf	inf
+AR0070-Ca	0	0	0	inf	inf
+AR0070-Cb	0	0	0	inf	inf
+AR0071-Ca	0	0	0	inf	inf
+AR0071-Cb	0	0	0	inf	inf
+AR0072-Ca	0	0	0	inf	inf
+AR0072-Cb	0	0	0	inf	inf
+AR0073-Ca	0	0	0	inf	inf
+AR0073-Cb	0	0	0	inf	inf
+AR0074-Ca	0	0	0	inf	inf
+AR0074-Cb	0	0	0	inf	inf
+AR0075-Ca	0	0	0	inf	inf
+AR0075-Cb	0	0	0	inf	inf
+AR0076-Ca	0	0	0	inf	inf
+AR0076-Cb	0	0	0	inf	inf
+AR0077-Ca	0	0	0	inf	inf
+AR0077-Cb	0	0	0	inf	inf
+AR0078-Ca	0	0	0	inf	inf
+AR0078-Cb	0	0	0	inf	inf
+AR0079-Ca	0	0	0	inf	inf
+AR0079-Cb	0	0	0	inf	inf
+AR0080-Ca	0	0	0	inf	inf
+AR0080-Cb	0	0	0	inf	inf
+AR0081-Ca	0	0	0	inf	inf
+AR0081-Cb	0	0	0	inf	inf
+AR0082-Ca	0	0	0	inf	inf
+AR0082-Cb	0	0	0	inf	inf
+AR0083-Ca	0	0	0	inf	inf
+AR0083-Cb	0	0	0	inf	inf
+AR0084-Ca	0	0	0	inf	inf
+AR0084-Cb	0	0	0	inf	inf
+AR0085-Ca	0	0	0	inf	inf
+AR0085-Cb	0	0	0	inf	inf
+AR0086-Ca	0	0	0	inf	inf
+AR0086-Cb	0	0	0	inf	inf
+AR0087-Ca	0	0	0	inf	inf
+AR0087-Cb	0	0	0	inf	inf
+AR0088-Ca	0	0	0	inf	inf
+AR0088-Cb	0	0	0	inf	inf
+AR0089-Ca	0	0	0	inf	inf
+AR0089-Cb	0	0	0	inf	inf
+AR0090-Ca	0	0	0	inf	inf
+AR0090-Cb	0	0	0	inf	inf
+AR0092-Ca	0	0	0	inf	inf
+AR0092-Cb	0	0	0	inf	inf
+AR0093-Ca	0	0	0	inf	inf
+AR0093-Cb	0	0	0	inf	inf
+AR0095-Ca	0	0	0	inf	inf
+AR0095-Cb	0	0	0	inf	inf
+AR0096-Ca	0	0	0	inf	inf
+AR0096-Cb	0	0	0	inf	inf
+AR0097-Ca	0	0	0	inf	inf
+AR0097-Cb	0	0	0	inf	inf
+AR0098-Ca	0	0	0	inf	inf
+AR0098-Cb	0	0	0	inf	inf
+AR0099-Ca	0	0	0	inf	inf
+AR0099-Cb	0	0	0	inf	inf
+AR0100-Ca	0	0	0	inf	inf
+AR0100-Cb	0	0	0	inf	inf
+AS0001-Ca	0	0	0	inf	inf
+AS0001-Cb	0	0	0	inf	inf
+AS0002-Ca	0	0	0	inf	inf
+AS0002-Cb	0	0	0	inf	inf
+AS0003-Ca	0	0	0	inf	inf
+AS0003-Cb	0	0	0	inf	inf
+AS0004-Ca	0	0	0	inf	inf
+AS0004-Cb	0	0	0	inf	inf
+AS0005-Ca	0	0	0	inf	inf
+AS0005-Cb	0	0	0	inf	inf
+AS0006-Ca	0	0	0	inf	inf
+AS0006-Cb	0	0	0	inf	inf
+AS0007-Ca	0	0	0	inf	inf
+AS0007-Cb	0	0	0	inf	inf
+AS0008-Ca	0	0	0	inf	inf
+AS0008-Cb	0	0	0	inf	inf
+AS0009-Ca	0	0	0	inf	inf
+AS0009-Cb	0	0	0	inf	inf
+AS0010-Ca	0	0	0	inf	inf
+AS0010-Cb	0	0	0	inf	inf
+AS0011-Ca	0	0	0	inf	inf
+AS0011-Cb	0	0	0	inf	inf
+AS0012-Ca	0	0	0	inf	inf
+AS0012-Cb	0	0	0	inf	inf
+AS0013-Ca	0	0	0	inf	inf
+AS0013-Cb	0	0	0	inf	inf
+AS0014-Ca	0	0	0	inf	inf
+AS0014-Cb	0	0	0	inf	inf
+AS0015-Ca	0	0	0	inf	inf
+AS0015-Cb	0	0	0	inf	inf
+AS0016-Ca	0	0	0	inf	inf
+AS0016-Cb	0	0	0	inf	inf
+AS0017-Ca	0	0	0	inf	inf
+AS0017-Cb	0	0	0	inf	inf
+AS0018-Ca	0	0	0	inf	inf
+AS0018-Cb	0	0	0	inf	inf
+AS0019-Ca	0	0	0	inf	inf
+AS0019-Cb	0	0	0	inf	inf
+AS0020-Ca	0	0	0	inf	inf
+AS0020-Cb	0	0	0	inf	inf
+AS0021-Ca	0	0	0	inf	inf
+AS0021-Cb	0	0	0	inf	inf
+AS0022-Ca	0	0	0	inf	inf
+AS0022-Cb	0	0	0	inf	inf
+AS0024-Ca	0	0	0	inf	inf
+AS0024-Cb	0	0	0	inf	inf
+AS0025-Ca	0	0	0	inf	inf
+AS0025-Cb	0	0	0	inf	inf
+AS0026-Ca	0	0	0	inf	inf
+AS0026-Cb	0	0	0	inf	inf
+AS0027-Ca	0	0	0	inf	inf
+AS0027-Cb	0	0	0	inf	inf
+AS0028-Ca	0	0	0	inf	inf
+AS0028-Cb	0	0	0	inf	inf
+AS0029-Ca	0	0	0	inf	inf
+AS0029-Cb	0	0	0	inf	inf
+AS0030-Ca	0	0	0	inf	inf
+AS0030-Cb	0	0	0	inf	inf
+AS0032-Ca	0	0	0	inf	inf
+AS0032-Cb	0	0	0	inf	inf
+AS0033-Ca	0	0	0	inf	inf
+AS0033-Cb	0	0	0	inf	inf
+AS0034-Ca	0	0	0	inf	inf
+AS0034-Cb	0	0	0	inf	inf
+AS0035-Ca	0	0	0	inf	inf
+AS0035-Cb	0	0	0	inf	inf
+AS0036-Ca	0	0	0	inf	inf
+AS0036-Cb	0	0	0	inf	inf
+AS0037-Ca	0	0	0	inf	inf
+AS0037-Cb	0	0	0	inf	inf
+AS0039-Ca	0	0	0	inf	inf
+AS0039-Cb	0	0	0	inf	inf
+AS0040-Ca	0	0	0	inf	inf
+AS0040-Cb	0	0	0	inf	inf
+AS0041-Ca	0	0	0	inf	inf
+AS0041-Cb	0	0	0	inf	inf
+AS0042-Ca	0	0	0	inf	inf
+AS0042-Cb	0	0	0	inf	inf
+AS0044-Ca	0	0	0	inf	inf
+AS0044-Cb	0	0	0	inf	inf
+AS0045-Ca	0	0	0	inf	inf
+AS0045-Cb	0	0	0	inf	inf
+AS0046-Ca	0	0	0	inf	inf
+AS0046-Cb	0	0	0	inf	inf
+AS0047-Ca	0	0	0	inf	inf
+AS0047-Cb	0	0	0	inf	inf
+AS0048-Ca	0	0	0	inf	inf
+AS0048-Cb	0	0	0	inf	inf
+AS0049-Ca	0	0	0	inf	inf
+AS0049-Cb	0	0	0	inf	inf
+AS0051-Ca	0	0	0	inf	inf
+AS0051-Cb	0	0	0	inf	inf
+AS0052-Ca	0	0	0	inf	inf
+AS0052-Cb	0	0	0	inf	inf
+AS0053-Ca	0	0	0	inf	inf
+AS0053-Cb	0	0	0	inf	inf
+AS0054-Ca	0	0	0	inf	inf
+AS0054-Cb	0	0	0	inf	inf
+AS0055-Ca	0	0	0	inf	inf
+AS0055-Cb	0	0	0	inf	inf
+AS0056-Ca	0	0	0	inf	inf
+AS0056-Cb	0	0	0	inf	inf
+AS0057-Ca	0	0	0	inf	inf
+AS0057-Cb	0	0	0	inf	inf
+AS0058-Ca	0	0	0	inf	inf
+AS0058-Cb	0	0	0	inf	inf
+AS0059-Ca	0	0	0	inf	inf
+AS0059-Cb	0	0	0	inf	inf
+AS0060-Ca	0	0	0	inf	inf
+AS0060-Cb	0	0	0	inf	inf
+AS0062-Ca	0	0	0	inf	inf
+AS0062-Cb	0	0	0	inf	inf
+AS0064-Ca	0	0	0	inf	inf
+AS0064-Cb	0	0	0	inf	inf
+AS0065-Ca	0	0	0	inf	inf
+AS0065-Cb	0	0	0	inf	inf
+AS0066-Ca	0	0	0	inf	inf
+AS0066-Cb	0	0	0	inf	inf
+AS0068-Ca	0	0	0	inf	inf
+AS0068-Cb	0	0	0	inf	inf
+AS0069-Ca	0	0	0	inf	inf
+AS0069-Cb	0	0	0	inf	inf
+AS0070-Ca	0	0	0	inf	inf
+AS0070-Cb	0	0	0	inf	inf
+AS0071-Ca	0	0	0	inf	inf
+AS0071-Cb	0	0	0	inf	inf
+AS0072-Ca	0	0	0	inf	inf
+AS0072-Cb	0	0	0	inf	inf
+AS0073-Ca	0	0	0	inf	inf
+AS0073-Cb	0	0	0	inf	inf
+AS0074-Ca	0	0	0	inf	inf
+AS0074-Cb	0	0	0	inf	inf
+AS0076-Ca	0	0	0	inf	inf
+AS0076-Cb	0	0	0	inf	inf
+AS0077-Ca	0	0	0	inf	inf
+AS0077-Cb	0	0	0	inf	inf
+AS0078-Ca	0	0	0	inf	inf
+AS0078-Cb	0	0	0	inf	inf
+AV0001-Ca	1	1	1	3.732017993927002	5.19111967086792
+AV0001-Cb	0	0	0	0.07980532199144363	15.261879920959473
+AV0002-Ca	0	0	0	inf	inf
+AV0002-Cb	0	0	0	inf	inf
+AV0003-Ca	0	0	0	inf	inf
+AV0003-Cb	0	0	0	inf	inf
+AV0004-Ca	0	0	0	inf	inf
+AV0004-Cb	0	0	0	inf	inf
+AV0005-Ca	0	0	0	-4.3563385009765625	19.16383934020996
+AV0005-Cb	1	1	1	6.666320323944092	0.9800362586975098
+AV0006-Ca	0	0	0	inf	inf
+AV0006-Cb	0	0	0	inf	inf
+AV0007-Ca	0	0	0	inf	inf
+AV0007-Cb	0	0	0	inf	inf
+AV0008-Ca	0	0	0	inf	inf
+AV0008-Cb	0	0	0	inf	inf
+AV0009-Ca	0	0	0	inf	inf
+AV0009-Cb	0	0	0	inf	inf
+AV0010-Ca	0	0	0	inf	inf
+AV0010-Cb	0	0	0	inf	inf
+AV0011-Ca	0	0	0	inf	inf
+AV0011-Cb	0	0	0	inf	inf
+AV0012-Ca	0	0	0	inf	inf
+AV0012-Cb	0	0	0	inf	inf
+AV0013-Ca	0	0	0	inf	inf
+AV0013-Cb	0	0	0	inf	inf
+AV0014-Ca	0	0	0	inf	inf
+AV0014-Cb	0	0	0	inf	inf
+AV0015-Ca	0	0	0	inf	inf
+AV0015-Cb	0	0	0	inf	inf
+AV0017-Ca	0	0	0	inf	inf
+AV0017-Cb	0	0	0	inf	inf
+AV0018-Ca	0	0	0	inf	inf
+AV0018-Cb	0	0	0	inf	inf
+AV0020-Ca	1	1	0	2.8259670734405518	6.345701217651367
+AV0020-Cb	0	0	1	1.8594868183135986	9.021141052246094
+AV0021-Ca	0	0	0	inf	inf
+AV0021-Cb	0	0	0	inf	inf
+AV0022-Ca	0	0	0	inf	inf
+AV0022-Cb	0	0	0	inf	inf
+AV0024-Ca	0	0	0	inf	inf
+AV0024-Cb	0	0	0	inf	inf
+AV0025-Ca	0	0	0	inf	inf
+AV0025-Cb	0	0	0	inf	inf
+AV0026-Ca	1	1	1	5.7659454345703125	1.5662562847137451
+AV0026-Cb	0	0	0	-3.9557578563690186	17.5559024810791
+AV0027-Ca	0	0	0	inf	inf
+AV0027-Cb	0	0	0	inf	inf
+AV0028-Ca	0	0	0	inf	inf
+AV0028-Cb	0	0	0	inf	inf
+AV0029-Ca	1	1	0	2.4746851921081543	5.950438976287842
+AV0029-Cb	1	1	1	7.160430908203125	0.2449919432401657
+AV0030-Ca	0	0	0	inf	inf
+AV0030-Cb	0	0	0	inf	inf
+AV0031-Ca	1	1	1	3.844475030899048	7.260865688323975
+AV0031-Cb	0	0	0	-1.5129873752593994	15.5792875289917
+AV0032-Ca	0	0	0	inf	inf
+AV0032-Cb	0	0	0	inf	inf
+AV0033-Ca	1	1	1	2.773303985595703	5.954803943634033
+AV0033-Cb	0	0	1	1.4667470455169678	8.947779655456543
+AV0034-Ca	0	0	0	inf	inf
+AV0034-Cb	0	0	0	inf	inf
+AV0035-Ca	0	0	0	inf	inf
+AV0035-Cb	0	0	0	inf	inf
+AV0036-Ca	1	1	1	3.1086244583129883	5.599665641784668
+AV0036-Cb	1	1	1	5.55912971496582	1.4550034999847412
+AV0037-Ca	0	0	0	inf	inf
+AV0037-Cb	0	0	0	inf	inf
+AV0038-Ca	0	0	0	inf	inf
+AV0038-Cb	0	0	0	inf	inf
+AV0039-Ca	0	0	0	inf	inf
+AV0039-Cb	0	0	0	inf	inf
+AV0040-Ca	0	0	0	inf	inf
+AV0040-Cb	0	0	0	inf	inf
+AV0041-Ca	0	0	0	-3.919712781906128	18.166683197021484
+AV0041-Cb	0	0	0	1.8074142932891846	5.871156215667725
+AV0042-Ca	0	0	0	inf	inf
+AV0042-Cb	0	0	0	inf	inf
+AV0043-Ca	0	0	0	inf	inf
+AV0043-Cb	0	0	0	inf	inf
+AV0044-Ca	0	0	0	inf	inf
+AV0044-Cb	0	0	0	inf	inf
+AV0045-Ca	0	0	0	inf	inf
+AV0045-Cb	0	0	0	inf	inf
+AV0046-Ca	0	0	0	inf	inf
+AV0046-Cb	0	0	0	inf	inf
+AV0047-Ca	0	0	0	inf	inf
+AV0047-Cb	0	0	0	inf	inf
+AY0006-Ca	0	0	0	inf	inf
+AY0006-Cb	0	0	0	inf	inf
+AY0007-Ca	1	1	1	3.125654935836792	5.640122413635254
+AY0007-Cb	1	1	1	3.0919201374053955	5.75650691986084
+AY0010-Ca	0	0	0	inf	inf
+AY0010-Cb	0	0	0	inf	inf
+AY0011-Ca	0	0	1	-1.1094180345535278	14.35937213897705
+AY0011-Cb	0	0	0	0.3081636130809784	11.490303993225098
+AY0012-Ca	0	0	0	-1.4257813692092896	15.690216064453125
+AY0012-Cb	0	0	1	-0.5309349298477173	13.62199592590332
+AY0013-Ca	0	0	0	-2.5108206272125244	15.876569747924805
+AY0013-Cb	1	1	0	2.6366043090820312	6.055622100830078
+AY0015-Ca	1	1	0	2.1847944259643555	6.281706809997559
+AY0015-Cb	1	1	1	5.312883377075195	2.3902084827423096
+AY0016-Ca	0	0	1	0.1980835199356079	11.492719650268555
+AY0016-Cb	1	1	1	2.994148015975952	5.7546067237854
+AY0017-Ca	1	1	1	4.898502349853516	5.579266548156738
+AY0017-Cb	0	0	0	-1.427375078201294	15.711404800415039
+AY0018-Ca	0	0	1	0.20512467622756958	12.414069175720215
+AY0018-Cb	0	0	1	-2.1397430896759033	15.691632270812988
+AY0019-Ca	0	0	0	inf	inf
+AY0019-Cb	0	0	0	inf	inf
+AY0020-Ca	0	0	1	-3.5813424587249756	17.712400436401367
+AY0020-Cb	0	0	0	-1.406811237335205	15.574653625488281
+AY0021-Ca	0	0	0	inf	inf
+AY0021-Cb	0	0	0	inf	inf
+AY0023-Ca	0	0	0	-1.3758546113967896	15.734869956970215
+AY0023-Cb	0	0	1	-2.4901251792907715	16.129858016967773
+AY0024-Ca	1	1	0	2.095259666442871	5.793291091918945
+AY0024-Cb	0	0	1	-2.320446491241455	15.953956604003906
+AY0025-Ca	0	0	0	-4.516549587249756	19.138715744018555
+AY0025-Cb	0	0	1	-1.4933834075927734	15.61933708190918
+AY0026-Ca	1	1	1	2.920588493347168	5.897258758544922
+AY0026-Cb	0	0	0	-1.3825982809066772	14.8795747756958
+AY0027-Ca	0	0	1	-0.062077660113573074	13.006134986877441
+AY0027-Cb	1	1	1	3.162930488586426	5.6892828941345215
+AY0029-Ca	1	1	1	5.234827518463135	5.132242202758789
+AY0029-Cb	0	0	0	1.2928013801574707	9.084437370300293
+AY0031-Ca	0	0	0	1.543553113937378	8.767054557800293
+AY0031-Cb	1	1	1	2.6858572959899902	6.125016689300537
+AY0032-Ca	0	0	0	0.5689890384674072	9.752500534057617
+AY0032-Cb	0	0	1	-1.2745611667633057	15.627291679382324
+AY0033-Ca	1	1	1	5.574958324432373	1.4088468551635742
+AY0033-Cb	0	1	1	2.0690550804138184	9.707475662231445
+AY0034-Ca	0	0	1	-0.5460192561149597	14.175460815429688
+AY0034-Cb	0	0	1	-3.396458864212036	17.19055938720703
+AY0035-Ca	0	0	0	-1.6510608196258545	15.59189510345459
+AY0035-Cb	1	1	0	2.2776596546173096	6.240736961364746
+AY0036-Ca	0	0	1	0.8671035170555115	10.795818328857422
+AY0036-Cb	0	0	1	1.3346978425979614	5.824925422668457
+AY0038-Ca	1	1	0	2.2756192684173584	6.353166580200195
+AY0038-Cb	0	0	0	1.1162316799163818	11.337141036987305
+AY0039-Ca	0	0	0	-1.3334261178970337	15.750423431396484
+AY0039-Cb	0	0	0	-1.7362937927246094	15.560982704162598
+AY0040-Ca	0	0	0	inf	inf
+AY0040-Cb	0	0	0	inf	inf
+AY0041-Ca	0	0	0	inf	inf
+AY0041-Cb	0	0	0	inf	inf
+AY0042-Ca	0	1	0	2.0472683906555176	5.932507038116455
+AY0042-Cb	1	1	1	5.075582027435303	2.005403757095337
+AY0043-Ca	0	0	0	inf	inf
+AY0043-Cb	0	0	0	inf	inf
+AY0045-Ca	0	0	0	1.6602720022201538	10.875483512878418
+AY0045-Cb	0	0	1	-1.304327368736267	15.739680290222168
+AY0046-Ca	0	0	0	1.018007755279541	10.791760444641113
+AY0046-Cb	0	1	1	1.9773499965667725	8.500781059265137
+AY0047-Ca	0	0	1	-2.748450756072998	16.163249969482422
+AY0047-Cb	0	0	1	-0.44927945733070374	13.962231636047363
+AY0048-Ca	1	1	1	3.1848583221435547	5.796421051025391
+AY0048-Cb	0	0	1	1.578849196434021	10.121133804321289
+AY0049-Ca	0	0	1	1.4716277122497559	9.036873817443848
+AY0049-Cb	0	0	1	-0.5151506066322327	14.117659568786621
+AY0050-Ca	0	0	1	-1.520340085029602	15.507539749145508
+AY0050-Cb	1	1	1	5.397188186645508	2.203620433807373
+AY0052-Ca	0	0	1	1.0224632024765015	9.00206184387207
+AY0052-Cb	1	1	1	2.7625954151153564	5.885190010070801
+AY0053-Ca	0	1	1	1.9497549533843994	7.038759708404541
+AY0053-Cb	0	0	0	-1.1616363525390625	15.720155715942383
+AY0054-Ca	0	0	0	inf	inf
+AY0054-Cb	0	0	0	inf	inf
+AY0055-Ca	0	0	1	-1.282165765762329	15.524015426635742
+AY0055-Cb	0	0	1	-1.3474769592285156	15.657394409179688
+AY0056-Ca	1	1	0	2.242961883544922	6.249155044555664
+AY0056-Cb	0	0	1	-0.5532305240631104	14.123640060424805
+AY0057-Ca	0	1	1	1.9678775072097778	9.290266990661621
+AY0057-Cb	0	0	0	-3.042023181915283	16.457550048828125
+AY0058-Ca	0	0	0	0.9473753571510315	10.709303855895996
+AY0058-Cb	0	0	1	-1.3495728969573975	15.648290634155273
+AY0059-Ca	0	0	0	-4.475844860076904	18.84477996826172
+AY0059-Cb	0	0	0	-1.8412905931472778	15.722870826721191
+AY0060-Ca	1	1	0	2.348598003387451	5.946871757507324
+AY0060-Cb	1	1	1	5.584141731262207	1.3212684392929077
+AY0061-Ca	0	1	1	1.998996615409851	5.599394798278809
+AY0061-Cb	0	0	0	0.4028879702091217	15.357666015625
+AY0062-Ca	0	0	1	1.2459403276443481	9.517195701599121
+AY0062-Cb	0	0	1	-1.4768693447113037	15.790802955627441
+AY0063-Ca	0	0	1	1.0567166805267334	9.203521728515625
+AY0063-Cb	0	0	1	0.7832390666007996	10.957144737243652
+AY0064-Ca	0	0	1	-1.3025568723678589	15.59736156463623
+AY0064-Cb	0	0	1	-1.276330828666687	15.610183715820312
+AY0065-Ca	0	0	0	-1.1219223737716675	15.664124488830566
+AY0065-Cb	0	0	0	-3.0934629440307617	16.79758071899414
+AY0066-Ca	0	0	0	1.7683063745498657	5.7024688720703125
+AY0066-Cb	0	0	1	1.5030983686447144	6.032867431640625
+AY0067-Ca	0	0	0	-0.3379225432872772	14.14339542388916
+AY0067-Cb	0	0	1	1.6734193563461304	8.997013092041016
+AY0068-Ca	0	1	0	2.0732319355010986	5.9157538414001465
+AY0068-Cb	1	1	0	2.2004692554473877	6.199354648590088
+AY0069-Ca	1	1	1	3.0952441692352295	5.800097942352295
+AY0069-Cb	0	0	1	1.3184561729431152	9.458977699279785
+AY0070-Ca	1	1	0	2.5141239166259766	6.303924083709717
+AY0070-Cb	1	1	0	2.308136224746704	6.269948959350586
+AY0072-Ca	1	1	1	5.579231262207031	2.3172688484191895
+AY0072-Cb	1	1	0	3.223663568496704	7.713888168334961
+AY0074-Ca	1	1	1	3.6620023250579834	7.003593444824219
+AY0074-Cb	0	0	0	-1.3066695928573608	15.86613941192627
+AY0076-Ca	0	0	0	-4.398597717285156	19.10948944091797
+AY0076-Cb	0	0	1	-1.2898094654083252	15.637663841247559
+AY0077-Ca	0	0	0	0.6673158407211304	9.968605041503906
+AY0077-Cb	1	1	1	3.118277072906494	5.493649959564209
+AY0078-Ca	0	0	0	-1.506335973739624	15.722376823425293
+AY0078-Cb	1	1	0	2.635596513748169	6.3855509757995605
+AY0079-Ca	1	1	1	3.244295358657837	5.634683132171631
+AY0079-Cb	1	1	1	3.380768299102783	7.091114521026611
+AY0080-Ca	0	0	1	-1.8040529489517212	15.767419815063477
+AY0080-Cb	0	0	0	-1.5445318222045898	15.61866283416748
+AY0082-Ca	1	1	1	3.6977531909942627	6.909093856811523
+AY0082-Cb	1	1	0	2.231252908706665	6.147437572479248
+AY0083-Ca	1	1	1	2.764425277709961	7.480238437652588
+AY0083-Cb	0	0	1	-0.16605526208877563	12.207846641540527
+AY0085-Ca	0	0	0	inf	inf
+AY0085-Cb	0	0	0	inf	inf
+AY0087-Ca	0	0	0	-1.556299090385437	17.937891006469727
+AY0087-Cb	0	0	0	1.750102162361145	10.898365020751953
+AY0088-Ca	0	0	1	1.5559474229812622	5.9504714012146
+AY0088-Cb	0	0	0	-0.9141677618026733	14.491986274719238
+AY0089-Ca	0	0	0	-1.6030347347259521	15.728141784667969
+AY0089-Cb	1	1	1	3.062457323074341	5.7419514656066895
+AY0090-Ca	1	1	1	3.0930910110473633	5.778880596160889
+AY0090-Cb	0	0	0	-3.1271204948425293	16.787927627563477
+AY0091-Ca	0	0	1	0.6408880949020386	14.95763874053955
+AY0091-Cb	1	1	0	2.919589042663574	5.953105449676514
+AD0142-Ca	0	0	0	inf	inf
+AD0142-Cb	0	0	0	inf	inf
+AD0143-Ca	0	0	0	inf	inf
+AD0143-Cb	0	0	0	inf	inf
+AD0231-Ca	0	0	0	inf	inf
+AD0231-Cb	0	0	0	inf	inf
+AD0232-Ca	0	0	0	inf	inf
+AD0232-Cb	0	0	0	inf	inf
+AD0254-Ca	0	0	0	inf	inf
+AD0254-Cb	0	0	0	inf	inf
+AD0255-Ca	0	0	0	inf	inf
+AD0255-Cb	0	0	0	inf	inf
+AD0277-Ca	0	0	0	inf	inf
+AD0277-Cb	0	0	0	inf	inf
+AD0278-Ca	0	0	0	inf	inf
+AD0278-Cb	0	0	0	inf	inf
+AD0305-Ca	0	0	0	inf	inf
+AD0305-Cb	0	0	0	inf	inf
+AD0306-Ca	0	0	0	inf	inf
+AD0306-Cb	0	0	0	inf	inf
+AD0324-Ca	0	0	0	inf	inf
+AD0324-Cb	0	0	0	inf	inf
+AD0325-Ca	0	0	0	inf	inf
+AD0325-Cb	0	0	0	inf	inf
+AD0347-Ca	0	0	0	inf	inf
+AD0347-Cb	0	0	0	inf	inf
+AD0348-Ca	0	0	0	inf	inf
+AD0348-Cb	0	0	0	inf	inf
+AD0371-Ca	0	0	0	inf	inf
+AD0371-Cb	0	0	0	inf	inf
+AD0372-Ca	0	0	0	inf	inf
+AD0372-Cb	0	0	0	inf	inf
+AD0422-Ca	0	0	0	inf	inf
+AD0422-Cb	0	0	0	inf	inf
+AD0423-Ca	0	0	0	inf	inf
+AD0423-Cb	0	0	0	inf	inf
+AD0447-Ca	0	0	0	inf	inf
+AD0447-Cb	0	0	0	inf	inf
+AD0448-Ca	0	0	0	inf	inf
+AD0448-Cb	0	0	0	inf	inf
+AD0473-Ca	0	0	0	inf	inf
+AD0473-Cb	0	0	0	inf	inf
+AD0474-Ca	0	0	0	inf	inf
+AD0474-Cb	0	0	0	inf	inf
