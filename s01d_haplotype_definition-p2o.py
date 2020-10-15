@@ -118,9 +118,52 @@ p2_genotyp_purewt_vect = np.sum(p2_genotyp_purewt_nalt>0, axis=1)
 p2_genotyp_purewt_vect = (np.sum(p2_genotyp_purewt_nalt>0, axis=1) > 0) * 1
 
 
+#### TRY DISTANCE
+
+# out_purewt_dxy = allel.pairwise_dxy(pos=p2_genvars_sub["POS"], gac=p2_genotyp_purewt.to_allele_counts())
+# out_purewt_dxy.shape
 # p2_samples_nowt_ix = np.where( p2_samples["119Sgen"][p2_popdict["all"]].values != "wt" )[0]
 # p2_sampleh_nowt_ix = np.where( p2_sampleh["genotype"][p2_popdich["all"]].values != "wt" )[0]
 # p2_sampleh_wt_ix =   np.where( p2_sampleh["genotype"][p2_popdich["all"]].values == "wt" )[0]
+
+import scipy.spatial
+p2_genotyp_purewt_nalt_bin = p2_genotyp_purewt_nalt
+p2_genotyp_purewt_nalt_bin[p2_genotyp_purewt_nalt_bin>1] = 1
+
+dis_to_purewt_r = np.zeros(shape = p2_haploty_sub.shape[1])
+for i in range(p2_haploty_sub.shape[1]):
+
+	prob=p2_haploty_sub[:,i].tolist()
+	arr_prob_puwt = np.transpose(np.vstack((np.transpose(p2_genotyp_purewt_nalt_bin), p2_haploty_sub[:,i] )))
+	out_pairdist = allel.pairwise_distance(arr_prob_puwt, metric="cityblock")
+	out_pairdisq =  scipy.spatial.distance.squareform(out_pairdist)
+	dis_to_purewt_r[i] = np.mean(out_pairdisq[-1][:-1])
+
+
+quantile = .05
+top_correlated_quantile = np.quantile(dis_to_purewt_r, q=1-quantile)
+bot_correlated_quantile = np.quantile(dis_to_purewt_r, q=quantile)
+
+ixs_top_correlated_haplotyes = np.where(dis_to_purewt_r >= top_correlated_quantile)[0]
+ixs_bot_correlated_haplotyes = np.where(dis_to_purewt_r <= bot_correlated_quantile)[0]
+
+# save pdf
+plt.figure(figsize=(5,5))
+plt.plot(np.sort(dis_to_purewt_r), color="blue")
+plt.axhline(y=bot_correlated_quantile, color="red", linestyle='dashed')
+plt.axhline(y=top_correlated_quantile, color="red", linestyle='dashed')
+plt.title("Mean distance to pure wt sample")
+plt.savefig("%s/dist_classification.pdf" % (results_fo), bbox_inches='tight')
+plt.close()
+
+p2_sampleh_interest = p2_sampleh.iloc[p2_popdich["all"]]
+p2_sampleh_interest = p2_sampleh_interest.reset_index()
+p2_resistant_haps = p2_sampleh_interest.iloc[ixs_top_correlated_haplotyes]
+p2_resistant_haps.to_csv("%s/dist_classification.resistant_top10p.csv" % (results_fo), sep="\t", index=False)
+
+
+
+#### TRY CORRELATION
 
 from scipy.stats.stats import pearsonr
 from scipy.stats.stats import spearmanr

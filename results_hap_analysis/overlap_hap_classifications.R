@@ -13,7 +13,7 @@ c_umap_280S = c_umap[c_umap$p2_rfc_prediction == 1,"ox_code"]
 c_umap_280S = c_umap[c_umap$p2_rfcd_prediction == 1,"ox_code"]
 # c_umap_280S = c_umap[c_umap$p2_umap_0 >6 & c_umap$p2_umap_1 >20 & c_umap$p2_umap_1 < 40 ,"ox_code"]
 
-c_umap_fn = "corr_classification.resistant_top10p.csv"
+c_umap_fn = "dist_classification.resistant_top10p.csv"
 c_umap = read.table(c_umap_fn, sep = "\t", header = T, stringsAsFactors = F)
 c_umap$ox_code_sample = stringr::str_replace(c_umap$ox_code, pattern = "[a|b]$", replacement = "")
 c_umap_280S = c_umap$ox_code
