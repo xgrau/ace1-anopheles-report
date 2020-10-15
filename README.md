@@ -127,3 +127,17 @@ number (found with 'library(help = ape)' or
 'packageVersion("ape")').
 
 ```
+
+```python
+       ,_     _,
+         '._.'
+    '-,   (_)   ,-'
+      '._ .:. _.'
+       _ '|Y|' _
+     ,` `>\ /<` `,
+    ` ,-`  I  `-, `
+      |   /=\   |
+    ,-'   |=|   '-,
+          )-(
+          \_/
+```
