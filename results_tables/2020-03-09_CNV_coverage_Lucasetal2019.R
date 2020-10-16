@@ -35,7 +35,7 @@ pos_max_dataset = max(dup$Position) / 1e6
 # list of samples
 list_samples = met$id
 
-pdf(file="cnv_per_sample_coverage.pdf",height=4,width=4)
+pdf(file="cnv_per_sample_coverage.pdf",height=4,width=8)
 
 for (i in 1:length(list_samples)) {
   
@@ -80,6 +80,7 @@ dev.off()
 
 
 
+# lot coverage per population, separating dup and nodup
 list_populations = levels(met$population)
 
 pdf(file="cnv_per_population_coverage.pdf",height=6,width=4)
@@ -141,13 +142,14 @@ for (pop in popl) {
     
   }
   
-  # abline(v=tags/1e6, lty=3, col="springgreen4")
+  abline(v=tags/1e6, lty=3, col="springgreen4")
   
   
 }
 
 dev.off()
 
+# same, with rolled averages
 list_populations = levels(met$population)
 import(zoo)
 
@@ -214,10 +216,113 @@ for (pop in popl) {
     
   }
   
-  # abline(v=tags/1e6, lty=3, col="springgreen4")
+  abline(v=tags/1e6, lty=3, col="springgreen4")
   
   
 }
+
+dev.off()
+
+# coverage in duplicated specimens
+pdf(file="cnv_per_duplication_coverage_boxplots.pdf",height=8,width=4)
+
+samples_in_dup = as.character(met[met$hasdup,"id"])
+samples_in_nodup = as.character(met[!met$hasdup,"id"])
+
+layout(c(1,2))
+
+# plot dups: normalised coverage
+dup_i = dup[dup$id %in% samples_in_dup,c("id","Normalised_coverage","Position")]
+dup_w = reshape(dup_i, idvar = "Position", direction = "wide", timevar = "id")
+rownames(dup_w) = dup_w[,1]
+dup_w = as.matrix(dup_w[,-1])
+
+ace_window = which.min(abs(as.numeric(rownames(dup_w)) - ace_start*1e6))
+ace_coverage = as.numeric(dup_w[ace_window,])
+plot(ecdf(ace_coverage), col="magenta", xlim=c(0,8), verticals = T, pch = NA,ylab="CDF", xlab="Normalised coverage", main="Duplicated specimens")
+abline(v=2, lty=2)
+dat_coverage = matrix(nrow = length(ace_coverage), ncol = 5)
+dat_coverage[,1]=ace_coverage
+n=1
+for (tag in tags) {
+  n=n+1
+  tag_window = which.min(abs(as.numeric(rownames(dup_w)) - tag))
+  tag_coverage = dup_w[tag_window,]
+  lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
+  dat_coverage[,n] = tag_coverage
+}
+boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="Normalised coverage", ylim=c(0,8))
+abline(h=2, lty=2)
+
+# plot dups: raw coverage
+dup_i = dup[dup$id %in% samples_in_dup,c("id","Counts","Position")]
+dup_w = reshape(dup_i, idvar = "Position", direction = "wide", timevar = "id")
+rownames(dup_w) = dup_w[,1]
+dup_w = as.matrix(dup_w[,-1])
+
+ace_window = which.min(abs(as.numeric(rownames(dup_w)) - ace_start*1e6))
+ace_coverage = as.numeric(dup_w[ace_window,])
+plot(ecdf(ace_coverage), col="magenta", xlim=c(0,600), verticals = T, pch = NA,ylab="CDF", xlab="Raw coverage", main="Duplicated specimens")
+dat_coverage = matrix(nrow = length(ace_coverage), ncol = 5)
+dat_coverage[,1]=ace_coverage
+n=1
+for (tag in tags) {
+  n=n+1
+  tag_window = which.min(abs(as.numeric(rownames(dup_w)) - tag))
+  tag_coverage = dup_w[tag_window,]
+  lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
+  dat_coverage[,n] = tag_coverage
+}
+boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="Raw coverage", ylim=c(0,600))
+
+dev.off()
+
+
+# coverage in duplicated specimens
+pdf(file="cnv_per_duplication_coverage.pdf",height=10,width=8)
+layout(c(1,2))
+
+
+samples_in_dup = as.character(met[met$hasdup,"id"])
+samples_in_nodup = as.character(met[!met$hasdup,"id"])
+
+# plot with dups: norm coverage
+plot(
+  0,0, xlim = c(pos_min_dataset, pos_max_dataset),  ylim=c(0,12), las=1,
+  xlab="Position", ylab="Normalised coverage", main=sprintf("%s with duplication", "all"))
+lines(c(ace_start,ace_end), c(0,0), lwd= 10, lend='butt', col="magenta")
+abline(h=2, lty=2)
+abline(v=c(dup_start_major, dup_end_major), lty=2, col="red")
+abline(v=c(dup_start_minor, dup_end_minor), lty=2, col="orange")
+
+
+for (i in 1:length(samples_in_dup)) {
+  dup_i = dup[dup$id == samples_in_dup[i],]
+  i_pos = zoo::rollapply(dup_i$Position/1e6, width=10, by=2, FUN=mean)
+  i_nco = zoo::rollapply(dup_i$Normalised_coverage, width=10, by=2, FUN=mean)
+  lines(i_pos,i_nco,col=alpha("blue", 0.2))
+} 
+abline(v=tags/1e6, lty=3, col="springgreen4")
+
+
+# plot with dups: raw coverage
+plot(
+  0,0, xlim = c(pos_min_dataset, pos_max_dataset),  ylim=c(0,600), las=1,
+  xlab="Position", ylab="Raw coverage", main=sprintf("%s with duplication", "all"))
+lines(c(ace_start,ace_end), c(0,0), lwd= 10, lend='butt', col="magenta")
+abline(h=0, lty=2)
+abline(v=c(dup_start_major, dup_end_major), lty=2, col="red")
+abline(v=c(dup_start_minor, dup_end_minor), lty=2, col="orange")
+
+
+for (i in 1:length(samples_in_dup)) {
+  dup_i = dup[dup$id == samples_in_dup[i],]
+  i_pos = zoo::rollapply(dup_i$Position/1e6, width=10, by=2, FUN=mean)
+  i_nco = zoo::rollapply(dup_i$Counts, width=10, by=2, FUN=mean)
+  lines(i_pos,i_nco,col=alpha("blue", 0.2))
+} 
+abline(v=tags/1e6, lty=3, col="springgreen4")
+
 
 dev.off()
 
