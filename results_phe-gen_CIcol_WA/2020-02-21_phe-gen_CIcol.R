@@ -294,22 +294,41 @@ anova(mod_rat, mod_ratcnv, test = "Chisq")
 anova(mod_mgscnv, mod_mgs, test = "Chisq")
 anova(mod_mgsrat, mod_mgs, test = "Chisq")
 
-# nALT+G280S v G280S
-glm_tables(model=mod_mgsrat, null=mod_mgs, model_name = "model")        
-# nALT+G280S+CNV v nALT+G280S
-glm_tables(model=mod_mgsratcnv, null=mod_mgsrat, model_name = "model")        
 
-# CNV+G280S v G280S
-glm_tables(model=mod_mgscnv, null=mod_mgs, model_name = "model")        
+
+
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = F)
+
+# adding nALT: nALT+G280S v G280S
+mod_tau = glm_tables(model=mod_mgsrat, null=mod_mgs, model_name = "nALT+G280S v G280S")   
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = T)
+
+# adding CNVs: CNV+G280S v G280S
+mod_tau = glm_tables(model=mod_mgscnv, null=mod_mgs, model_name = "CNV+G280S v G280S")        
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = T)
+
+# comparing FULL model to simpler models with G280S and ONE dup-related variable
+# nALT+G280S+CNV v nALT+G280S
+mod_tau = glm_tables(model=mod_mgsratcnv, null=mod_mgsrat, model_name = "FULL v nALT+G280S")        
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = T)
+
 # nALT+G280S+CNV v CNV+G280S
-glm_tables(model=mod_mgsratcnv, null=mod_mgscnv, model_name = "model")        
+mod_tau = glm_tables(model=mod_mgsratcnv, null=mod_mgscnv, model_name = "FULL v CNV+G280S")        
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = T)
 
-# nALT+G280S+CNV v nALT+G280S
-glm_tables(model=mod_mgscnv, null=mod_mgs, model_name = "model")        
-glm_tables(model=mod_mgsratcnv, null=mod_cnv, model_name = "model")        
-
-glm_tables(model=mod_mgsratcnv, null=mod_mgsrat, model_name = "model")        
-glm_tables(model=mod_mgsratcnv, null=mod_mgscnv, model_name = "model")        
+# comparing FULL model to simpler models with G280S and ONE dup-related variable
+mod_tau = glm_tables(model=mod_mgsratcnv, null=mod_cnv, model_name = "FULL v BIC (CNV)")        
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", t(mod_tau$model_table), quote=FALSE, sep="\t", col.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", mod_tau$variable_table, quote=FALSE, sep="\t", row.names=FALSE, append = T)
+write.table(file="sequential_CIcol_phe-gty_all_models.csv", data.frame(), quote = F, append = T)
 
 # ### BACKWARD ELIMINATION
 # mod_BKE = glmodelling(input.table = data, list.of.markers = c("A65S","G280S", "CNV", "estimated_n_ALT"),
