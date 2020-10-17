@@ -279,9 +279,8 @@ boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="Raw coverage", 
 #### INTERMISSION: PLOTS AND ECDFS FOR HAPLOTYPE SCORES ####
 
 hsd = read.table("dupcoverage_stats.HaplotypeScore.csv", sep="\t", header = T)
-
 ace_coverage = hsd[hsd$pos>ace_mut*1e6 - 300 & hsd$pos < ace_mut*1e6 + 300, "HaplotypeScore" ]
-plot(ecdf(ace_coverage), col="magenta", xlim=c(0,20), verticals = T, pch = NA,ylab="CDF", xlab="Raw coverage", main="HS, entire dataset")
+plot(ecdf(ace_coverage), col="magenta", xlim=c(0,20), ylim=c(0,1), verticals = T, pch = NA,ylab="CDF", xlab="Raw coverage", main="HS, entire dataset")
 dat_coverage = list("Ace1" = ace_coverage)
 n=1
 for (tag in tags) {
@@ -290,6 +289,8 @@ for (tag in tags) {
   lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
   dat_coverage[[n]] = tag_coverage
 }
+abline(v=2, lty=2, col="red")
+
 boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="HaplotypeScore",
         sub="distribution of values in positions within region of interest")
 abline(h=2, lty=2, col="red")
