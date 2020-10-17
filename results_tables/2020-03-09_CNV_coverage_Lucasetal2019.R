@@ -14,6 +14,7 @@ graphics.off()
 # ace location
 ace_start = 3489213 / 1e6
 ace_end   = 3493788 / 1e6
+ace_mut = 3492074 / 1e6
 
 # duplication breakpoints 
 dup_start_major = 3436800 / 1e6
@@ -151,7 +152,7 @@ dev.off()
 
 # same, with rolled averages
 list_populations = levels(met$population)
-import(zoo)
+library(zoo)
 
 pdf(file="cnv_per_population_coverage_rolled.pdf",height=6,width=4)
 
@@ -275,6 +276,24 @@ for (tag in tags) {
 }
 boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="Raw coverage", ylim=c(0,600))
 
+#### INTERMISSION: PLOTS AND ECDFS FOR HAPLOTYPE SCORES ####
+
+hsd = read.table("dupcoverage_stats.HaplotypeScore.csv", sep="\t", header = T)
+
+ace_coverage = hsd[hsd$pos>ace_mut*1e6 - 300 & hsd$pos < ace_mut*1e6 + 300, "HaplotypeScore" ]
+plot(ecdf(ace_coverage), col="magenta", xlim=c(0,20), verticals = T, pch = NA,ylab="CDF", xlab="Raw coverage", main="HS, entire dataset")
+dat_coverage = list("Ace1" = ace_coverage)
+n=1
+for (tag in tags) {
+  n=n+1
+  tag_coverage = hsd[hsd$pos>tag - 300 & hsd$pos < tag + 300, "HaplotypeScore" ]
+  lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
+  dat_coverage[[n]] = tag_coverage
+}
+boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="HaplotypeScore",
+        sub="distribution of values in positions within region of interest")
+abline(h=2, lty=2, col="red")
+
 dev.off()
 
 
@@ -342,3 +361,4 @@ dev.off()
 #           names = c("duplicated regions","tagging variants","non-duplicated regions"),las=2, col = "slategray3",)
 #   }
 # }
+

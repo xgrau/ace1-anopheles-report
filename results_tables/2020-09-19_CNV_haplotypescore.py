@@ -84,8 +84,8 @@ pdf_pages.savefig(bbox_inches='tight')
 plt.close()
 
 ar_dat = pd.DataFrame(data={
-	"pos" : np.array(ar_pos*1e6).astype(int),
-	"HaplotypeScore": ar_loc
+	"pos" : genvars["POS"].compress(pos_bool),
+	"HaplotypeScore": genvars[var].compress(pos_bool)
 })
 ar_dat.to_csv("dupcoverage_stats.HaplotypeScore.csv", sep="\t", index=False)
 
