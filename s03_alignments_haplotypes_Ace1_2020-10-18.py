@@ -470,6 +470,88 @@ for pn,popi in enumerate(hap_pops_df["ids"]):
 happhy.to_csv("%s/hapalignment_%s.fasta" % (outdir,export_name),sep="\n",index=False, header=False)
 
 
+# now, do the same thing but subsetting by haplotype score
+hsd_fn  = "results_tables/dupcoverage_stats.HaplotypeScore.csv"
+hsd = pd.read_csv(hsd_fn, sep="\t")
+hsd_fil = hsd[hsd["HaplotypeScore"]<13]["pos"]
+export_name  = "duplication_HSdiploid_thr13"
+poplhap = popl
+
+# haplotypes: variants
+hapcall     = zarr.open(haploty_fn)
+print("Load haplotype variants...")
+hapcall_var = hapcall[chrom]["variants"]
+hapvars     = allel.VariantChunkedTable(hapcall_var,names=["POS","REF","ALT"],index="POS")
+hap_bool    = np.logical_and(hapvars["POS"][:] >= export_start, hapvars["POS"][:] <= export_end)
+hap_bool    = np.logical_and(hap_bool , np.isin(hapvars["POS"], hsd_fil) )
+hapvars_sub = hapvars.compress(hap_bool)
+
+# haplotypes: phased genotypes
+print("Load haplotype haplotypes...")
+hapcall_gen = hapcall[chrom]["calldata/genotype"]
+haploty_gen = allel.GenotypeChunkedArray(hapcall_gen)
+# find samples in haplotype dataset that coincide with genotypes
+haploty_sam = hapcall[chrom]["samples"][:].astype(str)
+hapsam_bool = np.isin(haploty_sam, np.array(samples_sub["ox_code"]))
+haploty_sub = haploty_gen.subset(sel0=hap_bool,sel1=hapsam_bool)
+
+# recast haplotypes: drop ploidy
+print("Drop ploidy haplotypes...")
+haploty_sub_hap = haploty_sub.to_haplotypes()
+
+# haplotype dicts
+# arrays of hap ids and populations of each hap (double the size of genotype arryays: 2 haps per individual except in X chromosome)
+print("Samples dictionary for haps...")
+is_samp_in_hap = np.isin(np.array(samples_sub["ox_code"]),haploty_sam)
+hap_ids        = np.array(list(itertools.chain(*[[s + 'a', s + 'b'] for s in haploty_sam[hapsam_bool]])))
+hap_pops       = np.array(list(itertools.chain(*[[s, s] for s in np.array(samples_sub[popc][is_samp_in_hap])])))
+hap_pops_df    = pd.DataFrame(data={ popc : hap_pops , "ids" : hap_ids})
+
+# pop dicts for haplotype data
+popdicthap = dict()
+for popi in poplhap: 
+    popdicthap[popi]  = hap_pops_df[hap_pops_df[popc] == popi].index.tolist()
+
+popdicthap["all"] = []
+for popi in poplhap:
+    popdicthap["all"] = popdicthap["all"] + popdicthap[popi]
+
+# haplotypes: allele counts
+print("Allele counts haplotypes...")
+hapalco_sub = haploty_sub_hap.count_alleles_subpops(subpops=popdicthap)
+
+# filter haplotypes: segregating alleles, no singletons
+is_hapseg   = hapalco_sub["all"].is_segregating()[:] # segregating
+is_hapnosing= hapalco_sub["all"][:,:2].min(axis=1)>2 # no singletons
+filhap_bool = (is_hapseg[:] & is_hapnosing[:])
+
+# subset
+print("Subset haps...")
+haploty_seg = haploty_sub_hap.compress(filhap_bool)
+hapvars_seg = hapvars_sub.compress(filhap_bool)
+hapalco_seg = hapalco_sub.compress(filhap_bool)
+
+# refs and alts
+hapvars_seg_REF = hapvars_seg["REF"][:].astype(str)
+hapvars_seg_ALT = hapvars_seg["ALT"][:].astype(str)
+
+
+# output
+print("FASTA...")
+happhy = pd.DataFrame({
+    "hap": ">"+hap_pops_df["ids"]+"_"+hap_pops_df["population"],
+    "seq": np.nan},    
+    columns=["hap", "seq"])
+
+for pn,popi in enumerate(hap_pops_df["ids"]):
+    
+    popi_gen = np.ndarray.tolist(haploty_seg[:,pn])
+    popi_seq = [hapvars_seg_REF[gn] if gei == 0 else hapvars_seg_ALT[gn] for gn,gei in enumerate(popi_gen)]
+    happhy["seq"][pn] = ''.join(str(e) for e in popi_seq)
+
+happhy.to_csv("%s/hapalignment_%s.fasta" % (outdir,export_name),sep="\n",index=False, header=False)
+
+
 
 
 

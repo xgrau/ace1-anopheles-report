@@ -24,6 +24,7 @@ dup_end_minor = 3518700 / 1e6
 
 # add tagging variants
 tags = c(3465693,3469441,3481632,3504796)
+tagcol = c("springgreen3","gray","springgreen3","springgreen3")
 
 dup = read.table(dupsf, sep="\t", header = T)
 met = read.csv(sampf,sep="\t",na.strings=c("","NA"))
@@ -240,19 +241,28 @@ dup_w = as.matrix(dup_w[,-1])
 
 ace_window = which.min(abs(as.numeric(rownames(dup_w)) - ace_start*1e6))
 ace_coverage = as.numeric(dup_w[ace_window,])
-plot(ecdf(ace_coverage), col="magenta", xlim=c(0,8), verticals = T, pch = NA,ylab="CDF", xlab="Normalised coverage", main="Duplicated specimens")
+ecdfun=ecdf(ace_coverage)
+plot(
+  x=seq(0,10,length.out = 100), 
+  y = ecdfun(v = seq(0,10,length.out = 100)),ylim=c(0,1), 
+  type = "l", col="magenta", ylab="CDF", 
+  xlab="Normalised coverage", main="Duplicated specimens")
 abline(v=2, lty=2)
 dat_coverage = matrix(nrow = length(ace_coverage), ncol = 5)
 dat_coverage[,1]=ace_coverage
 n=1
 for (tag in tags) {
   n=n+1
+  tgc=tagcol[n-1]
   tag_window = which.min(abs(as.numeric(rownames(dup_w)) - tag))
   tag_coverage = dup_w[tag_window,]
-  lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
+  ecdfun = ecdf(tag_coverage)
+  lines(
+    x=seq(0,10,length.out = 100),
+    y=ecdfun(v = seq(0,10,length.out = 100)), col=tgc)
   dat_coverage[,n] = tag_coverage
 }
-boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="Normalised coverage", ylim=c(0,8))
+boxplot(dat_coverage, names = c("Ace1", tags), col=c("magenta",tagcol), ylab="Normalised coverage", ylim=c(0,8))
 abline(h=2, lty=2)
 
 # plot dups: raw coverage
@@ -263,35 +273,54 @@ dup_w = as.matrix(dup_w[,-1])
 
 ace_window = which.min(abs(as.numeric(rownames(dup_w)) - ace_start*1e6))
 ace_coverage = as.numeric(dup_w[ace_window,])
-plot(ecdf(ace_coverage), col="magenta", xlim=c(0,600), verticals = T, pch = NA,ylab="CDF", xlab="Raw coverage", main="Duplicated specimens")
+ecdfun=ecdf(ace_coverage)
+plot(
+  x=seq(0,300,length.out = 100), 
+  y = ecdfun(v = seq(0,300,length.out = 100)),ylim=c(0,1), 
+  type = "l", col="magenta", ylab="CDF", 
+  xlab="Raw coverage", main="Duplicated specimens")
 dat_coverage = matrix(nrow = length(ace_coverage), ncol = 5)
 dat_coverage[,1]=ace_coverage
 n=1
 for (tag in tags) {
   n=n+1
+  tgc=tagcol[n-1]
   tag_window = which.min(abs(as.numeric(rownames(dup_w)) - tag))
   tag_coverage = dup_w[tag_window,]
-  lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
+  ecdfun = ecdf(tag_coverage)
+  lines(
+    x=seq(0,300,length.out = 100),
+    y=ecdfun(v = seq(0,300,length.out = 100)), col=tgc)
   dat_coverage[,n] = tag_coverage
 }
-boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="Raw coverage", ylim=c(0,600))
+boxplot(dat_coverage, names = c("Ace1", tags),  col=c("magenta",tagcol), ylab="Raw coverage", ylim=c(0,300))
 
 #### INTERMISSION: PLOTS AND ECDFS FOR HAPLOTYPE SCORES ####
 
 hsd = read.table("dupcoverage_stats.HaplotypeScore.csv", sep="\t", header = T)
 ace_coverage = hsd[hsd$pos>ace_start*1e6 - 300 & hsd$pos < ace_end*1e6 + 300, "HaplotypeScore" ]
-plot(ecdf(ace_coverage), col="magenta", xlim=c(0,20), ylim=c(0,1), verticals = T, pch = NA,ylab="CDF", xlab="Raw coverage", main="HS, entire dataset")
+ecdfun=ecdf(ace_coverage)
+plot(
+  x=seq(0,20,length.out = 100), 
+  y = ecdfun(v = seq(0,20,length.out = 100)),ylim=c(0,1), 
+  type = "l", col="magenta", ylab="CDF", 
+  xlab="Raw coverage", main="Duplicated specimens")
+
 dat_coverage = list("Ace1" = ace_coverage)
 n=1
 for (tag in tags) {
   n=n+1
+  tgc=tagcol[n-1]
   tag_coverage = hsd[hsd$pos>tag - 300 & hsd$pos < tag + 300, "HaplotypeScore" ]
-  lines(ecdf(tag_coverage), col="blue", verticals = T, pch = NA)
+  ecdfun = ecdf(tag_coverage)
+  lines(
+    x=seq(0,20,length.out = 100),
+    y=ecdfun(v = seq(0,20,length.out = 100)), col=tgc)
   dat_coverage[[n]] = tag_coverage
 }
 abline(v=2, lty=2, col="red")
 
-boxplot(dat_coverage, names = c("Ace1", tags), col="gray", ylab="HaplotypeScore",
+boxplot(dat_coverage, names = c("Ace1", tags), col=c("magenta",tagcol), ylab="HaplotypeScore",
         sub="distribution of values in positions within region of interest")
 abline(h=2, lty=2, col="red")
 
