@@ -1,0 +1,4 @@
+upstream_breakpoint_out	2R	100.00	34	0	0	1	34	3436893	3436926	2e-10	63.9
+upstream_breakpoint_in	2R	100.00	38	0	0	1	38	3436927	3436964	1e-12	71.3
+downstream_breakpoint_in	2R	100.00	33	0	0	1	33	3639803	3639835	6e-10	62.1
+downstream_breakpoint_out	2R	100.00	38	0	0	1	38	3639836	3639873	1e-12	71.3
