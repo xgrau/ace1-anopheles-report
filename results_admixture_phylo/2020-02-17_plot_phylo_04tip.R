@@ -7,25 +7,13 @@ library(stringr)
 prefix    = "phylo"
 
 phy_list  = c("hapalignment_duplication.iqt.treefile",
-              "hapalignment_duplication_HSdiploid.treefile",
-              "hapalignment_duplication_HSdiploid_thr13.treefile",
-              "hapalignment_duplication_HSdiploid_thr13.bionj",
               "hapalignment_upstream.iqt.treefile",
               "hapalignment_downstream.iqt.treefile",
-              "hapalignment_breakupdu5k.iqt.treefile",
-              "hapalignment_breakdodu5k.iqt.treefile",
-              "hapalignment_break5kdupboth.iqt.treefile",
-              "hapalignment_break1kdupboth.iqt.treefile")
+              "hapalignment_breakdodu5k.iqt.treefile")
 phy_name  = c("A) duplication",
-              "A2) duplication, HS~2",
-              "A3) duplication, HS thr13",
-              "A3b) duplication bionj, HS thr13",
               "B) upstream",
               "C) downstream",
-              "D) upstream of the breakpoint",
-              "E) downstream of the breakpoint",
-              "both5k",
-              "both1k")
+              "D) upstream of the breakpoint")
 
 dups = read.table("haps_with_dups.csv", header = T)
 hap_has_dup = as.vector(dups[dups$has_dup,"hap"])
