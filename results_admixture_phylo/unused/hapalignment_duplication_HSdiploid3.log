@@ -1,0 +1,1169 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Apr 26 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    node-hp0412.linux.crg.es (AVX, 125 GB RAM)
+Command: iqtree -s hapalignment_duplication_HSdiploid3.fasta -nt AUTO -ntmax 4 -m TEST -mset GTR -pre hapalignment_duplication_HSdiploid3 -bb 1000 -nm 100000 -cptime 3600
+Seed:    65226 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Oct 18 09:56:42 2020
+Kernel:  AVX - auto-detect threads (4 CPU cores detected)
+
+Reading alignment file hapalignment_duplication_HSdiploid3.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 690 sequences with 224 columns, 224 distinct patterns
+224 parsimony-informative, 0 singleton sites, 0 constant sites
+                 Gap/Ambiguity  Composition  p-value
+   1  AA0040-Ca_GHcol    0.00%    passed     99.06%
+   2  AA0040-Cb_GHcol    0.00%    passed     99.87%
+   3  AA0041-Ca_GHcol    0.00%    passed     84.67%
+   4  AA0041-Cb_GHcol    0.00%    passed     99.39%
+   5  AA0042-Ca_GHcol    0.00%    passed     92.87%
+   6  AA0042-Cb_GHcol    0.00%    passed     97.78%
+   7  AA0043-Ca_GHcol    0.00%    passed     99.36%
+   8  AA0043-Cb_GHcol    0.00%    passed     98.16%
+   9  AA0044-Ca_GHcol    0.00%    passed     96.46%
+  10  AA0044-Cb_GHcol    0.00%    passed     99.68%
+  11  AA0048-Ca_GHgam    0.00%    passed     99.58%
+  12  AA0048-Cb_GHgam    0.00%    passed     98.79%
+  13  AA0049-Ca_GHcol    0.00%    passed     95.82%
+  14  AA0049-Cb_GHcol    0.00%    passed     90.96%
+  15  AA0050-Ca_GHgam    0.00%    passed     98.79%
+  16  AA0050-Cb_GHgam    0.00%    passed     99.58%
+  17  AA0051-Ca_GHcol    0.00%    passed     92.58%
+  18  AA0051-Cb_GHcol    0.00%    passed     97.23%
+  19  AA0052-Ca_GHcol    0.00%    passed     98.21%
+  20  AA0052-Cb_GHcol    0.00%    passed     99.83%
+  21  AA0053-Ca_GHcol    0.00%    passed     99.06%
+  22  AA0053-Cb_GHcol    0.00%    passed     92.80%
+  23  AA0054-Ca_GHcol    0.00%    passed     92.87%
+  24  AA0054-Cb_GHcol    0.00%    passed     99.36%
+  25  AA0055-Ca_GHcol    0.00%    passed     94.41%
+  26  AA0055-Cb_GHcol    0.00%    passed     96.99%
+  27  AA0056-Ca_GHcol    0.00%    passed     99.06%
+  28  AA0056-Cb_GHcol    0.00%    passed     98.41%
+  29  AA0060-Ca_GHgam    0.00%    passed     98.79%
+  30  AA0060-Cb_GHgam    0.00%    passed     99.58%
+  31  AA0061-Ca_GHgam    0.00%    passed     99.58%
+  32  AA0061-Cb_GHgam    0.00%    passed     98.79%
+  33  AA0063-Ca_GHcol    0.00%    passed     95.87%
+  34  AA0063-Cb_GHcol    0.00%    passed     98.69%
+  35  AA0064-Ca_GHcol    0.00%    passed     98.58%
+  36  AA0064-Cb_GHcol    0.00%    passed     99.90%
+  37  AA0066-Ca_GHcol    0.00%    passed     99.72%
+  38  AA0066-Cb_GHcol    0.00%    passed     91.17%
+  39  AA0067-Ca_GHcol    0.00%    passed     91.17%
+  40  AA0067-Cb_GHcol    0.00%    passed     99.65%
+  41  AA0068-Ca_GHcol    0.00%    passed     98.23%
+  42  AA0068-Cb_GHcol    0.00%    passed     96.94%
+  43  AA0072-Ca_GHgam    0.00%    passed     98.28%
+  44  AA0072-Cb_GHgam    0.00%    passed     96.99%
+  45  AA0073-Ca_GHcol    0.00%    passed     93.72%
+  46  AA0073-Cb_GHcol    0.00%    passed     99.20%
+  47  AA0074-Ca_GHcol    0.00%    passed     99.81%
+  48  AA0074-Cb_GHcol    0.00%    passed     95.58%
+  49  AA0075-Ca_GHcol    0.00%    passed     97.68%
+  50  AA0075-Cb_GHcol    0.00%    passed     99.88%
+  51  AA0076-Ca_GHcol    0.00%    passed     99.87%
+  52  AA0076-Cb_GHcol    0.00%    passed     98.28%
+  53  AA0077-Ca_GHcol    0.00%    passed     99.36%
+  54  AA0077-Cb_GHcol    0.00%    passed     99.28%
+  55  AA0080-Ca_GHcol    0.00%    passed     99.88%
+  56  AA0080-Cb_GHcol    0.00%    passed     99.88%
+  57  AA0084-Ca_GHgam    0.00%    passed     99.58%
+  58  AA0084-Cb_GHgam    0.00%    passed     98.79%
+  59  AA0085-Ca_GHgam    0.00%    passed     99.16%
+  60  AA0085-Cb_GHgam    0.00%    passed     99.16%
+  61  AA0086-Ca_GHgam    0.00%    passed     99.86%
+  62  AA0086-Cb_GHgam    0.00%    passed     99.31%
+  63  AA0087-Ca_GHcol    0.00%    passed     98.79%
+  64  AA0087-Cb_GHcol    0.00%    passed     99.88%
+  65  AA0088-Ca_GHcol    0.00%    passed     95.62%
+  66  AA0088-Cb_GHcol    0.00%    passed     84.40%
+  67  AA0089-Ca_GHcol    0.00%    passed     96.00%
+  68  AA0089-Cb_GHcol    0.00%    passed     98.69%
+  69  AA0090-Ca_GHcol    0.00%    passed     97.78%
+  70  AA0090-Cb_GHcol    0.00%    passed     99.06%
+  71  AA0091-Ca_GHcol    0.00%    passed     99.81%
+  72  AA0091-Cb_GHcol    0.00%    passed     98.21%
+  73  AA0096-Ca_GHgam    0.00%    passed     98.48%
+  74  AA0096-Cb_GHgam    0.00%    passed     98.28%
+  75  AA0097-Ca_GHcol    0.00%    passed     98.28%
+  76  AA0097-Cb_GHcol    0.00%    passed     99.78%
+  77  AA0098-Ca_GHcol    0.00%    passed     99.81%
+  78  AA0098-Cb_GHcol    0.00%    passed     99.20%
+  79  AA0099-Ca_GHcol    0.00%    passed     87.82%
+  80  AA0099-Cb_GHcol    0.00%    passed     96.14%
+  81  AA0100-Ca_GHcol    0.00%    passed     92.80%
+  82  AA0100-Cb_GHcol    0.00%    passed     99.24%
+  83  AA0101-Ca_GHcol    0.00%    passed     98.69%
+  84  AA0101-Cb_GHcol    0.00%    passed     96.99%
+  85  AA0102-Ca_GHcol    0.00%    passed     86.84%
+  86  AA0102-Cb_GHcol    0.00%    passed     98.23%
+  87  AA0103-Ca_GHcol    0.00%    passed     98.22%
+  88  AA0103-Cb_GHcol    0.00%    passed     99.72%
+  89  AA0104-Ca_GHcol    0.00%    passed     98.79%
+  90  AA0104-Cb_GHcol    0.00%    passed     99.83%
+  91  AA0107-Ca_GHcol    0.00%    passed    100.00%
+  92  AA0107-Cb_GHcol    0.00%    passed     92.57%
+  93  AA0108-Ca_GHgam    0.00%    passed     99.58%
+  94  AA0108-Cb_GHgam    0.00%    passed     98.79%
+  95  AA0109-Ca_GHcol    0.00%    passed     97.12%
+  96  AA0109-Cb_GHcol    0.00%    passed     98.00%
+  97  AA0110-Ca_GHcol    0.00%    passed     98.74%
+  98  AA0110-Cb_GHcol    0.00%    passed     97.63%
+  99  AA0111-Ca_GHcol    0.00%    passed     96.98%
+ 100  AA0111-Cb_GHcol    0.00%    passed     99.65%
+ 101  AA0113-Ca_GHcol    0.00%    passed     97.51%
+ 102  AA0113-Cb_GHcol    0.00%    passed     99.58%
+ 103  AA0114-Ca_GHcol    0.00%    passed     97.18%
+ 104  AA0114-Cb_GHcol    0.00%    passed     95.77%
+ 105  AA0115-Ca_GHcol    0.00%    passed     93.92%
+ 106  AA0115-Cb_GHcol    0.00%    passed     79.81%
+ 107  AA0116-Ca_GHcol    0.00%    passed     80.94%
+ 108  AA0116-Cb_GHcol    0.00%    passed     97.64%
+ 109  AA0122-Ca_GHgam    0.00%    passed     92.98%
+ 110  AA0122-Cb_GHgam    0.00%    passed     95.68%
+ 111  AA0123-Ca_GHcol    0.00%    passed     95.86%
+ 112  AA0123-Cb_GHcol    0.00%    passed     98.74%
+ 113  AA0124-Ca_GHcol    0.00%    passed     97.78%
+ 114  AA0124-Cb_GHcol    0.00%    passed     91.17%
+ 115  AA0125-Ca_GHcol    0.00%    passed     99.36%
+ 116  AA0125-Cb_GHcol    0.00%    passed     95.67%
+ 117  AA0127-Ca_GHcol    0.00%    passed     99.68%
+ 118  AA0127-Cb_GHcol    0.00%    passed     99.20%
+ 119  AA0132-Ca_GHcol    0.00%    passed     94.41%
+ 120  AA0132-Cb_GHcol    0.00%    passed     95.09%
+ 121  AA0133-Ca_GHgam    0.00%    passed     97.92%
+ 122  AA0133-Cb_GHgam    0.00%    passed     96.86%
+ 123  AA0134-Ca_GHcol    0.00%    passed     99.90%
+ 124  AA0134-Cb_GHcol    0.00%    passed     91.00%
+ 125  AA0135-Ca_GHcol    0.00%    passed    100.00%
+ 126  AA0135-Cb_GHcol    0.00%    passed     95.44%
+ 127  AA0136-Ca_GHcol    0.00%    passed     97.51%
+ 128  AA0136-Cb_GHcol    0.00%    passed     92.91%
+ 129  AA0139-Ca_GHcol    0.00%    passed     99.39%
+ 130  AA0139-Cb_GHcol    0.00%    passed     99.56%
+ 131  AA0140-Ca_GHcol    0.00%    passed     95.62%
+ 132  AA0140-Cb_GHcol    0.00%    passed     99.81%
+ 133  AA0141-Ca_GHcol    0.00%    passed     98.21%
+ 134  AA0141-Cb_GHcol    0.00%    passed     91.51%
+ 135  AB0085-Ca_BFgam    0.00%    passed     99.65%
+ 136  AB0085-Cb_BFgam    0.00%    passed     97.24%
+ 137  AB0087-Ca_BFcol    0.00%    passed     99.28%
+ 138  AB0087-Cb_BFcol    0.00%    passed     99.86%
+ 139  AB0088-Ca_BFcol    0.00%    passed     97.92%
+ 140  AB0088-Cb_BFcol    0.00%    passed     97.03%
+ 141  AB0089-Ca_BFcol    0.00%    passed     99.16%
+ 142  AB0089-Cb_BFcol    0.00%    passed     92.05%
+ 143  AB0090-Ca_BFcol    0.00%    passed     91.66%
+ 144  AB0090-Cb_BFcol    0.00%    passed     96.67%
+ 145  AB0091-Ca_BFcol    0.00%    passed     97.08%
+ 146  AB0091-Cb_BFcol    0.00%    passed     98.22%
+ 147  AB0092-Ca_BFcol    0.00%    passed     99.36%
+ 148  AB0092-Cb_BFcol    0.00%    passed     95.13%
+ 149  AB0094-Ca_BFcol    0.00%    passed     99.36%
+ 150  AB0094-Cb_BFcol    0.00%    passed     97.78%
+ 151  AB0095-Ca_BFcol    0.00%    passed     99.36%
+ 152  AB0095-Cb_BFcol    0.00%    passed     99.65%
+ 153  AB0097-Ca_BFcol    0.00%    passed     95.82%
+ 154  AB0097-Cb_BFcol    0.00%    passed     99.87%
+ 155  AB0098-Ca_BFcol    0.00%    passed     99.16%
+ 156  AB0098-Cb_BFcol    0.00%    passed     98.00%
+ 157  AB0099-Ca_BFcol    0.00%    passed     99.28%
+ 158  AB0099-Cb_BFcol    0.00%    passed     93.92%
+ 159  AB0100-Ca_BFcol    0.00%    passed     99.36%
+ 160  AB0100-Cb_BFcol    0.00%    passed     98.63%
+ 161  AB0101-Ca_BFcol    0.00%    passed     85.45%
+ 162  AB0101-Cb_BFcol    0.00%    passed     99.06%
+ 163  AB0103-Ca_BFgam    0.00%    passed     88.06%
+ 164  AB0103-Cb_BFgam    0.00%    passed     97.78%
+ 165  AB0104-Ca_BFgam    0.00%    passed     98.63%
+ 166  AB0104-Cb_BFgam    0.00%    passed     98.33%
+ 167  AB0108-Ca_BFgam    0.00%    passed     99.65%
+ 168  AB0108-Cb_BFgam    0.00%    passed     97.92%
+ 169  AB0109-Ca_BFcol    0.00%    passed     90.55%
+ 170  AB0109-Cb_BFcol    0.00%    passed     99.88%
+ 171  AB0110-Ca_BFcol    0.00%    passed     98.87%
+ 172  AB0110-Cb_BFcol    0.00%    passed     95.44%
+ 173  AB0111-Ca_BFcol    0.00%    passed     98.88%
+ 174  AB0111-Cb_BFcol    0.00%    passed     98.00%
+ 175  AB0112-Ca_BFcol    0.00%    passed     94.69%
+ 176  AB0112-Cb_BFcol    0.00%    passed     99.06%
+ 177  AB0113-Ca_BFcol    0.00%    passed     99.86%
+ 178  AB0113-Cb_BFcol    0.00%    passed     99.20%
+ 179  AB0114-Ca_BFcol    0.00%    passed     97.18%
+ 180  AB0114-Cb_BFcol    0.00%    passed     99.90%
+ 181  AB0115-Ca_BFcol    0.00%    passed     95.82%
+ 182  AB0115-Cb_BFcol    0.00%    passed     80.04%
+ 183  AB0117-Ca_BFgam    0.00%    passed     99.87%
+ 184  AB0117-Cb_BFgam    0.00%    passed     99.65%
+ 185  AB0118-Ca_BFgam    0.00%    passed     91.99%
+ 186  AB0118-Cb_BFgam    0.00%    passed     94.96%
+ 187  AB0119-Ca_BFgam    0.00%    passed     99.16%
+ 188  AB0119-Cb_BFgam    0.00%    passed     93.34%
+ 189  AB0122-Ca_BFcol    0.00%    passed    100.00%
+ 190  AB0122-Cb_BFcol    0.00%    passed     95.71%
+ 191  AB0123-Ca_BFcol    0.00%    passed     99.24%
+ 192  AB0123-Cb_BFcol    0.00%    passed     97.12%
+ 193  AB0124-Ca_BFcol    0.00%    passed     89.61%
+ 194  AB0124-Cb_BFcol    0.00%    passed     94.41%
+ 195  AB0126-Ca_BFgam    0.00%    passed     94.97%
+ 196  AB0126-Cb_BFgam    0.00%    passed     95.44%
+ 197  AB0127-Ca_BFgam    0.00%    passed     99.65%
+ 198  AB0127-Cb_BFgam    0.00%    passed     96.98%
+ 199  AB0128-Ca_BFgam    0.00%    passed     99.86%
+ 200  AB0128-Cb_BFgam    0.00%    passed     99.72%
+ 201  AB0129-Ca_BFgam    0.00%    passed     96.67%
+ 202  AB0129-Cb_BFgam    0.00%    passed     99.90%
+ 203  AB0130-Ca_BFgam    0.00%    passed     98.48%
+ 204  AB0130-Cb_BFgam    0.00%    passed     99.78%
+ 205  AB0133-Ca_BFgam    0.00%    passed     97.94%
+ 206  AB0133-Cb_BFgam    0.00%    passed     99.20%
+ 207  AB0134-Ca_BFgam    0.00%    passed     99.65%
+ 208  AB0134-Cb_BFgam    0.00%    passed     99.58%
+ 209  AB0135-Ca_BFgam    0.00%    passed     97.78%
+ 210  AB0135-Cb_BFgam    0.00%    passed     80.95%
+ 211  AB0136-Ca_BFgam    0.00%    passed     99.83%
+ 212  AB0136-Cb_BFgam    0.00%    passed     99.06%
+ 213  AB0137-Ca_BFcol    0.00%    passed     99.20%
+ 214  AB0137-Cb_BFcol    0.00%    passed     94.52%
+ 215  AB0138-Ca_BFcol    0.00%    passed     99.83%
+ 216  AB0138-Cb_BFcol    0.00%    passed     97.10%
+ 217  AB0139-Ca_BFcol    0.00%    passed     99.78%
+ 218  AB0139-Cb_BFcol    0.00%    passed     99.23%
+ 219  AB0140-Ca_BFcol    0.00%    passed    100.00%
+ 220  AB0140-Cb_BFcol    0.00%    passed     95.44%
+ 221  AB0142-Ca_BFcol    0.00%    passed     98.21%
+ 222  AB0142-Cb_BFcol    0.00%    passed     95.31%
+ 223  AB0143-Ca_BFgam    0.00%    passed     99.16%
+ 224  AB0143-Cb_BFgam    0.00%    passed     98.58%
+ 225  AB0145-Ca_BFgam    0.00%    passed     99.20%
+ 226  AB0145-Cb_BFgam    0.00%    passed     99.06%
+ 227  AB0146-Ca_BFgam    0.00%    passed     99.20%
+ 228  AB0146-Cb_BFgam    0.00%    passed     98.28%
+ 229  AB0147-Ca_BFgam    0.00%    passed     96.00%
+ 230  AB0147-Cb_BFgam    0.00%    passed     98.22%
+ 231  AB0148-Ca_BFgam    0.00%    passed     78.25%
+ 232  AB0148-Cb_BFgam    0.00%    passed     99.72%
+ 233  AB0150-Ca_BFgam    0.00%    passed     99.06%
+ 234  AB0150-Cb_BFgam    0.00%    passed     99.20%
+ 235  AB0151-Ca_BFgam    0.00%    passed     99.72%
+ 236  AB0151-Cb_BFgam    0.00%    passed     97.42%
+ 237  AB0153-Ca_BFgam    0.00%    passed     93.14%
+ 238  AB0153-Cb_BFgam    0.00%    passed     93.45%
+ 239  AB0155-Ca_BFgam    0.00%    passed     98.52%
+ 240  AB0155-Cb_BFgam    0.00%    passed     98.26%
+ 241  AB0157-Ca_BFgam    0.00%    passed     99.20%
+ 242  AB0157-Cb_BFgam    0.00%    passed     99.06%
+ 243  AB0158-Ca_BFgam    0.00%    passed     99.90%
+ 244  AB0158-Cb_BFgam    0.00%    passed     95.62%
+ 245  AB0159-Ca_BFgam    0.00%    passed     97.51%
+ 246  AB0159-Cb_BFgam    0.00%    passed     99.20%
+ 247  AB0160-Ca_BFgam    0.00%    passed     97.16%
+ 248  AB0160-Cb_BFgam    0.00%    passed     99.28%
+ 249  AB0161-Ca_BFgam    0.00%    passed     98.00%
+ 250  AB0161-Cb_BFgam    0.00%    passed     99.28%
+ 251  AB0162-Ca_BFgam    0.00%    passed     92.61%
+ 252  AB0162-Cb_BFgam    0.00%    passed     98.33%
+ 253  AB0164-Ca_BFgam    0.00%    passed     97.03%
+ 254  AB0164-Cb_BFgam    0.00%    passed     99.81%
+ 255  AB0165-Ca_BFgam    0.00%    passed     93.45%
+ 256  AB0165-Cb_BFgam    0.00%    passed     96.69%
+ 257  AB0166-Ca_BFgam    0.00%    passed     99.78%
+ 258  AB0166-Cb_BFgam    0.00%    passed     97.51%
+ 259  AB0167-Ca_BFgam    0.00%    passed     99.20%
+ 260  AB0167-Cb_BFgam    0.00%    passed     99.23%
+ 261  AB0169-Ca_BFgam    0.00%    passed     98.41%
+ 262  AB0169-Cb_BFgam    0.00%    passed     99.20%
+ 263  AB0170-Ca_BFgam    0.00%    passed     95.13%
+ 264  AB0170-Cb_BFgam    0.00%    passed     95.82%
+ 265  AB0171-Ca_BFgam    0.00%    passed     88.90%
+ 266  AB0171-Cb_BFgam    0.00%    passed     89.54%
+ 267  AB0172-Ca_BFgam    0.00%    passed     99.39%
+ 268  AB0172-Cb_BFgam    0.00%    passed     99.24%
+ 269  AB0173-Ca_BFgam    0.00%    passed     98.88%
+ 270  AB0173-Cb_BFgam    0.00%    passed     98.83%
+ 271  AB0174-Ca_BFgam    0.00%    passed     94.41%
+ 272  AB0174-Cb_BFgam    0.00%    passed     99.27%
+ 273  AB0175-Ca_BFgam    0.00%    passed     96.65%
+ 274  AB0175-Cb_BFgam    0.00%    passed     99.09%
+ 275  AB0176-Ca_BFgam    0.00%    passed     97.92%
+ 276  AB0176-Cb_BFgam    0.00%    passed     99.58%
+ 277  AB0177-Ca_BFgam    0.00%    passed     99.28%
+ 278  AB0177-Cb_BFgam    0.00%    passed     99.56%
+ 279  AB0178-Ca_BFgam    0.00%    passed     98.79%
+ 280  AB0178-Cb_BFgam    0.00%    passed     92.84%
+ 281  AB0179-Ca_BFgam    0.00%    passed     87.82%
+ 282  AB0179-Cb_BFgam    0.00%    passed     87.34%
+ 283  AB0181-Ca_BFcol    0.00%    passed     99.65%
+ 284  AB0181-Cb_BFcol    0.00%    passed     99.16%
+ 285  AB0182-Ca_BFcol    0.00%    passed     94.97%
+ 286  AB0182-Cb_BFcol    0.00%    passed     80.04%
+ 287  AB0183-Ca_BFcol    0.00%    passed     99.83%
+ 288  AB0183-Cb_BFcol    0.00%    passed     94.41%
+ 289  AB0184-Ca_BFcol    0.00%    passed     92.34%
+ 290  AB0184-Cb_BFcol    0.00%    passed     97.24%
+ 291  AB0185-Ca_BFcol    0.00%    passed     85.47%
+ 292  AB0185-Cb_BFcol    0.00%    passed     95.77%
+ 293  AB0186-Ca_BFcol    0.00%    passed     99.28%
+ 294  AB0186-Cb_BFcol    0.00%    passed     97.16%
+ 295  AB0187-Ca_BFcol    0.00%    passed     89.13%
+ 296  AB0187-Cb_BFcol    0.00%    passed     95.81%
+ 297  AB0188-Ca_BFcol    0.00%    passed     98.58%
+ 298  AB0188-Cb_BFcol    0.00%    passed     98.41%
+ 299  AB0189-Ca_BFcol    0.00%    passed     99.39%
+ 300  AB0189-Cb_BFcol    0.00%    passed     99.86%
+ 301  AB0190-Ca_BFcol    0.00%    passed     99.27%
+ 302  AB0190-Cb_BFcol    0.00%    passed     95.44%
+ 303  AB0191-Ca_BFcol    0.00%    passed     86.84%
+ 304  AB0191-Cb_BFcol    0.00%    passed     97.12%
+ 305  AB0192-Ca_BFcol    0.00%    passed     87.88%
+ 306  AB0192-Cb_BFcol    0.00%    passed     98.16%
+ 307  AB0195-Ca_BFcol    0.00%    passed     89.28%
+ 308  AB0195-Cb_BFcol    0.00%    passed     95.58%
+ 309  AB0196-Ca_BFcol    0.00%    passed     96.67%
+ 310  AB0196-Cb_BFcol    0.00%    passed     97.51%
+ 311  AB0197-Ca_BFgam    0.00%    passed     90.91%
+ 312  AB0197-Cb_BFgam    0.00%    passed     97.68%
+ 313  AB0198-Ca_BFgam    0.00%    passed    100.00%
+ 314  AB0198-Cb_BFgam    0.00%    passed     95.82%
+ 315  AB0199-Ca_BFgam    0.00%    passed     95.27%
+ 316  AB0199-Cb_BFgam    0.00%    passed    100.00%
+ 317  AB0200-Ca_BFgam    0.00%    passed     90.40%
+ 318  AB0200-Cb_BFgam    0.00%    passed     91.15%
+ 319  AB0201-Ca_BFgam    0.00%    passed     99.58%
+ 320  AB0201-Cb_BFgam    0.00%    passed     95.38%
+ 321  AB0202-Ca_BFgam    0.00%    passed     95.80%
+ 322  AB0202-Cb_BFgam    0.00%    passed     97.92%
+ 323  AB0203-Ca_BFgam    0.00%    passed     99.72%
+ 324  AB0203-Cb_BFgam    0.00%    passed     99.72%
+ 325  AB0204-Ca_BFcol    0.00%    passed     99.36%
+ 326  AB0204-Cb_BFcol    0.00%    passed     99.65%
+ 327  AB0205-Ca_BFgam    0.00%    passed     97.94%
+ 328  AB0205-Cb_BFgam    0.00%    passed     97.63%
+ 329  AB0206-Ca_BFgam    0.00%    passed     98.21%
+ 330  AB0206-Cb_BFgam    0.00%    passed     98.21%
+ 331  AB0207-Ca_BFgam    0.00%    passed     95.82%
+ 332  AB0207-Cb_BFgam    0.00%    passed     93.92%
+ 333  AB0208-Ca_BFgam    0.00%    passed     99.06%
+ 334  AB0208-Cb_BFgam    0.00%    passed     99.20%
+ 335  AB0209-Ca_BFcol    0.00%    passed     99.87%
+ 336  AB0209-Cb_BFcol    0.00%    passed     97.63%
+ 337  AB0210-Ca_BFcol    0.00%    passed     97.03%
+ 338  AB0210-Cb_BFcol    0.00%    passed     96.67%
+ 339  AB0211-Ca_BFgam    0.00%    passed     96.46%
+ 340  AB0211-Cb_BFgam    0.00%    passed     98.69%
+ 341  AB0212-Ca_BFcol    0.00%    passed     99.36%
+ 342  AB0212-Cb_BFcol    0.00%    passed     92.99%
+ 343  AB0213-Ca_BFcol    0.00%    passed     95.73%
+ 344  AB0213-Cb_BFcol    0.00%    passed     97.47%
+ 345  AB0215-Ca_BFcol    0.00%    passed     99.56%
+ 346  AB0215-Cb_BFcol    0.00%    passed     97.12%
+ 347  AB0217-Ca_BFgam    0.00%    passed     98.21%
+ 348  AB0217-Cb_BFgam    0.00%    passed     99.24%
+ 349  AB0218-Ca_BFgam    0.00%    passed     99.16%
+ 350  AB0218-Cb_BFgam    0.00%    passed     98.00%
+ 351  AB0219-Ca_BFcol    0.00%    passed     91.66%
+ 352  AB0219-Cb_BFcol    0.00%    passed     91.17%
+ 353  AB0221-Ca_BFcol    0.00%    passed     97.92%
+ 354  AB0221-Cb_BFcol    0.00%    passed     99.27%
+ 355  AB0222-Ca_BFcol    0.00%    passed     94.06%
+ 356  AB0222-Cb_BFcol    0.00%    passed     95.04%
+ 357  AB0223-Ca_BFcol    0.00%    passed     98.88%
+ 358  AB0223-Cb_BFcol    0.00%    passed     93.14%
+ 359  AB0224-Ca_BFcol    0.00%    passed     99.28%
+ 360  AB0224-Cb_BFcol    0.00%    passed     95.04%
+ 361  AB0226-Ca_BFcol    0.00%    passed     97.03%
+ 362  AB0226-Cb_BFcol    0.00%    passed     99.06%
+ 363  AB0227-Ca_BFcol    0.00%    passed     93.26%
+ 364  AB0227-Cb_BFcol    0.00%    passed     99.78%
+ 365  AB0228-Ca_BFgam    0.00%    passed     88.45%
+ 366  AB0228-Cb_BFgam    0.00%    passed     96.01%
+ 367  AB0229-Ca_BFcol    0.00%    passed     97.97%
+ 368  AB0229-Cb_BFcol    0.00%    passed     95.67%
+ 369  AB0231-Ca_BFgam    0.00%    passed     96.99%
+ 370  AB0231-Cb_BFgam    0.00%    passed     99.06%
+ 371  AB0232-Ca_BFgam    0.00%    passed     99.06%
+ 372  AB0232-Cb_BFgam    0.00%    passed     97.10%
+ 373  AB0233-Ca_BFgam    0.00%    passed     92.52%
+ 374  AB0233-Cb_BFgam    0.00%    passed     99.16%
+ 375  AB0234-Ca_BFcol    0.00%    passed     95.67%
+ 376  AB0234-Cb_BFcol    0.00%    passed     92.98%
+ 377  AB0235-Ca_BFgam    0.00%    passed     96.25%
+ 378  AB0235-Cb_BFgam    0.00%    passed     99.83%
+ 379  AB0236-Ca_BFgam    0.00%    passed     92.52%
+ 380  AB0236-Cb_BFgam    0.00%    passed     98.79%
+ 381  AB0237-Ca_BFcol    0.00%    passed     97.23%
+ 382  AB0237-Cb_BFcol    0.00%    passed    100.00%
+ 383  AB0238-Ca_BFgam    0.00%    passed     99.20%
+ 384  AB0238-Cb_BFgam    0.00%    passed     99.06%
+ 385  AB0239-Ca_BFgam    0.00%    passed     99.81%
+ 386  AB0239-Cb_BFgam    0.00%    passed     99.58%
+ 387  AB0240-Ca_BFcol    0.00%    passed     92.81%
+ 388  AB0240-Cb_BFcol    0.00%    passed     93.71%
+ 389  AB0241-Ca_BFgam    0.00%    passed     98.00%
+ 390  AB0241-Cb_BFgam    0.00%    passed    100.00%
+ 391  AB0242-Ca_BFcol    0.00%    passed     94.69%
+ 392  AB0242-Cb_BFcol    0.00%    passed     96.98%
+ 393  AB0243-Ca_BFcol    0.00%    passed     99.16%
+ 394  AB0243-Cb_BFcol    0.00%    passed     98.87%
+ 395  AB0244-Ca_BFgam    0.00%    passed     98.88%
+ 396  AB0244-Cb_BFgam    0.00%    passed     91.00%
+ 397  AB0246-Ca_BFcol    0.00%    passed     99.28%
+ 398  AB0246-Cb_BFcol    0.00%    passed     98.33%
+ 399  AB0247-Ca_BFcol    0.00%    passed     96.46%
+ 400  AB0247-Cb_BFcol    0.00%    passed     97.51%
+ 401  AB0248-Ca_BFcol    0.00%    passed     90.71%
+ 402  AB0248-Cb_BFcol    0.00%    passed     99.65%
+ 403  AB0249-Ca_BFcol    0.00%    passed     98.87%
+ 404  AB0249-Cb_BFcol    0.00%    passed     97.30%
+ 405  AB0250-Ca_BFcol    0.00%    passed     99.03%
+ 406  AB0250-Cb_BFcol    0.00%    passed     95.77%
+ 407  AB0251-Ca_BFgam    0.00%    passed     97.51%
+ 408  AB0251-Cb_BFgam    0.00%    passed     97.68%
+ 409  AB0252-Ca_BFgam    0.00%    passed     90.56%
+ 410  AB0252-Cb_BFgam    0.00%    passed     99.56%
+ 411  AB0253-Ca_BFgam    0.00%    passed     99.24%
+ 412  AB0253-Cb_BFgam    0.00%    passed     96.65%
+ 413  AB0255-Ca_BFgam    0.00%    passed     93.45%
+ 414  AB0255-Cb_BFgam    0.00%    passed     99.86%
+ 415  AB0256-Ca_BFgam    0.00%    passed     98.16%
+ 416  AB0256-Cb_BFgam    0.00%    passed     90.10%
+ 417  AB0257-Ca_BFcol    0.00%    passed     99.28%
+ 418  AB0257-Cb_BFcol    0.00%    passed     99.20%
+ 419  AB0258-Ca_BFcol    0.00%    passed     92.99%
+ 420  AB0258-Cb_BFcol    0.00%    passed     94.06%
+ 421  AB0260-Ca_BFgam    0.00%    passed     99.88%
+ 422  AB0260-Cb_BFgam    0.00%    passed     99.06%
+ 423  AB0261-Ca_BFgam    0.00%    passed     83.48%
+ 424  AB0261-Cb_BFgam    0.00%    passed     93.55%
+ 425  AB0262-Ca_BFcol    0.00%    passed     92.84%
+ 426  AB0262-Cb_BFcol    0.00%    passed     99.56%
+ 427  AB0263-Ca_BFcol    0.00%    passed     99.68%
+ 428  AB0263-Cb_BFcol    0.00%    passed     95.44%
+ 429  AB0264-Ca_BFgam    0.00%    passed     99.72%
+ 430  AB0264-Cb_BFgam    0.00%    passed     99.65%
+ 431  AB0265-Ca_BFgam    0.00%    passed     99.86%
+ 432  AB0265-Cb_BFgam    0.00%    passed     93.71%
+ 433  AB0266-Ca_BFcol    0.00%    passed     93.72%
+ 434  AB0266-Cb_BFcol    0.00%    passed     96.46%
+ 435  AB0267-Ca_BFcol    0.00%    passed     99.86%
+ 436  AB0267-Cb_BFcol    0.00%    passed     96.69%
+ 437  AB0268-Ca_BFgam    0.00%    passed     92.79%
+ 438  AB0268-Cb_BFgam    0.00%    passed     99.65%
+ 439  AB0270-Ca_BFgam    0.00%    passed     99.06%
+ 440  AB0270-Cb_BFgam    0.00%    passed    100.00%
+ 441  AB0271-Ca_BFgam    0.00%    passed     98.79%
+ 442  AB0271-Cb_BFgam    0.00%    passed     99.88%
+ 443  AB0272-Ca_BFgam    0.00%    passed     99.27%
+ 444  AB0272-Cb_BFgam    0.00%    passed     78.80%
+ 445  AB0273-Ca_BFgam    0.00%    passed     87.69%
+ 446  AB0273-Cb_BFgam    0.00%    passed     95.79%
+ 447  AB0274-Ca_BFgam    0.00%    passed     95.78%
+ 448  AB0274-Cb_BFgam    0.00%    passed     99.36%
+ 449  AB0275-Ca_BFgam    0.00%    passed     92.99%
+ 450  AB0275-Cb_BFgam    0.00%    passed     94.41%
+ 451  AB0276-Ca_BFcol    0.00%    passed     99.72%
+ 452  AB0276-Cb_BFcol    0.00%    passed     99.06%
+ 453  AB0277-Ca_BFgam    0.00%    passed     96.65%
+ 454  AB0277-Cb_BFgam    0.00%    passed     87.10%
+ 455  AB0278-Ca_BFgam    0.00%    passed     91.54%
+ 456  AB0278-Cb_BFgam    0.00%    passed     95.58%
+ 457  AB0279-Ca_BFcol    0.00%    passed     99.56%
+ 458  AB0279-Cb_BFcol    0.00%    passed     97.07%
+ 459  AB0280-Ca_BFgam    0.00%    passed     94.96%
+ 460  AB0280-Cb_BFgam    0.00%    passed     98.58%
+ 461  AB0281-Ca_BFgam    0.00%    passed     99.28%
+ 462  AB0281-Cb_BFgam    0.00%    passed     98.21%
+ 463  AB0282-Ca_BFcol    0.00%    passed     97.63%
+ 464  AB0282-Cb_BFcol    0.00%    passed     99.16%
+ 465  AB0283-Ca_BFgam    0.00%    passed     98.05%
+ 466  AB0283-Cb_BFgam    0.00%    passed     91.46%
+ 467  AB0284-Ca_BFgam    0.00%    passed     98.55%
+ 468  AB0284-Cb_BFgam    0.00%    passed     99.06%
+ 469  AV0001-Ca_GNgam    0.00%    passed     97.07%
+ 470  AV0001-Cb_GNgam    0.00%    passed     94.05%
+ 471  AV0002-Ca_GNgam    0.00%    passed    100.00%
+ 472  AV0002-Cb_GNgam    0.00%    passed     99.39%
+ 473  AV0003-Ca_GNgam    0.00%    passed     97.03%
+ 474  AV0003-Cb_GNgam    0.00%    passed     97.51%
+ 475  AV0004-Ca_GNgam    0.00%    passed     97.12%
+ 476  AV0004-Cb_GNgam    0.00%    passed     85.18%
+ 477  AV0005-Ca_GNgam    0.00%    passed     99.20%
+ 478  AV0005-Cb_GNgam    0.00%    passed     96.94%
+ 479  AV0006-Ca_GNgam    0.00%    passed     96.25%
+ 480  AV0006-Cb_GNgam    0.00%    passed     97.23%
+ 481  AV0007-Ca_GNgam    0.00%    passed     97.68%
+ 482  AV0007-Cb_GNgam    0.00%    passed     98.21%
+ 483  AV0008-Ca_GNgam    0.00%    passed     97.12%
+ 484  AV0008-Cb_GNgam    0.00%    passed     99.83%
+ 485  AV0009-Ca_GNgam    0.00%    passed     99.65%
+ 486  AV0009-Cb_GNgam    0.00%    passed     99.86%
+ 487  AV0010-Ca_GNgam    0.00%    passed     98.58%
+ 488  AV0010-Cb_GNgam    0.00%    passed     99.65%
+ 489  AV0011-Ca_GNgam    0.00%    passed     92.61%
+ 490  AV0011-Cb_GNgam    0.00%    passed     68.03%
+ 491  AV0012-Ca_GNgam    0.00%    passed     99.72%
+ 492  AV0012-Cb_GNgam    0.00%    passed     94.97%
+ 493  AV0013-Ca_GNgam    0.00%    passed     99.16%
+ 494  AV0013-Cb_GNgam    0.00%    passed     99.23%
+ 495  AV0014-Ca_GNgam    0.00%    passed     99.83%
+ 496  AV0014-Cb_GNgam    0.00%    passed     99.72%
+ 497  AV0015-Ca_GNgam    0.00%    passed     97.08%
+ 498  AV0015-Cb_GNgam    0.00%    passed     99.20%
+ 499  AV0017-Ca_GNgam    0.00%    passed     95.44%
+ 500  AV0017-Cb_GNgam    0.00%    passed     99.27%
+ 501  AV0018-Ca_GNgam    0.00%    passed     95.58%
+ 502  AV0018-Cb_GNgam    0.00%    passed     82.12%
+ 503  AV0020-Ca_GNgam    0.00%    passed     96.25%
+ 504  AV0020-Cb_GNgam    0.00%    passed     97.24%
+ 505  AV0021-Ca_GNgam    0.00%    passed     98.55%
+ 506  AV0021-Cb_GNgam    0.00%    passed     99.81%
+ 507  AV0022-Ca_GNgam    0.00%    passed     99.16%
+ 508  AV0022-Cb_GNgam    0.00%    passed     96.94%
+ 509  AV0024-Ca_GNgam    0.00%    passed     99.58%
+ 510  AV0024-Cb_GNgam    0.00%    passed     95.78%
+ 511  AV0025-Ca_GNgam    0.00%    passed     95.81%
+ 512  AV0025-Cb_GNgam    0.00%    passed     99.09%
+ 513  AV0026-Ca_GNgam    0.00%    passed     98.26%
+ 514  AV0026-Cb_GNgam    0.00%    passed     91.25%
+ 515  AV0027-Ca_GNgam    0.00%    passed     99.06%
+ 516  AV0027-Cb_GNgam    0.00%    passed     94.05%
+ 517  AV0028-Ca_GNgam    0.00%    passed     96.99%
+ 518  AV0028-Cb_GNgam    0.00%    passed     99.28%
+ 519  AV0029-Ca_GNgam    0.00%    passed     99.06%
+ 520  AV0029-Cb_GNgam    0.00%    passed     86.45%
+ 521  AV0030-Ca_GNgam    0.00%    passed     98.48%
+ 522  AV0030-Cb_GNgam    0.00%    passed     98.87%
+ 523  AV0031-Ca_GNgam    0.00%    passed     99.23%
+ 524  AV0031-Cb_GNgam    0.00%    passed     98.55%
+ 525  AV0032-Ca_GNgam    0.00%    passed     97.03%
+ 526  AV0032-Cb_GNgam    0.00%    passed     99.65%
+ 527  AV0033-Ca_GNgam    0.00%    passed     88.41%
+ 528  AV0033-Cb_GNgam    0.00%    passed     98.79%
+ 529  AV0034-Ca_GNgam    0.00%    passed     97.08%
+ 530  AV0034-Cb_GNgam    0.00%    passed     95.58%
+ 531  AV0035-Ca_GNgam    0.00%    passed     99.56%
+ 532  AV0035-Cb_GNgam    0.00%    passed     95.78%
+ 533  AV0036-Ca_GNgam    0.00%    passed     97.92%
+ 534  AV0036-Cb_GNgam    0.00%    passed     95.11%
+ 535  AV0037-Ca_GNgam    0.00%    passed     98.74%
+ 536  AV0037-Cb_GNgam    0.00%    passed     99.20%
+ 537  AV0039-Ca_GNgam    0.00%    passed     99.28%
+ 538  AV0039-Cb_GNgam    0.00%    passed     99.28%
+ 539  AV0041-Ca_GNgam    0.00%    passed     95.82%
+ 540  AV0041-Cb_GNgam    0.00%    passed     99.36%
+ 541  AV0043-Ca_GNgam    0.00%    passed     98.83%
+ 542  AV0043-Cb_GNgam    0.00%    passed     90.69%
+ 543  AV0044-Ca_GNgam    0.00%    passed     99.20%
+ 544  AV0044-Cb_GNgam    0.00%    passed     94.41%
+ 545  AV0045-Ca_GNgam    0.00%    passed     98.05%
+ 546  AV0045-Cb_GNgam    0.00%    passed     95.86%
+ 547  AV0047-Ca_GNgam    0.00%    passed     98.69%
+ 548  AV0047-Cb_GNgam    0.00%    passed     97.12%
+ 549  AY0006-Ca_CIcol    0.00%    passed     98.22%
+ 550  AY0006-Cb_CIcol    0.00%    passed     95.11%
+ 551  AY0007-Ca_CIcol    0.00%    passed     99.20%
+ 552  AY0007-Cb_CIcol    0.00%    passed     99.06%
+ 553  AY0010-Ca_CIcol    0.00%    passed     95.78%
+ 554  AY0010-Cb_CIcol    0.00%    passed     97.24%
+ 555  AY0011-Ca_CIcol    0.00%    passed     99.86%
+ 556  AY0011-Cb_CIcol    0.00%    passed     99.87%
+ 557  AY0012-Ca_CIcol    0.00%    passed     92.80%
+ 558  AY0012-Cb_CIcol    0.00%    passed     98.28%
+ 559  AY0013-Ca_CIcol    0.00%    passed     97.16%
+ 560  AY0013-Cb_CIcol    0.00%    passed     99.56%
+ 561  AY0015-Ca_CIcol    0.00%    passed     98.21%
+ 562  AY0015-Cb_CIcol    0.00%    passed     91.51%
+ 563  AY0016-Ca_CIcol    0.00%    passed     98.87%
+ 564  AY0016-Cb_CIcol    0.00%    passed     99.20%
+ 565  AY0017-Ca_CIcol    0.00%    passed     95.31%
+ 566  AY0017-Cb_CIcol    0.00%    passed     92.67%
+ 567  AY0018-Ca_CIcol    0.00%    passed     98.69%
+ 568  AY0018-Cb_CIcol    0.00%    passed     90.15%
+ 569  AY0019-Ca_CIcol    0.00%    passed     95.79%
+ 570  AY0019-Cb_CIcol    0.00%    passed     97.16%
+ 571  AY0020-Ca_CIcol    0.00%    passed     99.83%
+ 572  AY0020-Cb_CIcol    0.00%    passed     99.90%
+ 573  AY0021-Ca_CIcol    0.00%    passed     99.28%
+ 574  AY0021-Cb_CIcol    0.00%    passed     99.36%
+ 575  AY0023-Ca_CIcol    0.00%    passed     92.84%
+ 576  AY0023-Cb_CIcol    0.00%    passed     97.51%
+ 577  AY0024-Ca_CIcol    0.00%    passed     94.54%
+ 578  AY0024-Cb_CIcol    0.00%    passed     93.72%
+ 579  AY0025-Ca_CIcol    0.00%    passed     98.26%
+ 580  AY0025-Cb_CIcol    0.00%    passed     98.87%
+ 581  AY0026-Ca_CIcol    0.00%    passed     98.23%
+ 582  AY0026-Cb_CIcol    0.00%    passed     98.33%
+ 583  AY0027-Ca_CIcol    0.00%    passed     98.28%
+ 584  AY0027-Cb_CIcol    0.00%    passed     99.16%
+ 585  AY0029-Ca_CIcol    0.00%    passed     98.74%
+ 586  AY0029-Cb_CIcol    0.00%    passed     98.69%
+ 587  AY0031-Ca_CIcol    0.00%    passed     99.20%
+ 588  AY0031-Cb_CIcol    0.00%    passed     99.06%
+ 589  AY0032-Ca_CIcol    0.00%    passed     91.44%
+ 590  AY0032-Cb_CIcol    0.00%    passed     98.22%
+ 591  AY0033-Ca_CIcol    0.00%    passed     94.15%
+ 592  AY0033-Cb_CIcol    0.00%    passed     97.30%
+ 593  AY0034-Ca_CIcol    0.00%    passed     92.67%
+ 594  AY0034-Cb_CIcol    0.00%    passed     99.28%
+ 595  AY0035-Ca_CIcol    0.00%    passed     98.58%
+ 596  AY0035-Cb_CIcol    0.00%    passed     91.70%
+ 597  AY0036-Ca_CIcol    0.00%    passed     98.74%
+ 598  AY0036-Cb_CIcol    0.00%    passed     98.26%
+ 599  AY0038-Ca_CIcol    0.00%    passed     98.41%
+ 600  AY0038-Cb_CIcol    0.00%    passed     96.12%
+ 601  AY0039-Ca_CIcol    0.00%    passed     93.41%
+ 602  AY0039-Cb_CIcol    0.00%    passed     99.65%
+ 603  AY0040-Ca_CIcol    0.00%    passed     99.83%
+ 604  AY0040-Cb_CIcol    0.00%    passed     98.22%
+ 605  AY0041-Ca_CIcol    0.00%    passed     99.28%
+ 606  AY0041-Cb_CIcol    0.00%    passed     99.88%
+ 607  AY0042-Ca_CIcol    0.00%    passed     98.55%
+ 608  AY0042-Cb_CIcol    0.00%    passed     92.96%
+ 609  AY0043-Ca_CIcol    0.00%    passed     92.87%
+ 610  AY0043-Cb_CIcol    0.00%    passed     98.21%
+ 611  AY0045-Ca_CIcol    0.00%    passed     95.82%
+ 612  AY0045-Cb_CIcol    0.00%    passed     99.20%
+ 613  AY0046-Ca_CIcol    0.00%    passed     93.45%
+ 614  AY0046-Cb_CIcol    0.00%    passed     92.58%
+ 615  AY0047-Ca_CIcol    0.00%    passed     99.58%
+ 616  AY0047-Cb_CIcol    0.00%    passed     98.21%
+ 617  AY0048-Ca_CIcol    0.00%    passed     96.67%
+ 618  AY0048-Cb_CIcol    0.00%    passed     97.12%
+ 619  AY0049-Ca_CIcol    0.00%    passed     93.45%
+ 620  AY0049-Cb_CIcol    0.00%    passed     96.01%
+ 621  AY0050-Ca_CIcol    0.00%    passed    100.00%
+ 622  AY0050-Cb_CIcol    0.00%    passed     98.74%
+ 623  AY0052-Ca_CIcol    0.00%    passed     99.06%
+ 624  AY0052-Cb_CIcol    0.00%    passed     99.20%
+ 625  AY0053-Ca_CIcol    0.00%    passed     98.79%
+ 626  AY0053-Cb_CIcol    0.00%    passed     96.67%
+ 627  AY0054-Ca_CIcol    0.00%    passed     99.65%
+ 628  AY0054-Cb_CIcol    0.00%    passed     93.45%
+ 629  AY0055-Ca_CIcol    0.00%    passed     99.06%
+ 630  AY0055-Cb_CIcol    0.00%    passed     99.20%
+ 631  AY0056-Ca_CIcol    0.00%    passed     99.09%
+ 632  AY0056-Cb_CIcol    0.00%    passed     98.88%
+ 633  AY0057-Ca_CIcol    0.00%    passed     97.24%
+ 634  AY0057-Cb_CIcol    0.00%    passed     96.46%
+ 635  AY0058-Ca_CIcol    0.00%    passed     99.58%
+ 636  AY0058-Cb_CIcol    0.00%    passed     95.79%
+ 637  AY0059-Ca_CIcol    0.00%    passed     98.05%
+ 638  AY0059-Cb_CIcol    0.00%    passed     97.11%
+ 639  AY0060-Ca_CIcol    0.00%    passed     99.81%
+ 640  AY0060-Cb_CIcol    0.00%    passed     80.52%
+ 641  AY0061-Ca_CIcol    0.00%    passed     99.20%
+ 642  AY0061-Cb_CIcol    0.00%    passed     99.06%
+ 643  AY0062-Ca_CIcol    0.00%    passed     95.82%
+ 644  AY0062-Cb_CIcol    0.00%    passed     99.24%
+ 645  AY0063-Ca_CIcol    0.00%    passed     96.94%
+ 646  AY0063-Cb_CIcol    0.00%    passed     85.47%
+ 647  AY0064-Ca_CIcol    0.00%    passed     99.06%
+ 648  AY0064-Cb_CIcol    0.00%    passed     99.20%
+ 649  AY0065-Ca_CIcol    0.00%    passed     97.94%
+ 650  AY0065-Cb_CIcol    0.00%    passed     99.23%
+ 651  AY0066-Ca_CIcol    0.00%    passed     97.03%
+ 652  AY0066-Cb_CIcol    0.00%    passed     99.27%
+ 653  AY0067-Ca_CIcol    0.00%    passed     97.36%
+ 654  AY0067-Cb_CIcol    0.00%    passed     94.01%
+ 655  AY0068-Ca_CIcol    0.00%    passed     99.39%
+ 656  AY0068-Cb_CIcol    0.00%    passed     98.33%
+ 657  AY0069-Ca_CIcol    0.00%    passed     99.06%
+ 658  AY0069-Cb_CIcol    0.00%    passed     99.20%
+ 659  AY0070-Ca_CIcol    0.00%    passed     98.41%
+ 660  AY0070-Cb_CIcol    0.00%    passed     96.12%
+ 661  AY0072-Ca_CIcol    0.00%    passed     95.87%
+ 662  AY0072-Cb_CIcol    0.00%    passed     97.51%
+ 663  AY0074-Ca_CIcol    0.00%    passed     98.63%
+ 664  AY0074-Cb_CIcol    0.00%    passed     93.82%
+ 665  AY0076-Ca_CIcol    0.00%    passed     99.06%
+ 666  AY0076-Cb_CIcol    0.00%    passed     99.20%
+ 667  AY0077-Ca_CIcol    0.00%    passed     99.81%
+ 668  AY0077-Cb_CIcol    0.00%    passed     99.58%
+ 669  AY0078-Ca_CIcol    0.00%    passed     92.58%
+ 670  AY0078-Cb_CIcol    0.00%    passed     97.36%
+ 671  AY0079-Ca_CIcol    0.00%    passed     99.06%
+ 672  AY0079-Cb_CIcol    0.00%    passed     99.20%
+ 673  AY0080-Ca_CIcol    0.00%    passed     99.58%
+ 674  AY0080-Cb_CIcol    0.00%    passed     99.06%
+ 675  AY0082-Ca_CIcol    0.00%    passed     99.28%
+ 676  AY0082-Cb_CIcol    0.00%    passed     99.88%
+ 677  AY0083-Ca_CIcol    0.00%    passed     98.41%
+ 678  AY0083-Cb_CIcol    0.00%    passed     91.99%
+ 679  AY0085-Ca_CIcol    0.00%    passed     99.36%
+ 680  AY0085-Cb_CIcol    0.00%    passed     99.36%
+ 681  AY0087-Ca_CIcol    0.00%    passed     98.21%
+ 682  AY0087-Cb_CIcol    0.00%    passed     97.16%
+ 683  AY0088-Ca_CIcol    0.00%    passed     97.94%
+ 684  AY0088-Cb_CIcol    0.00%    passed     99.23%
+ 685  AY0089-Ca_CIcol    0.00%    passed     99.72%
+ 686  AY0089-Cb_CIcol    0.00%    passed     96.12%
+ 687  AY0090-Ca_CIcol    0.00%    passed     99.88%
+ 688  AY0090-Cb_CIcol    0.00%    passed     98.33%
+ 689  AY0091-Ca_CIcol    0.00%    passed     99.06%
+ 690  AY0091-Cb_CIcol    0.00%    passed     99.20%
+****  TOTAL              0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: AA0139-Ca_GHcol is identical to AA0041-Cb_GHcol but kept for subsequent analysis
+NOTE: AA0050-Cb_GHgam is identical to AA0048-Ca_GHgam but kept for subsequent analysis
+NOTE: AA0050-Ca_GHgam is identical to AA0048-Cb_GHgam but kept for subsequent analysis
+NOTE: AA0104-Ca_GHcol is identical to AA0087-Ca_GHcol but kept for subsequent analysis
+NOTE: AA0140-Cb_GHcol is identical to AA0098-Ca_GHcol but kept for subsequent analysis
+NOTE: AB0095-Ca_BFcol is identical to AA0125-Ca_GHcol but kept for subsequent analysis
+NOTE: AB0186-Ca_BFcol is identical to AB0099-Ca_BFcol but kept for subsequent analysis
+NOTE: AB0133-Cb_BFgam is identical to AB0113-Cb_BFcol but kept for subsequent analysis
+NOTE: AB0182-Cb_BFcol is identical to AB0115-Cb_BFcol but kept for subsequent analysis
+NOTE: AB0235-Cb_BFgam is identical to AB0136-Ca_BFgam but kept for subsequent analysis
+NOTE: AB0150-Ca_BFgam is identical to AB0145-Cb_BFgam but kept for subsequent analysis
+NOTE: AY0016-Cb_CIcol is identical to AB0146-Ca_BFgam but kept for subsequent analysis
+NOTE: AY0025-Cb_CIcol is identical to AY0016-Ca_CIcol but kept for subsequent analysis
+NOTE: AY0070-Cb_CIcol is identical to AY0038-Cb_CIcol but kept for subsequent analysis
+NOTE: AY0083-Ca_CIcol is identical to AY0070-Ca_CIcol but kept for subsequent analysis
+NOTE: AY0090-Ca_CIcol is identical to AY0082-Cb_CIcol but kept for subsequent analysis
+NOTE: 38 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: AA0060-Cb_GHgam (identical to AA0048-Ca_GHgam) is ignored but added at the end
+NOTE: AA0061-Ca_GHgam (identical to AA0048-Ca_GHgam) is ignored but added at the end
+NOTE: AA0084-Ca_GHgam (identical to AA0048-Ca_GHgam) is ignored but added at the end
+NOTE: AA0108-Ca_GHgam (identical to AA0048-Ca_GHgam) is ignored but added at the end
+NOTE: AA0060-Ca_GHgam (identical to AA0048-Cb_GHgam) is ignored but added at the end
+NOTE: AA0061-Cb_GHgam (identical to AA0048-Cb_GHgam) is ignored but added at the end
+NOTE: AA0084-Cb_GHgam (identical to AA0048-Cb_GHgam) is ignored but added at the end
+NOTE: AA0108-Cb_GHgam (identical to AA0048-Cb_GHgam) is ignored but added at the end
+NOTE: AY0021-Ca_CIcol (identical to AB0099-Ca_BFcol) is ignored but added at the end
+NOTE: AB0145-Ca_BFgam (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AB0150-Cb_BFgam (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AB0157-Ca_BFgam (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AB0208-Cb_BFgam (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AB0238-Ca_BFgam (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AV0005-Ca_GNgam (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0007-Ca_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0052-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0055-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0061-Ca_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0064-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0069-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0076-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0079-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AY0091-Cb_CIcol (identical to AB0113-Cb_BFcol) is ignored but added at the end
+NOTE: AB0157-Cb_BFgam (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AB0208-Ca_BFgam (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AB0238-Cb_BFgam (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AV0029-Ca_GNgam (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0007-Cb_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0031-Cb_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0052-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0055-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0061-Cb_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0064-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0069-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0076-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0079-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+NOTE: AY0091-Ca_CIcol (identical to AB0145-Cb_BFgam) is ignored but added at the end
+Alignment was printed to hapalignment_duplication_HSdiploid3.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to hapalignment_duplication_HSdiploid3.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.158 seconds
+Measuring multi-threading efficiency up to 4 CPU cores
+Increase to 10 rounds for branch lengths
+5 trees examined
+Threads: 1 / Time: 4.068 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -22994
+Threads: 2 / Time: 3.381 sec / Speedup: 1.203 / Efficiency: 60% / LogL: -22994
+Threads: 3 / Time: 3.220 sec / Speedup: 1.263 / Efficiency: 42% / LogL: -22994
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+ASC+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -14465.683
+Optimal log-likelihood: -14465.443
+Rate parameters:  A-C: 1.20134  A-G: 5.25445  A-T: 2.80751  C-G: 0.23781  C-T: 5.22809  G-T: 1.00000
+Base frequencies:  A: 0.206  C: 0.267  G: 0.277  T: 0.249
+Gamma shape alpha: 0.472
+Parameters optimization took 1 rounds (0.392 sec)
+Time for fast ML tree search: 3.266 seconds
+
+NOTE: ModelFinder requires 20 MB RAM!
+ModelFinder will test up to 4 DNA models (sample size: 224) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         15548.633    1309 33715.266    3463295.266  38181.111
+  2  GTR+F+ASC     15548.615    1309 33715.230    3463295.230  38181.075
+  3  GTR+F+G4      14459.916    1310 31539.833    3466359.833  36009.089
+  4  GTR+F+ASC+G4  14457.092    1310 31534.184    3466354.184  36003.440
+Akaike Information Criterion:           GTR+F+ASC+G4
+Corrected Akaike Information Criterion: GTR+F+ASC
+Bayesian Information Criterion:         GTR+F+ASC+G4
+Best-fit model: GTR+F+ASC+G4 chosen according to BIC
+
+All model information printed to hapalignment_duplication_HSdiploid3.model.gz
+CPU time for ModelFinder: 31.417 seconds (0h:0m:31s)
+Wall-clock time for ModelFinder: 16.660 seconds (0h:0m:16s)
+Generating 1000 samples for ultrafast bootstrap (seed: 65226)...
+
+NOTE: 20 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -14457.092
+Optimal log-likelihood: -14457.091
+Rate parameters:  A-C: 1.27412  A-G: 5.71957  A-T: 2.89764  C-G: 0.24167  C-T: 5.09611  G-T: 1.00000
+Base frequencies:  A: 0.206  C: 0.267  G: 0.277  T: 0.249
+Gamma shape alpha: 1.026
+Parameters optimization took 1 rounds (0.251 sec)
+Computing ML distances based on estimated model parameters... 5.410 sec
+Computing BIONJ tree...
+0.629 seconds
+Log-likelihood of BIONJ tree: -14254.639
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 17.383 second
+Computing log-likelihood of 98 initial trees ... 9.280 seconds
+Current best score: -14254.639
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -14084.693
+Iteration 10 / LogL: -14398.149 / Time: 0h:2m:37s
+Iteration 20 / LogL: -14431.644 / Time: 0h:5m:1s
+Finish initializing candidate tree set (20)
+Current best tree score: -14084.693 / CPU time: 296.153
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -14248.944 / Time: 0h:6m:53s (0h:16m:51s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -14071.750
+Iteration 40 / LogL: -14080.979 / Time: 0h:9m:16s (0h:21m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 41: -14057.494
+Iteration 50 / LogL: -14096.033 / Time: 0h:11m:21s (0h:21m:6s left)
+Log-likelihood cutoff on original alignment: -14444.436
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 60: -14056.279
+Iteration 60 / LogL: -14056.279 / Time: 0h:13m:39s (0h:23m:9s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 62: -14043.774
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 67: -14041.221
+Iteration 70 / LogL: -14061.106 / Time: 0h:15m:57s (0h:22m:25s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 71: -14039.624
+Iteration 80 / LogL: -14102.321 / Time: 0h:18m:13s (0h:20m:59s left)
+Iteration 90 / LogL: -14057.764 / Time: 0h:20m:40s (0h:18m:49s left)
+Iteration 100 / LogL: -14059.914 / Time: 0h:23m:1s (0h:16m:30s left)
+Log-likelihood cutoff on original alignment: -14438.069
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.910
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 107: -14033.671
+Iteration 110 / LogL: -14071.140 / Time: 0h:25m:13s (0h:22m:26s left)
+Iteration 120 / LogL: -14073.179 / Time: 0h:27m:15s (0h:19m:55s left)
+Iteration 130 / LogL: -14063.703 / Time: 0h:29m:17s (0h:17m:29s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 133: -14026.750
+Iteration 140 / LogL: -14067.489 / Time: 0h:31m:27s (0h:21m:2s left)
+Iteration 150 / LogL: -14030.177 / Time: 0h:33m:35s (0h:18m:42s left)
+Log-likelihood cutoff on original alignment: -14434.935
+Iteration 160 / LogL: -14047.605 / Time: 0h:35m:42s (0h:16m:23s left)
+Iteration 170 / LogL: -14041.804 / Time: 0h:37m:47s (0h:14m:5s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 179: -14026.334
+Iteration 180 / LogL: -14050.670 / Time: 0h:39m:45s (0h:21m:59s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 181: -14020.690
+Iteration 190 / LogL: -14033.659 / Time: 0h:42m:11s (0h:20m:18s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 197: -14017.247
+Iteration 200 / LogL: -14035.471 / Time: 0h:44m:21s (0h:21m:37s left)
+Log-likelihood cutoff on original alignment: -14434.935
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.951
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -14035.667 / Time: 0h:46m:47s (0h:20m:8s left)
+Iteration 220 / LogL: -14040.639 / Time: 0h:49m:1s (0h:17m:54s left)
+Iteration 230 / LogL: -14052.386 / Time: 0h:51m:12s (0h:15m:39s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 233: -14012.597
+Iteration 240 / LogL: -14019.089 / Time: 0h:53m:35s (0h:20m:51s left)
+Iteration 250 / LogL: -14042.264 / Time: 0h:55m:45s (0h:18m:35s left)
+Log-likelihood cutoff on original alignment: -14434.935
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 255: -14007.238
+Iteration 260 / LogL: -14025.357 / Time: 0h:58m:11s (0h:21m:20s left)
+Iteration 270 / LogL: -14032.005 / Time: 1h:0m:22s (0h:19m:4s left)
+Iteration 280 / LogL: -14024.719 / Time: 1h:2m:34s (0h:16m:49s left)
+Iteration 290 / LogL: -14026.631 / Time: 1h:4m:50s (0h:14m:34s left)
+Iteration 300 / LogL: -14027.343 / Time: 1h:7m:3s (0h:12m:20s left)
+Log-likelihood cutoff on original alignment: -14434.935
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.948
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -14022.368 / Time: 1h:9m:30s (0h:20m:14s left)
+Iteration 320 / LogL: -14016.791 / Time: 1h:11m:44s (0h:17m:59s left)
+Iteration 330 / LogL: -14010.397 / Time: 1h:14m:6s (0h:15m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 332: -14000.084
+Iteration 340 / LogL: -14016.353 / Time: 1h:16m:24s (0h:20m:44s left)
+Iteration 350 / LogL: -14006.212 / Time: 1h:18m:39s (0h:18m:28s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 360 / LogL: -14009.586 / Time: 1h:20m:55s (0h:16m:13s left)
+Iteration 370 / LogL: -14015.494 / Time: 1h:23m:22s (0h:14m:0s left)
+Iteration 380 / LogL: -14018.440 / Time: 1h:25m:37s (0h:11m:44s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 381: -13999.337
+Iteration 390 / LogL: -14046.137 / Time: 1h:27m:53s (0h:20m:33s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 397: -13996.505
+Iteration 400 / LogL: -14008.065 / Time: 1h:30m:7s (0h:21m:54s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.948
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 401: -13983.101
+Iteration 410 / LogL: -14010.857 / Time: 1h:32m:21s (0h:20m:33s left)
+Iteration 420 / LogL: -14018.548 / Time: 1h:34m:43s (0h:18m:18s left)
+Iteration 430 / LogL: -14006.895 / Time: 1h:36m:59s (0h:16m:3s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 437: -13982.117
+Iteration 440 / LogL: -14015.985 / Time: 1h:39m:16s (0h:21m:56s left)
+Iteration 450 / LogL: -14010.180 / Time: 1h:41m:33s (0h:19m:40s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 455: -13979.777
+Iteration 460 / LogL: -13983.652 / Time: 1h:43m:52s (0h:21m:29s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 467: -13979.478
+Iteration 470 / LogL: -14038.581 / Time: 1h:46m:6s (0h:21m:56s left)
+Iteration 480 / LogL: -14004.918 / Time: 1h:48m:20s (0h:19m:40s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 490: -13965.139
+Iteration 490 / LogL: -13965.139 / Time: 1h:50m:30s (0h:22m:35s left)
+Iteration 500 / LogL: -13982.552 / Time: 1h:52m:49s (0h:20m:20s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.893
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -13968.151 / Time: 1h:54m:59s (0h:20m:19s left)
+Iteration 520 / LogL: -13968.471 / Time: 1h:57m:10s (0h:18m:3s left)
+Iteration 530 / LogL: -13989.474 / Time: 1h:59m:22s (0h:15m:47s left)
+Iteration 540 / LogL: -13988.611 / Time: 2h:1m:30s (0h:13m:31s left)
+Iteration 550 / LogL: -13980.772 / Time: 2h:3m:44s (0h:11m:16s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 560 / LogL: -13976.188 / Time: 2h:5m:58s (0h:9m:0s left)
+Iteration 570 / LogL: -13990.146 / Time: 2h:8m:9s (0h:6m:45s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 580: -13964.408
+Iteration 580 / LogL: -13964.408 / Time: 2h:10m:22s (0h:22m:31s left)
+Iteration 590 / LogL: -13987.524 / Time: 2h:12m:37s (0h:20m:15s left)
+Iteration 600 / LogL: -13979.238 / Time: 2h:14m:48s (0h:18m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.881
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 601: -13962.987
+Iteration 610 / LogL: -13995.902 / Time: 2h:17m:0s (0h:20m:28s left)
+Iteration 620 / LogL: -13973.066 / Time: 2h:19m:19s (0h:18m:13s left)
+Iteration 630 / LogL: -14005.479 / Time: 2h:21m:32s (0h:15m:58s left)
+Iteration 640 / LogL: -13996.830 / Time: 2h:23m:42s (0h:13m:43s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 641: -13961.522
+Iteration 650 / LogL: -13966.878 / Time: 2h:26m:1s (0h:20m:28s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 660 / LogL: -13985.724 / Time: 2h:28m:15s (0h:18m:13s left)
+Iteration 670 / LogL: -13983.670 / Time: 2h:30m:19s (0h:15m:57s left)
+Iteration 680 / LogL: -13993.838 / Time: 2h:32m:25s (0h:13m:41s left)
+Iteration 690 / LogL: -13980.510 / Time: 2h:34m:39s (0h:11m:26s left)
+Iteration 700 / LogL: -13979.195 / Time: 2h:36m:58s (0h:9m:12s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.893
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 702: -13959.030
+Iteration 710 / LogL: -13976.084 / Time: 2h:39m:20s (0h:20m:40s left)
+Iteration 720 / LogL: -13992.442 / Time: 2h:41m:33s (0h:18m:25s left)
+Iteration 730 / LogL: -13977.462 / Time: 2h:43m:53s (0h:16m:11s left)
+Iteration 740 / LogL: -13986.695 / Time: 2h:46m:14s (0h:13m:56s left)
+Iteration 750 / LogL: -13995.764 / Time: 2h:48m:35s (0h:11m:42s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 760 / LogL: -13976.591 / Time: 2h:51m:4s (0h:9m:28s left)
+Iteration 770 / LogL: -13981.525 / Time: 2h:53m:27s (0h:7m:13s left)
+Iteration 780 / LogL: -13985.441 / Time: 2h:55m:46s (0h:4m:57s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 784: -13957.382
+Iteration 790 / LogL: -13993.038 / Time: 2h:58m:12s (0h:21m:13s left)
+Iteration 800 / LogL: -14018.268 / Time: 3h:0m:33s (0h:18m:58s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.902
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 810 / LogL: -14002.849 / Time: 3h:3m:1s (0h:20m:21s left)
+Iteration 820 / LogL: -13964.044 / Time: 3h:5m:20s (0h:18m:6s left)
+Iteration 830 / LogL: -13983.632 / Time: 3h:7m:48s (0h:15m:51s left)
+Iteration 840 / LogL: -13992.473 / Time: 3h:10m:10s (0h:13m:35s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 842: -13950.603
+Iteration 850 / LogL: -13971.753 / Time: 3h:12m:33s (0h:20m:51s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 860 / LogL: -13993.365 / Time: 3h:15m:5s (0h:18m:37s left)
+Iteration 870 / LogL: -13976.463 / Time: 3h:17m:27s (0h:16m:21s left)
+Iteration 880 / LogL: -13981.158 / Time: 3h:19m:57s (0h:14m:6s left)
+Iteration 890 / LogL: -13970.369 / Time: 3h:22m:25s (0h:11m:50s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 894: -13944.637
+Iteration 900 / LogL: -13971.786 / Time: 3h:24m:51s (0h:21m:25s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.922
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 910 / LogL: -13957.275 / Time: 3h:27m:19s (0h:20m:31s left)
+Iteration 920 / LogL: -13973.115 / Time: 3h:29m:38s (0h:18m:14s left)
+Iteration 930 / LogL: -13971.970 / Time: 3h:31m:49s (0h:15m:57s left)
+Iteration 940 / LogL: -13970.029 / Time: 3h:34m:0s (0h:13m:40s left)
+Iteration 950 / LogL: -13982.612 / Time: 3h:36m:12s (0h:11m:23s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 960 / LogL: -13975.082 / Time: 3h:38m:26s (0h:9m:6s left)
+Iteration 970 / LogL: -13965.348 / Time: 3h:40m:42s (0h:6m:49s left)
+Iteration 980 / LogL: -13967.113 / Time: 3h:43m:1s (0h:4m:33s left)
+Iteration 990 / LogL: -13962.166 / Time: 3h:45m:15s (0h:2m:16s left)
+Iteration 1000 / LogL: -13993.814 / Time: 3h:47m:28s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.940
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1006: -13942.090
+Iteration 1010 / LogL: -13972.238 / Time: 3h:49m:47s (0h:21m:51s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1020: -13937.151
+Iteration 1020 / LogL: -13937.151 / Time: 3h:52m:1s (0h:22m:46s left)
+Iteration 1030 / LogL: -13959.003 / Time: 3h:54m:16s (0h:20m:29s left)
+Iteration 1040 / LogL: -13966.001 / Time: 3h:56m:29s (0h:18m:12s left)
+Iteration 1050 / LogL: -13971.922 / Time: 3h:58m:47s (0h:15m:56s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1060 / LogL: -13972.959 / Time: 4h:1m:6s (0h:13m:39s left)
+Iteration 1070 / LogL: -13980.518 / Time: 4h:3m:19s (0h:11m:22s left)
+Iteration 1080 / LogL: -13963.012 / Time: 4h:5m:41s (0h:9m:6s left)
+Iteration 1090 / LogL: -13959.285 / Time: 4h:8m:1s (0h:6m:49s left)
+Iteration 1100 / LogL: -13950.039 / Time: 4h:10m:18s (0h:4m:33s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.942
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1110 / LogL: -13945.399 / Time: 4h:12m:41s (0h:20m:30s left)
+Iteration 1120 / LogL: -13960.342 / Time: 4h:15m:0s (0h:18m:13s left)
+Iteration 1130 / LogL: -13981.980 / Time: 4h:17m:21s (0h:15m:57s left)
+Iteration 1140 / LogL: -13973.688 / Time: 4h:19m:41s (0h:13m:40s left)
+Iteration 1150 / LogL: -13981.261 / Time: 4h:21m:54s (0h:11m:23s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1160 / LogL: -13954.714 / Time: 4h:24m:22s (0h:9m:7s left)
+Iteration 1170 / LogL: -13966.969 / Time: 4h:26m:37s (0h:6m:50s left)
+Iteration 1180 / LogL: -13983.236 / Time: 4h:28m:55s (0h:4m:33s left)
+Iteration 1190 / LogL: -13963.637 / Time: 4h:31m:13s (0h:2m:16s left)
+Iteration 1200 / LogL: -13967.112 / Time: 4h:33m:36s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.941
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1210 / LogL: -13963.415 / Time: 4h:36m:5s (0h:20m:33s left)
+Iteration 1220 / LogL: -13951.603 / Time: 4h:38m:20s (0h:18m:16s left)
+Iteration 1230 / LogL: -13970.325 / Time: 4h:40m:52s (0h:15m:59s left)
+Iteration 1240 / LogL: -13969.913 / Time: 4h:43m:24s (0h:13m:43s left)
+Iteration 1250 / LogL: -13955.533 / Time: 4h:45m:57s (0h:11m:26s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1260 / LogL: -13967.244 / Time: 4h:48m:28s (0h:9m:9s left)
+Iteration 1270 / LogL: -13945.620 / Time: 4h:50m:57s (0h:6m:52s left)
+Iteration 1280 / LogL: -13974.735 / Time: 4h:53m:32s (0h:4m:35s left)
+Iteration 1290 / LogL: -13998.548 / Time: 4h:56m:10s (0h:2m:17s left)
+Iteration 1300 / LogL: -13965.112 / Time: 4h:58m:42s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.947
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1310 / LogL: -13959.014 / Time: 5h:1m:20s (0h:20m:43s left)
+Iteration 1320 / LogL: -13988.829 / Time: 5h:3m:56s (0h:18m:26s left)
+Iteration 1330 / LogL: -13951.370 / Time: 5h:6m:38s (0h:16m:9s left)
+Iteration 1340 / LogL: -13967.098 / Time: 5h:9m:13s (0h:13m:51s left)
+Iteration 1350 / LogL: -13960.194 / Time: 5h:11m:48s (0h:11m:33s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1360 / LogL: -13961.732 / Time: 5h:14m:36s (0h:9m:15s left)
+Iteration 1370 / LogL: -13975.965 / Time: 5h:17m:8s (0h:6m:56s left)
+Iteration 1380 / LogL: -13973.858 / Time: 5h:19m:38s (0h:4m:38s left)
+Iteration 1390 / LogL: -13956.314 / Time: 5h:22m:14s (0h:2m:19s left)
+Iteration 1400 / LogL: -13977.398 / Time: 5h:24m:48s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.949
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1410 / LogL: -13950.632 / Time: 5h:27m:20s (0h:20m:54s left)
+Iteration 1420 / LogL: -13959.543 / Time: 5h:29m:48s (0h:18m:35s left)
+Iteration 1430 / LogL: -13971.616 / Time: 5h:32m:9s (0h:16m:16s left)
+Iteration 1440 / LogL: -13981.462 / Time: 5h:34m:39s (0h:13m:57s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1449: -13935.702
+Iteration 1450 / LogL: -13973.075 / Time: 5h:37m:7s (0h:23m:2s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1460 / LogL: -13957.748 / Time: 5h:39m:47s (0h:20m:43s left)
+Iteration 1470 / LogL: -13977.378 / Time: 5h:42m:31s (0h:18m:25s left)
+Iteration 1480 / LogL: -13985.013 / Time: 5h:45m:8s (0h:16m:6s left)
+Iteration 1490 / LogL: -13952.816 / Time: 5h:47m:49s (0h:13m:46s left)
+Iteration 1500 / LogL: -13964.843 / Time: 5h:50m:28s (0h:11m:27s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1510 / LogL: -13952.664 / Time: 5h:53m:16s (0h:21m:4s left)
+Iteration 1520 / LogL: -13948.342 / Time: 5h:56m:3s (0h:18m:45s left)
+Iteration 1530 / LogL: -13952.659 / Time: 5h:58m:39s (0h:16m:25s left)
+Iteration 1540 / LogL: -13949.970 / Time: 6h:1m:19s (0h:14m:5s left)
+Iteration 1550 / LogL: -13974.651 / Time: 6h:4m:1s (0h:11m:45s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1560 / LogL: -13950.397 / Time: 6h:6m:45s (0h:9m:24s left)
+Iteration 1570 / LogL: -13967.176 / Time: 6h:9m:29s (0h:7m:3s left)
+Iteration 1580 / LogL: -13953.284 / Time: 6h:12m:6s (0h:4m:42s left)
+Iteration 1590 / LogL: -13971.453 / Time: 6h:14m:51s (0h:2m:21s left)
+Iteration 1600 / LogL: -13967.557 / Time: 6h:17m:33s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.952
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1610 / LogL: -13974.922 / Time: 6h:20m:19s (0h:21m:16s left)
+Iteration 1620 / LogL: -13958.530 / Time: 6h:22m:59s (0h:18m:55s left)
+Iteration 1630 / LogL: -13979.351 / Time: 6h:25m:37s (0h:16m:34s left)
+Iteration 1640 / LogL: -13971.167 / Time: 6h:28m:14s (0h:14m:12s left)
+Iteration 1650 / LogL: -13947.338 / Time: 6h:30m:50s (0h:11m:51s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1660 / LogL: -13991.597 / Time: 6h:33m:37s (0h:9m:29s left)
+Iteration 1670 / LogL: -13956.512 / Time: 6h:36m:34s (0h:7m:7s left)
+Iteration 1680 / LogL: -13948.564 / Time: 6h:39m:23s (0h:4m:45s left)
+Iteration 1690 / LogL: -13992.324 / Time: 6h:42m:7s (0h:2m:22s left)
+Iteration 1700 / LogL: -13951.661 / Time: 6h:45m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.955
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1710 / LogL: -13964.870 / Time: 6h:47m:52s (0h:21m:28s left)
+Iteration 1720 / LogL: -13958.512 / Time: 6h:50m:35s (0h:19m:6s left)
+Iteration 1730 / LogL: -13936.610 / Time: 6h:53m:33s (0h:16m:44s left)
+Iteration 1740 / LogL: -13951.904 / Time: 6h:56m:26s (0h:14m:22s left)
+Iteration 1750 / LogL: -13954.787 / Time: 6h:59m:20s (0h:11m:59s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1760 / LogL: -13961.336 / Time: 7h:2m:15s (0h:9m:36s left)
+Iteration 1770 / LogL: -13993.664 / Time: 7h:5m:3s (0h:7m:12s left)
+Iteration 1780 / LogL: -13950.931 / Time: 7h:7m:55s (0h:4m:48s left)
+Iteration 1790 / LogL: -13968.838 / Time: 7h:10m:44s (0h:2m:24s left)
+Iteration 1800 / LogL: -13954.305 / Time: 7h:13m:28s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.968
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1810 / LogL: -13936.338 / Time: 7h:16m:20s (0h:21m:42s left)
+Iteration 1820 / LogL: -13952.666 / Time: 7h:19m:12s (0h:19m:18s left)
+Iteration 1830 / LogL: -13961.831 / Time: 7h:21m:59s (0h:16m:54s left)
+Iteration 1840 / LogL: -13943.972 / Time: 7h:24m:41s (0h:14m:30s left)
+Iteration 1850 / LogL: -13948.838 / Time: 7h:27m:24s (0h:12m:5s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1860 / LogL: -13964.752 / Time: 7h:30m:14s (0h:9m:41s left)
+Iteration 1870 / LogL: -13964.975 / Time: 7h:33m:2s (0h:7m:16s left)
+Iteration 1880 / LogL: -13974.814 / Time: 7h:35m:41s (0h:4m:51s left)
+Iteration 1890 / LogL: -13955.402 / Time: 7h:38m:21s (0h:2m:25s left)
+Iteration 1900 / LogL: -13946.562 / Time: 7h:41m:15s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -14434.033
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.973
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1910 / LogL: -13977.101 / Time: 7h:44m:14s (0h:21m:53s left)
+Iteration 1920 / LogL: -13943.728 / Time: 7h:47m:11s (0h:19m:28s left)
+Iteration 1930 / LogL: -13980.972 / Time: 7h:50m:11s (0h:17m:3s left)
+Iteration 1940 / LogL: -13951.670 / Time: 7h:53m:10s (0h:14m:38s left)
+Iteration 1950 / LogL: -13986.473 / Time: 7h:56m:6s (0h:12m:12s left)
+Log-likelihood cutoff on original alignment: -14434.033
+Iteration 1960 / LogL: -13947.282 / Time: 7h:59m:7s (0h:9m:46s left)
+Iteration 1970 / LogL: -13954.008 / Time: 8h:2m:7s (0h:7m:20s left)
+Iteration 1980 / LogL: -13958.257 / Time: 8h:4m:56s (0h:4m:54s left)
